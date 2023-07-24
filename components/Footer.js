@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
   return (
   <React.Fragment className="bg-[#1E293B] w-full mx-auto">
-    <footer className="px-24  py-10 bg-gray-800 w-full mx-auto ">
+    <footer className="px-24  py-10 bg-light-800 w-full mx-auto ">
   <div className="flex flex-col md:flex-row md:items-center ">
     <span>
       {/* <svg
@@ -25,19 +25,19 @@ const Footer = () => {
   </div>
   <div className="mt-16 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-8 text-center ">
     <div className="mb-8 lg:mb-0">
-      <p className="mb-6 text-lg font-semibold text-white">Company</p>
-      <ul className="flex flex-col space-y-4 text-[14px] font-medium text-white">
-        <li className='text-white'>About us</li>
-        <li className='text-white'>Company History</li>
-        <li className='text-white'>Our Team</li>
-        <li className='text-white'>Our Vision</li>
-        <li className='text-white'>Press Release</li>
+      <p className="mb-6 text-lg font-semibold text-dark">Company</p>
+      <ul className="flex flex-col space-y-4 text-[14px] font-medium">
+        <li>About us</li>
+        <li>Company History</li>
+        <li>Our Team</li>
+        <li>Our Vision</li>
+        <li>Press Release</li>
       </ul>
     </div>
 
     <div className="mb-8 lg:mb-0">
-      <p className="mb-6 text-lg font-semibold text-white">Our Stores</p>
-      <ul className="flex flex-col space-y-4 text-[14px] font-medium text-white">
+      <p className="mb-6 text-lg font-semibold text-dark">Our Stores</p>
+      <ul className="flex flex-col space-y-4 text-[14px] font-medium text-dark">
         <li>Washington</li>
         <li>New Hampshire</li>
         <li>Maine</li>
@@ -46,8 +46,8 @@ const Footer = () => {
       </ul>
     </div>
     <div className="mb-8 lg:mb-0">
-      <p className="mb-6 text-lg font-semibold text-white">Services</p>
-      <ul className="flex flex-col space-y-4 text-[14px] font-medium text-white">
+      <p className="mb-6 text-lg font-semibold text-dark">Services</p>
+      <ul className="flex flex-col space-y-4 text-[14px] font-medium text-dark">
         <li>UI / UX Design</li>
         <li>App Development</li>
         <li>API reference</li>
@@ -56,8 +56,8 @@ const Footer = () => {
       </ul>
     </div>
     <div className="mb-8 lg:mb-0">
-      <p className="mb-6 text-lg font-semibold text-white">Legal</p>
-      <ul className="flex flex-col space-y-4 text-[14px] font-medium text-white">
+      <p className="mb-6 text-lg font-semibold text-dark">Legal</p>
+      <ul className="flex flex-col space-y-4 text-[14px] font-medium text-dark">
         <li>Privacy Policy</li>
         <li>Terms of Service</li>
         <li>Cookie Policy</li>
@@ -66,8 +66,8 @@ const Footer = () => {
       </ul>
     </div>
     <div className="mb-8 lg:mb-0">
-      <p className="mb-6 text-lg font-semibold text-white">Social Links</p>
-      <ul className="flex flex-col space-y-4 text-[14px] font-medium text-white">
+      <p className="mb-6 text-lg font-semibold text-dark">Social Links</p>
+      <ul className="flex flex-col space-y-4 text-[14px] font-medium text-dark">
         <li>Facebook</li>
         <li>Twitter</li>
         <li>Instagram</li>

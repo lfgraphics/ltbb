@@ -111,7 +111,7 @@ export default function Third() {
           ))}
         </Swiper>
 
-        <div  data-aos="flip-down" className="m-4 mt-8 mb-4">
+        {/* <div  data-aos="flip-down" className="m-4 mt-8 mb-4">
           <div className="max-w-full p-6 overflow-hidden  rounded-lg shadow bg-[#1E293B] text-gray-100" >
             <article>
               <h2 className="text-xl font-bold text-center mb-2">It&apos;s important</h2>
@@ -123,16 +123,10 @@ export default function Third() {
               </p>
 
               <p className="mt-4 text-gray-400"></p>
-              {/* <div className="flex items-center mt-8 space-x-4">
-			<img src="https://source.unsplash.com/100x100/?portrait" alt="" className="w-10 h-10 rounded-full bg-gray-500" />
-			<div>
-				<h3 className="text-sm font-medium">Leroy Jenkins</h3>
-				<time datetime="2021-02-18" className="text-sm text-gray-400">Feb 18th 2021</time>
-			</div>
-		</div> */}
+              
             </article>
           </div>
-        </div>
+        </div> */}
 
       </div>
     </>

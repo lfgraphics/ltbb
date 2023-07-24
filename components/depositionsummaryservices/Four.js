@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 
 import 'aos/dist/aos.css';
-import Image from 'next/image';
 
 
 const Four = () => {
@@ -16,132 +15,45 @@ const Four = () => {
 
   const data = [
     {
-      title: "Case Management",
+      title: "Summarization",
       details: [
-        "Reviewing, organizing, indexing, and summarizing client files",
-        "Preparing different correspondence",
-        "Preparing a variety of pleadings"
+        "Deposition summary services specialize in reviewing and summarizing deposition transcripts. They extract essential facts, statements, and arguments presented during the deposition process."
       ]
     },
     {
-      title: "Discovery Preparation",
+      title: "Highlighting Key Information",
       details: [
-        "Drafting Subpoenas, Interrogatories, and Discovery Demands",
-        "Detailed Analysis Reports of Depositions and Interrogatories",
-        "Witness Summary",
-        "Requesting for Medical Reports and Detailed Analysis of Medical Reports"
+        "These services focus on identifying and highlighting key points, significant testimony, and important exhibits or evidence referenced during the deposition. This helps attorneys quickly grasp the crucial details without having to review the entire transcript."
       ]
     },
     {
-      title: "Trial Preparation",
+      title: "Customization",
       details: [
-        "Expert witness report summarization",
-        "Document summarization for discovery",
-        "Property search from public records",
-        "Document Management with the use of software Casemap"
+        "Deposition summaries can be customized to meet specific requirements. Attorneys can request summaries that align with their preferred format, level of detail, and organization style."
       ]
     },
     {
-      title: "Legal Document Production",
+      title: "Time and Cost Savings",
       details: [
-        "Contracts",
-        "Power of attorneys",
-        "Prenuptial agreements",
-        "Case Information statements",
-        "Property Settlement agreements"
+        "Dealing with lengthy deposition transcripts can be time-consuming and labor-intensive. TLB’s legal professionals can save valuable time and allocate their resources more efficiently. It can also be cost-effective compared to hiring additional in-house staff or allocating existing resources for this task."
       ]
     },
     {
-      title: "Editorial Support",
+      title: "Case Preparation",
       details: [
-        "Editorial support to publishers who are looking for value-added enhancements to their publications. Our services comprise of:",
-        "Abstraction of case law and legal journals",
-        "Indexing legal material",
-        "Legal research",
-        "Copy editing"
+        "Deposition summaries play a vital role in case preparation. They provide attorneys with a clear overview of the deposition testimony, aiding in case strategy development, identifying strengths and weaknesses, and preparing for trial or settlement negotiations."
       ]
     },
     {
-      title: "Organizing Legal Database",
+      title: "Improved Collaboration",
       details: [
-        "Creating legal databases for law firms and corporates",
-        "Providing assistance in organizing the information into an index and searchable database"
+        "Deposition summaries facilitate effective collaboration among legal teams. Attorneys can easily share and discuss the key points and important information extracted from the depositions, enhancing communication and coordination."
       ]
     },
     {
-      title: "Proofreading Services",
+      title: "Reviewing the transcript of the deposition",
       details: [
-        "Reviewing and rectifying spellings",
-        "Making grammatical changes if needed",
-        "Confirming uniformity in typefaces throughout the document",
-        "Determining accurate and consecutive numbering of several elements like page numbers",
-        "Looking for errors in formatting",
-        "Validating table of contents with elements like titles and subtitles",
-        "Validating the appropriateness of in-text illustrations",
-        "Real Estate Title Search",
-        "Data Entry Services"
-      ]
-    },
-    {
-      title: "Corporate Services",
-      details: [
-        "Coordinating Hearings, Depositions, and Meetings with Clients",
-        "Preparing Notices for Hearings and Depositions",
-        "Arranging Court Reporters and Ordering Transcripts",
-        "Formatting and Finalizing Pleadings and Correspondence",
-        "Filing Documents Electronically",
-        "Preparing Periodic Client Invoices",
-        "Performing Clerical Tasks and Assignments",
-        "Preparing Table of Authorities",
-        "Preparing Table of Contents",
-        "Legal Typing and Creating Minutes of Meetings"
-      ]
-    },
-    {
-      title: "Legal Research and Drafting Services",
-      details: [
-        "Performing Due Diligence",
-        "Data Room Management",
-        "Administrative and Regulatory Law Research Services",
-        "Legislation Research Services, including Primary (Regulations, Statutes, Cases, etc.) and Secondary Sources (Legal Dictionaries, Law Reviews, Treatises, etc.)",
-        "Case Law Research Services",
-        "Compliance Research Services",
-        "Multi-Jurisdictional Research Services",
-        "Memoranda of Law Research Services",
-        "Drafting of agreements/contracts as well as court-specific documents",
-        "Analyzing SEC Forms such as Form 4 and inputting the relevant information into Excel."
-      ]
-    },
-    {
-      title: "Legal Transcription Services",
-      details: [
-        "Transcribing audio files related to legal cases.",
-        "Tribunal Transcription",
-        "Verbatim Voice Dictation"
-      ]
-    },
-    {
-      title: "Litigation Support Services",
-      details: [
-        "Depositions",
-        "Medical Records",
-        "Document Review Management",
-        "Electronic Data Discovery Solutions",
-        "Processing of Information Stored Electronically"
-      ]
-    },
-    {
-      title: "Other services",
-      details: [
-        "Data Management",
-        "Reviewing documentation",
-        "Legal data entry services",
-        "Business registrations",
-        "Preparing Agreements and Contracts (business and other kind)",
-        "Data format conversion and storage",
-        "Collection Evidence",
-        "Legal Coding",
-        "Legal Content Support"
+        "Our expert deposition summary service providers review the transcript of the deposition and extract the key points and testimony."
       ]
     }
   ];
@@ -167,10 +79,10 @@ const Four = () => {
 
                   <p
 
-                    className="text-xl font-bold text-black  dark:hover:text-white-500  "
+                    className="text-3xl font-bold text-black  dark:hover:text-white-500  "
 
                   >
-                    TLBs Paralegal Services
+                    TLB’s Deposition Summary Services
 
                   </p>
                 </div>
@@ -180,8 +92,9 @@ const Four = () => {
             <div className="mt-2">
 
               <p className="mt-2 lg:px-16 sm:px-12  px-0 text-black font-semibold ">
-                We at The Legal Base understand the burden an attorney or a lawyer goes through. That is why we offer custom paralegal support services that are specially designed to suit your unique needs. Below mentioned are our portfolio of paralegal services that can be outsourced to us.
-
+                TLB’s goal with deposition summary services is to provide a concise and accurate summary of the key points and testimony from a deposition, in a format that is easily understandable and useful to the client.
+                <br></br>
+                We mainly focus on the following services -
               </p>
             </div>
             <div className="flex items-center justify-between mt-4">

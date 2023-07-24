@@ -1,7 +1,10 @@
 import './globals.css'
+import React from 'react'
 import { Inter } from 'next/font/google'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+// import ParticlesBg from 'particles-bg'
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -16,6 +19,7 @@ export default function RootLayout({ children }) {
         <Navbar></Navbar>
         {children}
         <Footer></Footer>
+        {/* <ParticlesBg color="#1E293B" num={200} type="circle" bg={true} /> */}
         </body>
     </html>
   )

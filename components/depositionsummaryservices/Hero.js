@@ -19,16 +19,18 @@ const Hero = () => {
             <p className="mt-8 text-lg font-bold text-gray-700">
               Deposition summary services are professional services that provide concise summaries of legal depositions. A deposition is a sworn out-of-court testimony given by a witness or a party to a lawsuit, typically recorded by a court reporter. These depositions are an essential part of the discovery process in litigation, as they allow both sides to gather information and evidence.
               <br></br>
+              <br></br>
               Deposition summary services aim to assist attorneys and legal professionals by condensing the lengthy and detailed deposition transcripts into more manageable summaries. These summaries highlight the key points, important facts, and significant statements made during the deposition. They may also include relevant exhibits or evidence referenced during the testimony.
+              <br></br>
               <br></br>
               The purpose of deposition summaries is to provide attorneys with a clear overview of the deposition's content without having to review the entire transcript. This can save time and effort, allowing legal professionals to quickly identify relevant information and develop their case strategy accordingly.
               <br></br>
+              <br></br>
               Deposition summary services may be provided by specialized companies or by freelance legal professionals who have expertise in legal research and summarization. The summaries can be customized to meet specific requirements and can vary in length and level of detail depending on the client's needs.
               <br></br>
+              <br></br>
               Overall, deposition summary services streamline the review process for attorneys, making it easier to digest the information obtained during depositions and aiding in the preparation of cases for trial or settlement negotiations.
-              <br>
-              </br>
-
+              <br></br>
             </p>
             <form action="" className="mt-8 flex items-start space-x-2">
               <div>

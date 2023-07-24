@@ -18,19 +18,19 @@ const Four = () => {
     {
       title: "24/7 Answering Services",
       details: [
-        "No matter what type of law you practice, potential clients may call at any time. With our round-the-clock legal intake services, you can rest easy knowing that there will always be a live operator available to answer their calls. Our expert legal intake professionals will use scripts that you design and gather all the relevant information to help you move ahead with your business. With our services, you can be sure that all the right information is always collected."
+        "No matter what type of law you practice, potential clients may call at any time. With our round-the-clock legal intake services, you can rest easy knowing that there will always be a live operator available to answer their calls.\n\nOur expert legal intake professionals will use scripts that you design and gather all the relevant information to help you move ahead with your business. With our services, you can be sure that all the right information is always collected."
       ]
     },
     {
       title: "Scalable Services",
       details: [
-        "We have a professionally run legal intake centre that can handle all your call and chat volume, whether you are receiving sporadic calls throughout the night or multiple inquiries from potential clients. Our legal intake professionals are experts in multitasking and dealing with every caller so that you never miss a lead."
+        "We have a professionally run legal intake centre that can handle all your call and chat volume, whether you are receiving sporadic calls throughout the night or multiple inquiries from potential clients.\n\nOur legal intake professionals are experts in multitasking and dealing with every caller so that you never miss a lead."
       ]
     },
     {
       title: "High-quality Reporting Services",
       details: [
-       "Our legal intake representatives will record all the calls and other data you receive and deliver it to you in the format of your choice, whether it's through web-based databases or email communication. Our goal is to capture every potential opportunity and deliver the data that you need to capitalise on it. With our legal intake reporting services, we eliminate the need for further data entry, allowing you to move quickly on all your leads."
+       "Our legal intake representatives will record all the calls and other data you receive and deliver it to you in the format of your choice, whether it's through web-based databases or email communication.\n\nOur goal is to capture every potential opportunity and deliver the data that you need to capitalise on it. With our legal intake reporting services, we eliminate the need for further data entry, allowing you to move quickly on all your leads."
       ]
     }
   ];
@@ -54,7 +54,7 @@ const Four = () => {
                     alt="avatar"
                   />
 
-                  <p className="text-xl font-bold text-black  dark:hover:text-white-500">
+                  <p className="text-3xl font-bold text-black  dark:hover:text-white-500">
                     TLB’s Case Intake Services
                   </p>
                 </div>

@@ -158,7 +158,7 @@ const Four = () => {
                     alt="avatar"
                   />
 
-                  <p className="text-xl font-bold text-black  dark:hover:text-white-500">
+                  <p className="text-3xl font-bold text-black  dark:hover:text-white-500">
                     TLB’s Contract Management Lifecycle Services
                   </p>
                 </div>

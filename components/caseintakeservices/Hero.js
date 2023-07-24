@@ -19,7 +19,7 @@ const Hero = () => {
 
             </h1>
             <p className="mt-8 text-lg font-bold text-gray-700">
-              The Legal Base LPO is a leading legal intake service provider and has helped several attorneys
+              TLB is a leading legal intake service provider and has helped several attorneys
               and practices grow their businesses and be successful in the competitive marketplace. We
               provide high-quality legal intake solutions that are customised to your exact needs and
               requirements.

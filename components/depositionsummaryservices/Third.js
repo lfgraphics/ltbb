@@ -16,37 +16,25 @@ import { EffectCoverflow, Pagination } from "swiper";
 export default function Third() {
   const cardData = [
     {
-      title: "Cost savings",
-      description: "Outsourcing paralegal support to TLB can be more cost-effective than hiring and maintaining an in-house paralegal team. By outsourcing to TLB, organizations can avoid costs associated with salaries, benefits, training, office space, equipment, and other overhead expenses.",
+      title: "Expertise:",
+      description: `Outsourcing deposition summary services to TLB allows access to professionals who are experienced in legal research, summarization, and understanding the intricacies of deposition transcripts. These experts are skilled in extracting key information and presenting it in a clear and concise manner.`,
     },
     {
-      title: "Scalability and flexibility",
-      description: "Outsourcing to TLB allows for flexibility in scaling paralegal resources based on workload fluctuations or specific project requirements. During peak periods or when facing a sudden increase in caseload, organizations can quickly ramp up paralegal support without the need for long-term commitments.",
+      title: "Timesaving:",
+      description: `Deposition transcripts can be lengthy and time-consuming to review. By engaging with TLB’s deposition summarization process, legal professionals can save valuable time and focus on other critical aspects of their cases.`,
     },
     {
-      title: "Access to specialized expertise",
-      description: "Outsourcing to TLB provides access to a pool of paralegals with diverse backgrounds and expertise in various areas of law. Organizations can tap into this specialized knowledge without having to invest in extensive training or hiring full-time paralegals with specific skill sets.",
+      title: "Cost-effectiveness: ",
+      description: `Outsourcing deposition summary services to TLB can be cost-effective compared to hiring additional in-house staff or allocating existing resources to handle deposition summaries. It eliminates the need for training and managing staff solely for this task.`,
     },
     {
-      title: "Enhanced efficiency and productivity",
-      description: "TLB Paralegal support can help streamline legal operations, increase efficiency, and improve overall productivity. TLB Paralegals are experienced in handling routine legal tasks, document management, research, and administrative duties, allowing attorneys to focus on higher-level legal work.",
+      title: "Scalability:",
+      description: `Outsourcing to TLB provides flexibility in managing workload fluctuations. Law firms can easily adjust the volume of work assigned to the deposition summary service provider based on their current needs.`,
     },
     {
-      title: "Focus on core legal work",
-      description: "By outsourcing paralegal support to TLB, attorneys and legal professionals can devote more time and attention to their core legal work, such as strategy, client counseling, case management, and courtroom advocacy. TLB Paralegals handle the time-consuming tasks, freeing up attorneys to focus on matters that require their expertise.",
-    },
-    {
-      title: "Access to advanced technology and resources",
-      description: "TLB Outsourced paralegal service providers often have access to advanced legal technology, research databases, and document management systems. Leveraging these tools can improve efficiency, accuracy, and the quality of work delivered.",
-    },
-    {
-      title: "Reduced administrative burden",
-      description: "TLB Paralegals can assist with administrative tasks, such as organizing documents, managing calendars, and maintaining case files. By outsourcing these administrative responsibilities to TLB, attorneys can minimize their administrative workload and allocate their time more effectively.",
-    },
-    {
-      title: "Increased agility and competitiveness",
-      description: "Outsourcing to TLB paralegal support allows organizations to stay agile and competitive in a rapidly changing legal landscape. They can quickly adapt to new projects, expand their services, and meet client demands without being constrained by limited in-house resources.",
-    },
+      title: "Quality and Accuracy:",
+      description: `TLB’s specialized deposition summary service has rigorous quality control measures in place to ensure accuracy and attention to detail in their summaries. We are familiar with legal terminology and the specific requirements of deposition summaries.\n\nWhen considering outsourcing deposition summary services, it is essential to select a reputable and reliable service provider. Conducting due diligence, checking reviews or testimonials, and evaluating the provider's expertise and track record can help ensure a successful outsourcing partnership.`,
+    }
 
   ];
 
@@ -56,11 +44,13 @@ export default function Third() {
 
         <div className="container mx-auto p-4 my-6 space-y-2 text-center  mt-4 bg-w mb-4">
           <h2 className="text-3xl font-bold">
-            Why Outsource Paralegal Support Services to TLB?
+            Why Outsource Deposition Summary Services to TLB?
           </h2>
           <p className="dark:text-gray-400">
-            Outsourcing paralegal support offers several benefits to law firms and
-            legal departments:
+            Outsourced deposition summary services refer to the practice of hiring an external service provider to handle the task of creating deposition summaries. Instead of handling the task in-house, law firms and legal professionals outsource this work to specialized companies or freelance professionals who specialize in deposition summarization.
+            <br></br>
+            There are several reasons why outsourcing deposition summary services may be beneficial:
+
           </p>
         </div>
         <Swiper
@@ -111,7 +101,7 @@ export default function Third() {
           ))}
         </Swiper>
 
-        <div className="m-4 mt-8 mb-4">
+        {/* <div className="m-4 mt-8 mb-4">
           <div className="max-w-full p-6 overflow-hidden  rounded-lg shadow bg-[#1E293B] text-gray-100" >
             <article data-aos="flip-down">
               <h2 className="text-xl font-bold text-center mb-2">It&apos;s important</h2>
@@ -120,16 +110,9 @@ export default function Third() {
               </p>
 
               <p className="mt-4 text-gray-400"></p>
-              {/* <div className="flex items-center mt-8 space-x-4">
-			<img src="https://source.unsplash.com/100x100/?portrait" alt="" className="w-10 h-10 rounded-full bg-gray-500" />
-			<div>
-				<h3 className="text-sm font-medium">Leroy Jenkins</h3>
-				<time datetime="2021-02-18" className="text-sm text-gray-400">Feb 18th 2021</time>
-			</div>
-		</div> */}
             </article>
           </div>
-        </div>
+        </div> */}
 
       </div>
     </>

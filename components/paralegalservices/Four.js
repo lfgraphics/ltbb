@@ -167,7 +167,7 @@ const Four = () => {
 
                   <p
 
-                    className="text-xl font-bold text-black  dark:hover:text-white-500  "
+                    className="text-3xl font-bold text-black  dark:hover:text-white-500  "
 
                   >
                     TLBs Paralegal Services
