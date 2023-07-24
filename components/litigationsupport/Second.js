@@ -101,7 +101,7 @@ const Second = () => {
 								</div>
 							</div>
 							<div aria-hidden="true" className="mt-10 lg:mt-0 " data-aos="fade-left">
-								<img src="https://source.unsplash.com/random/360x800" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500" />
+								<img src="/Litigation Support/pexels-md-jawadur-rahman-3927126.jpg" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500" />
 							</div>
 						</div>
 						<div>
@@ -125,8 +125,6 @@ const Second = () => {
 											</p>
 										</div>
 									</div>
-
-
 
 									<div className="mt-12 space-y-12">
 										<div className="flex shadow-lg p-4 hover:shadow-2xl hover:p-4 border-solid  rounded-md" data-aos="fade-left">
@@ -185,7 +183,7 @@ const Second = () => {
 									</div>
 								</div>
 								<div className="mt-10 lg:mt-0 lg:col-start-1 lg:row-start-1" data-aos="fade-right">
-									<img src="https://source.unsplash.com/random/361x481" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500" />
+									<img src="/Litigation Support/pexels-pavel-danilyuk-8112203.jpg" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500" />
 								</div>
 							</div>
 						</div>

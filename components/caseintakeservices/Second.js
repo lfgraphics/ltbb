@@ -100,7 +100,7 @@ const Second = () => {
 								</div>
 							</div>
 							<div aria-hidden="true" className="mt-10 lg:mt-0 " data-aos="fade-left">
-								<img src="https://source.unsplash.com/random/360x800" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500" />
+								<img src="/Case Intake/pexels-mikhail-nilov-7735702.jpg" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500" />
 							</div>
 						</div>
 						<div>
@@ -164,14 +164,14 @@ const Second = () => {
 											</div>
 										</div>
 										{/* <div className="flex shadow-lg p-4 hover:shadow-2xl hover:p-4 border-solid  rounded-md" data-aos="fade-left"> */}
-											{/* <div className="flex-shrink-0">
+										{/* <div className="flex-shrink-0">
 												<div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
 													<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
 														<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
 													</svg>
 												</div>
 											</div> */}
-											{/*
+										{/*
 											<div className="ml-4">
 												<h4 className="text-lg font-medium leading-6">Immigration Support: </h4>
 												<p className="mt-2 dark:text-gray-400">TLB Paralegals can provide support in immigration matters, including completing immigration forms, gathering supporting documentation, and assisting with visa applications or petitions.
@@ -182,7 +182,7 @@ const Second = () => {
 									</div>
 								</div>
 								<div className="mt-10 lg:mt-0 lg:col-start-1 lg:row-start-1" data-aos="fade-right">
-									<img src="https://source.unsplash.com/random/361x481" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500" />
+									<img src="/Case Intake/pexels-karolina-grabowska-5387261.jpg" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500" />
 								</div>
 							</div>
 						</div>
@@ -196,9 +196,11 @@ const Second = () => {
 						<div
 							className="w-full lg:w-1/3"
 							style={{
-								backgroundImage: 'url("https://source.unsplash.com/random/640x480")',
+								backgroundImage: 'url("/Case Intake/pexels-mikhail-nilov-7731326.jpg")',
 								backgroundPosition: "center center",
-								backgroundSize: "cover"
+								backgroundSize: "cover",
+								// height: '640px',
+								// width: '480px'
 							}}
 						/>
 						<div className="flex flex-col w-full p-6 lg:w-2/3 md:p-8 lg:p-12">
