@@ -18,19 +18,23 @@ const Four = () => {
     {
       title: "24/7 Answering Services",
       details: [
-        "No matter what type of law you practice, potential clients may call at any time. With our round-the-clock legal intake services, you can rest easy knowing that there will always be a live operator available to answer their calls.\n\nOur expert legal intake professionals will use scripts that you design and gather all the relevant information to help you move ahead with your business. With our services, you can be sure that all the right information is always collected."
+        "No matter what type of law you practice, potential clients may call at any time. With our round-the-clock legal intake services, you can rest easy knowing that there will always be a live operator available to answer their calls.",
+        "Our expert legal intake professionals will use scripts that you design and gather all the relevant information to help you move ahead with your business. With our services, you can be sure that all the right information is always collected."
+        
       ]
     },
     {
       title: "Scalable Services",
       details: [
-        "We have a professionally run legal intake centre that can handle all your call and chat volume, whether you are receiving sporadic calls throughout the night or multiple inquiries from potential clients.\n\nOur legal intake professionals are experts in multitasking and dealing with every caller so that you never miss a lead."
+        "We have a professionally run legal intake centre that can handle all your call and chat volume, whether you are receiving sporadic calls throughout the night or multiple inquiries from potential clients.",
+        "Our legal intake professionals are experts in multitasking and dealing with every caller so that you never miss a lead."
       ]
     },
     {
       title: "High-quality Reporting Services",
       details: [
-       "Our legal intake representatives will record all the calls and other data you receive and deliver it to you in the format of your choice, whether it's through web-based databases or email communication.\n\nOur goal is to capture every potential opportunity and deliver the data that you need to capitalise on it. With our legal intake reporting services, we eliminate the need for further data entry, allowing you to move quickly on all your leads."
+       "Our legal intake representatives will record all the calls and other data you receive and deliver it to you in the format of your choice, whether it's through web-based databases or email communication.",
+       "Our goal is to capture every potential opportunity and deliver the data that you need to capitalise on it. With our legal intake reporting services, we eliminate the need for further data entry, allowing you to move quickly on all your leads."
       ]
     }
   ];
@@ -40,10 +44,6 @@ const Four = () => {
     <React.Fragment>
       <div className='mx-auto  sm:w-5/6 w-full md:w-5/6 lg:5/6'>
         <div className='m-4 space-y-3'>
-
-
-
-
           <div className="max-w-full px-8 py-4 bg-[#f8fafc] rounded-lg shadow-gray-400   cursor-pointer" data-aos="fade-down">
             <div className="flex items-center justify-between">
               <span className="text-md font-bold text-black ">
@@ -63,29 +63,15 @@ const Four = () => {
             </div>
             <div className="mt-2">
 
-              <p className="mt-2 lg:px-16 sm:px-12  px-0 text-black font-semibold ">
+              <p className="mt-2 lg:px-14 sm:px-12 px-0 text-black font-semibold ">
                 TLB is a legal intake company with decades of experience in providing top-notch
                 services to clients. We understand that every legal practice is unique and that's why we have a
                 range of offerings to match your specific needs. Here's what you can expect from our legal
                 intake services:
               </p>
             </div>
-            <div className="flex items-center justify-between mt-4">
-              {/* <a
-      href="#"
-      className="text-blue-600 dark:text-blue-400 hover:underline"
-      tabIndex={0}
-      role="link"
-    >
-      Read more
-    </a> */}
-              <div className="flex items-center">
+            
 
-
-              </div>
-            </div>
-
-            {/* ============================================================== */}
 
             <section className="bg-[#f8fafc] dark:bg-white-90 mt-4">
               <div className="container px-6 py-8 mx-auto">

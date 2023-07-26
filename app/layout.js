@@ -1,11 +1,11 @@
 import './globals.css'
 import React from 'react'
-import { Inter } from 'next/font/google'
+import { Varela } from 'next/font/google'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 // import ParticlesBg from 'particles-bg'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Varela({ subsets: ['latin'],weight:'400' })
 
 export const metadata = {
   title: 'Create Next App',

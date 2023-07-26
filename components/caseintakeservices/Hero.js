@@ -18,7 +18,7 @@ const Hero = () => {
               Outsourced Case Intake Services
 
             </h1>
-            <p className="mt-8 text-lg font-bold text-gray-700">
+            <p className="mt-8 text-lg text-gray-700">
               TLB is a leading legal intake service provider and has helped several attorneys
               and practices grow their businesses and be successful in the competitive marketplace. We
               provide high-quality legal intake solutions that are customised to your exact needs and
