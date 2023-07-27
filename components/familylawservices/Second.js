@@ -98,7 +98,7 @@ const Second = () => {
 								</div>
 							</div>
 							<div aria-hidden="true" className="mt-10 lg:mt-0 " data-aos="fade-left">
-								<img src="/Case Intake/pexels-mikhail-nilov-7735702.jpg" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500" />
+								<img src="/Family Law/pexels-kindel-media-7979587.jpg" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500" />
 							</div>
 						</div>
 						<div>
@@ -181,7 +181,7 @@ const Second = () => {
 									</div>
 								</div>
 								<div className="mt-10 lg:mt-0 lg:col-start-1 lg:row-start-1" data-aos="fade-right">
-									<img src="/Case Intake/pexels-karolina-grabowska-5387261.jpg" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500" />
+									<img src="/Family Law/pexels-cottonbro-studio-4098228.jpg" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500" />
 								</div>
 							</div>
 						</div>
@@ -195,7 +195,7 @@ const Second = () => {
 						<div
 							className="w-full lg:w-1/3"
 							style={{
-								backgroundImage: 'url("/Case Intake/pexels-mikhail-nilov-7731326.jpg")',
+								backgroundImage: 'url("/Family Law/pexels-vlada-karpovich-4609046.jpg")',
 								backgroundPosition: "center center",
 								backgroundSize: "cover",
 								// height: '640px',

@@ -51,7 +51,7 @@ const Hero = () => {
           <div className="relative lg:col-span-5 lg:-mr-8 xl:col-span-6">
             <img
               className="aspect-[3/2] bg-gray-50 object-cover lg:aspect-[4/3] lg:h-[700px] xl:aspect-[16/9]"
-              src="/Case Intake/pexels-mohamed-hamdi-16282318.jpg"
+              src="/Family Law/pexels-kindel-media-7979431.jpg"
               alt=""
             />
           </div>

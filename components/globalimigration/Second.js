@@ -88,7 +88,7 @@ const Second = () => {
 								</div>
 							</div>
 							<div aria-hidden="true" className="mt-10 lg:mt-0 " data-aos="fade-left">
-								<img src="https://source.unsplash.com/random/360x800" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500" />
+								<img src="/Immigration/pexels-sheila-731217.jpg" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500" />
 							</div>
 						</div>
 
@@ -147,7 +147,7 @@ const Second = () => {
 									</div>
 								</div>
 								<div className="mt-10 lg:mt-0 lg:col-start-1 lg:row-start-1" data-aos="fade-right">
-									<img src="https://source.unsplash.com/random/361x481" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500" />
+									<img src="/Immigration/pexels-tima-miroshnichenko-7009473.jpg" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500" />
 								</div>
 							</div>
 						</div>
@@ -221,7 +221,7 @@ const Second = () => {
 								</div> */}
 						</div>
 						<div aria-hidden="true" className="mt-10 lg:mt-0 " data-aos="fade-left">
-							<img src="https://source.unsplash.com/random/360x800" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500" />
+							<img src="/Immigration/pexels-sheila-731217.jpg" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500" />
 						</div>
 					</div>
 
@@ -252,7 +252,7 @@ const Second = () => {
 						<div
 							className="w-full lg:w-1/3"
 							style={{
-								backgroundImage: 'url("https://source.unsplash.com/random/640x480")',
+								backgroundImage: 'url("/Immigration/pexels-michaela-s-10160241.jpg")',
 								backgroundPosition: "center center",
 								backgroundSize: "cover"
 							}}
