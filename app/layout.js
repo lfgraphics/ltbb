@@ -21,6 +21,10 @@ export default function RootLayout({ children }) {
         <title>{metadata.title}</title>
       </head>
       <body className={inter.className}>
+      <div class="vertical-flow-container">
+        <p class="vertical-flow-text">Your flowing text goes here...</p>
+      </div>
+
         <Navbar></Navbar>
         {children}
         <Footer></Footer>
