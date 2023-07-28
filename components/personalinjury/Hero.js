@@ -6,8 +6,8 @@ const Hero = () => {
     <React.Fragment>
       <div className="relative  sm:w-5/6 w-full md:w-5/6 lg:5/6  mx-auto bg-white">
         <div className="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8">
-          <div className="flex flex-col justify-center px-4 py-12 md:py-16 lg:col-span-7 lg:gap-x-6 lg:px-6 lg:py-24 xl:col-span-6">
-            <div className="mt-8 flex max-w-max items-center space-x-2 rounded-full bg-gray-100 p-1">
+          <div  className="flex flex-col justify-top px-4 py-12 md:py-16 lg:col-span-7 lg:gap-x-6 lg:px-2 lg:py-1 xl:col-span-6" >
+            <div className="mt-4 flex max-w-max items-center space-x-2 rounded-full bg-gray-100 p-1">
               <div className="rounded-full bg-white p-1 px-2">
                 <p className="text-sm font-medium">Want&apos; Solution</p>
               </div>
@@ -17,7 +17,7 @@ const Hero = () => {
               Outsourced Personal Injury Services
 
             </h1>
-            <p className="mt-8 text-lg font-bold text-gray-700">
+            <p className="mt-8 text-lg text-gray-700">
               Outsourced personal injury support services involve engaging third-party providers like TLB to
               assist law firms and attorneys in handling various tasks and responsibilities related to personal
               injury cases. These services are designed to streamline processes, improve efficiency, and

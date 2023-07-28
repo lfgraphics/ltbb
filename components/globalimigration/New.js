@@ -131,7 +131,7 @@ const Four = () => {
                         <div className="mt-2">
 
                             <p className="mt-2 lg:px-16 sm:px-12  px-0 text-black font-semibold ">
-                                {/* Immigration is a specific area of law and expertise that requires a unique combination of compassion and legal expertise. Locating a competent and cost-effective immigration assistance agency is a huge challenge. The Legal Base has a team of competent immigration attorneys who can manage your entire immigration process with effortlessness. */}
+                                {/* Immigration is a specific area of law and expertise that requires a unique combination of compassion and legal expertise. Locating a competent and cost-effective immigration assistance agency is a huge challenge. TLB has a team of competent immigration attorneys who can manage your entire immigration process with effortlessness. */}
                             </p>
                         </div>
                         <div className="flex items-center justify-between mt-4">

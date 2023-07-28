@@ -8,13 +8,18 @@ import Footer from '@/components/Footer'
 const inter = Varela({ subsets: ['latin'],weight:'400' })
 
 export const metadata = {
-  title: 'The Legal Base',
-  description: 'The Legal Base LPO is a global outsourcing partner which works closely with law firms , attorneys and legal departments of corporations',
+  title: 'TLB',
+  description: 'TLB LPO is a global outsourcing partner which works closely with law firms , attorneys and legal departments of corporations',
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{metadata.title}</title>
+      </head>
       <body className={inter.className}>
         <Navbar></Navbar>
         {children}

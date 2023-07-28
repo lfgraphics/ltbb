@@ -135,7 +135,7 @@ const Four = () => {
             <div className="mt-2">
 
               <p className="mt-2 lg:px-16 sm:px-12  px-0 text-black font-semibold ">
-                The Legal Base brings you access to expert medico-legal consultants possessing
+                TLB brings you access to expert medico-legal consultants possessing
                 in-depth knowledge in the field of personal injury and medicolegal. Our experts have
                 huge experience in providing medico-legal advice to top law firms in the US, UK and
                 Canada.

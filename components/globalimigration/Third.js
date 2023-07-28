@@ -113,9 +113,9 @@ export default function Third() {
         <div className="m-4 mt-8 mb-4" data-aos="flip-down">
           <div className="max-w-full p-6 overflow-hidden  rounded-lg shadow bg-[#1E293B] text-gray-100" >
             <article>
-              <h2 className="text-xl font-bold text-center mb-2">Our Global Immigration Management Service experts help your business by:</h2>
+              <h2 className="text-xl font-bold text-center mb-4">Our Global Immigration Management Service experts help your business by:</h2>
               {/* <p> */}
-              <p className="font-semibold text-center">
+              <p className="text-center font-18">
                  As a virtual assistant for your Immigration Firm.
                  Information from clients on the prescribed case management tool/database.
                  Information in consonance with visa specific requirements.
@@ -140,8 +140,8 @@ export default function Third() {
         {/* <div data-aos="flip-down" className="m-4 mt-8 mb-4">
           <div className="max-w-full p-6 overflow-hidden  rounded-lg shadow bg-[#1E293B] text-gray-100" >
             <article>
-              <h2 className="text-xl font-bold text-center mb-2">It&apos;s important</h2>
-              <p className="font-semibold text-md">
+              <h2 className="text-xl font-bold text-center mb-4">It&apos;s Important</h2>
+              <p className="text-lg">
                 Overall, outsourcing case intake services to TLB will allows law firms to improve client service,
                 increase efficiency, reduce costs, and focus on their core legal work. By leveraging the expertise
                 and scalability TLB, firms can effectively manage the initial contact and evaluation process,

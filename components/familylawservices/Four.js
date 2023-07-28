@@ -68,7 +68,7 @@ const Four = () => {
     {
       title: "Name change",
       details: [
-       `Legal representation for individuals seeking to change their name or the name of a minor child is a complex process. Our attorneys at The Legal Base can help you make the entire process smooth by assisting with the paperwork and court appearances.
+       `Legal representation for individuals seeking to change their name or the name of a minor child is a complex process. Our attorneys at TLB can help you make the entire process smooth by assisting with the paperwork and court appearances.
 `
       ]
     },

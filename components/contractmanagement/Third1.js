@@ -114,8 +114,8 @@ matter experts for an error-free output.`,
         {/* <div data-aos="flip-down" className="m-4 mt-8 mb-4">
           <div className="max-w-full p-6 overflow-hidden  rounded-lg shadow bg-[#1E293B] text-gray-100" >
             <article>
-              <h2 className="text-xl font-bold text-center mb-2">It&apos;s important</h2>
-              <p className="font-semibold text-md">
+              <h2 className="text-xl font-bold text-center mb-4">It&apos;s Important</h2>
+              <p className="text-lg">
                 Overall, outsourcing contract lifecycle management services offers companies
                 numerous advantages, including cost savings, access to expertise, scalability, flexibility,
                 and improved efficiency, allowing them to focus on their core business objectives.

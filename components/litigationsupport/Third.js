@@ -285,8 +285,8 @@ export default function Third() {
         {/* <div data-aos="flip-down" className="m-4 mt-8 mb-4">
           <div className="max-w-full p-6 overflow-hidden  rounded-lg shadow bg-[#1E293B] text-gray-100" >
             <article>
-              <h2 className="text-xl font-bold text-center mb-2">It&apos;s important</h2>
-              <p className="font-semibold text-md">
+              <h2 className="text-xl font-bold text-center mb-4">It&apos;s Important</h2>
+              <p className="text-lg">
                 Overall, outsourcing personal injury support services to TLB will allow law firms and
                 attorneys to leverage specialized expertise, increase efficiency, reduce costs, and focus
                 on delivering high-quality legal services to their clients. It enables them to streamline

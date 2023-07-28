@@ -104,8 +104,8 @@ export default function Third() {
         {/* <div className="m-4 mt-8 mb-4">
           <div className="max-w-full p-6 overflow-hidden  rounded-lg shadow bg-[#1E293B] text-gray-100" >
             <article data-aos="flip-down">
-              <h2 className="text-xl font-bold text-center mb-2">It&apos;s important</h2>
-              <p className="font-semibold text-md">
+              <h2 className="text-xl font-bold text-center mb-4">It&apos;s Important</h2>
+              <p className="text-lg">
                 &quot;It&apos;s important to note that outsourcing paralegal support does not replace the need for qualified attorneys. Rather, it complements legal expertise by providing additional support and resources, enabling legal professionals to operate more efficiently and effectively.&quot;
               </p>
 

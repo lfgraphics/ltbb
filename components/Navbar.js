@@ -45,10 +45,8 @@ const Navbar = () => {
 
   return (
     <React.Fragment>
-
-
-      <header className=" w-full sticky top-0 z-50 opacity-100  border-b bg-white pb-4 shadow-md">
-        <div className="mx-auto flex w-5/6 items-center justify-between px-4 py-2">
+      <header className=" w-full sticky top-0 z-30  opacity-100  border-b navbar pb-4 shadow-md">
+        <div className="mx-auto flex w-5/6 items-center justify-left">
           <div className="inline-flex items-center space-x-2">
             <span>
               {/* <svg
@@ -63,14 +61,16 @@ const Navbar = () => {
                   fill="black"
                 />
               </svg> */}
-              <Image src="/TlbLogoY.png" alt="Logo"
-                width={30}
-                height={30}
-              ></Image>
-              {/* <img src="TlbLogoY.png" alt="Logo"/> */}
+              <div class="logo-container logo">
+              <Link className="font-bold" href="/">
+                
+              <Image src="/logo-black.svg" alt="Logo"
+                width={100}
+                height={100}
+              ></Image></Link>
+              </div>
             </span>
-            <Link className="font-bold" href="/">T&nbsp;L&nbsp;B</Link>
-            {/* <span className="font-bold">LTB</span> */}
+            
           </div>
           {/* <div className="hidden lg:block">
             <ul className="inline-flex space-x-8">
@@ -102,7 +102,7 @@ const Navbar = () => {
                 <li key={item.name}>
                   <a
                     href={item.href}
-                    className="text-sm font-semibold text-gray-800 hover:text-gray-900"
+                    className="text-sm text-gray-800 hover:text-black"
                   >
                     {item.name}
                   </a>
@@ -112,7 +112,7 @@ const Navbar = () => {
                 <button
 
                   onClick={toggleCart}
-                  className="text-sm font-semibold text-gray-800 hover:text-gray-900"
+                  className="text-sm  text-gray-800 hover:text-black"
                 >
                   Services
                 </button>
@@ -122,7 +122,7 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <div className="hidden lg:block">
+          {/* <div className="hidden lg:block">
             <button
               type="button"
               onClick={toggleCart}
@@ -131,7 +131,7 @@ const Navbar = () => {
               Services
             </button>
 
-          </div>
+          </div> */}
           <div className="lg:hidden">
             <Menu onClick={toggleMenu} className="h-6 w-6 cursor-pointer" />
           </div>
@@ -474,7 +474,7 @@ const Navbar = () => {
                   New feature availabel!
                 </h2>
                 <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">
-                  Discover The Legal Base&apos;s new services! As your &apos;One Stop Shop&apos; for personal injury law firms, we offer complete medical and legal assistance. Our support spans all phases of litigation, from client intake to settlement. Experience our expertise and continuous support. Don&apos;t miss out!
+                  Discover TLB&apos;s new services! As your &apos;One Stop Shop&apos; for personal injury law firms, we offer complete medical and legal assistance. Our support spans all phases of litigation, from client intake to settlement. Experience our expertise and continuous support. Don&apos;t miss out!
                 </p>
                 <img
                   className="object-cover w-full h-32 mt-2 rounded-lg"

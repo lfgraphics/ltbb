@@ -39,7 +39,7 @@ const Four = () => {
     {
       title: "Form fillings",
       details: [
-        "The Legal Base assists immigration consultants and attorneys in completing the formalities by taking care of the voluminous paperwork. The Legal Base Immigration team manages the majority of petition preparation work, and the final filings are completed by the attorneys or the law firms. This frees up a lot of the attorneys’ time and saves their costs considerably.",
+        "TLB assists immigration consultants and attorneys in completing the formalities by taking care of the voluminous paperwork. TLB Immigration team manages the majority of petition preparation work, and the final filings are completed by the attorneys or the law firms. This frees up a lot of the attorneys’ time and saves their costs considerably.",
         "Expertise in filling the following forms",
         "H1-B, H-2A, H-2B, H-4",
         "L1-A, L1-B, L-2",
@@ -53,7 +53,7 @@ const Four = () => {
     {
       title: "Drafting Attorney Cover Letters for Immigration Petitions",
       details: [
-        "The Legal Base has a team of competent immigration attorneys who can manage your entire immigration process with effortlessness. Also, Immigration assistance requires a lot of documentation, which due to its huge volume may prove difficult for immigration agencies to handle, hence they need to take help from immigration consultants for completing the paperwork.",
+        "TLB has a team of competent immigration attorneys who can manage your entire immigration process with effortlessness. Also, Immigration assistance requires a lot of documentation, which due to its huge volume may prove difficult for immigration agencies to handle, hence they need to take help from immigration consultants for completing the paperwork.",
         "I-601 , Application for Disclaimer of Inadmissibility",
         "I-212, Application for Authorization to reapply for Admission After Deportation",
         "Criminal Relief",
@@ -98,7 +98,7 @@ const Four = () => {
             <div className="mt-2">
 
               <p className="mt-2 lg:px-16 sm:px-12  px-0 text-black font-semibold ">
-                Immigration is a specific area of law and expertise that requires a unique combination of compassion and legal expertise. Locating a competent and cost-effective immigration assistance agency is a huge challenge. The Legal Base has a team of competent immigration attorneys who can manage your entire immigration process with effortlessness.
+                Immigration is a specific area of law and expertise that requires a unique combination of compassion and legal expertise. Locating a competent and cost-effective immigration assistance agency is a huge challenge. TLB has a team of competent immigration attorneys who can manage your entire immigration process with effortlessness.
               </p>
             </div>
             <div className="flex items-center justify-between mt-4">

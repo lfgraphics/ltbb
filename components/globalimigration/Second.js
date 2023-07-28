@@ -24,11 +24,11 @@ const Second = () => {
 						<div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
 							<div>
 
-								<div className="flex shadow-lg p-4 hover:shadow-2xl hover:p-4 border-solid  rounded-md" data-aos="fade-right">
+								<div className="flex shadow-lg p-4 hover:shadow-2xl  border-solid  rounded-md" data-aos="fade-right">
 
 									<div className="flex-shrink-0">
-										<div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
-											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
+										<div className="flex items-center justify-center w-12 h-12 rounded-md bg-gray-700">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
 												<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
 											</svg>
 										</div>
@@ -40,10 +40,10 @@ const Second = () => {
 									</div>
 								</div>
 								<div className="mt-12 space-y-12">
-									<div className="flex shadow-lg p-4 hover:shadow-2xl hover:p-4 border-solid  rounded-md" data-aos="fade-right">
+									<div className="flex shadow-lg p-4 hover:shadow-2xl  border-solid  rounded-md" data-aos="fade-right">
 										<div className="flex-shrink-0">
-											<div className="flex items-center justify-center w-12 h-[100] rounded-md dark:bg-violet-400 dark:text-gray-900">
-												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
+											<div className="flex items-center justify-center w-12 h-12 rounded-md bg-gray-700">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
 													<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
 												</svg>
 											</div>
@@ -55,10 +55,10 @@ const Second = () => {
 											</p>
 										</div>
 									</div>
-									<div className="flex shadow-lg p-4 hover:shadow-2xl hover:p-4 border-solid  rounded-md" data-aos="fade-right">
+									<div className="flex shadow-lg p-4 hover:shadow-2xl  border-solid  rounded-md" data-aos="fade-right">
 										<div className="flex-shrink-0">
-											<div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
-												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
+											<div className="flex items-center justify-center w-12 h-12 rounded-md bg-gray-700">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
 													<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
 												</svg>
 											</div>
@@ -70,10 +70,10 @@ const Second = () => {
 											</p>
 										</div>
 									</div>
-									<div className="flex shadow-lg p-4 hover:shadow-2xl hover:p-4 border-solid  rounded-md" data-aos="fade-right">
+									<div className="flex shadow-lg p-4 hover:shadow-2xl  border-solid  rounded-md" data-aos="fade-right">
 										<div className="flex-shrink-0">
-											<div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
-												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
+											<div className="flex items-center justify-center w-12 h-12 rounded-md bg-gray-700">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
 													<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
 												</svg>
 											</div>
@@ -97,10 +97,10 @@ const Second = () => {
 							<div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
 								<div className="lg:col-start-2">
 
-									<div className="flex shadow-lg p-4 hover:shadow-2xl hover:p-4 border-solid  rounded-md" data-aos="fade-right">
+									<div className="flex shadow-lg p-4 hover:shadow-2xl  border-solid  rounded-md" data-aos="fade-right">
 										<div className="flex-shrink-0">
-											<div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
-												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
+											<div className="flex items-center justify-center w-12 h-12 rounded-md bg-gray-700">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
 													<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
 												</svg>
 											</div>
@@ -114,10 +114,10 @@ const Second = () => {
 									</div>
 
 									<div className="mt-12 space-y-12">
-										<div className="flex shadow-lg p-4 hover:shadow-2xl hover:p-4 border-solid  rounded-md" >
+										<div className="flex shadow-lg p-4 hover:shadow-2xl  border-solid  rounded-md" >
 											<div className="flex-shrink-0" data-aos="fade-left">
-												<div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
-													<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
+												<div className="flex items-center justify-center w-12 h-12 rounded-md bg-gray-700">
+													<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
 														<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
 													</svg>
 												</div>
@@ -129,10 +129,10 @@ const Second = () => {
 												</p>
 											</div>
 										</div>
-										<div className="flex shadow-lg p-4 hover:shadow-2xl hover:p-4 border-solid  rounded-md" data-aos="fade-left">
+										<div className="flex shadow-lg p-4 hover:shadow-2xl  border-solid  rounded-md" data-aos="fade-left">
 											<div className="flex-shrink-0">
-												<div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
-													<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
+												<div className="flex items-center justify-center w-12 h-12 rounded-md bg-gray-700">
+													<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
 														<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
 													</svg>
 												</div>
@@ -140,7 +140,7 @@ const Second = () => {
 											<div className="ml-4">
 												<h4 className="text-lg font-medium leading-6">Immigration Policy and Advocacy:
 												</h4>
-												<p className="mt-2 dark:text-gray-400">TTLB can assist clients in monitoring and analyzing immigration policy changes, providing guidance on their impact, and advocating for clients' interests through engagement with government agencies and immigration authorities.
+												<p className="mt-2 dark:text-gray-400">TLB can assist clients in monitoring and analyzing immigration policy changes, providing guidance on their impact, and advocating for clients' interests through engagement with government agencies and immigration authorities.
 												</p>
 											</div>
 										</div>
@@ -157,11 +157,11 @@ const Second = () => {
 					<div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
 						<div>
 
-							<div className="flex shadow-lg p-4 hover:shadow-2xl hover:p-4 border-solid  rounded-md" data-aos="fade-right">
+							<div className="flex shadow-lg p-4 hover:shadow-2xl  border-solid  rounded-md" data-aos="fade-right">
 
 								<div className="flex-shrink-0">
-									<div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
-										<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
+									<div className="flex items-center justify-center w-12 h-12 rounded-md bg-gray-700">
+										<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
 											<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
 										</svg>
 									</div>
@@ -173,10 +173,10 @@ const Second = () => {
 								</div>
 							</div>
 							<div className="mt-12 space-y-12">
-								<div className="flex shadow-lg p-4 hover:shadow-2xl hover:p-4 border-solid  rounded-md" data-aos="fade-right">
+								<div className="flex shadow-lg p-4 hover:shadow-2xl  border-solid  rounded-md" data-aos="fade-right">
 									<div className="flex-shrink-0">
-										<div className="flex items-center justify-center w-12 h-[100] rounded-md dark:bg-violet-400 dark:text-gray-900">
-											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
+										<div className="flex items-center justify-center w-12 h-12 rounded-md bg-gray-700">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
 												<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
 											</svg>
 										</div>
@@ -188,10 +188,10 @@ const Second = () => {
 										</p>
 									</div>
 								</div>
-								<div className="flex shadow-lg p-4 hover:shadow-2xl hover:p-4 border-solid  rounded-md" data-aos="fade-right">
+								<div className="flex shadow-lg p-4 hover:shadow-2xl  border-solid  rounded-md" data-aos="fade-right">
 									<div className="flex-shrink-0">
-										<div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
-											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
+										<div className="flex items-center justify-center w-12 h-12 rounded-md bg-gray-700">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
 												<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
 											</svg>
 										</div>
@@ -204,10 +204,10 @@ const Second = () => {
 									</div>
 								</div>
 							</div>
-							{/* <div className="flex shadow-lg p-4 hover:shadow-2xl hover:p-4 border-solid  rounded-md" data-aos="fade-right">
+							{/* <div className="flex shadow-lg p-4 hover:shadow-2xl  border-solid  rounded-md" data-aos="fade-right">
 									<div className="flex-shrink-0">
-										<div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
-											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
+										<div className="flex items-center justify-center w-12 h-12 rounded-md bg-gray-700">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
 												<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
 											</svg>
 										</div>
@@ -227,10 +227,10 @@ const Second = () => {
 
 
 
-					{/* <div className="flex shadow-lg p-4 hover:shadow-2xl hover:p-4 border-solid  rounded-md" data-aos="fade-left"> */}
+					{/* <div className="flex shadow-lg p-4 hover:shadow-2xl  border-solid  rounded-md" data-aos="fade-left"> */}
 					{/* <div className="flex-shrink-0">
-												<div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
-													<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
+												<div className="flex items-center justify-center w-12 h-12 rounded-md bg-gray-700">
+													<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
 														<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
 													</svg>
 												</div>

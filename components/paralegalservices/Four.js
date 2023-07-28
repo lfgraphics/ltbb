@@ -180,7 +180,7 @@ const Four = () => {
             <div className="mt-2">
 
               <p className="mt-2 lg:px-16 sm:px-12  px-0 text-black font-semibold ">
-                We at The Legal Base understand the burden an attorney or a lawyer goes through. That is why we offer custom paralegal support services that are specially designed to suit your unique needs. Below mentioned are our portfolio of paralegal services that can be outsourced to us.
+                We at TLB understand the burden an attorney or a lawyer goes through. That is why we offer custom paralegal support services that are specially designed to suit your unique needs. Below mentioned are our portfolio of paralegal services that can be outsourced to us.
 
               </p>
             </div>

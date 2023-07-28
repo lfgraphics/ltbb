@@ -6,8 +6,8 @@ const Hero = () => {
     <React.Fragment>
       <div className="relative  sm:w-5/6 w-full md:w-5/6 lg:5/6  mx-auto bg-white">
         <div className="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8">
-          <div className="flex flex-col justify-center px-4 py-12 md:py-16 lg:col-span-7 lg:gap-x-6 lg:px-6 lg:py-24 xl:col-span-6">
-            <div className="mt-8 flex max-w-max items-center space-x-2 rounded-full bg-gray-100 p-1">
+          <div  className="flex flex-col justify-top px-4 py-12 md:py-16 lg:col-span-7 lg:gap-x-6 lg:px-2 lg:py-1 xl:col-span-6" >
+            <div className="mt-4 flex max-w-max items-center space-x-2 rounded-full bg-gray-100 p-1">
               <div className="rounded-full bg-white p-1 px-2">
                 <p className="text-sm font-medium">Want&apos; Solution</p>
               </div>
@@ -17,7 +17,7 @@ const Hero = () => {
               Outsourced Paralegal Services
 
             </h1>
-            <p className="mt-8 text-lg font-bold text-gray-700">
+            <p className="mt-8 text-lg text-gray-700">
               Outsourced paralegal services involve contracting with a third-party provider like TLB to handle various legal support tasks and responsibilities typically performed by in-house paralegals. TLB is a specialized firm that employ paralegals with expertise in different areas of law.
               <br>
               </br>
