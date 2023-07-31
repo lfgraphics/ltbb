@@ -5,7 +5,7 @@ import Image from 'next/image'
 const Hero = () => {
   return (
     <React.Fragment>
-      <div className="relative  sm:w-5/6 w-full md:w-5/6 lg:5/6  mx-auto bg-white mt-12">
+      <div className="relative  sm:w-5/6 w-full md:w-5/6 lg:5/6  mx-auto bg-white">
         <div className="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8">
           <div  className="flex flex-col justify-top px-4 py-12 md:py-16 lg:col-span-7 lg:gap-x-6 lg:px-2 lg:py-1 xl:col-span-6" >
             <div className="mt-4 flex max-w-max items-center space-x-2 rounded-full bg-gray-100 p-1">
@@ -46,7 +46,7 @@ const Hero = () => {
           </div>
           <div className="relative lg:col-span-5 lg:-mr-8 xl:col-span-6">
             <img
-              className="aspect-[3/2] bg-gray-50 object-cover lg:aspect-[4/3] lg:h-[700px] xl:aspect-[16/9]"
+              className="aspect-[3/2] bg-gray-50 lg:aspect-[4/3] lg:h-[700px] xl:aspect-[16/9] object-cover h-62 w-124"
               src="/Legal Research/pexels-anna-shvets-5324926.jpg"
               alt=""
             />

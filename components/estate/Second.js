@@ -99,8 +99,8 @@ const Second = () => {
 									</div>
 								</div>
 							</div>
-							<div aria-hidden="true" className="mt-10 lg:mt-0 " data-aos="fade-left">
-								<img src="/Estate Planning/pexels-ekaterina-bolovtsova-6077961.jpg" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500" />
+							<div aria-hidden="true" className="mx-auto rounded-lg shadow-lg object-fill" data-aos="fade-left">
+								<img src="/Estate Planning/pexels-ekaterina-bolovtsova-6077961.jpg" alt="" className="mx-auto rounded-lg shadow-lg object-fill" />
 							</div>
 						</div>
 						<div>
@@ -200,8 +200,8 @@ const Second = () => {
 										{/* </div> */}
 									</div>
 								</div>
-								<div className="mt-10 lg:mt-0 lg:col-start-1 lg:row-start-1" data-aos="fade-right">
-									<img src="/Estate Planning/pexels-kindel-media-7578984.jpg" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500" />
+								<div className="mx-auto rounded-lg shadow-lg object-filllg:col-start-1 lg:row-start-1" data-aos="fade-right">
+									<img src="/Estate Planning/pexels-kindel-media-7578984.jpg" alt="" className="mx-auto rounded-lg shadow-lg object-fill" />
 								</div>
 							</div>
 						</div>
@@ -213,7 +213,7 @@ const Second = () => {
 				<section className="dark:bg-gray-800 dark:text-gray-100 m-4 mx-8 bg-white mb-4" data-aos="zoom-in">
 					<div className="container flex flex-col mx-auto lg:flex-row">
 						<div
-							className="w-full lg:w-1/3"
+							className="w-full lg:w-1/3 rounded-lg object-fill"
 							style={{
 								backgroundImage: 'url("/Estate Planning/pexels-mikhail-nilov-7731330.jpg")',
 								backgroundPosition: "center center",

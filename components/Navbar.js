@@ -45,18 +45,16 @@ const Navbar = () => {
   // toggleCart() 
   return (
     <React.Fragment>
-      <header className=" w-full fixed top-0 z-30 opacity-100  border-b navbar pb-4 shadow-md">
-        <div className="mx-auto flex w-5/6 items-center justify-left">
+      <header className=" w-full fixed top-0 z-30 border-b navbar pb-4 shadow-md ">
+        <div className="mx-auto flex w-5/6 items-center justify-between">
           <div className="inline-flex space-x-2 logo-container logo">
             <span>         
-              <Link className="font-bold" href="/">
-                
-              <Image src="/logo-black.svg" alt="Logo"
+              <Link href="/">                
+              <Image src="/The_Legal Base-logos_black.png" alt="Logo"
                 width={100}
                 height={100}
               ></Image></Link>
             </span>
-            
           </div>
        
 
@@ -160,7 +158,7 @@ const Navbar = () => {
         </div>
       </header>
       {/* sidebar */}
-      <div ref={ref} className="mycart fixed h-[10vh] z-40 right-0 top-0 transform transition-transform translate-x-full ">
+      <div ref={ref} className="mycart fixed h-[10vh] z-40 right-0 top-0 transform transition-transform translate-x-full">
         <aside className="flex flex-col w-64 h-screen px-5 py-8 overflow-y-auto bg-white border-r rtl:border-r-0 rtl:border-l dark:bg-gray-900 dark:border-gray-700">
           <a href="#">
 
@@ -215,7 +213,7 @@ const Navbar = () => {
                     d="M10.125 2.25h-4.5c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125v-9M10.125 2.25h.375a9 9 0 019 9v.375M10.125 2.25A3.375 3.375 0 0113.5 5.625v1.5c0 .621.504 1.125 1.125 1.125h1.5a3.375 3.375 0 013.375 3.375M9 15l2.25 2.25L15 12"
                   />
                 </svg>
-                <span className="mx-2 text-sm font-medium" onClick={toggleMenu}>Contract Management</span>
+                <span className="mx-2 text-sm font-medium">Contract Management</span>
               </Link>
               <Link
                 onClick={toggleCart}
