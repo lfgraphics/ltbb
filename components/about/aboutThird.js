@@ -12,7 +12,7 @@ const aboutThird = () => {
 	});
   return (
    <React.Fragment>
-    <section className="bg-white dark:bg-gray-900" data-aos="fade-left">
+    <section className="bg-white " data-aos="fade-left">
   <div className="relative flex">
     <div className="min-h-screen lg:w-1/3" />
     <div className="hidden w-3/4 min-h-screen bg-gray-100 dark:bg-gray-800 lg:block" />

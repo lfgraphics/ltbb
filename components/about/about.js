@@ -19,7 +19,7 @@ const about = () => {
     <React.Fragment>
     
   {/* ===== Team Start ===== */}
-  <section className="i pg ji gp uq" data-aos="fade-down">
+  <section className="i pg ji gp uq bg-white-900" data-aos="fade-down">
     {/* Bg Shapes */}
     <span className="rc h s r vd fd/5 fh rm" />
     <img src="images/shape-08.svg" alt="Shape Bg" className="h q r" />
@@ -278,11 +278,11 @@ const about = () => {
                     
                       <span className="rc">TLB</span>
                     </div>
-                    <img
+                    {/* <img
                       className="rk"
                       src="images/brand-light-02.svg"
                       alt="Brand"
-                    />
+                    /> */}
                   </div>
                 </div>
               </div>
@@ -290,7 +290,7 @@ const about = () => {
           </div>
         </div>
         {/* If we need navigation */}
-        <div className="tc wf xf fg jb">
+        {/* <div className="tc wf xf fg jb">
           <div className="swiper-button-prev c tc wf xf ie ld rg _g dh pf ml vr hh rm tl zm rl ym">
             <svg
               className="th lm"
@@ -321,7 +321,7 @@ const about = () => {
               />
             </svg>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   </div>

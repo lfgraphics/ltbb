@@ -1,8 +1,8 @@
-import './globals.css'
-import React from 'react'
-import { Varela } from 'next/font/google'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
+import './globals.css';
+import React from 'react';
+import { Varela } from 'next/font/google';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 // import ParticlesBg from 'particles-bg'
 
 const inter = Varela({ subsets: ['latin'],weight:'400' })
