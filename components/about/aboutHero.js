@@ -1,6 +1,8 @@
+"use client"
 import React from 'react'
-
+import Player from './player'
 const aboutHero = () => {
+ 
   return (
     <React.Fragment>
              <div className='bg-white'>
@@ -16,7 +18,7 @@ const aboutHero = () => {
         <p className="uo">
         TLB: Your legal companion, offering expert solutions. Navigate complexities confidently with our dedicated team. Elevate your legal experience with TLB.
         </p>
-        <a
+        {/* <a
           href="https://www.youtube.com/watch?v=xcJtL7QggTI"
           data-fslightbox=""
           className="vc wf hg mb"
@@ -26,7 +28,8 @@ const aboutHero = () => {
             <img src="images/icon-play.svg" alt="Play" />
           </span>
           <span className="kk">SEE HOW WE WORK</span>
-        </a>
+        </a> */}
+      <Player></Player>
       </div>
 
 
