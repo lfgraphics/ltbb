@@ -46,26 +46,24 @@ const Footer = ({ darkMode }) => {
                 <li><a href="#">Legal Transcription</a></li>
               </ul>
             </div>
-          </div>
-        </div>
-        <div className={`mt-6 ${textColor}`}>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="col-span-1">
-              <p>&copy; {new Date().getFullYear()} The Legal Base. All rights reserved.</p>
-            </div>
-            <div className="col-span-1 text-right">
-              <h3 className="text-lg font-semibold mb-3">Socials</h3>
-              <div>
-                <a href="https://twitter.com/TheLegalBase" target='_blank' className="text-gray-600 hover:text-blue-400 transition-all duration-300 mr-3">
-                  <i className="fab fa-twitter"></i>
-                </a>
-                <a href="https://www.linkedin.com/company/thelegalbase/" target='_blank' className="text-gray-600 hover:text-blue-400 transition-all duration-300">
-                  <i className="fab fa-linkedin"></i>
-                </a>
+            <div className={`mt-6 ${textColor}`}>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="text-left">
+                  <h3 className="text-lg font-semibold mb-3">Socials</h3>
+                  <div>
+                    <a href="https://twitter.com/TheLegalBase" target='_blank' className="text-gray-600 hover:text-blue-400 transition-all duration-300 mr-3">
+                      <i className="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/thelegalbase/" target='_blank' className="text-gray-600 hover:text-blue-400 transition-all duration-300">
+                      <i className="fab fa-linkedin"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        
       </div>
     </footer>
   );
