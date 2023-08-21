@@ -27,7 +27,7 @@ const about = () => {
 
   const profileData = [
     {
-      id:"1",
+      id:1,
       name:"ANSHU GAUTAM",
       roal:"Co-Founder and Director",
       img:"Anshu.jpg",
@@ -37,7 +37,7 @@ const about = () => {
     },
     
     {
-      id:"2",
+      id:2,
       name:"Shashi Shekhar",
       roal:"Co-founder and Principal Advisor",
       img:"Shashi.jpg",
@@ -47,7 +47,7 @@ const about = () => {
     },
     
     {
-      id:"3",
+      id:3,
       name:"Shashi Shekhar",
       roal:"Co-founder and Principal Advisor",
       img:"Shashi.jpg",
