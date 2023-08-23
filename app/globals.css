@@ -26,16 +26,25 @@ body {
   overflow-x: hidden;
 }
 
-.cls-2{
+.cls-2 {
   fill: transparent;
 }
 
-.navbar{
+.navbar {
   background-color: white;
   padding: 10px;
   justify-content: space-between;
   display: flex;
 }
+
+@media (max-width: 450px) {
+  .xs-border-none {
+    border: none;
+  }
+}
+
+
+
 /* .navbar {
   
   

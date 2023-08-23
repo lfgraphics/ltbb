@@ -4,9 +4,9 @@ const Footer = () => {
   return (
     <footer className="bg-gray-200 w-full flex justify-center p-4 text-black">
       <div className="w-full flex flex-col md:flex-row">
-        <div className="my-4 ml-10 md:w-1/3 border-r border-r-gray-500 pl-6 pr-6">
+        <div className="my-4 md:w-1/3 border-r border-r-gray-500 pl-6 pr-6 xs-border-none">
           <div className="my-4 md:w-1/3">
-            <img src="The_Legal Base-logos_black.png" alt="The Legal Base Logo" className="w-full m-auto" />
+            <img src="The_Legal Base-logos_black.png" alt="The Legal Base Logo" className="w-full m-auto block sm:mx-auto sm:w-80" />
           </div>
           <h3 className="text-lg font-bold">Contact Us</h3>
 
@@ -16,9 +16,9 @@ const Footer = () => {
               <p className="text-xs">111 Lawrence Street, 49 B, New York, NY 11201, USA</p>
             </li>
             <li className="text-xs">
-              <a href="mailto:contact@thelegalbase.com" className="hover:text-blue-700 text-sm">
+              <a href="mailto:contact@thelegalbase.com" className="hover:text-blue-700">
                 contact@thelegalbase.com
-              </a> <a href="tel:+17188653815" className="hover:text-blue-700 text-sm">
+              </a> <a href="tel:+17188653815" className="hover:text-blue-700">
                 (+1) 718 865 3815
               </a>
             </li>
@@ -29,9 +29,9 @@ const Footer = () => {
               <p className="text-xs">Abbey House, 25 Clarendon Road, Redhill, Surrey RH1 1QZ, GBR</p>
             </li>
             <li className="text-xs">
-              <a href="mailto:contact@thelegalbase.com" className="hover:text-blue-700 text-sm">
+              <a href="mailto:contact@thelegalbase.com" className="hover:text-blue-700">
                 contact@thelegalbase.com
-              </a> <a href="tel:+447894858483" className="hover:text-blue-700 text-sm">
+              </a> <a href="tel:+447894858483" className="hover:text-blue-700">
                 (+44) 789 485 8483
               </a>
             </li>
@@ -42,26 +42,26 @@ const Footer = () => {
               <p className="text-xs">Office No 45, 12th Floor, iThum Tower, Block B, Galaxy Business Park, Sector 62, Noida – 201309 Uttar Pradesh, India</p>
             </li>
             <li className="text-xs">
-              <a href="mailto:contact@thelegalbase.com" className="hover:text-blue-700 text-sm">
+              <a href="mailto:contact@thelegalbase.com" className="hover:text-blue-700">
                 contact@thelegalbase.com
-              </a> <a href="tel:+918287645230" className="hover:text-blue-700 text-sm">
+              </a> <a href="tel:+918287645230" className="hover:text-blue-700">
                 (+91) 828 764 5230
               </a>
             </li>
           </ul>
         </div>
 
-        <div className="my-4 md:w-1/3 border-r border-r-gray-500 pl-6">
+        <div className="my-4 md:w-1/3 border-r border-r-gray-500 pl-6 xs-border-none">
           <h3 className="text-lg font-bold">Important Links</h3>
           <ul className="mt-3">
             <li>
-              <a href="/contact" className="hover:text-blue-700 text-sm">Contact</a>
+              <a href="/contact" className="hover:text-blue-700">Contact</a>
             </li>
             <li>
-              <a href="/cookies-policy" className="hover:text-blue-700 text-sm">Cookies Policy</a>
+              <a href="/cookies-policy" className="hover:text-blue-700">Cookies Policy</a>
             </li>
             <li>
-              <a href="/privacy-policy" className="hover:text-blue-700 text-sm">Privacy Policy</a>
+              <a href="/privacy-policy" className="hover:text-blue-700">Privacy Policy</a>
             </li>
           </ul>
         </div>
@@ -70,19 +70,19 @@ const Footer = () => {
           <h3 className="text-lg font-bold">Quick Links</h3>
           <ul className="mt-3">
             <li>
-              <a href="/about" className="hover:text-blue-700 text-sm">About Us</a>
+              <a href="/about" className="hover:text-blue-700">About Us</a>
             </li>
             <li>
-              <a href="/services" className="hover:text-blue-700 text-sm">Our Services</a>
+              <a href="/services" className="hover:text-blue-700">Our Services</a>
             </li>
           </ul>
-          <div className="mt-3 border-t border-t-gray-500 mr-6">
+          <div className="mt-3 border-t border-t-gray-500 mr-6 xs-border-none">
             <h3 className="text-lg font-bold pb-2 pt-3">Socials</h3>
             <a href="https://twitter.com/thelegalbase" className="hover:text-blue-700 mr-3">
-              <i className="fab fa-twitter"></i>
+              <i className="fab fa-twitter text-xl"></i>
             </a>
             <a href="https://www.linkedin.com/company/thelegalbase/" className="hover:text-blue-700">
-              <i className="fab fa-linkedin"></i>
+              <i className="fab fa-linkedin text-xl"></i>
             </a>
           </div>
         </div>
