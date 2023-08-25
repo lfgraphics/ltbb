@@ -38,18 +38,18 @@ const aboutHero = () => {
        {/* About Images */}
        <div className="animate_left xc gn gg jn/2 i">
         <div>
-          <img
+          {/* <img
             src="images/shape-05.svg"
             alt="Shape"
             className="h -ud-left-5 x"
-          />
+          /> */}
           <img src="images/about-01.png" alt="About" className="ib" />
           <img src="images/about-02.png" alt="About" />
         </div>
         <div>
-          <img src="images/shape-06.svg" alt="Shape" />
+          {/* <img src="images/shape-06.svg" alt="Shape" /> */}
           <img src="images/about-03.png" alt="About" className="ob gb" />
-          <img src="images/shape-07.svg" alt="Shape" className="bb" />
+          {/* <img src="images/shape-07.svg" alt="Shape" className="bb" /> */}
         </div>
       </div>
       {/* About Content */}
