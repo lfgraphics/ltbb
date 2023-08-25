@@ -6,6 +6,7 @@ import {
 
     Transition,
 } from '@headlessui/react';
+import { IoIosCloseCircle } from "react-icons/io";
 
 import './style.css'
 const Player = () => {
@@ -14,7 +15,7 @@ const Player = () => {
         thumbWidth: 600,
         thumbHeight: 150,
         thumbAlt: "video alt",
-        video: "https://drive.google.com/file/d/1jI3gG2w5nQuiMBRKO-ggf7VEtdtkVO6i/view?usp=sharing",
+        video: "/TLB Services.mp4",
         videoWidth: 1000,
         videoHeight: 400
     }
@@ -86,14 +87,31 @@ const Player = () => {
             leaveFrom="opacity-100 scale-100"
             leaveTo="opacity-0 scale-75"
           >
-            <div className="max-w-5xl mx-auto h-full flex items-center">
-              <Dialog.Panel className="w-full max-h-full rounded-3xl shadow-2xl aspect-video bg-black overflow-hidden">
-                <video ref={videoRef} loop controls>
-                  <source src={props.video} width={props.videoWidth} height={props.videoHeight} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+           <div className="max-w-5xl mx-auto">
+              <Dialog.Panel className="w-full max-h-full rounded-3xl shadow-2xl bg-white overflow-hidden relative">
+                {/* Close Button */}
+                <button
+                  onClick={() => setModalOpen(false)}
+                  className="absolute top-2 right-2 text-red text-xl cursor-pointer"
+                >
+                  <IoIosCloseCircle className='text-3xl text-black hover:text-3xl' />
+                  
+                </button>
+                {/* End: Close Button */}
+                <div className='container m-4 p-4'>
+                  <video
+                    ref={videoRef}
+                    className="w-full h-full object-center object-cover"
+                    loop
+                    controls
+                  >
+                    <source src={props.video} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
               </Dialog.Panel>
             </div>
+          
           </Transition.Child>
           {/* End: Modal dialog */}
         </Dialog>
