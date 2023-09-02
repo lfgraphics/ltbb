@@ -42,7 +42,7 @@ const Navbar = () => {
 	};
 	return (
 		<>
-			<header className=' w-full fixed top-0 z-30 border-b navbar pb-4 shadow-md '>
+			<header className=' w-full fixed top-0 z-30 border-b navbar pb-4 shadow-md h-16 opacity-80'>
 				<div className='mx-auto flex w-5/6 items-center justify-between'>
 					<div className='inline-flex space-x-2 logo-container logo'>
 						<span>
