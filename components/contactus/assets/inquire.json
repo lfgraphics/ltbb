@@ -1,0 +1,67 @@
+[
+    {
+        "id": 1,
+        "value": "CONTRACT MANAGEMENT",
+        "name": "CONTRACT MANAGEMENT"
+    },
+    {
+        "id": 2,
+        "value": "MEDICO LEGAL",
+        "name": "MEDICO LEGAL"
+    },
+    {
+        "id": 3,
+        "value": "ESTATE PLANNING",
+        "name": "ESTATE PLANNING"
+    },
+    {
+        "id": 4,
+        "value": "IMMIGRATION SUPPORT",
+        "name": "IMMIGRATION SUPPORT"
+    },
+    {
+        "id": 5,
+        "value": "DEPOSITION SUMMARY",
+        "name": "DEPOSITION SUMMARY"
+    },
+    {
+        "id": 6,
+        "value": "LEGAL TRANSCRIPTION",
+        "name": "LEGAL TRANSCRIPTION"
+    },
+    {
+        "id": 7,
+        "value": "LEGAL RESEARCH",
+        "name": "LEGAL RESEARCH"
+    },
+    {
+        "id": 8,
+        "value": "LITIGATION SUPPORT",
+        "name": "LITIGATION SUPPORT"
+    },
+    {
+        "id": 9,
+        "value": "CASE INTAKE",
+        "name": "CASE INTAKE"
+    },
+    {
+        "id": 10,
+        "value": "DOCUMENT REVIEW",
+        "name": "DOCUMENT REVIEW"
+    },
+    {
+        "id": 11,
+        "value": "PARALEGAL SUPPORT",
+        "name": "PARALEGAL SUPPORT"
+    },
+    {
+        "id": 12,
+        "value": "BESPOKE LEGAL IT",
+        "name": "BESPOKE LEGAL IT"
+    },
+    {
+        "id": 13,
+        "value": "OTHERS",
+        "name": "OTHERS"
+    }
+]

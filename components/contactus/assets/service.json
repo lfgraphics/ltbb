@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "value": "FREE TRIAL",
+        "name": "FREE TRIAL"
+    },
+    {
+        "id": 2,
+        "value": "GET A QUOTE",
+        "name": "GET A QUOTE"
+    },
+    {
+        "id": 3,
+        "value": "REQUEST A TEMPLATE",
+        "name": "REQUEST A TEMPLATE"
+    },
+    {
+        "id": 4,
+        "value": "OTHERS",
+        "name": "OTHERS"
+    }
+]
