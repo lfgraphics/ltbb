@@ -3,21 +3,24 @@ import FirstStep from './firstStep'
 import Button from './button'
 import SecondStep from './secondStep'
 import ThirdStep from './thirdStep'
+import { useForm } from 'react-hook-form';
 
 const Form = () => {
     const [step,setStep] = React.useState(1);
+    const [formState , setFormState] = React.useState(1)
+    const {watch,register,formState:{errors},isValid} = useForm({mode:"all"});
     const Step = ()=>{
         if(step===1){
             return (
-                <FirstStep></FirstStep>
+                <FirstStep register={register} errors={errors} isValid={isValid} ></FirstStep>
             )
         }else if(step ===2){
             return (
-                <SecondStep></SecondStep>
+                <SecondStep register={register} errors={errors}></SecondStep>
             )
         }else if(step ===3){
             return (
-                <ThirdStep></ThirdStep>
+                <ThirdStep register={register} errors={errors}></ThirdStep>
             )
         }
     }
@@ -32,10 +35,10 @@ const Form = () => {
       
 {Step()}
         
-        <Button step={step} setStep={setStep}></Button>
+        <Button step={step} setStep={setStep} isValid={isValid} watch={watch}></Button>
 
       
- 
+        
 </div>
 </div>
        </React.Fragment>
