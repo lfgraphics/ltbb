@@ -1,13 +1,11 @@
 "use client"
 import React from 'react';
-
-import Form from '@/components/contactus/Form';
-
-
+import Contact from '@/components/contactus/contact'
 const page = () => {
   return (
   <React.Fragment>
-    <Form></Form>
+    <Contact/>
+    
   </React.Fragment>
   )
 }
