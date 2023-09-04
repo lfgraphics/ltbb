@@ -3,7 +3,7 @@ export const tlbServicesData = [
 		title: 'Case Intake Services',
 		desc: 'The Legal Base LPO provides high-quality legal intake solutions that are customised to your exact needs and requirements.',
 		href: '/caseintakeservices',
-		imageUrl: 'images\case-intake-card-bg.webp'
+		imageUrl: 'images/case-intake-card-bg.webp'
 	},
 	{
 		title: 'Contract Management',

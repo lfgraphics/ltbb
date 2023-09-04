@@ -12,7 +12,7 @@ const LegalSolutions = () => {
 						route={service.href}
 						hoverData={service.desc}
 						title={service.title}
-            imageUrl={service.imageUrl}
+            url={service.imageUrl}
 					/>
 				))}
 			</div>

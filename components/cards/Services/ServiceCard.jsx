@@ -4,9 +4,8 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 
-const ServiceCard = ({ route, title, hoverData, imageUrl }) => {
+const ServiceCard = ({ route, title, hoverData, url }) => {
 	const [isHovered, setIsHovered] = useState(false);
-	console.log(imageUrl)
 	return (
 		<motion.div
 			className='w-52 h-72 hover:h-72 rounded-xl flex justify-center items-center shadow-slate-500 border-2 cursor-default bg-white text-center overflow-hidden'
@@ -24,7 +23,7 @@ const ServiceCard = ({ route, title, hoverData, imageUrl }) => {
 					{hoverData}
 				</motion.p>
 			) : (
-				<div className="h-full w-full flex align-center items-center bg-cover bg-opacity-50 bg-[url(/images/case-intake-card-bg.webp)]" >
+				<div className="h-full w-full flex align-center items-center bg-cover bg-opacity-50" style={{backgroundImage: `url(${url})`}}>
 					<span className='text-lg p-2'>{title}</span>
 				</div>
 			)}
