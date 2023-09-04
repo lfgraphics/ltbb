@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "name": "INDIA",
+        "img": "https://thelegalbase.com/wp-content/uploads/2022/07/CfArfigUkAAPK87.jpg",
+        "email":"contact@thelegalbase.com",
+        "phone":"(+91) 828 764 5230",
+        "address": "Office No 45, 12th Floor,\niThum Tower, Block B,\nGalaxy Business Park,\nSector 62, Noida  201309\nUttar Pradesh, India"
+        
+    },
+    {
+        "id": 2,
+        "name": "UNITED KINGDOM",
+        "img": "https://thelegalbase.com/wp-content/uploads/2022/07/6118490502_05ed2b618e_b.jpg",
+        "email":"contact@thelegalbase.com",
+        "phone":"(+44) 789 485 8483",
+        "address": "Abbey House,\n25 Clarendon Road,\nRedhill, Surrey RH1 1QZ, GBR"
+    },
+    {
+        "id": 3,
+        "name": "UNITED States",
+        "img": "https://thelegalbase.com/wp-content/uploads/2022/07/photo-1618243545619-479e9b5cfacf.jpg",
+        "email":"contact@thelegalbase.com",
+        "phone":"",
+        "address": "111 Lawrence St 49 b,\nBrooklyner Brooklyn,\nNY 11201 USA"
+    }
+]
