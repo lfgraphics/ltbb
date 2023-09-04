@@ -1,3 +1,4 @@
+import LegalSolutions from '@/components/legalSolutions';
 import React from 'react';
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
 					type='video/mp4'
 				/>
 			</video>
+			<LegalSolutions />
 		</>
 	);
 }
