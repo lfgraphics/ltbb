@@ -25,7 +25,7 @@ const ServiceCard = ({ route, title, hoverData, url }) => {
 				</motion.p>
 			) : (
 				<>
-					<span className='text-lg font-semibold z-10'>{title}</span>
+					<span className='text-lg font-semibold z-10 p-2'>{title}</span>
 					<Image src={url} preload fill alt="card background image" sizes="100%" style={{opacity: 0.4}}/>
 				</>
 			)}
