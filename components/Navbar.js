@@ -43,7 +43,7 @@ const Navbar = () => {
 	return (
 		<>
 			<header className=' w-full fixed top-0 z-30 border-b navbar pb-4 shadow-md h-16 opacity-80'>
-				<div className='mx-auto flex w-5/6 items-center justify-between'>
+				<div className='mx-auto flex w-11/12 items-center justify-between'>
 					<div className='inline-flex space-x-2 logo-container logo'>
 						<span>
 							<Link href='/'>
@@ -63,7 +63,7 @@ const Navbar = () => {
 								<li key={item.name}>
 									<a
 										href={item.href}
-										className='text-sm text-gray-800 hover:text-black'
+										className='text-md font-semibold hover:text-gray-700 tracking-wide'
 									>
 										{item.name}
 									</a>
@@ -72,7 +72,7 @@ const Navbar = () => {
 							<li>
 								<button
 									onClick={toggleCart}
-									className='text-sm  text-gray-800 hover:text-black'
+									className='text-md font-semibold hover:text-gray-700 tracking-wide'
 								>
 									Services
 								</button>
