@@ -19,7 +19,7 @@ const ServiceCard = ({ route, title, hoverData, url }) => {
 					initial={{ opacity: 0 }}
 					animate={{ opacity: isHovered ? 1 : 0 }}
 					transition={{ duration: 0.9 }}
-					className='text-md text-start p-2'
+					className='text-start p-2'
 				>
 					{hoverData}
 				</motion.p>
