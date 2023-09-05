@@ -19,14 +19,14 @@ const ServiceCard = ({ route, title, hoverData, url }) => {
 					initial={{ opacity: 0 }}
 					animate={{ opacity: isHovered ? 1 : 0 }}
 					transition={{ duration: 0.9 }}
-					className='text-md text-start p-2 leading-3'
+					className='text-md text-start p-2'
 				>
 					{hoverData}
 				</motion.p>
 			) : (
 				<>
 					<span className='text-lg font-semibold z-10'>{title}</span>
-					<Image src={url} fill alt="card background image" sizes="100%" style={{opacity: 0.4}}/>
+					<Image src={url} preload fill alt="card background image" sizes="100%" style={{opacity: 0.4}}/>
 				</>
 			)}
 		</motion.div>
