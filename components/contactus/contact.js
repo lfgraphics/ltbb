@@ -4,13 +4,12 @@ import Button from './button'
 import SecondStep from './secondStep'
 import ThirdStep from './thirdStep'
 import { useForm } from 'react-hook-form';
-import Card from './card'
-import Country from './assets/country'
-import { v4 as uuidv4 } from 'uuid';
 import Location1 from './location1'
 import Location2 from './location2'
-import Location3 from './location1'
+import Location3 from './location3'
+
 const Form = () => {
+  
     const [step,setStep] = React.useState(1);
     const [formState , setFormState] = React.useState(1)
     const {watch,register,formState:{errors},isValid} = useForm({mode:"all"});
@@ -48,8 +47,8 @@ const Form = () => {
 </div>
 </div>
 
-<h1 className='text-center text-2xl font-bold text-black mt-5 p-4 '>OUR LOCATIONS</h1>
-<div className='flex flex-col   w-full items-center justify-center h-full mx-auto  gap-4 px-6'>
+<h1 className='text-center text-3xl font-bold text-gray-800 underline mt-5 p-4 '>OUR LOCATIONS</h1>
+<div className='flex flex-col   w-full items-center justify-center h-full mx-auto gap-4   px-6'>
    
 {/*  */}
 {/* {Country.map((item,index)=>{
@@ -61,9 +60,9 @@ const Form = () => {
 })}
  */}
 
- <Location1></Location1>
- <Location2></Location2>
- <Location3></Location3>
+ <Location1  />
+ <Location2 />
+ <Location3 />
 
 
 

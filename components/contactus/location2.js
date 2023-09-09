@@ -1,94 +1,52 @@
 import React from 'react'
 import Country from './assets/country'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 const location2 = () => {
+  useEffect(() => {
+		AOS.init({
+			offset: 300, // offset (in px) from the original trigger point
+			delay: 0, // values from 0 to 3000, with step 50ms
+			duration: 1000,
+		});
+	});
   return (
     <React.Fragment>
-        <div className='flex gap-4 '>
+      <div className="flex flex-col justify-center shadow-lg hover:shadow-xl border-solid " data-aos="fade-left">
+    <div className="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
+      
+      <div className="w-full md:w-2/3 bg-white flex flex-col space-y-2 p-3">
 
-       
-    {/* ==================== */}
+        <h3 className="font-black text-gray-800 md:text-3xl text-xl">
+          {Country[1].name}
+        </h3>
+        <p className="md:text-lg text-gray-700 font-bold text-base">
+         {Country[1].address}
+        </p>
+        <p className="text-xl font-black text-gray-800">
+         {Country[1].phone}
 
-    <div className='flex-1 w-2/3 '>
-    <div className="max-w-2xl px-8 py-4 h-64 bg-white rounded-lg shadow-md dark:bg-gray-800">
-  <div className="flex items-center justify-between">
-    <span className="text-sm font-light text-gray-600 dark:text-gray-400">
-      {Country[1].name}
-    </span>
-    <a
-      className="px-3 py-1 text-sm font-bold text-gray-100 transition-colors duration-300 transform bg-gray-600 rounded cursor-pointer hover:bg-gray-500"
-      tabIndex={0}
-      role="button"
-    >
-      TLB
-    </a>
-  </div>
-  <div className="mt-2">
-    <a
-      href="#"
-      className="text-xl font-bold text-gray-700 dark:text-white hover:text-gray-600 dark:hover:text-gray-200 hover:underline"
-      tabIndex={0}
-      role="link"
-    >
-   Address
-    </a>
-    <p className="mt-2 text-gray-600 dark:text-gray-300">
-      {Country[1].address}
-    </p>
-  </div>
-  <div className="flex items-center justify-between mt-4">
-    <a
-      href="#"
-      className="text-blue-600 dark:text-blue-400 hover:underline"
-      tabIndex={0}
-      role="link"
-    >
-      {Country[1].phone}
-    </a>
-    <div className="flex items-center">
-      {/* <img
-        className="hidden object-cover w-10 h-10 mx-4 rounded-full sm:block"
-        src="https://images.unsplash.com/photo-1502980426475-b83966705988?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=40&q=80"
-        alt="avatar"
-      /> */}
-      <a
-        className="font-bold text-gray-700 cursor-pointer dark:text-gray-200"
-        tabIndex={0}
-        role="link"
-      >
-      {Country[1].email}
-      </a>
+        </p>
+        <p className="text-xl font-black text-gray-800">
+         {Country[1].email}
+
+        </p>
+      </div>
+
+
+
+
+
+      <div className="w-full md:w-1/3 bg-white grid place-items-center">
+        <img
+          src={Country[1].img}
+          alt="tailwind logo"
+          className="rounded-xl"
+        />
+      </div>
     </div>
   </div>
-</div>
-
-        </div>   
-         {/*=========  */}
-         <div className='flex-2 w-1/4'>
-
-
-<div className="w-full cursor-pointer max-w-4xl p-6 overflow-hidden bg-white rounded-xl shadow-lg">
-<img
-className="object-cover rounded-lg w-full h-56"
-src={Country[1].img}
-alt="avatar"
-/>
-<div className="py-5 text-center">
-<a
-  href="#"
-  className="block text-xl font-bold text-gray-800 "
-  tabIndex={0}
-  role="link"
->
-{Country[1].name}
-</a>
-<span className="text-sm text-gray-700 ">
-
-</span>
-</div>
-</div>
-
-</div>
-        </div>
     </React.Fragment>
   )
 }
