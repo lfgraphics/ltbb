@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "value": "SINGLE ATTORNEY",
+        "name": "SINGLE ATTORNEY"
+    },
+    {
+        "id": 2,
+        "value": "LAW FIRM",
+        "name": "LAW FIRM"
+    },
+    {
+        "id": 3,
+        "value": "CORPORATE LEGAL DEPARTMENT",
+        "name": "CORPORATE LEGAL DEPARTMENT"
+    },
+    {
+        "id": 4,
+        "value": "CONSULTANT",
+        "name": "CONSULTANT"
+    },
+    {
+        "id": 5,
+        "value": "OTHERS",
+        "name": "OTHERS"
+    }
+]
