@@ -16,7 +16,7 @@ const secondStep = ({register,errors}) => {
   <input
   {...register('country', { required: true })}
     type="text"
-    placeholder="John Doe"
+    placeholder="Country Name"
     className="block   mt-2 w-full placeholder-gray-400/70 dark:placeholder-gray-500 rounded-xl border border-gray-200 bg-white px-5 py-2.5 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40  "
   />
       {errors.country && <p className='text-red-900 text-sm mt-2'>This field is required</p>}
@@ -34,7 +34,7 @@ Enter City
   <input
     {...register('city', { required: true })}
     type="text"
-    placeholder="John Doe"
+    placeholder="City Name"
     className="block   mt-2 w-full placeholder-gray-400/70 dark:placeholder-gray-500 rounded-xl border border-gray-200 bg-white px-5 py-2.5 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40  "
   />
         {errors.city && <p className='text-red-900 text-sm mt-2'>This field is required</p>}
