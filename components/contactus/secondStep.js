@@ -9,7 +9,9 @@ const secondStep = ({register,errors}) => {
     htmlFor="username"
     className="block text-sm text-black-500 font-bold dark:text-gray-300"
   >
-    Entery Country 
+  
+    Enter Country
+
   </label>
   <input
   {...register('country', { required: true })}
@@ -26,7 +28,8 @@ const secondStep = ({register,errors}) => {
     htmlFor="username"
     className="block text-sm text-black-500 font-bold dark:text-gray-300"
   >
-  Entery city
+Enter City
+
   </label>
   <input
     {...register('city', { required: true })}
@@ -40,7 +43,7 @@ const secondStep = ({register,errors}) => {
     htmlFor="username"
     className="block text-sm text-black-500 font-bold dark:text-gray-300"
   >
-   Whe is a good time to connect with you ?
+ When is a good time to connect with you ?
 
   </label>
 
