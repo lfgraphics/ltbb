@@ -46,7 +46,7 @@ const button = ({step,setStep,isValid,watch}) => {
     <React.Fragment>
           <div className='flex gap-4  justify-center mt-4 p-2 '>
             <div>
-            <button disabled={step===1}  onClick={onHandlePrevious} className="rounded-md bg-white px-6 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black">
+            <button disabled={step===1}  onClick={onHandlePrevious} className="rounded-md bg-white px-6 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-black hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black">
     Previous
 </button>
             </div>
