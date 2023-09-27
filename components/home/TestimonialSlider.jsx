@@ -4,26 +4,26 @@ import { Pagination, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import LegalSearchCard from "./LegalSearchCard";
-import { legalSearchData } from "@/constants/legalSearchData";
-export default function LegalSearchSlider() {
+import TestimonialsCard from "./TestimonialsCard";
+import { homeTestimonialsData } from "@/constants/homeTestimonialsData";
+export default function TestimonialSlider() {
   return (
     <div className="flex justify-between gap-8 py-10 ">
       <Swiper
         spaceBetween={30}
         loop={true}
         breakpoints={{
-          300: { slidesPerView: 1 },
-          500: { slidesPerView: 2 },
-          768: { slidesPerView: 3 },
+          600: { slidesPerView: 1 },
+          700: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
         }}
         navigation={true}
         modules={[Pagination, Navigation]}
       >
-        {legalSearchData?.map((item) => {
+        {homeTestimonialsData?.map((item) => {
           return (
             <SwiperSlide key={item.id}>
-              <LegalSearchCard data={item} />
+              <TestimonialsCard data={item} />
             </SwiperSlide>
           );
         })}

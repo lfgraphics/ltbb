@@ -1,4 +1,4 @@
-import { homeBlogData } from "@/contants/homeBlogData";
+import { homeBlogData } from "@/constants/homeBlogData";
 import BlogCard from "./BlogCard";
 
 export default function BlogSection() {

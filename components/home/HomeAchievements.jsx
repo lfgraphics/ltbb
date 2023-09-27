@@ -1,4 +1,4 @@
-import { homeAchievementData } from "@/contants/homeAchievementsData";
+import { homeAchievementData } from "@/constants/homeAchievementsData";
 export default function HomeAchievements() {
   return (
     <section className="mb-16 py-10 px-[5%]">
