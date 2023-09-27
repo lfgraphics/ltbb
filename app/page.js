@@ -4,6 +4,7 @@ import AnimatedShape from '@/components/service/AnimatedShape'
 import HomeAchievements from '@/components/home/HomeAchievements'
 import LegalSolutions from '@/components/home/LegalSolutions'
 import HowWeWork from '@/components/home/HowWeWork'
+import OurMissionAndVisions from '@/components/home/OurMissionAndVisions'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <HomeAchievements/>
       <LegalSolutions/>
       <HowWeWork/>
+      <OurMissionAndVisions/>
     </React.Fragment>
   )
 }

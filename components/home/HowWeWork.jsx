@@ -6,7 +6,6 @@ export default function HowWeWork() {
   const [isPlaying, setIsPlaying] = useState(false);
 
   const handlePlay = () => {
-    console.log("Clicke");
     if (videoRef.current.paused) {
       videoRef.current.play();
       setIsPlaying(true);
@@ -16,14 +15,14 @@ export default function HowWeWork() {
     }
   };
   return (
-    <section className="px-[5%] py-20 ">
+    <section className="px-[5%] py-10 md:py-16 ">
       <h2 className="text-2xl md:text-3xl font-extrabold text-black">
         How We Work
       </h2>
       <div className="w-full mt-8 relative">
         <button
           onClick={() => handlePlay()}
-          className="absolute bottom-8 right-6 w-12 h-12 rounded-full bg-blue-600 z-50 flex justify-center items-center text-white cursor-pointer"
+          className="absolute bottom-8 right-6 w-12 h-12 rounded-full bg-blue-600 z-10 flex justify-center items-center text-white cursor-pointer"
         >
           {isPlaying ? <Pause /> : <Play />}
         </button>

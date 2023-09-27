@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useState } from "react"; // Import useState
 
 export default function LegalSearchCard({ data }) {
-  const { title, desc, learnMore } = data;
+  const { title, desc, learnMore,image } = data;
   const [isHovered, setIsHovered] = useState(false); // Use state to track hover
 
   return (
@@ -14,7 +14,7 @@ export default function LegalSearchCard({ data }) {
     >
       <div className="absolute inset-0">
         <Image
-          src="/legal-solutions.png"
+          src={image}
           fill
           className=" object-cover"
           alt={title}
