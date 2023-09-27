@@ -17,8 +17,8 @@ export default function Home() {
       <LegalSolutions />
       <HowWeWork />
       <OurMissionAndVisions />
-      <BlogSection/>
-      <Testimonials/>
+      <BlogSection />
+      <Testimonials />
     </React.Fragment>
   );
 }
