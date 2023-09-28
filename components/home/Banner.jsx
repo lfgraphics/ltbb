@@ -35,6 +35,7 @@ export default function Banner() {
           .map((_, i) => {
             return (
               <button
+                key={i}
                 onClick={() => handleContentChange(i)}
                 className={`w-4 h-4 rounded-full ${
                   i === bannerIndex - 1 ? "bg-homeCTA" : "bg-gray-300"
