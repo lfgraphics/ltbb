@@ -7,6 +7,7 @@ export default function BannerVideo() {
 						className='w-full h-full relative object-center object-cover rounded-lg -left-3 -top-3'
 						loop
 						autoPlay
+						muted
 					>
 						<source
 							src='https://thelegalbase.com/wp-content/uploads/2022/07/My-Movie_Website.mp4'
