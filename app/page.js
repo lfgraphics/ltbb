@@ -1,12 +1,9 @@
-import Image from 'next/image'
-import React from 'react'
-import CommingSoon from '@/components/CommingSoon'
+import Hero from '@/components/Homepage/Hero';
 
 export default function Home() {
-  return (
-    <React.Fragment>
-      <CommingSoon></CommingSoon>
-      {/* <Landing></Landing> */}
-    </React.Fragment>
-  )
+	return (
+		<>
+			<Hero />
+		</>
+	);
 }
