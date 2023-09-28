@@ -3,7 +3,6 @@ import Link from "next/link";
 
 export default function BlogCard({ data }) {
   const { image, title, desc, link } = data;
-  console.log(title);
   return (
     <div className="flex-1 min-w-[300px] md:max-w-[320px] rounded-md p-4 bg-white drop-shadow-md">
       <div className="relative w-full h-56">
