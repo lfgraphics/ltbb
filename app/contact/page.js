@@ -5,7 +5,6 @@ const page = () => {
   return (
   <React.Fragment>
     <Contact/>
-    
   </React.Fragment>
   )
 }

@@ -7,6 +7,7 @@ import HowWeWork from "@/components/home/HowWeWork";
 import OurMissionAndVisions from "@/components/home/OurMissionAndVisions";
 import BlogSection from "@/components/home/BlogSection";
 import Testimonials from "@/components/home/Testimonials";
+import ContactSection from "@/components/home/ContactSection";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <OurMissionAndVisions />
       <BlogSection />
       <Testimonials />
+      <ContactSection/>
     </React.Fragment>
   );
 }
