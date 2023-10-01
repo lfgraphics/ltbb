@@ -45,7 +45,7 @@ const Navbar = () => {
   // toggleCart() 
   return (
     <React.Fragment>
-      <header className=" w-full fixed top-0 z-30 border-b navbar pb-4 shadow-md ">
+      <header className=" w-full sticky top-0 z-30 border-b navbar pb-4 shadow-md ">
         <div className="mx-auto flex w-5/6 items-center justify-between">
           <div className="inline-flex space-x-2 logo-container logo">
             <span>         
@@ -62,12 +62,12 @@ const Navbar = () => {
             <ul className="inline-flex space-x-8">
               {menuItems.map((item) => (
                 <li key={item.name}>
-                  <a
+                  <Link
                     href={item.href}
                     className="text-sm text-gray-800 hover:text-black"
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
               <li>

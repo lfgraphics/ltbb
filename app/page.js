@@ -1,12 +1,26 @@
-import Image from 'next/image'
-import React from 'react'
-import CommingSoon from '@/components/CommingSoon'
+import React from "react";
+import Banner from "@/components/home/Banner";
+import AnimatedShape from "@/components/service/AnimatedShape";
+import HomeAchievements from "@/components/home/HomeAchievements";
+import LegalSolutions from "@/components/home/LegalSolutions";
+import HowWeWork from "@/components/home/HowWeWork";
+import OurMissionAndVisions from "@/components/home/OurMissionAndVisions";
+import BlogSection from "@/components/home/BlogSection";
+import Testimonials from "@/components/home/Testimonials";
+import ContactSection from "@/components/home/ContactSection";
 
 export default function Home() {
   return (
     <React.Fragment>
-      <CommingSoon></CommingSoon>
-      {/* <Landing></Landing> */}
+      <Banner />
+      <AnimatedShape background="#EFF2FF" />
+      <HomeAchievements />
+      <LegalSolutions />
+      <HowWeWork />
+      <OurMissionAndVisions />
+      <BlogSection />
+      <Testimonials />
+      <ContactSection/>
     </React.Fragment>
-  )
+  );
 }
