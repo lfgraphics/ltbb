@@ -1,3 +1,4 @@
+import { MoveLeft, MoveRight } from "lucide-react";
 import TestimonialSlider from "./TestimonialSlider";
 
 export default function Testimonials() {
@@ -8,6 +9,7 @@ export default function Testimonials() {
         <p className="text-gray-300">What our clients says </p>
       </div>
       <TestimonialSlider />
+      <div className="text-center flex items-center justify-center gap-3 text-white md:hidden"><MoveLeft/> Scroll to see more <MoveRight/></div>
     </section>
   );
 }
