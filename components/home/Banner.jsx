@@ -34,7 +34,7 @@ export default function Banner() {
   }, [inView, bannerIndex]);
 
   return (
-    <div className="lg:min-h-[85vh] md:min-h-[60vh] sm:min-h-[75vh] py-10 flex flex-col xl:min-h-fit justify-center gap-20 bg-homeBg homeClipPath px-[5%]">
+    <div className=" py-10 flex flex-col min-h-fit justify-center gap-20 bg-homeBg homeClipPath px-[5%]">
       <div className="flex flex-col-reverse sm:flex-row gap-12 items-center h-full md:pt-10">
         <div className="flex-1" ref={setRefs}>
           <BannerContent content={bannerHeading[bannerIndex]} />
