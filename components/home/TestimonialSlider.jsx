@@ -8,7 +8,7 @@ import TestimonialsCard from "./TestimonialsCard";
 import { homeTestimonialsData } from "@/constants/homeTestimonialsData";
 export default function TestimonialSlider() {
   return (
-    <div className="flex justify-between gap-8 py-10 ">
+    <div className="flex justify-between gap-8 py-10 testimonials">
       <Swiper
         spaceBetween={30}
         loop={true}
