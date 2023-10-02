@@ -15,7 +15,7 @@ export default function HomeAchievements() {
           return (
             <div
               key={id}
-              className={`flex-1 border-r-2 border-[#EAECF0] ${
+              className={`flex-1 border-r-0 md:border-r-2 border-[#EAECF0] ${
                 id === homeAchievementData.length && "border-none"
               }`}
             >

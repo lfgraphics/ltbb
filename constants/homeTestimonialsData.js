@@ -7,7 +7,7 @@ export const homeTestimonialsData = [
   },
   {
     id: 2,
-    review:"TLB continues to be recommended for the contract management services. Their team spirit and internal delivery model is the backbone for their timely and quality delivery and makes them one of the best in their field , if not the best. Good luck to them !",
+    review:"TLB continues to be recommended for the contract management services. Their team spirit and internal delivery model is the backbone for their timely and quality delivery and makes them one of the best in their field , if not the best. Good luck to them!",
     name: "Mary Long",
     designation: "Founder Partner , Leading Law Firm,New York",
   },

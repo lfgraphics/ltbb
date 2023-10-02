@@ -18,6 +18,7 @@ export default function LegalSearchCard({ data }) {
           fill
           className=" object-cover"
           alt={title}
+          priority
         />
       </div>
       <div className="relative text-white h-full text-center flex flex-col justify-end py-2 legalOverlay px-2">
