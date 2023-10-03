@@ -1,7 +1,7 @@
 import { homeAchievementData } from "@/constants/homeAchievementsData";
 export default function HomeAchievements() {
   return (
-    <section className="mb-16 py-10 px-[5%]">
+    <section className="mb-16 py-16 px-[5%]">
       <div className="text-center">
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black">
           TLB’S ACHIEVEMENTS

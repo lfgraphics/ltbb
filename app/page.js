@@ -13,7 +13,6 @@ export default function Home() {
   return (
     <React.Fragment>
       <Banner />
-      <AnimatedShape background="#EFF2FF" />
       <HomeAchievements />
       <LegalSolutions />
       <HowWeWork />
