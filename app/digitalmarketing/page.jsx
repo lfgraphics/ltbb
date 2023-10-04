@@ -192,7 +192,7 @@ export default function DigitalMarketing() {
           </div>
         </div>
 
-        <div className="w-full px-5 h-[600px] mt-12">
+        <div className="w-full px-0 h-screen mt-12 flex justify-center items-center">
           <Carousel/>
         </div>
 
@@ -222,24 +222,39 @@ export default function DigitalMarketing() {
         </div>
 
         <div className="flex flex-col gap-6 mt-12">
-          <div className="flex gap-5">
-            <div>ICON</div>
+          <div className="flex gap-5 items-center">
+          <img
+              src="/digital-marketing/icons/market-research 1.png"
+              className="h-[65px] w-[65px] lg:h-[100px] lg:w-[100px]"
+            />
             <p className="text-lg lg:text-2xl">1. Conduct market research on your intended audience.</p>
           </div>
-          <div className="flex gap-5">
-            <div></div>
+          <div className="flex gap-5 items-center">
+          <img
+              src="/digital-marketing/icons/goal 1.png"
+              className="h-[65px] w-[65px] lg:h-[100px] lg:w-[100px]"
+            />
             <p className="text-lg lg:text-2xl">2. Establish your digital marketing objectives.</p>
           </div>
-          <div className="flex gap-5">
-            <div></div>
+          <div className="flex gap-5 items-center">
+          <img
+              src="/digital-marketing/icons/social-media 1.png"
+              className="h-[65px] w-[65px] lg:h-[100px] lg:w-[100px]"
+            />
             <p className="text-lg lg:text-2xl">3. Which marketing channels are most effective for lawyers?</p>
           </div>
-          <div className="flex gap-5">
-            <div></div>
+          <div className="flex gap-5 items-center">
+          <img
+              src="/digital-marketing/icons/profit 1.png"
+              className="h-[65px] w-[65px] lg:h-[100px] lg:w-[100px]"
+            />
             <p className="text-lg lg:text-2xl">4. Design an SEO-friendly legal office website that turns visitors into clients.</p>
           </div>
-          <div className="flex gap-5">
-            <div></div>
+          <div className="flex gap-5 items-center">
+          <img
+              src="/digital-marketing/icons/evaluation (1) 1.png"
+              className="h-[65px] w-[65px] lg:h-[100px] lg:w-[100px]"
+            />
             <p className="text-lg lg:text-2xl">5. Evaluate the effectiveness of your digital marketing plan.</p>
           </div>
         </div>
