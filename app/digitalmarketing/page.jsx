@@ -78,7 +78,7 @@ export default function DigitalMarketing() {
             </div>
 
             <div
-              className="w-full rounded-lg lg:rounded-2xl flex gap-5 md:p-8 md:py-16 p-4 lg:gap-8"
+              className="w-full rounded-lg lg:rounded-2xl mt-3 flex gap-5 md:p-8 md:py-16 p-4 lg:gap-8"
               style={{ boxShadow: " -1px 1px 9px 0px rgba(0,0,0,0.75)" }}
             >
               <div className="w-[200px] h-[200px]">
@@ -100,7 +100,7 @@ export default function DigitalMarketing() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-6 mt-16 md:flex-row items-stretch lg:gap-32">
+        <div className="flex flex-col gap-6 mt-5 lg:mt-16 md:flex-row items-stretch lg:gap-32">
           <img
             src="/digital-marketing/digital-marketing-4.webp"
             className="w-full h-[425px] lg:h-auto lg:max-h-[calc(100vh-20vh)] grow object-cover rounded-xl order-2"
@@ -126,7 +126,7 @@ export default function DigitalMarketing() {
             </div>
 
             <div
-              className="w-full rounded-lg lg:rounded-2xl flex gap-5 md:p-8 md:py-16 p-4 lg:gap-8"
+              className="w-full rounded-lg lg:rounded-2xl mt-3 flex gap-5 md:p-8 md:py-16 p-4 lg:gap-8"
               style={{ boxShadow: " -1px 1px 9px 0px rgba(0,0,0,0.75)" }}
             >
               <div className="w-[200px] h-[200px]">
