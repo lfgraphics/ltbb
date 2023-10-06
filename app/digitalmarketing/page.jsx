@@ -17,14 +17,14 @@ export default function DigitalMarketing() {
               src="/digital-marketing/digital-marketing-1.webp"
               width={800}
               height={600}
-              className="w-full"
+              className="w-full lg:w-[80%]"
             />
           </div>
-          <div className="flex flex-col w-full lg:w-2/4 lg:gap-24">
-            <h2 className="text-2xl lg:text-4xl font-semibold leading-loose">
+          <div className="flex flex-col w-full lg:w-2/4 lg:gap-8 gap-2">
+            <h2 className="text-xl lg:text-3xl font-semibold">
               Why Outsource Digital Marketing Services to TLB?
             </h2>
-            <p className="text-lg lg:text-2xl">
+            <p className="lg:text-2xl">
               We offer legal industry specific and custom solutions that help
               take your law firm or legal practice to the next level.
             </p>
@@ -40,7 +40,7 @@ export default function DigitalMarketing() {
             />
           </div>
           <div className="flex flex-col w-full lg:w-3/4">
-            <p className="text-lg lg:text-2xl">
+            <p className="lg:text-2xl">
               At TLB, we take the time to research our clients, their
               industries, and their competition. We do this because we want our
               client’s law firm to get relevant and industry-tailored digital
@@ -56,19 +56,19 @@ export default function DigitalMarketing() {
             src="/digital-marketing/digital-marketing-3.webp"
             className="w-full h-[425px] lg:h-auto lg:max-h-[calc(100vh-20vh)] grow object-cover rounded-xl"
           />
-          <div className="flex flex-col justify-between grow gap-2 md:gap-6 lg:gap-10">
+          <div className="flex flex-col justify-evenly grow gap-2 md:gap-6 lg:gap-10">
             <div
-              className="w-full rounded-lg lg:rounded-2xl flex gap-5 md:p-8 md:py-16 p-4 lg:gap-8"
+              className="w-full rounded-lg lg:rounded-2xl flex gap-5 md:p-8 md:py-10 xl:py-16 p-4 lg:gap-8"
               style={{ boxShadow: " -1px 1px 9px 0px rgba(0,0,0,0.75)" }}
             >
-              <div className="w-[200px] h-[200px]">
-                <FontAwesomeIcon icon={faSquareCheck} fixedWidth className="h-[50px] w-[50px] md:h-[75px] md:w-[75px] xl:h-[100px] xl:w-[100px]" />
+              <div className="w-[200px]  ">
+                <FontAwesomeIcon icon={faSquareCheck} fixedWidth className="h-[50px] w-[50px] lg:h-[75px] lg:w-[75px] " />
               </div>
               <div>
-                <h2 className="text-2xl lg:text-4xl font-semibold leading-none text-start">
+                <h2 className="text-xl lg:text-3xl font-semibold leading-none text-start">
                   Client-Centric Service
                 </h2>
-                <p className="text-lg lg:text-2xl mt-5">
+                <p className="lg:text-2xl mt-2 lg:mt-5">
                   We give our clients constant consultation by giving them a
                   professional account manager to handle all of their needs. To
                   maintain seamless communication, our clients will always have
@@ -78,17 +78,17 @@ export default function DigitalMarketing() {
             </div>
 
             <div
-              className="w-full rounded-lg lg:rounded-2xl mt-3 flex gap-5 md:p-8 md:py-16 p-4 lg:gap-8"
+              className="w-full rounded-lg lg:rounded-2xl mt-3 flex gap-5 md:p-8 md:py-10 xl:py-16 p-4 lg:gap-8"
               style={{ boxShadow: " -1px 1px 9px 0px rgba(0,0,0,0.75)" }}
             >
-              <div className="w-[200px] h-[200px]">
-                <FontAwesomeIcon icon={faSquareCheck} fixedWidth className="h-[50px] w-[50px] md:h-[75px] md:w-[75px] xl:h-[100px] xl:w-[100px]" />
+              <div className="w-[200px]  ">
+                <FontAwesomeIcon icon={faSquareCheck} fixedWidth className="h-[50px] w-[50px] lg:h-[75px] lg:w-[75px] " />
               </div>
               <div>
-                <h2 className="text-2xl lg:text-4xl font-semibold leading-none text-start">
+                <h2 className="text-xl lg:text-3xl font-semibold leading-none text-start">
                   Data-Driven Strategies
                 </h2>
-                <p className="text-lg lg:text-2xl mt-5">
+                <p className="lg:text-2xl mt-2 lg:mt-5">
                   In most of our efforts, we depend on research and in-depth
                   data analysis. Data,for us, may provide vital information that
                   few organizations in your sector have access to. In addition,
@@ -105,19 +105,19 @@ export default function DigitalMarketing() {
             src="/digital-marketing/digital-marketing-4.webp"
             className="w-full h-[425px] lg:h-auto lg:max-h-[calc(100vh-20vh)] grow object-cover rounded-xl order-2"
           />
-          <div className="flex flex-col justify-between grow gap-2 md:gap-6 lg:gap-10 order-1">
+          <div className="flex flex-col justify-evenly grow gap-2 md:gap-6 lg:gap-10 order-1">
             <div
-              className="w-full rounded-lg lg:rounded-2xl flex gap-5 md:p-8 md:py-16 p-4 lg:gap-8"
+              className="w-full rounded-lg lg:rounded-2xl flex gap-5 md:p-8 md:py-10 xl:py-16 p-4 lg:gap-8"
               style={{ boxShadow: " -1px 1px 9px 0px rgba(0,0,0,0.75)" }}
             >
-              <div className="w-[200px] h-[200px]">
-                <FontAwesomeIcon icon={faSquareCheck} fixedWidth className="h-[50px] w-[50px] md:h-[75px] md:w-[75px] xl:h-[100px] xl:w-[100px]" />
+              <div className="w-[200px]">
+                <FontAwesomeIcon icon={faSquareCheck} fixedWidth className="h-[50px] w-[50px] lg:h-[75px] lg:w-[75px] " />
               </div>
               <div>
-                <h2 className="text-2xl lg:text-4xl font-semibold leading-none text-start">
+                <h2 className="text-xl lg:text-3xl font-semibold leading-none text-start">
                   Transparency
                 </h2>
-                <p className="text-lg lg:text-2xl mt-5">
+                <p className="lg:text-2xl mt-2 lg:mt-5">
                   For our clients, we never hide or change information. Honesty
                   and integrity are two of our core principles at Thrive, and we
                   live up to them in our daily operations.
@@ -126,17 +126,17 @@ export default function DigitalMarketing() {
             </div>
 
             <div
-              className="w-full rounded-lg lg:rounded-2xl mt-3 flex gap-5 md:p-8 md:py-16 p-4 lg:gap-8"
+              className="w-full rounded-lg lg:rounded-2xl mt-3 flex gap-5 md:p-8 md:py-10 xl:py-16 p-4 lg:gap-8"
               style={{ boxShadow: " -1px 1px 9px 0px rgba(0,0,0,0.75)" }}
             >
-              <div className="w-[200px] h-[200px]">
-                <FontAwesomeIcon icon={faSquareCheck} fixedWidth className="h-[50px] w-[50px] md:h-[75px] md:w-[75px] xl:h-[100px] xl:w-[100px]" />
+              <div className="w-[200px]  ">
+                <FontAwesomeIcon icon={faSquareCheck} fixedWidth className="h-[50px] w-[50px] lg:h-[75px] lg:w-[75px] " />
               </div>
               <div>
-                <h2 className="text-2xl lg:text-4xl font-semibold leading-none text-start">
+                <h2 className="text-xl lg:text-3xl font-semibold leading-none text-start">
                   Innovative Approach
                 </h2>
-                <p className="text-lg lg:text-2xl mt-5">
+                <p className="lg:text-2xl mt-2 lg:mt-5">
                   We all know that the marketing sector is always evolving. TLB
                   encourages new approaches and is not afraid to test them to
                   discover whether they are better than what we are currently
@@ -149,17 +149,17 @@ export default function DigitalMarketing() {
         </div>
 
         <div
-          className="w-full rounded-lg lg:rounded-2xl flex gap-5 mt-12 md:p-8 md:py-16 p-4 lg:gap-8"
+          className="w-full rounded-lg lg:rounded-2xl flex gap-5 mt-12 md:p-8 md:py-10 xl:py-16 p-4 lg:gap-8"
           style={{ boxShadow: " -1px 1px 9px 0px rgba(0,0,0,0.75)" }}
         >
-          <div className="w-[200px] h-[200px]">
-            <FontAwesomeIcon icon={faSquareCheck} fixedWidth className="h-[50px] w-[50px] md:h-[75px] md:w-[75px] xl:h-[100px] xl:w-[100px]" />
+          <div className="w-[200px] ">
+            <FontAwesomeIcon icon={faSquareCheck} fixedWidth className="h-[50px] w-[50px] lg:h-[75px] lg:w-[75px] " />
           </div>
           <div>
-            <h2 className="text-2xl lg:text-4xl font-semibold leading-none text-start">
+            <h2 className="text-xl lg:text-3xl font-semibold leading-none">
               On-Time Delivery
             </h2>
-            <p className="text-lg lg:text-2xl mt-5">
+            <p className="lg:text-2xl mt-2 lg:mt-5">
               We are dedicated to providing the finest possible service to our
               clients. This involves always adhering to their timetables and
               deadlines. Our teams collaborate and use powerful project
@@ -177,11 +177,11 @@ export default function DigitalMarketing() {
               className="w-full"
             />
           </div>
-          <div className="flex flex-col w-full lg:w-3/4 lg:gap-24">
-            <h2 className="text-2xl lg:text-4xl font-semibold leading-loose">
+          <div className="flex flex-col w-full lg:w-3/4 lg:gap-10">
+            <h2 className="text-xl lg:text-3xl font-semibold leading-loose">
               TLB’s Digital Marketing Services
             </h2>
-            <p className="text-lg lg:text-2xl">
+            <p className="lg:text-2xl">
               Lawyers and attorneys at law firms frequently lack the time and
               resources to negotiate the complex and time-consuming realm of
               digital marketing. At TLB, we appreciate the necessity for law
@@ -192,11 +192,11 @@ export default function DigitalMarketing() {
           </div>
         </div>
 
-        <div className="w-full px-0 h-screen mt-12 flex justify-center items-center">
+        <div className="w-full h-[1200px] sm:h-[780px] lg:h-[880px] p-10 mt-24 overflow-x-hidden">
           <Carousel/>
         </div>
 
-        <div className="flex flex-col-reverse gap-6 mt-12 md:flex-row items-center lg:gap-32">
+        <div className="flex flex-col-reverse gap-6 mt-[40px] xl:mt-14 md:flex-row items-center lg:gap-32">
           <div className="w-full lg:w-1/4 rounded-lg order-2">
             <Image
               src="/digital-marketing/digital-marketing-6.webp"
@@ -205,8 +205,8 @@ export default function DigitalMarketing() {
               className="w-full"
             />
           </div>
-          <div className="flex flex-col w-full lg:w-3/4 lg:gap-24 order-1">
-            <h2 className="text-2xl lg:text-4xl font-semibold leading-loose">
+          <div className="flex flex-col w-full lg:w-3/4 lg:gap-8 order-1">
+            <h2 className="text-xl lg:text-3xl font-semibold leading-loose">
                 How we make Digital Marketing strategies for law firms
             </h2>
             <p className="text-lg lg:text-2xl">
