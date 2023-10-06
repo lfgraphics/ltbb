@@ -4,6 +4,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareCheck } from "@fortawesome/free-solid-svg-icons";
 import Carousel from "./Carousel";
+import PhoneCarousel from "./PhoneCarousel";
 
 
 export default function DigitalMarketing() {
@@ -192,8 +193,11 @@ export default function DigitalMarketing() {
           </div>
         </div>
 
-        <div className="w-full h-[1200px] sm:h-[780px] lg:h-[880px] p-10 mt-24 overflow-x-hidden">
+        <div className="hidden sm:block w-full sm:h-[780px] lg:h-[880px] p-10 mt-24 overflow-x-hidden">
           <Carousel/>
+        </div>
+        <div className="w-full p-2 mt-8 block sm:hidden">
+          <PhoneCarousel/>
         </div>
 
         <div className="flex flex-col-reverse gap-6 mt-[40px] xl:mt-14 md:flex-row items-center lg:gap-32">
