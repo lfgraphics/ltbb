@@ -2,7 +2,7 @@ import Hero from "@/components/digitalmarketing/Hero";
 import Image from "next/image";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSquareCheck } from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft, faArrowRight, faSquareCheck } from "@fortawesome/free-solid-svg-icons";
 import Carousel from "./Carousel";
 import PhoneCarousel from "./PhoneCarousel";
 
@@ -63,7 +63,7 @@ export default function DigitalMarketing() {
               style={{ boxShadow: " -1px 1px 9px 0px rgba(0,0,0,0.75)" }}
             >
               <div className="w-[200px]  ">
-                <FontAwesomeIcon icon={faSquareCheck} fixedWidth className="h-[50px] w-[50px] lg:h-[75px] lg:w-[75px] " />
+                <FontAwesomeIcon icon={faSquareCheck} fixedWidth className="h-[25px] w-[25px] lg:h-[50px] lg:w-[50px]" />
               </div>
               <div>
                 <h2 className="text-xl lg:text-3xl font-semibold leading-none text-start">
@@ -83,7 +83,7 @@ export default function DigitalMarketing() {
               style={{ boxShadow: " -1px 1px 9px 0px rgba(0,0,0,0.75)" }}
             >
               <div className="w-[200px]  ">
-                <FontAwesomeIcon icon={faSquareCheck} fixedWidth className="h-[50px] w-[50px] lg:h-[75px] lg:w-[75px] " />
+                <FontAwesomeIcon icon={faSquareCheck} fixedWidth className="h-[25px] w-[25px] lg:h-[50px] lg:w-[50px]" />
               </div>
               <div>
                 <h2 className="text-xl lg:text-3xl font-semibold leading-none text-start">
@@ -111,8 +111,8 @@ export default function DigitalMarketing() {
               className="w-full rounded-lg lg:rounded-2xl flex gap-5 md:p-8 md:py-10 xl:py-16 p-4 lg:gap-8"
               style={{ boxShadow: " -1px 1px 9px 0px rgba(0,0,0,0.75)" }}
             >
-              <div className="w-[200px]">
-                <FontAwesomeIcon icon={faSquareCheck} fixedWidth className="h-[50px] w-[50px] lg:h-[75px] lg:w-[75px] " />
+              <div>
+                <FontAwesomeIcon icon={faSquareCheck} fixedWidth className="h-[25px] w-[25px] lg:h-[50px] lg:w-[50px] " />
               </div>
               <div>
                 <h2 className="text-xl lg:text-3xl font-semibold leading-none text-start">
@@ -130,8 +130,8 @@ export default function DigitalMarketing() {
               className="w-full rounded-lg lg:rounded-2xl mt-3 flex gap-5 md:p-8 md:py-10 xl:py-16 p-4 lg:gap-8"
               style={{ boxShadow: " -1px 1px 9px 0px rgba(0,0,0,0.75)" }}
             >
-              <div className="w-[200px]  ">
-                <FontAwesomeIcon icon={faSquareCheck} fixedWidth className="h-[50px] w-[50px] lg:h-[75px] lg:w-[75px] " />
+              <div className="">
+                <FontAwesomeIcon icon={faSquareCheck} fixedWidth className="h-[25px] w-[25px] lg:h-[50px] lg:w-[50px] " />
               </div>
               <div>
                 <h2 className="text-xl lg:text-3xl font-semibold leading-none text-start">
@@ -153,8 +153,8 @@ export default function DigitalMarketing() {
           className="w-full rounded-lg lg:rounded-2xl flex gap-5 mt-12 md:p-8 md:py-10 xl:py-16 p-4 lg:gap-8"
           style={{ boxShadow: " -1px 1px 9px 0px rgba(0,0,0,0.75)" }}
         >
-          <div className="w-[200px] ">
-            <FontAwesomeIcon icon={faSquareCheck} fixedWidth className="h-[50px] w-[50px] lg:h-[75px] lg:w-[75px] " />
+          <div className="">
+            <FontAwesomeIcon icon={faSquareCheck} fixedWidth className="h-[25px] w-[25px] lg:h-[50px] lg:w-[50px]" />
           </div>
           <div>
             <h2 className="text-xl lg:text-3xl font-semibold leading-none">
@@ -193,11 +193,16 @@ export default function DigitalMarketing() {
           </div>
         </div>
 
-        <div className="hidden sm:block w-full sm:h-[780px] lg:h-[880px] p-10 mt-24 overflow-x-hidden">
+        <div className="hidden sm:block w-full sm:h-[800px] lg:h-[920px] p-8 mt-24">
           <Carousel/>
         </div>
         <div className="w-full p-2 mt-8 block sm:hidden">
           <PhoneCarousel/>
+          <div className="flex w-full justify-center items-center gap-2">
+            <FontAwesomeIcon icon={faArrowLeft} fixedWidth className="h-[14px] w-[14px] mt-2" />
+            <p className="text-sm font-semibold text-center mt-2"> Swipe for more </p>
+            <FontAwesomeIcon icon={faArrowRight} fixedWidth className="h-[14px] w-[14px] mt-2" />
+          </div>
         </div>
 
         <div className="flex flex-col-reverse gap-6 mt-[40px] xl:mt-14 md:flex-row items-center lg:gap-32">

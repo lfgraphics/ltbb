@@ -1,9 +1,7 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore from "swiper/core";
-import { Navigation, Pagination, Autoplay } from "swiper";
+import {  Pagination } from "swiper";
 import "swiper/css";
-import "swiper/css/navigation";
 import "swiper/css/pagination";
 import React from "react";
 
@@ -11,13 +9,9 @@ function PhoneCarousel() {
   return (
     <Swiper
       slidesPerView={1}
-      modules={[Navigation, Pagination,Autoplay]}
+      modules={[Pagination]}
       loop={true}
       pagination={true}
-      autoplay={{
-        delay: 1500,
-        disableOnInteraction: false,
-      }}
       style={{
         boxShadow: "0px 0px 9px 1px rgba(0, 0, 0, 0.75)",
         WebkitBoxShadow: "0px 0px 9px 1px rgba(0, 0, 0, 0.75)",
