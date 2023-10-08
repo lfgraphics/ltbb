@@ -20,10 +20,10 @@ export default function TestimonialSlider() {
         navigation={true}
         modules={[Pagination, Navigation]}
       >
-        {homeTestimonialsData?.map((item) => {
+        {homeTestimonialsData?.map((item,i) => {
           return (
             <SwiperSlide key={item.id}>
-              <TestimonialsCard data={item} />
+              <TestimonialsCard data={item} animationDelay={i*150}/>
             </SwiperSlide>
           );
         })}

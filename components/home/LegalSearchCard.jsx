@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react"; // Import useState
 
-export default function LegalSearchCard({ data }) {
+export default function LegalSearchCard({ data ,animationDelay}) {
   const { title, desc, learnMore, image } = data;
   const [isHovered, setIsHovered] = useState(false); // Use state to track hover
 
@@ -11,8 +11,14 @@ export default function LegalSearchCard({ data }) {
       className="flex-1 relative h-80 w-full sm:max-w-xs lg:max-w-full overflow-hidden rounded-md shadow-lg cursor-pointer"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      data-aos="zoom-in"
+      data-aos-delay={animationDelay}
     >
-      <div className={`absolute inset-0 ${isHovered && "scale-110"} transition duration-300 ease-in-out`}>
+      <div
+        className={`absolute inset-0 ${
+          isHovered && "scale-110"
+        } transition duration-300 ease-in-out`}
+      >
         <Image src={image} fill className="object-cover" alt={title} priority />
       </div>
       <div className="relative text-white h-full text-center flex flex-col justify-end py-2 legalOverlay px-2">

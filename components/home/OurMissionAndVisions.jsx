@@ -9,6 +9,7 @@ export default function OurMissionAndVisions() {
           “trusted partner” for corporates, law firms, and attorneys worldwide
           whilst professionally delivering legal services, process consulting to
           them, and operating as a seamless extension of their teams."
+        animationType="fade-right"
       />
       <OurMissionsAndVisionsCard
         title="Our Mission"
@@ -16,6 +17,7 @@ export default function OurMissionAndVisions() {
           competitive advantage at each stage of the legal service delivery
           process in order to generate superior long-term returns, while
           continuously focusing on protecting our client’s interests."
+        animationType="fade-left"
       />
     </div>
   );

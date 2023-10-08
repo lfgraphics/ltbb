@@ -16,7 +16,10 @@ export default function HowWeWork() {
   };
   return (
     <section className="px-[5%] py-10 md:py-16 ">
-      <h2 className="text-2xl md:text-3xl font-extrabold text-black">
+      <h2
+        className="text-2xl md:text-3xl font-extrabold text-black"
+        data-aos="fade-right"
+      >
         How We Work
       </h2>
       <div className="w-full mt-8 relative">

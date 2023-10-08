@@ -2,7 +2,6 @@
 import { useEffect, useState, useRef, useCallback } from "react";
 import { useInView } from "react-intersection-observer";
 import BannerContent from "./BannerContent";
-import BannerVideo from "./BannerVideo";
 import { bannerHeading } from "@/constants/bannerContentData";
 export default function Banner() {
   const [bannerIndex, setBannerIndex] = useState(1);
@@ -34,14 +33,21 @@ export default function Banner() {
   }, [inView, bannerIndex]);
 
   return (
-    <div className=" py-10 flex flex-col min-h-fit justify-center gap-20 bg-homeBg homeClipPath px-[5%]">
-      <div className="flex flex-col-reverse sm:flex-row gap-12 items-center h-full md:pt-10">
-        <div className="flex-1" ref={setRefs}>
-          <BannerContent content={bannerHeading[bannerIndex]} />
+    <section className="relative mt-8 h-[70vh] lg:h-[85vh] w-[90%] mx-auto  ">
+      <video className="w-full object-cover rounded-xl h-full " autoPlay muted>
+        <source
+          src="https://thelegalbase.com/wp-content/uploads/2022/07/My-Movie_Website.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col justify-center px-[5%] rounded-xl">
+        <div className="px-[5%]">
+          <div className="flex-1 max-w-2xl" ref={setRefs}>
+            <BannerContent content={bannerHeading[bannerIndex]} />
+          </div>
         </div>
-        <BannerVideo />
       </div>
-      <div className="flex mb-0 md:mb-8 justify-center gap-3 mt-10 lg:mt-0">
+      <div className="w-full flex justify-center gap-3 absolute bottom-8">
         {Array(3)
           .fill(1)
           .map((_, i) => {
@@ -56,6 +62,6 @@ export default function Banner() {
             );
           })}
       </div>
-    </div>
+    </section>
   );
 }

@@ -20,10 +20,10 @@ export default function LegalSearchSlider() {
         navigation={true}
         modules={[Pagination, Navigation]}
       >
-        {legalSearchData?.map((item) => {
+        {legalSearchData?.map((item, i) => {
           return (
             <SwiperSlide key={item.id}>
-              <LegalSearchCard data={item} />
+              <LegalSearchCard data={item} animationDelay={i * 150} />
             </SwiperSlide>
           );
         })}

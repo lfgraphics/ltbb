@@ -1,7 +1,11 @@
-export default function TestimonialsCard({ data }) {
+export default function TestimonialsCard({ data,animationDelay }) {
   const { review, name, designation } = data;
   return (
-    <div className="bg-white p-4 rounded-xl h-full flex flex-col justify-center">
+    <div
+      className="bg-white p-4 rounded-xl h-full flex flex-col justify-center"
+      data-aos="zoom-in"
+      data-aos-delay={animationDelay}
+    >
       <p>{review}</p>
       <div className="mt-3">
         <h4 className="text-black text-xl">{name}</h4>

@@ -22,6 +22,7 @@ export default function BannerContent({ content }) {
         variants={variants}
         animate={"show"}
         initial="hide"
+        className="min-h-fit"
       >
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold">{title}</h1>
         <p className="text-gray-300 h-36 md:h-20 mt-4">{bannerContent}</p>
