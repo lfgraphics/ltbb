@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react"; // Import useState
 
-export default function LegalSearchCard({ data ,animationDelay}) {
+export default function LegalSearchCard({ data, animationDelay }) {
   const { title, desc, learnMore, image } = data;
   const [isHovered, setIsHovered] = useState(false); // Use state to track hover
 

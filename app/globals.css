@@ -27,18 +27,28 @@ body {
   overflow-x: hidden;
   font-family: 'Varela Round', sans-serif;
 }
-h1,h2,h3,h4,h5,h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Outfit', sans-serif;
 }
+
 .cls-2 {
   fill: transparent;
 }
-.homeClipPath{
+
+.homeClipPath {
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
 }
-.legalOverlay{
-  background: rgba(0,0,0,0.3);
+
+.legalOverlay {
+  background: rgba(0, 0, 0, 0.3);
 }
+
 .swiper-pagination-bullets {
   display: none;
 }
@@ -50,11 +60,13 @@ h1,h2,h3,h4,h5,h6{
   display: flex;
 }
 
-@media (max-width:768px){
-  .homeClipPath{
+@media (max-width:768px) {
+  .homeClipPath {
     clip-path: none;
   }
-  .testimonials .swiper-button-prev,.testimonials .swiper-button-next{
+
+  .testimonials .swiper-button-prev,
+  .testimonials .swiper-button-next {
     display: none !important;
   }
 }

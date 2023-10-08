@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -15,12 +15,12 @@ export default function Home() {
   useEffect(() => {
     AOS.init({
       offset: 150,
-      delay: 0, 
+      delay: 0,
       duration: 500,
     });
   });
   return (
-    <React.Fragment>
+    <section className="overflow-hidden">
       <Banner />
       <HomeAchievements />
       <LegalSolutions />
@@ -29,6 +29,6 @@ export default function Home() {
       <BlogSection />
       <Testimonials />
       <ContactSection />
-    </React.Fragment>
+    </section>
   );
 }
