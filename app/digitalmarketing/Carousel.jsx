@@ -11,18 +11,16 @@ function Carousel() {
   useEffect(() => {
     handleRadioChange({ target: { id: "s2" } });
   }, []);
-  setInterval(() => {
-    if(activeSlide+1 == 6){
-      setActiveSlide(1)
-    }
-    else {
-      handleRadioChange({ target: { id: `s${activeSlide+1}` } });
-      setActiveSlide(activeSlide+1);
-    }
-    
-  }, 3000);
 
-  
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const nextSlide = activeSlide === 5 ? 1 : activeSlide + 1;
+      setActiveSlide(nextSlide);
+    }, 3000); 
+    return () => {
+      clearInterval(interval);
+    };
+  }, [activeSlide]);
 
 
   return (
