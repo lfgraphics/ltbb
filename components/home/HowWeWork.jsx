@@ -34,7 +34,7 @@ export default function HowWeWork() {
           className="w-full object-cover rounded-xl max-h-[80vh]"
         >
           <source
-            src="https://thelegalbase.com/wp-content/uploads/2022/06/TLB-Services.mp4"
+            src="/TLB Services.mp4"
             type="video/mp4"
           />
         </video>

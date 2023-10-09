@@ -34,7 +34,7 @@ export default function Banner() {
 
   return (
     <section className="relative mt-8 h-[70vh] lg:h-[85vh] w-[90%] mx-auto  ">
-      <video className="w-full object-cover rounded-xl h-full " autoPlay muted>
+      <video className="w-full object-cover rounded-xl h-full " autoPlay muted loop>
         <source
           src="https://thelegalbase.com/wp-content/uploads/2022/07/My-Movie_Website.mp4"
           type="video/mp4"
@@ -55,9 +55,8 @@ export default function Banner() {
               <button
                 key={i}
                 onClick={() => handleContentChange(i)}
-                className={`md:w-3 md:h-3 md:rounded-full w-2 h-2 rounded-lg ${
-                  i === bannerIndex - 1 ? "bg-homeCTA" : "bg-gray-300"
-                }`}
+                className={`md:w-3 md:h-3 md:rounded-full w-2 h-2 rounded-lg ${i === bannerIndex - 1 ? "bg-homeCTA" : "bg-gray-300"
+                  }`}
               ></button>
             );
           })}
