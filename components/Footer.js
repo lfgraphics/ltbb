@@ -18,8 +18,8 @@ const Footer = () => {
             <li className="text-xs">
               <a href="mailto:contact@thelegalbase.com" className="hover:text-blue-700">
                 contact@thelegalbase.com
-              </a> <a href="tel:+17188653815" className="hover:text-blue-700">
-                (+1) 718 865 3815
+              </a> <a href="tel:+14159094205" className="hover:text-blue-700">
+                (+1) 415 909 4205
               </a>
             </li>
           </ul>
@@ -39,13 +39,19 @@ const Footer = () => {
           <h6 className="mt-3 font-bold">India</h6>
           <ul>
             <li>
-              <p className="text-xs">Office No 45, 12th Floor, iThum Tower, Block B, Galaxy Business Park, Sector 62, Noida – 201309 Uttar Pradesh, India</p>
+              <p className="text-xs">The Legal Base,
+                4th Floor - Bhavya Corporate Tower,
+                Vibhuti Khand,
+                Gomti Nagar,
+                Lucknow - 226010,
+                Uttar Pradesh,
+                India</p>
             </li>
             <li className="text-xs">
               <a href="mailto:contact@thelegalbase.com" className="hover:text-blue-700">
                 contact@thelegalbase.com
               </a> <a href="tel:+918287645230" className="hover:text-blue-700">
-                (+91) 828 764 5230
+                (+91) 956 910 7903
               </a>
             </li>
           </ul>
