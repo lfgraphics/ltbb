@@ -29,9 +29,10 @@ export default function BannerContent({ content }) {
       </motion.div>
       <Link
         href={link}
-        className="bg-homeCTA rounded-xl py-2 px-6 hover:opacity-90 max-w-fit"
+        className="bg-homeCTA mt-2 rounded-xl py-2 px-6 hover:opacity-90 max-w-fit"
+        scroll={false}
       >
-        Enquire Now
+        Inquire Now
       </Link>
     </div>
   );

@@ -3,6 +3,7 @@ import { useEffect, useState, useRef, useCallback } from "react";
 import { useInView } from "react-intersection-observer";
 import BannerContent from "./BannerContent";
 import { bannerHeading } from "@/constants/bannerContentData";
+import BannerVideo from "./BannerVideo";
 export default function Banner() {
   const [bannerIndex, setBannerIndex] = useState(1);
   const bannerRef = useRef();
@@ -24,7 +25,7 @@ export default function Banner() {
     let intervalID;
     if (inView) {
       intervalID = setInterval(() => {
-        setBannerIndex((prev) => (prev === 3 ? 1 : prev + 1));
+        setBannerIndex((prev) => (prev === 4 ? 1 : prev + 1));
       }, 4000);
     }
     return () => {
@@ -34,12 +35,7 @@ export default function Banner() {
 
   return (
     <section className="relative mt-8 h-[70vh] lg:h-[85vh] w-[90%] mx-auto  ">
-      <video className="w-full object-cover rounded-xl h-full " autoPlay muted loop>
-        <source
-          src="https://thelegalbase.com/wp-content/uploads/2022/07/My-Movie_Website.mp4"
-          type="video/mp4"
-        />
-      </video>
+      <BannerVideo />
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col justify-center px-[5%] rounded-xl">
         <div className="px-[5%]">
           <div className="flex-1 max-w-2xl" ref={setRefs}>
@@ -48,7 +44,7 @@ export default function Banner() {
         </div>
       </div>
       <div className="w-full flex justify-center gap-3 absolute bottom-8">
-        {Array(3)
+        {Array(4)
           .fill(1)
           .map((_, i) => {
             return (
