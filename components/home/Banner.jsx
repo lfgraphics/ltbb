@@ -34,7 +34,7 @@ export default function Banner() {
   }, [inView, bannerIndex]);
 
   return (
-    <section className="relative mt-8 h-[70vh] lg:h-[85vh] w-[90%] mx-auto  ">
+    <section className="relative mt-8 h-[88vh] lg:h-[85vh] w-[90%] mx-auto  ">
       <BannerVideo />
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col justify-center px-[5%] rounded-xl">
         <div className="px-[5%]">
