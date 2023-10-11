@@ -34,11 +34,11 @@ export default function Banner() {
   }, [inView, bannerIndex]);
 
   return (
-    <section className="relative mt-8 h-[88vh] lg:h-[85vh] w-[90%] mx-auto  ">
+    <section className="relative mt-8 h-[75vh] lg:h-[85vh] w-[90%] mx-auto  ">
       <BannerVideo />
-      <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col justify-center px-[5%] rounded-xl">
-        <div className="px-[5%]">
-          <div className="flex-1 max-w-2xl" ref={setRefs}>
+      <div className="absolute  inset-0 w-full h-full bg-black bg-opacity-50 flex flex-col justify-center px-[5%] rounded-xl">
+        <div className="relative">
+          <div className="max-w-2xl h-full" ref={setRefs}>
             <BannerContent content={bannerHeading[bannerIndex]} />
           </div>
         </div>

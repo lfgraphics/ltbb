@@ -16,7 +16,7 @@ export default function BannerContent({ content }) {
     },
   };
   return (
-    <div className="flex flex-1 w-full flex-col gap-3 text-white">
+    <div className="flex w-full flex-col  gap-3 text-white">
       <motion.div
         key={title}
         variants={variants}
@@ -25,11 +25,11 @@ export default function BannerContent({ content }) {
         className="min-h-fit"
       >
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold">{title}</h1>
-        <p className="text-gray-300 h-36 md:h-20 mt-4">{bannerContent}</p>
+        <p className="text-gray-300 mt-4">{bannerContent}</p>
       </motion.div>
       <Link
         href={link}
-        className="bg-homeCTA mt-2 rounded-xl py-2 px-6 hover:opacity-90 max-w-fit"
+        className="bg-homeCTA rounded-xl py-2 px-6 hover:opacity-90 max-w-fit"
         scroll={false}
       >
         Inquire Now
