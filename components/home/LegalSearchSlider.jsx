@@ -26,7 +26,6 @@ export default function LegalSearchSlider() {
             500: { slidesPerView: 2 },
             768: { slidesPerView: 3 },
           }}
-          watchSlidesVisibility={true}
           navigation={{ nextEl: ".arrow-right", prevEl: ".arrow-left" }}
           autoHeight={true}
           loop

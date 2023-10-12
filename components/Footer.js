@@ -2,10 +2,10 @@ import 'tailwindcss/tailwind.css';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-200 w-full flex justify-center p-4 text-black">
+    <footer className="bg-[#181C31] w-full flex justify-center p-4 text-white">
       <div className="w-full flex flex-col md:flex-row">
         <div className="my-4 md:w-1/3 border-r border-r-gray-500 pl-6 pr-6 xs-border-none">
-          <div className="my-4 md:w-1/3">
+          <div className="my-4 md:w-1/3 bg-white">
             <img src="The_Legal Base-logos_black.png" alt="The Legal Base Logo" className="w-full m-auto block sm:mx-auto sm:w-80" />
           </div>
           <h3 className="text-lg font-bold">Contact Us</h3>

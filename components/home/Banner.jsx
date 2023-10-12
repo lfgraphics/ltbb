@@ -34,29 +34,31 @@ export default function Banner() {
   }, [inView, bannerIndex]);
 
   return (
-    <section className="relative mt-8 h-[75vh] lg:h-[85vh] w-[90%] mx-auto  ">
-      <BannerVideo />
-      <div className="absolute  inset-0 w-full h-full bg-black bg-opacity-50 flex flex-col justify-center px-[5%] rounded-xl">
-        <div className="relative">
-          <div className="max-w-2xl h-full" ref={setRefs}>
-            <BannerContent content={bannerHeading[bannerIndex]} />
+    <section className="bg-white py-8">
+      <section className="relative h-[75vh] lg:h-[85vh] w-[90%] mx-auto">
+        <BannerVideo />
+        <div className="absolute  inset-0 w-full h-full bg-black bg-opacity-50 flex flex-col justify-center px-[5%] rounded-xl">
+          <div className="relative">
+            <div className="max-w-2xl h-full" ref={setRefs}>
+              <BannerContent content={bannerHeading[bannerIndex]} />
+            </div>
           </div>
         </div>
-      </div>
-      <div className="w-full flex justify-center gap-3 absolute bottom-8">
-        {Array(4)
-          .fill(1)
-          .map((_, i) => {
-            return (
-              <button
-                key={i}
-                onClick={() => handleContentChange(i)}
-                className={`md:w-3 md:h-3 md:rounded-full w-2 h-2 rounded-lg ${i === bannerIndex - 1 ? "bg-homeCTA" : "bg-gray-300"
-                  }`}
-              ></button>
-            );
-          })}
-      </div>
+        <div className="w-full flex justify-center gap-3 absolute bottom-8">
+          {Array(4)
+            .fill(1)
+            .map((_, i) => {
+              return (
+                <button
+                  key={i}
+                  onClick={() => handleContentChange(i)}
+                  className={`md:w-3 md:h-3 md:rounded-full w-2 h-2 rounded-lg ${i === bannerIndex - 1 ? "bg-homeCTA" : "bg-gray-300"
+                    }`}
+                ></button>
+              );
+            })}
+        </div>
+      </section>
     </section>
   );
 }

@@ -23,10 +23,9 @@ export default function TestimonialSlider() {
           spaceBetween={30}
           breakpoints={{
             600: { slidesPerView: 1 },
-           700: { slidesPerView: 2 },
-           1024: { slidesPerView: 3 },
+            700: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
           }}
-          watchSlidesVisibility={true}
           navigation={{ nextEl: ".arrow-right", prevEl: ".arrow-left" }}
           autoHeight={true}
           loop

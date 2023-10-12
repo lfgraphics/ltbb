@@ -12,10 +12,11 @@ export default function HowWeWork() {
     } else {
       videoRef.current.pause();
       setIsPlaying(false);
-    }
-  };
+    };
+  }
+
   return (
-    <section className="px-[5%] py-10 md:py-16 ">
+    <section className="px-[5%] py-10 md:py-16 bg-white">
       <h2
         className="text-2xl md:text-3xl font-extrabold text-black"
         data-aos="fade-right"
@@ -31,7 +32,7 @@ export default function HowWeWork() {
         </button>
         <video
           ref={videoRef}
-          className="w-full object-cover rounded-xl max-h-[80vh]"
+          className={`w-full object-cover rounded-xl max-h-[80vh]`}
         >
           <source
             src="/TLB Services.mp4"

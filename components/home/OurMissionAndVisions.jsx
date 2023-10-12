@@ -2,7 +2,7 @@ import OurMissionsAndVisionsCard from "./OurMissionsAndVisionsCard";
 
 export default function OurMissionAndVisions() {
   return (
-    <div className="flex flex-col md:flex-row mb-10 justify-between items-start px-[5%] text-black gap-3 md:gap-6">
+    <div className="flex flex-col md:flex-row pb-10 justify-between items-start px-[5%] text-black gap-3 md:gap-6 bg-white">
       <OurMissionsAndVisionsCard
         title="Our Vision"
         desc="The Legal Base was founded with a vision to establish itself as a
