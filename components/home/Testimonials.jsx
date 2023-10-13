@@ -9,9 +9,6 @@ export default function Testimonials() {
         <p className="">What our clients says </p>
       </div>
       <TestimonialSlider />
-      {/* <div className="text-center flex items-center justify-center gap-3  md:hidden text-black">
-        <MoveLeft /> Scroll to see more <MoveRight />
-      </div> */}
     </section>
   );
 }

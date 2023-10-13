@@ -5,6 +5,7 @@ import SwiperCore, {
   Scrollbar,
   A11y,
   EffectFade,
+  Autoplay,
 } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -13,7 +14,7 @@ import "swiper/css/navigation";
 import TestimonialsCard from "./TestimonialsCard";
 import { homeTestimonialsData } from "@/constants/homeTestimonialsData";
 
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, EffectFade]);
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, EffectFade, Autoplay]);
 
 export default function TestimonialSlider() {
   return (
@@ -22,13 +23,17 @@ export default function TestimonialSlider() {
         <Swiper
           spaceBetween={30}
           breakpoints={{
-            600: { slidesPerView: 1 },
-            700: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
+            800: { slidesPerView: 1 },
+            820: { slidesPerView: 2 },
+            1400: { slidesPerView: 3 },
           }}
           navigation={{ nextEl: ".arrow-right", prevEl: ".arrow-left" }}
           autoHeight={true}
           loop
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
         >
           {homeTestimonialsData?.map((item, i) => {
             return (
