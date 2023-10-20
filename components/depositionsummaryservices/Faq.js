@@ -21,20 +21,6 @@ const Faq = () => {
             TLB’s Deposition Summary Services
           </h2>
           <div className="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 divide-gray-700">
-            {/* {faqData.map((item, index) => (
-              <details
-                key={index}
-                open={index === openQuestionIndex}
-                onToggle={() => handleQuestionToggle(index)}
-              >
-                <summary className="py-2 outline-none cursor-pointer focus:underline">
-                  {item.question}
-                </summary>
-                <div className="px-4 pb-4">
-                  <p>{item.answer}</p>
-                </div>
-              </details>
-            ))} */}
             {faqData.map((item, index) => (
               <div key={index} className=" ">
                 <button
