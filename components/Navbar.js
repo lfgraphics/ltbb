@@ -131,7 +131,7 @@ const Navbar = () => {
           </div>
 
           <div className="hidden lg:block overflow-x-hidden">
-            <ul className="inline-flex space-x-8">
+            <ul className="inline-flex space-x-10">
               {menuItems.map((item) => (
                 <li key={item.name}>
                   <Link
@@ -144,18 +144,17 @@ const Navbar = () => {
                   </Link>
                   {item?.children && (
                     <div
-                      className={`absolute top-10  transition duration-500 ${
-                        showDropdown && item.name === hoveredLink?.name
-                          ? "scale-100"
-                          : "scale-0"
-                      }`}
+                      className={`absolute top-10  transform origin-top-left transition duration-500 ${showDropdown && item.name === hoveredLink?.name
+                        ? "scale-100"
+                        : "scale-0"
+                        }`}
                       onMouseEnter={() => handleShowDropdown(item)}
                       onMouseLeave={hideDropdown}
                     >
                       <ul className="bg-white py-4  px-6 mt-6 rounded-xl flex flex-col gap-2 shadow-lg ">
                         {item?.children?.map((item) => {
                           return (
-                            <li key={item.name}>
+                            <li key={item.name} onClick={hideDropdown}>
                               <Link
                                 href={item.href}
                                 className="text-sm text-gray-800 hover:text-gray-500 transition duration-300"
