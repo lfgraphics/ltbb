@@ -11,11 +11,10 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import LegalSearchCard from "./LegalSearchCard";
-import { legalSearchData } from "@/constants/legalSearchData";
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, EffectFade]);
 
-export default function LegalSearchSlider() {
+export default function ServicesSlider({ data }) {
   return (
     <div className="relative mt-8 px-[5%]">
       <div className="relative w-full sm:w-[90%] lg:w-[95%] mx-auto">
@@ -30,7 +29,7 @@ export default function LegalSearchSlider() {
           autoHeight={true}
           loop
         >
-          {legalSearchData?.map((item, i) => {
+          {data?.map((item, i) => {
             return (
               <SwiperSlide key={item.id}>
                 <LegalSearchCard data={item} animationDelay={i * 150} />

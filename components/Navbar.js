@@ -3,98 +3,9 @@ import React, { useState, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
+import { menuItems } from "@/constants/navigationData";
 const Navbar = () => {
-  const menuItems = [
-    {
-      name: "Legal Services",
-      href: "/",
-      children: [
-        {
-          id: 1,
-          name: "Case Intake Services",
-          href: "/caseintakeservices",
-        },
-        {
-          id: 2,
-          name: "Contract Management",
-          href: "/contractmanagement",
-        },
-        {
-          id: 3,
-          name: "Global Immigration Management",
-          href: "/globalimigration",
-        },
-        {
-          id: 4,
-          name: "Paralegal Services",
-          href: "/paralegalservices",
-        },
-        {
-          id: 5,
-          name: "Personal Injury",
-          href: "/personalinjury",
-        },
-        {
-          id: 6,
-          name: "Family Law Services",
-          href: "/familylawservices",
-        },
-        {
-          id: 7,
-          name: "Legal Research Services",
-          href: "/legalresearch",
-        },
-        {
-          id: 8,
-          name: "Litigation Support",
-          href: "/litigationsupport",
-        },
-        {
-          id: 9,
-          name: "Estate Planning Services",
-          href: "/estate",
-        },
-        {
-          id: 10,
-          name: "Deposition Summary Services",
-          href: "/depositionsummaryservices",
-        },
-        {
-          id: 11,
-          name: "Managed Document Review Service",
-          href: "/manageddocumentreviewservice",
-        },
-      ],
-    },
-    {
-      name: "Managed Services",
-      href: "/",
-      children: [
-        {
-          id: 1,
-          name: "Be Spoke IT Solutions",
-          href: "/",
-        },
-        {
-          id: 2,
-          name: "Digital Marketing",
-          href: "/",
-        },
-      ],
-    },
-    {
-      name: "AboutUs",
-      href: "/about",
-    },
-    {
-      name: "ContactUs",
-      href: "/contact",
-    },
-    {
-      name: "Repository",
-      href: "#",
-    },
-  ];
+
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [showDropdown, setShowDropdown] = React.useState(false);
   const [hoveredLink, setHoveredLink] = useState(null);
@@ -213,7 +124,7 @@ const Navbar = () => {
                   <div className="mt-6">
                     <nav className="grid gap-y-4">
                       {menuItems.map((item) => (
-                        <a
+                        <Link
                           key={item.name}
                           href={item.href}
                           className="-m-3 flex items-center rounded-md p-3 text-sm font-semibold hover:bg-gray-50"
@@ -221,7 +132,7 @@ const Navbar = () => {
                           <span className="ml-3 text-base font-medium text-gray-900">
                             {item.name}
                           </span>
-                        </a>
+                        </Link>
                       ))}
                     </nav>
                   </div>

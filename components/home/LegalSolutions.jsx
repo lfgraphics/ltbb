@@ -1,4 +1,5 @@
-import LegalSearchSlider from "./LegalSearchSlider";
+import LegalSearchSlider from "./ServicesSlider";
+import { legalSearchData } from "@/constants/legalSearchData";
 
 export default function LegalSolutions() {
   return (
@@ -6,7 +7,7 @@ export default function LegalSolutions() {
       <h2 className="text-2xl md:text-3xl font-extrabold text-center  px-[5%]">
         Legal Services{" "}
       </h2>
-      <LegalSearchSlider />
+      <LegalSearchSlider data={legalSearchData} />
     </section>
   );
 }

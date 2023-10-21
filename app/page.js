@@ -10,6 +10,7 @@ import OurMissionAndVisions from "@/components/home/OurMissionAndVisions";
 import BlogSection from "@/components/home/BlogSection";
 import Testimonials from "@/components/home/Testimonials";
 import ContactSection from "@/components/home/ContactSection";
+import ManagedServices from "@/components/home/ManagedServices";
 
 export default function Home() {
   useEffect(() => {
@@ -24,6 +25,7 @@ export default function Home() {
       <Banner />
       <HomeAchievements />
       <LegalSolutions />
+      <ManagedServices />
       <HowWeWork />
       <OurMissionAndVisions />
       <BlogSection />
