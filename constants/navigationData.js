@@ -58,6 +58,16 @@ export const menuItems = [
                 name: "Managed Document Review Service",
                 href: "/manageddocumentreviewservice",
             },
+            {
+                id: 12,
+                name: "M_A Diligence Services",
+                href: "/"
+            },
+            {
+                id: 13,
+                name: "Global IP Research & Consultation Services",
+                href: "/"
+            }
         ],
     },
     {
@@ -66,12 +76,12 @@ export const menuItems = [
         children: [
             {
                 id: 1,
-                name: "Bespoke IT Solutions",
+                name: "Bespoke IT Services",
                 href: "/",
             },
             {
                 id: 2,
-                name: "Digital Marketing",
+                name: "Digital Marketing Services for Law Firms",
                 href: "/",
             },
         ],

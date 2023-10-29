@@ -25,7 +25,7 @@ export default function ServicesSlider({ data }) {
             500: { slidesPerView: 2 },
             768: { slidesPerView: 3 },
           }}
-          navigation={{ nextEl: ".arrow-right", prevEl: ".arrow-left" }}
+          navigation={{ nextEl: ".arrow-right-1", prevEl: ".arrow-left-1" }}
           autoHeight={true}
           loop
         >
@@ -39,18 +39,18 @@ export default function ServicesSlider({ data }) {
         </Swiper>
       </div>
 
-      <button className="arrow-left hidden sm:block absolute bg-[#4E6BFF] rounded-full p-2 text-white top-[40%] translate-y-1/2  left-4">
+      <button className="arrow-left-1 hidden sm:block absolute bg-[#4E6BFF] rounded-full p-2 text-white top-[40%] translate-y-1/2  left-4">
         <MoveLeft />
       </button>
-      <button className="arrow-right hidden sm:block absolute bg-[#4E6BFF] rounded-full p-2 text-white top-[40%] translate-y-1/2 right-4">
+      <button className="arrow-right-1 hidden sm:block absolute bg-[#4E6BFF] rounded-full p-2 text-white top-[40%] translate-y-1/2 right-4">
         <MoveRight />
       </button>
 
       <div className="flex justify-center gap-6 sm:hidden mt-6">
-        <button className="arrow-left bg-[#4E6BFF] rounded-full p-2 text-white">
+        <button className="arrow-left-1 bg-[#4E6BFF] rounded-full p-2 text-white">
           <MoveLeft />
         </button>
-        <button className="arrow-right  bg-[#4E6BFF] rounded-full p-2 text-white">
+        <button className="arrow-right-1  bg-[#4E6BFF] rounded-full p-2 text-white">
           <MoveRight />
         </button>
       </div>

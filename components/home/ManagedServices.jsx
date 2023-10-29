@@ -1,4 +1,4 @@
-import LegalServicesSlider from "./ServicesSlider";
+import ManagedServicesSlider from "./ManagedServicesSlider";
 import { ManagedServicesData } from "@/constants/managedServicesData";
 
 export default function ManagedServices() {
@@ -7,7 +7,7 @@ export default function ManagedServices() {
             <h2 className="text-2xl md:text-3xl font-extrabold text-center  px-[5%]">
                 Managed Services{" "}
             </h2>
-            <LegalServicesSlider data={ManagedServicesData} />
+            <ManagedServicesSlider data={ManagedServicesData} />
         </section>
     );
 }

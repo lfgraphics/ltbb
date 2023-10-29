@@ -15,9 +15,8 @@ export default function LegalSearchCard({ data, animationDelay }) {
       data-aos-delay={animationDelay}
     >
       <div
-        className={`absolute inset-0 ${
-          isHovered && "scale-110"
-        } transition duration-300 ease-in-out`}
+        className={`absolute inset-0 ${isHovered && "scale-110"
+          } transition duration-300 ease-in-out`}
       >
         <Image src={image} fill className="object-cover" alt={title} priority />
       </div>
@@ -26,14 +25,15 @@ export default function LegalSearchCard({ data, animationDelay }) {
           {title}
         </h3>
         <div
-          className={`legalSearchCard ${
-            isHovered ? "-bottom-0 opacity-100" : "-bottom-full opacity-0"
-          } transition-all duration-300 ease-in-out flex flex-col gap-2 absolute left-0 text-start p-2 bg-[#0009]`}
-        >
-          <p className="text-gray-300">{desc}</p>
+          className={`legalSearchCard ${isHovered ? "-bottom-0 opacity-100 h-full" : "-bottom-full opacity-0"
+            } transition-all duration-300 ease-in-out flex flex-col gap-2 absolute left-0 text-start p-4  bg-homeCTA`}
+        >        <h3 className=" text-lg tracking-wide sm:text-xl md:text-2xl font-bold">
+            {title}
+          </h3>
+          <p className="text-white">{desc}</p>
           <Link
             href={learnMore}
-            className="p-2 bg-homeCTA max-w-fit rounded-md hover:opacity-80"
+            className="p-2 text-gray-300 max-w-fit rounded-md hover:opacity-80"
           >
             Learn More
           </Link>

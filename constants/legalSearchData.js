@@ -8,10 +8,10 @@ export const legalSearchData = [
   },
   {
     id: 2,
-    title: "Medico Legal",
-    desc: "The Legal Base brings you access to expert medico legal consultants possessing in-depth knowledge in field of personal injury.",
-    learnMore: "/personalinjury",
-    image: "/legal-solutions/personal-injury-card-bg.webp",
+    title: "Family Law Services",
+    desc: "Outsourced family law services refer to the practice of engaging external professionals or organizations to provide family law-related services on behalf of individuals or entities. Instead of hiring in-house legal staff, outsourcing to TLB allows law firms or attorneys to access specialized expertise and resources.",
+    learnMore: "/familylawservices",
+    image: "/Family Law/pexels-kindel-media-7979431.jpg",
   },
   {
     id: 3,
@@ -51,8 +51,43 @@ export const legalSearchData = [
   {
     id: 8,
     title: "Document Review",
-    desc: "TLB’s legal document review team has skilled document review attorneys and legal experts with an exceptional track of delivering accurate and effective document review services.",
+    desc: "Outsourced paralegal services involve contracting with a third-party provider like TLB to handle various legal support tasks and responsibilities typically performed by in-house paralegals. TLB is a specialized firm that employ paralegals with expertise in different areas of law.",
     learnMore: "/manageddocumentreviewservice",
     image: "/legal-solutions/document-review-card-bg.webp",
   },
+  {
+    id: 9,
+    title: "Case Intake Services",
+    desc: "TLB is a leading legal intake service provider and has helped several attorneys and practices grow their businesses and be successful in the competitive marketplace. We provide high-quality legal intake solutions that are customised to your exact needs and requirements.",
+    learnMore: "/caseintakeservices",
+    image: "/Case Intake/pexels-mohamed-hamdi-16282318.jpg",
+  },
+  {
+    id: 10,
+    title: "Paralegal Services",
+    desc: "Outsourced paralegal services involve contracting with a third-party provider like TLB to handle various legal support tasks and responsibilities typically performed by in-house paralegals. TLB is a specialized firm that employ paralegals with expertise in different areas of law.",
+    learnMore: "/paralegalservices",
+    image: "/Paralegal Services/pexels-dominika-roseclay-3839649.jpg",
+  },
+  {
+    id: 11,
+    title: "Personal Injury",
+    desc: "Outsourced personal injury support services involve engaging third-party providers like TLB to assist law firms and attorneys in handling various tasks and responsibilities related to personal injury cases. ",
+    learnMore: "/personalinjury",
+    image: "/legal-solutions/personal-injury-card-bg.webp",
+  },
+  {
+    id: 12,
+    title: "Global IP Research & Consultation",
+    desc: "TLB has a dedicated team of paralegals that can help you with a wide range of paralegal services, including legal research, drafting, and document review.",
+    learnMore: "/personalinjury",
+    image: "/legal-solutions/personal-injury-card-bg.webp",
+  },
+  {
+    id: 13,
+    title: "M_A Diligence Services",
+    desc: "TLB has a dedicated team of paralegals that can help you with a wide range of paralegal services, including legal research, drafting, and document review.",
+    learnMore: "/",
+    image: "/Legal Research/pexels-anna-shvets-5324926.jpg",
+  }
 ];
