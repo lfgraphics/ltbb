@@ -66,7 +66,7 @@ export const menuItems = [
             {
                 id: 13,
                 name: "Global IP Research & Consultation Services",
-                href: "/"
+                href: "/globalipresearchandconsultationservices"
             }
         ],
     },
