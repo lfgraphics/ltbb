@@ -81,7 +81,7 @@ export const legalSearchData = [
     title: "Global IP Research & Consultation",
     desc: "TLB has a dedicated team of paralegals that can help you with a wide range of paralegal services, including legal research, drafting, and document review.",
     learnMore: "/globalipresearchandconsultationservices",
-    image: "/legal-solutions/personal-injury-card-bg.webp",
+    image: "/Legal Research/pexels-lukas-317355.jpg",
   },
   {
     id: 13,

@@ -5,6 +5,7 @@ import SwiperCore, {
   Scrollbar,
   A11y,
   EffectFade,
+  Autoplay
 } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -12,7 +13,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import LegalSearchCard from "./LegalSearchCard";
 
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, EffectFade]);
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, EffectFade, Autoplay]);
 
 export default function ServicesSlider({ data }) {
   return (
@@ -25,9 +26,13 @@ export default function ServicesSlider({ data }) {
             500: { slidesPerView: 2 },
             768: { slidesPerView: 3 },
           }}
+          loop
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
           navigation={{ nextEl: ".arrow-right-1", prevEl: ".arrow-left-1" }}
           autoHeight={true}
-          loop
         >
           {data?.map((item, i) => {
             return (

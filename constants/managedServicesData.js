@@ -8,7 +8,7 @@ export const ManagedServicesData = [
     },
     {
         id: 2,
-        title: "Digital Marketing Services for Law Firms",
+        title: "Digital Marketing Services ",
         desc: "The Legal Base is a well-established digital marketing service provider staffed with highly skilled industry specialists. Our digital marketing team is dedicated to assisting legal organizations in achieving their objectives through bespoke plans and purpose-driven campaigns.",
         learnMore: "/",
         image: "/digital-marketing/digital-marketing-1.webp",

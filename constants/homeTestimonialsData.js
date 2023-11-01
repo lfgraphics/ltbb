@@ -20,7 +20,7 @@ export const homeTestimonialsData = [
     review: "We were looking for a service provider to help is review a complex contract which we were managing for one of our clients. Came across TLB when their sales team approached us and to our pleasant surprise TLB was very professional and detailed in their delivery.",
     name: "Susan Borthwick",
     designation: "Partner, Leading Law Firm , California",
-    image: "/testimonials/testimonial-avatar-2.png",
+    image: "/testimonials/testimonial-avatar-3.png",
     background: "#F4E5C5"
   },
   {

@@ -4,8 +4,8 @@ import OurMissionsAndVisionsCard from "./OurMissionsAndVisionsCard";
 export default function OurMissionAndVisions() {
   return (
     <section className="flex flex-col sm:flex-row gap-3 bg-white pb-10 px-[5%] ">
-      <div className="flex-1 relative min-h-[250px]">
-        <Image src="/ourMissionAndVision.webp" className="object-cover" fill alt="Our Mission and Vision" />
+      <div className="flex-1 bg-[#F7F7F7] relative min-h-[250px]">
+        <Image src="/Our-mission-and-vission.png" className="object-contain" fill alt="Our Mission and Vision" />
       </div>
       <div className="flex-1 flex flex-col text-black gap-3 sm:gap-28">
         <OurMissionsAndVisionsCard
