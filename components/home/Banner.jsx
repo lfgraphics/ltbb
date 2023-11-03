@@ -2,8 +2,8 @@
 import { useEffect, useState, useRef, useCallback } from "react";
 import { useInView } from "react-intersection-observer";
 import BannerContent from "./BannerContent";
-import BannerVideo from "./BannerVideo";
 import { bannerHeading } from "@/constants/bannerContentData";
+import BannerVideo from "./BannerVideo";
 export default function Banner() {
   const [bannerIndex, setBannerIndex] = useState(1);
   const bannerRef = useRef();
@@ -25,7 +25,7 @@ export default function Banner() {
     let intervalID;
     if (inView) {
       intervalID = setInterval(() => {
-        setBannerIndex((prev) => (prev === 3 ? 1 : prev + 1));
+        setBannerIndex((prev) => (prev === 4 ? 1 : prev + 1));
       }, 4000);
     }
     return () => {
@@ -34,28 +34,31 @@ export default function Banner() {
   }, [inView, bannerIndex]);
 
   return (
-    <div className=" py-10 flex flex-col min-h-fit justify-center gap-20 bg-homeBg homeClipPath px-[5%]">
-      <div className="flex flex-col-reverse sm:flex-row gap-12 items-center h-full md:pt-10">
-        <div className="flex-1" ref={setRefs}>
-          <BannerContent content={bannerHeading[bannerIndex]} />
-        </div>
+    <section className="bg-white py-8">
+      <section className="relative h-[75vh] lg:h-[85vh] w-[90%] mx-auto">
         <BannerVideo />
-      </div>
-      <div className="flex mb-0 md:mb-8 justify-center gap-3 mt-10 lg:mt-0">
-        {Array(3)
-          .fill(1)
-          .map((_, i) => {
-            return (
-              <button
-                key={i}
-                onClick={() => handleContentChange(i)}
-                className={`md:w-3 md:h-3 md:rounded-full w-2 h-2 rounded-lg ${
-                  i === bannerIndex - 1 ? "bg-homeCTA" : "bg-gray-300"
-                }`}
-              ></button>
-            );
-          })}
-      </div>
-    </div>
+        <div className="absolute  inset-0 w-full h-full bg-black bg-opacity-50 flex flex-col justify-center px-[5%] rounded-xl">
+          <div className="relative">
+            <div className="max-w-2xl h-full" ref={setRefs}>
+              <BannerContent content={bannerHeading[bannerIndex]} />
+            </div>
+          </div>
+        </div>
+        <div className="w-full flex justify-center gap-3 absolute bottom-8">
+          {Array(4)
+            .fill(1)
+            .map((_, i) => {
+              return (
+                <button
+                  key={i}
+                  onClick={() => handleContentChange(i)}
+                  className={`md:w-3 md:h-3 md:rounded-full w-2 h-2 rounded-lg ${i === bannerIndex - 1 ? "bg-homeCTA" : "bg-gray-300"
+                    }`}
+                ></button>
+              );
+            })}
+        </div>
+      </section>
+    </section>
   );
 }

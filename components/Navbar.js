@@ -1,84 +1,85 @@
-"use client"
-import React, { useState, useRef } from 'react';
-import Link from 'next/link';
-import { MdCancel } from 'react-icons/md'
-import Image from 'next/image';
-import { CheckCircle, ChevronDown, ChevronUp, Menu, Star, X } from 'lucide-react'
+"use client";
+import React, { useState, useRef } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { Menu, X } from "lucide-react";
+import { menuItems } from "@/constants/navigationData";
 const Navbar = () => {
 
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [showDropdown, setShowDropdown] = React.useState(false);
+  const [hoveredLink, setHoveredLink] = useState(null);
 
-  const menuItems = [
-    {
-      name: 'Legal Solutions',
-      href: '/',
-    },
-    {
-      name: 'AboutUs',
-      href: '/about',
-    },
-    {
-      name: 'ContactUs',
-      href: '/contact',
-    },
-    {
-      name: 'Repository',
-      href: '#',
-    },
-  ]
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false)
+  const handleShowDropdown = (item) => {
+    setShowDropdown(true);
+    setHoveredLink(item);
+  };
+
+  const hideDropdown = () => {
+    setShowDropdown(false);
+    setHoveredLink(null);
+  };
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen)
-  }
-  const ref = useRef();
+    setIsMenuOpen(!isMenuOpen);
+  };
 
-  const toggleCart = () => {
-    if (ref.current.classList.contains('translate-x-full')) {
-      ref.current.classList.remove('translate-x-full')
-      ref.current.classList.add('translate-x-0')
-    }
-    else if (!ref.current.classList.contains('translate-x-full')) {
-      ref.current.classList.remove('translate-x-0')
-      ref.current.classList.add('translate-x-full')
-    }
-  }
-  // toggleCart() 
   return (
     <React.Fragment>
       <header className=" w-full sticky top-0 z-30 border-b navbar pb-4 shadow-md ">
         <div className="mx-auto flex w-5/6 items-center justify-between">
           <div className="inline-flex space-x-2 logo-container logo">
-            <span>         
-              <Link href="/">                
-              <Image src="/The_Legal Base-logos_black.png" alt="Logo"
-                width={100}
-                height={100}
-              ></Image></Link>
+            <span>
+              <Link href="/">
+                <Image
+                  src="/The_Legal Base-logos_black.png"
+                  alt="Logo"
+                  width={100}
+                  height={100}
+                ></Image>
+              </Link>
             </span>
           </div>
-       
 
           <div className="hidden lg:block overflow-x-hidden">
-            <ul className="inline-flex space-x-8">
+            <ul className="inline-flex space-x-10">
               {menuItems.map((item) => (
                 <li key={item.name}>
                   <Link
                     href={item.href}
                     className="text-sm text-gray-800 hover:text-black"
+                    onMouseEnter={() => handleShowDropdown(item)}
+                    onMouseLeave={hideDropdown}
                   >
                     {item.name}
                   </Link>
+                  {item?.children && (
+                    <div
+                      className={`absolute top-10  transform origin-top-left transition duration-500 ${showDropdown && item.name === hoveredLink?.name
+                        ? "scale-100"
+                        : "scale-0"
+                        }`}
+                      onMouseEnter={() => handleShowDropdown(item)}
+                      onMouseLeave={hideDropdown}
+                    >
+                      <ul className="bg-white py-4  px-6 mt-6 rounded-xl flex flex-col gap-2 shadow-lg ">
+                        {item?.children?.map((item) => {
+                          return (
+                            <li key={item.name} onClick={hideDropdown}>
+                              <Link
+                                href={item.href}
+                                className="text-sm text-gray-800 hover:text-gray-500 transition duration-300"
+                              >
+                                {item.name}
+                              </Link>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </div>
+                  )}
                 </li>
               ))}
-              <li>
-                <button
-
-                  onClick={toggleCart}
-                  className="text-sm  text-gray-800 hover:text-black"
-                >
-                  Services
-                </button>
-              </li>
 
               <li></li>
             </ul>
@@ -123,7 +124,7 @@ const Navbar = () => {
                   <div className="mt-6">
                     <nav className="grid gap-y-4">
                       {menuItems.map((item) => (
-                        <a
+                        <Link
                           key={item.name}
                           href={item.href}
                           className="-m-3 flex items-center rounded-md p-3 text-sm font-semibold hover:bg-gray-50"
@@ -131,337 +132,16 @@ const Navbar = () => {
                           <span className="ml-3 text-base font-medium text-gray-900">
                             {item.name}
                           </span>
-                        </a>
+                        </Link>
                       ))}
-
-                      {/* <button
-                    onClick={toggleCart}
-                    className="text-sm font-bold text-gray-800  hover:text-gray-900"
-                  >
-                    Services
-                  </button> */}
-
-
                     </nav>
                   </div>
-                  <button
-                    type="button"
-                    onClick={toggleCart}
-                    className="mt-4 w-full rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-                  >
-                    Services
-                  </button>
                 </div>
               </div>
             </div>
           )}
         </div>
       </header>
-      {/* sidebar */}
-      <div ref={ref} className="mycart fixed h-[10vh] z-40 right-0 top-0 transform transition-transform translate-x-full">
-        <aside className="flex flex-col w-64 h-screen px-5 py-8 overflow-y-auto bg-white border-r rtl:border-r-0 rtl:border-l dark:bg-gray-900 dark:border-gray-700">
-          <a href="#">
-
-            <MdCancel onClick={toggleCart} className='text-2xl hover:bg-black-900 hover:text-indigo-900' />
-          </a>
-          <div className="flex flex-col justify-between flex-1 mt-6">
-            <nav className="flex-1 -mx-3 space-y-3 ">
-              <div className="relative mx-3">
-                
-              <h2 className="text-lg fomt-bold text-gray-900 dark:text-white">
-                  TLB's Services
-                </h2>
-              </div>
-              
-              <Link
-                onClick={toggleCart}
-                className="flex items-center px-3 py-2 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700"
-                href="/caseintakeservices"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-5 h-5"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M10.125 2.25h-4.5c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125v-9M10.125 2.25h.375a9 9 0 019 9v.375M10.125 2.25A3.375 3.375 0 0113.5 5.625v1.5c0 .621.504 1.125 1.125 1.125h1.5a3.375 3.375 0 013.375 3.375M9 15l2.25 2.25L15 12"
-                  />
-                </svg>
-                <span className="mx-2 text-sm font-medium">Case Intake Services</span>
-              </Link>
-              <Link
-                onClick={toggleCart}
-                className="flex items-center px-3 py-2 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700"
-                href="/contractmanagement"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-5 h-5"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M10.125 2.25h-4.5c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125v-9M10.125 2.25h.375a9 9 0 019 9v.375M10.125 2.25A3.375 3.375 0 0113.5 5.625v1.5c0 .621.504 1.125 1.125 1.125h1.5a3.375 3.375 0 013.375 3.375M9 15l2.25 2.25L15 12"
-                  />
-                </svg>
-                <span className="mx-2 text-sm font-medium">Contract Management</span>
-              </Link>
-              <Link
-                onClick={toggleCart}
-                className="flex items-center px-3 py-2 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700"
-                href="/globalimigration"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-5 h-5"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M10.125 2.25h-4.5c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125v-9M10.125 2.25h.375a9 9 0 019 9v.375M10.125 2.25A3.375 3.375 0 0113.5 5.625v1.5c0 .621.504 1.125 1.125 1.125h1.5a3.375 3.375 0 013.375 3.375M9 15l2.25 2.25L15 12"
-                  />
-                </svg>
-                <span className="mx-2 text-sm font-medium">Global Immigration Management</span>
-              </Link>
-              <Link
-                onClick={toggleCart}
-                className="flex items-center px-3 py-2 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700"
-                href="/paralegalservices"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-5 h-5"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M10.125 2.25h-4.5c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125v-9M10.125 2.25h.375a9 9 0 019 9v.375M10.125 2.25A3.375 3.375 0 0113.5 5.625v1.5c0 .621.504 1.125 1.125 1.125h1.5a3.375 3.375 0 013.375 3.375M9 15l2.25 2.25L15 12"
-                  />
-                </svg>
-                <span className="mx-2 text-sm font-medium">Paralegal Services</span>
-              </Link>
-              <Link
-                onClick={toggleCart}
-                className="flex items-center px-3 py-2 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700"
-                href="/personalinjury"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-5 h-5"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M10.125 2.25h-4.5c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125v-9M10.125 2.25h.375a9 9 0 019 9v.375M10.125 2.25A3.375 3.375 0 0113.5 5.625v1.5c0 .621.504 1.125 1.125 1.125h1.5a3.375 3.375 0 013.375 3.375M9 15l2.25 2.25L15 12"
-                  />
-                </svg>
-                <span className="mx-2 text-sm font-medium">Personal Injury</span>
-              </Link>
-              <Link
-                onClick={toggleCart}
-                className="flex items-center px-3 py-2 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700"
-                href="/familylawservices"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-5 h-5"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M10.125 2.25h-4.5c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125v-9M10.125 2.25h.375a9 9 0 019 9v.375M10.125 2.25A3.375 3.375 0 0113.5 5.625v1.5c0 .621.504 1.125 1.125 1.125h1.5a3.375 3.375 0 013.375 3.375M9 15l2.25 2.25L15 12"
-                  />
-                </svg>
-                <span className="mx-2 text-sm font-medium">Family Law Services</span>
-              </Link>
-              <Link
-                onClick={toggleCart}
-                className="flex items-center px-3 py-2 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700"
-                href="/legalresearch"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-5 h-5"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M10.125 2.25h-4.5c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125v-9M10.125 2.25h.375a9 9 0 019 9v.375M10.125 2.25A3.375 3.375 0 0113.5 5.625v1.5c0 .621.504 1.125 1.125 1.125h1.5a3.375 3.375 0 013.375 3.375M9 15l2.25 2.25L15 12"
-                  />
-                </svg>
-                <span className="mx-2 text-sm font-medium">Legal Research Services</span>
-              </Link>
-
-              <Link
-                onClick={toggleCart}
-                className="flex items-center px-3 py-2 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700"
-                href="/litigationsupport"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-5 h-5"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M10.125 2.25h-4.5c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125v-9M10.125 2.25h.375a9 9 0 019 9v.375M10.125 2.25A3.375 3.375 0 0113.5 5.625v1.5c0 .621.504 1.125 1.125 1.125h1.5a3.375 3.375 0 013.375 3.375M9 15l2.25 2.25L15 12"
-                  />
-                </svg>
-                <span className="mx-2 text-sm font-medium">Litigation support</span>
-              </Link>
-              <Link
-                onClick={toggleCart}
-                className="flex items-center px-3 py-2 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700"
-                href="/estate"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-5 h-5"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M10.125 2.25h-4.5c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125v-9M10.125 2.25h.375a9 9 0 019 9v.375M10.125 2.25A3.375 3.375 0 0113.5 5.625v1.5c0 .621.504 1.125 1.125 1.125h1.5a3.375 3.375 0 013.375 3.375M9 15l2.25 2.25L15 12"
-                  />
-                </svg>
-                <span className="mx-2 text-sm font-medium">Estate Planning Services</span>
-              </Link>
-
-              <Link
-                onClick={toggleCart}
-                className="flex items-center px-3 py-2 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700"
-                href="/depositionsummaryservices"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-5 h-5"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M10.125 2.25h-4.5c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125v-9M10.125 2.25h.375a9 9 0 019 9v.375M10.125 2.25A3.375 3.375 0 0113.5 5.625v1.5c0 .621.504 1.125 1.125 1.125h1.5a3.375 3.375 0 013.375 3.375M9 15l2.25 2.25L15 12"
-                  />
-                </svg>
-                <span className="mx-2 text-sm font-medium">Deposition summary services</span>
-              </Link>
-              
-              <Link
-                onClick={toggleCart}
-                className="flex items-center px-3 py-2 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700"
-                href="/manageddocumentreviewservice"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-5 h-5"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M10.125 2.25h-4.5c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125v-9M10.125 2.25h.375a9 9 0 019 9v.375M10.125 2.25A3.375 3.375 0 0113.5 5.625v1.5c0 .621.504 1.125 1.125 1.125h1.5a3.375 3.375 0 013.375 3.375M9 15l2.25 2.25L15 12"
-                  />
-                </svg>
-                <span className="mx-2 text-sm font-medium">Managed Document Review Service</span>
-              </Link>
-
-
-
-
-            </nav>
-            <div className="mt-6">
-              <div className="p-3 bg-gray-100 rounded-lg dark:bg-gray-800">
-                <h2 className="text-sm font-medium text-gray-800 dark:text-white">
-                  New feature availabel!
-                </h2>
-                <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">
-                  Discover TLB&apos;s new services! As your &apos;One Stop Shop&apos; for personal injury law firms, we offer complete medical and legal assistance. Our support spans all phases of litigation, from client intake to settlement. Experience our expertise and continuous support. Don&apos;t miss out!
-                </p>
-                <img
-                  className="object-cover w-full h-32 mt-2 rounded-lg"
-                  src="https://images.unsplash.com/photo-1658953229664-e8d5ebd039ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&h=1374&q=80"
-                  alt=""
-                />
-              </div>
-              <div className="flex items-center justify-between mt-6">
-                <a href="#" className="flex items-center gap-x-2">
-                  <img
-                    className="object-cover rounded-full h-7 w-7"
-                    src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&h=634&q=80"
-                    alt="avatar"
-                  />
-                  <span className="text-sm font-medium text-gray-700 dark:text-gray-200">
-                    John Doe
-                  </span>
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-500 transition-colors duration-200 rotate-180 dark:text-gray-400 rtl:rotate-0 hover:text-blue-500 dark:hover:text-blue-400"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="1.5"
-                    stroke="currentColor"
-                    className="w-5 h-5"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </aside>
-
-      </div>
     </React.Fragment>
   );
 };
