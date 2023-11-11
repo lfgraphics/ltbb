@@ -45,7 +45,7 @@ export default function AboutHero() {
                     <Image fill src="/about/about-01.webp" alt="About Hero" className='object-cover' />
                 </div>
                 <div data-aos="fade-left" data-aos-delay="400" className="relative h-[20vh] md:h-[25vh] lg:h-full flex-1 rounded-xl lg:rounded-3xl overflow-hidden">
-                    <Image fill src="/about/about-02.webp" alt="About Hero" className=' object-center object-fill' />
+                    <Image fill src="/about/about-02.webp" alt="About Hero" className=' object-center object-cover' />
                 </div>
             </div>
         </div>
