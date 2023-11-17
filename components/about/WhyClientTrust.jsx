@@ -1,6 +1,7 @@
 
 import Image from 'next/image'
 import React from 'react'
+import ReadMoreText from './ReadMoreText'
 
 const whyClientData = [
     {
@@ -46,7 +47,10 @@ export default function WhyClientTrust() {
         <section className='px-[9%] py-8 bg-[#F0F3FA] mt-12'>
             <div className='text-center flex flex-col gap-4 '>
                 <h2 data-aos="fade-right" data-aos-delay="100" className='text-2xl md:text-3xl lg:text-4xl'>Why do clients trust us?</h2>
-                <p data-aos="fade-left" data-aos-delay="200" className='text-[#79808A]'>At The Legal Base, we are driven by a relentless pursuit of excellence and the desire to constantly elevate the standard of legal service delivery. We are dedicated to delivering value and a competitive edge at every stage of the process, ensuring that our clients see superior long-term returns on their investment. Our focus is always on protecting our client's interests and delivering results that exceed their expectations. we believe that by going above and beyond, we can build lasting partnerships and help our clients achieve their goals.</p>
+                <ReadMoreText
+                    text="At The Legal Base, we are driven by a relentless pursuit of excellence and the desire to constantly elevate the standard of legal service delivery. We are dedicated to delivering value and a competitive edge at every stage of the process, ensuring that our clients see superior long-term returns on their investment. Our focus is always on protecting our client's interests and delivering results that exceed their expectations. we believe that by going above and beyond, we can build lasting partnerships and help our clients achieve their goals."
+                    aos="fade-left" delay="200" className='text-[#79808A]'
+                />
             </div>
             {/* Features */}
             <div className="flex flex-wrap gap-6 mt-12 justify-center">

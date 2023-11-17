@@ -6,7 +6,7 @@ export default function LeaderShipTeamCard({ data }) {
     return (
         <div data-aos="fade-up" data-aos-delay={id * 150} className='relative w-full sm:w-[45%] md:flex-1 h-[65vh] rounded-xl overflow-hidden '>
             <div className="absolute inset-0 bg-[rgba(0,0,0,0.15)] z-10"></div>
-            <Image src={image} fill alt={name} className='object-fill' />
+            <Image src={image} fill alt={name} className='object-cover' />
             <div className="absolute bottom-0 left-0 right-0 z-10 text-white p-4 ">
                 <h3 className='text-xl'>{name}</h3>
                 <div className="flex justify-between items-center">

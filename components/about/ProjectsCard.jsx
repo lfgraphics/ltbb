@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useState } from "react"; // Import useState
+import ReadMoreText from "./ReadMoreText";
 
 export default function ProjectsCard({ data }) {
     const { id, title, image, desc } = data;
@@ -24,12 +25,12 @@ export default function ProjectsCard({ data }) {
                     {title}
                 </h3>
                 <div
-                    className={`legalSearchCard ${isHovered ? "-bottom-0 opacity-100 h-full" : "-bottom-full opacity-0"
+                    className={`legalSearchCard ${isHovered ? "-bottom-0 opacity-100 h-full overflow-y-auto" : "-bottom-full opacity-0"
                         } transition-all duration-300 ease-in-out flex flex-col gap-2 absolute left-0 right-0 text-start p-4  bg-[#1C213D]`}
                 >        <h3 className=" text-lg tracking-wide sm:text-xl md:text-2xl font-bold">
                         {title}
                     </h3>
-                    <p className="text-white">{desc}</p>
+                    <ReadMoreText text={desc} className="text-white" />
 
                 </div>
             </div>

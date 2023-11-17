@@ -1,5 +1,6 @@
 import React from 'react'
 import ProjectsCard from './ProjectsCard'
+import ReadMoreText from './ReadMoreText'
 
 const howYourProjectDoneData = [
     {
@@ -33,11 +34,14 @@ export default function HowYourProjectsDone() {
         <section className='px-[9%] py-20 bg-white '>
             <div className='text-center flex flex-col gap-4 '>
                 <h2 data-aos="fade-right" data-aos-delay="100" className='text-2xl md:text-3xl lg:text-4xl'>How do we get your projects done?</h2>
-                <p data-aos="fade-left" data-aos-delay="200" className='text-[#79808A]'>The Legal Base was born from a desire to be more than just another legal services provider. Our founders
+                <ReadMoreText
+                    text="The Legal Base was born from a desire to be more than just another legal services provider. Our founders
                     envisioned a company that would be a true partner to corporates, law firms, and attorneys around the
                     globe - a trusted extension of their teams that would deliver legal services and process consulting with the
                     highest level of professionalism. We strive to be a valued and integral part of our client's operations,
-                    always working alongside them to achieve their goals and objectives.</p>
+                    always working alongside them to achieve their goals and objectives."
+                    aos="fade-left" delay="200" className='text-[#79808A]'
+                />
             </div>
             {/* Projects Card */}
             <div className="flex flex-wrap justify-between mt-8 gap-4">

@@ -19,7 +19,7 @@ const page = () => {
     });
   });
   return (
-    <>
+    <div className="overflow-x-hidden">
       <AboutHero />
       <OurStory />
       <Operations />
@@ -28,7 +28,7 @@ const page = () => {
       <MissionAndVision />
       <WhyClientTrust />
       <LeaderShipTeam />
-    </>
+    </div>
   )
 }
 

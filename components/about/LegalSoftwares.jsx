@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import ReadMoreText from './ReadMoreText'
 
 const logos = [
     {
@@ -54,7 +55,12 @@ export default function LegalSoftwares() {
         <section className='bg-[#F0F3FA] px-[9%] py-12'>
             <div className='text-center flex flex-col gap-4 mx-auto max-w-2xl'>
                 <h2 data-aos="fade-right" data-aos-delay="100" className='text-2xl md:text-3xl lg:text-4xl'>We’re well versed with all legal softwares</h2>
-                <p data-aos="fade-left" data-aos-delay="200" className='text-[#79808A]'>Our highly efficient lawyers and attorneys are well versed with the latest technological advancement in the legal sector. Our technical knowledge leverages complex cases helping lawfirms meet client deadlines.</p>
+                <ReadMoreText
+                    text="Our highly efficient lawyers and attorneys are well versed with the latest technological advancement in the legal sector. Our technical knowledge leverages complex cases helping lawfirms meet client deadlines."
+                    aos="fade-left"
+                    delay="200"
+                    className='text-[#79808A]'
+                />
             </div>
             {/* Logos */}
             <div className="flex gap-10 justify-center flex-wrap mt-8">
