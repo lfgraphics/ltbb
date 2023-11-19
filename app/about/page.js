@@ -10,6 +10,7 @@ import HowYourProjectsDone from "@/components/about/HowYourProjectsDone";
 import MissionAndVision from "@/components/about/MissionAndVision";
 import WhyClientTrust from "@/components/about/WhyClientTrust";
 import LeaderShipTeam from "@/components/about/LeaderShipTeam";
+import OurMissionAndVisions from "@/components/home/OurMissionAndVisions";
 const page = () => {
   useEffect(() => {
     AOS.init({
@@ -24,6 +25,9 @@ const page = () => {
       <OurStory />
       <Operations />
       <LegalSoftwares />
+      <div className="pt-10 bg-white">
+        <OurMissionAndVisions />
+      </div>
       <HowYourProjectsDone />
       <MissionAndVision />
       <WhyClientTrust />
