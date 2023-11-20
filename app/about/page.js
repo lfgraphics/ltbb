@@ -7,7 +7,6 @@ import OurStory from "@/components/about/OurStory";
 import Operations from "@/components/about/Operations";
 import LegalSoftwares from "@/components/about/LegalSoftwares";
 import HowYourProjectsDone from "@/components/about/HowYourProjectsDone";
-import MissionAndVision from "@/components/about/MissionAndVision";
 import WhyClientTrust from "@/components/about/WhyClientTrust";
 import LeaderShipTeam from "@/components/about/LeaderShipTeam";
 import OurMissionAndVisions from "@/components/home/OurMissionAndVisions";
@@ -29,7 +28,6 @@ const page = () => {
         <OurMissionAndVisions />
       </div>
       <HowYourProjectsDone />
-      <MissionAndVision />
       <WhyClientTrust />
       <LeaderShipTeam />
     </div>
