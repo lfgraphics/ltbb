@@ -27,7 +27,7 @@ const Faq = () => {
                   onClick={() => toggleExpand(index)}
                   className="flex items-center justify-between w-full p-2 text-left bg-transparent hover:bg-[#1b2636] rounded-md focus:outline-none"
                 >
-                  <span className="w-[90%] md:w-auto text-base lg:text-lg font-semibold">{item.question}</span>
+                  <span className="w-[90%] md:w-auto text-base lg:text-lg font-medium">{item.question}</span>
                   <svg
                     className={`w-5 h-5 ${
                       expanded[index] ? "transform rotate-180" : ""

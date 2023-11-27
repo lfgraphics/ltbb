@@ -85,7 +85,7 @@ const Four = () => {
               </span>
 
             </div>
-            <div className="mt-2  px-4">
+            <div className="mt-2 px-4">
 
               <p className="mt-2 lg:px-16 sm:px-12  px-0 text-black font-semibold ">
                 TLB’s goal with deposition summary services is to provide a concise and accurate summary of the key points and testimony from a deposition, in a format that is easily understandable and useful to the client.

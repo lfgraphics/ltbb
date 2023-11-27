@@ -1,87 +1,105 @@
-"use client"
+"use client";
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/effect-coverflow";
+import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
 import "./styles.css";
 
 // import required modules
-import { EffectCoverflow, Pagination } from "swiper";
+import { FreeMode, Pagination } from "swiper";
 
 export default function Third() {
   const cardData = [
     {
       title: "Expertise:",
-      description: "Estate planning involves complex legal and financial considerations. By outsourcing to TLB estate planning professionals, law firms and attorneys can benefit from their expertise and knowledge in this specific field. Our estate planning professionals stay updated with current laws, regulations, and strategies, ensuring that your estate plan is comprehensive and effective.",
+      description:
+        "Estate planning involves complex legal and financial considerations. By outsourcing to TLB estate planning professionals, law firms and attorneys can benefit from their expertise and knowledge in this specific field. Our estate planning professionals stay updated with current laws, regulations, and strategies, ensuring that your estate plan is comprehensive and effective.",
     },
     {
       title: "Time and Convenience:",
-      description: "Estate planning can be a time-consuming and intricate process. By outsourcing to TLB, law firms and attorneys can delegate the tasks to professionals who can efficiently handle the paperwork, legal documentation, financial analysis, and other administrative aspects. This frees up time for law firms and attorneys to focus on other priorities in their lives.",
+      description:
+        "Estate planning can be a time-consuming and intricate process. By outsourcing to TLB, law firms and attorneys can delegate the tasks to professionals who can efficiently handle the paperwork, legal documentation, financial analysis, and other administrative aspects. This frees up time for law firms and attorneys to focus on other priorities in their lives.",
     },
     {
       title: "Customized Solutions:",
-      description: "TLB’s estate planning professionals can tailor an estate plan to meet specific needs, goals, and circumstances. They can provide personalized advice, recommend appropriate strategies, and help law firms and attorneys to make informed decisions based on their unique situation. This personalized approach ensures that the estate plan is comprehensive and aligned with the objectives.",
+      description:
+        "TLB’s estate planning professionals can tailor an estate plan to meet specific needs, goals, and circumstances. They can provide personalized advice, recommend appropriate strategies, and help law firms and attorneys to make informed decisions based on their unique situation. This personalized approach ensures that the estate plan is comprehensive and aligned with the objectives.",
     },
     {
       title: "Risk Mitigation:",
-      description: "Estate planning mistakes or oversights can have significant consequences, both legally and financially. By outsourcing to TLB estate planning professionals, law firms and attorneys can minimize the risk of errors or omissions in their estate plan. TLB’s estate planning professionals have the knowledge and experience to identify potential pitfalls, ensure compliance with legal requirements, and provide guidance to protect assets and minimize tax liabilities.",
+      description:
+        "Estate planning mistakes or oversights can have significant consequences, both legally and financially. By outsourcing to TLB estate planning professionals, law firms and attorneys can minimize the risk of errors or omissions in their estate plan. TLB’s estate planning professionals have the knowledge and experience to identify potential pitfalls, ensure compliance with legal requirements, and provide guidance to protect assets and minimize tax liabilities.",
     },
     {
       title: "Confidentiality and Privacy: ",
-      description: "Estate planning often involves sensitive and confidential information about an individual's assets, beneficiaries, and family dynamics. By working with TLB’s trusted and professional estate planning professionals, law firms and attorneys can maintain a higher level of confidentiality and privacy compared to handling the estate planning process in-house.",
+      description:
+        "Estate planning often involves sensitive and confidential information about an individual's assets, beneficiaries, and family dynamics. By working with TLB’s trusted and professional estate planning professionals, law firms and attorneys can maintain a higher level of confidentiality and privacy compared to handling the estate planning process in-house.",
     },
     {
       title: "Cost-Effectiveness: ",
-      description: "While outsourcing estate planning services involves costs, it can be more cost-effective than hiring full-time professionals or relying on general practitioners who may not have specialized expertise in estate planning. By paying for the services on an as-needed basis, law firms and attorneys can access professional advice and assistance without incurring the ongoing expenses associated with maintaining an in-house team.",
+      description:
+        "While outsourcing estate planning services involves costs, it can be more cost-effective than hiring full-time professionals or relying on general practitioners who may not have specialized expertise in estate planning. By paying for the services on an as-needed basis, law firms and attorneys can access professional advice and assistance without incurring the ongoing expenses associated with maintaining an in-house team.",
     },
     {
       title: "Continuity:",
-      description: "Estate planning is an ongoing process that requires periodic review and adjustments. By establishing a relationship with TLB’s estate planning professionals, law firms and attorneys can benefit from their long-term support and guidance. TLB’s estate planning professionals can help keep the estate plan up to date, adapt it to changing circumstances, and assist with any future changes or challenges.",
-    }
+      description:
+        "Estate planning is an ongoing process that requires periodic review and adjustments. By establishing a relationship with TLB’s estate planning professionals, law firms and attorneys can benefit from their long-term support and guidance. TLB’s estate planning professionals can help keep the estate plan up to date, adapt it to changing circumstances, and assist with any future changes or challenges.",
+    },
   ];
 
   return (
     <>
       <div className="bg-transparent mx-auto w-5/6">
-
         <div className="container mx-auto p-4 my-6 space-y-2 text-center  mt-4 bg-w mb-4">
           <h2 className="text-3xl font-bold">
             Why Outsource Estate Planning Services to TLB?
           </h2>
           <p className="dark:text-gray-400">
-            There are several reasons why law firms and attorneys might choose to outsource estate planning services to TLB:
+            There are several reasons why law firms and attorneys might choose
+            to outsource estate planning services to TLB:
           </p>
         </div>
         <Swiper
-          effect={"coverflow"}
+          slidesPerView={3}
+          spaceBetween={30}
+          freeMode={true}
           grabCursor={true}
-          centeredSlides={true}
-          loop={true}
-          slidesPerView={"auto"}
-          coverflowEffect={{
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            shadow: true,
+          pagination={{
+            clickable: true,
           }}
-          pagination={false}
-          autoplay={{
-            delay: 3500,
-            disableOnInteraction: false,
+          breakpoints={{
+            "@0.00": {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            "@0.75": {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            "@1.00": {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+            "@1.50": {
+              slidesPerView: 4,
+              spaceBetween: 50,
+            },
           }}
-          modules={[EffectCoverflow, Pagination]}
-          className="mySwiper space-y-2"
+          modules={[FreeMode, Pagination]}
+          className="mySwiper"
         >
           {/* Step 2: Map the card data to the SwiperSlides */}
           {cardData.map((card, index) => (
-            <SwiperSlide key={index}>
-              <div className="bg-white tiles rounded-b-xl shadow-gray-700 shadow-xl rounded-t-lg    p-8 ">
+            <SwiperSlide
+              key={index}
+              className="border h-fit lg:min-h-[435px] p-8 flex flex-col"
+            >
+              <div className="bg-white flex-1">
                 <div className="flex items-center mb-6">
                   <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
                     <svg
@@ -121,7 +139,6 @@ export default function Third() {
             </article>
           </div>
         </div> */}
-
       </div>
     </>
   );

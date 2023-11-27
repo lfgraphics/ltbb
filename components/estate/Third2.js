@@ -5,13 +5,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/effect-coverflow";
+import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
 import "./styles.css";
 
 // import required modules
-import { EffectCoverflow, Pagination } from "swiper";
+import { FreeMode, Pagination } from "swiper";
 
 export default function Third2() {
   const cardData = [
@@ -71,30 +71,41 @@ export default function Third2() {
           </p>
         </div>
         <Swiper
-          effect={"coverflow"}
+          slidesPerView={3}
+          spaceBetween={30}
+          freeMode={true}
           grabCursor={true}
-          centeredSlides={true}
-          loop={true}
-          slidesPerView={"auto"}
-          coverflowEffect={{
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            shadow: true,
+          pagination={{
+            clickable: true,
           }}
-          pagination={false}
-          autoplay={{
-            delay: 3500,
-            disableOnInteraction: false,
+          breakpoints={{
+            "@0.00": {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            "@0.75": {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            "@1.00": {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+            "@1.50": {
+              slidesPerView: 4,
+              spaceBetween: 50,
+            },
           }}
-          modules={[EffectCoverflow, Pagination]}
-          className="mySwiper space-y-2"
+          modules={[FreeMode, Pagination]}
+          className="mySwiper"
         >
           {/* Step 2: Map the card data to the SwiperSlides */}
           {cardData.map((card, index) => (
-            <SwiperSlide key={index}>
-              <div className="bg-white tiles rounded-b-xl shadow-gray-700 shadow-xl rounded-t-lg    p-8 ">
+            <SwiperSlide
+              key={index}
+              className="border h-fit lg:min-h-[435px] p-8 flex flex-col"
+            >
+              <div className="bg-white flex-1">
                 <div className="flex items-center mb-6">
                   <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
                     <svg
@@ -112,7 +123,9 @@ export default function Third2() {
                   </div>
                   <h3 className="text-xl font-bold ml-4">{card.title}</h3>
                 </div>
-                <p className="text-gray-700">{card.description}</p>
+                <p className="text-gray-700">
+                  {card.description}
+                </p>
               </div>
             </SwiperSlide>
           ))}

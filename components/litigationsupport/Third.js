@@ -257,8 +257,11 @@ export default function Third() {
         >
           {/* Step 2: Map the card data to the SwiperSlides */}
           {cardData.map((card, index) => (
-            <SwiperSlide key={index}>
-              <div className="bg-white tiles rounded-b-xl shadow-gray-700 shadow-xl rounded-t-lg    p-8 ">
+            <SwiperSlide
+              key={index}
+              className="border h-fit lg:min-h-[435px] p-8 flex flex-col"
+            >
+              <div className="bg-white flex-1">
                 <div className="flex items-center mb-6">
                   <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
                     <svg
@@ -276,7 +279,9 @@ export default function Third() {
                   </div>
                   <h3 className="text-xl font-bold ml-4">{card.title}</h3>
                 </div>
-                <p className="text-gray-700">{card.description}</p>
+                <p className="text-gray-700">
+                  {card.description}
+                </p>
               </div>
             </SwiperSlide>
           ))}
