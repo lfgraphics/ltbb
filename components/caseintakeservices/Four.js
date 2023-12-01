@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 
@@ -20,7 +21,7 @@ const Four = () => {
       details: [
         "No matter what type of law you practice, potential clients may call at any time. With our round-the-clock legal intake services, you can rest easy knowing that there will always be a live operator available to answer their calls.",
         "Our expert legal intake professionals will use scripts that you design and gather all the relevant information to help you move ahead with your business. With our services, you can be sure that all the right information is always collected."
-        
+
       ]
     },
     {
@@ -33,8 +34,8 @@ const Four = () => {
     {
       title: "High-quality Reporting Services",
       details: [
-       "Our legal intake representatives will record all the calls and other data you receive and deliver it to you in the format of your choice, whether it's through web-based databases or email communication.",
-       "Our goal is to capture every potential opportunity and deliver the data that you need to capitalise on it. With our legal intake reporting services, we eliminate the need for further data entry, allowing you to move quickly on all your leads."
+        "Our legal intake representatives will record all the calls and other data you receive and deliver it to you in the format of your choice, whether it's through web-based databases or email communication.",
+        "Our goal is to capture every potential opportunity and deliver the data that you need to capitalise on it. With our legal intake reporting services, we eliminate the need for further data entry, allowing you to move quickly on all your leads."
       ]
     }
   ];
@@ -70,7 +71,7 @@ const Four = () => {
                 intake services:
               </p>
             </div>
-            
+
 
 
             <section className="bg-[#f8fafc] dark:bg-white-90 mt-4">

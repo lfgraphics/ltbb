@@ -2,6 +2,11 @@ import Hero from "@/components/digitalmarketing/Hero";
 import Image from "next/image";
 import React from "react";
 
+export const metadata = {
+  title: "Digital Marketing Services | TLB",
+  description: " TLB’s outsourced digital marketing services allow law firms and attorneys in achieving their social media and digital footprint objectives through bespoke plans and purpose-driven campaigns."
+}
+
 export default function DigitalMarketing() {
   return (
     <section className="bg-white pb-20">

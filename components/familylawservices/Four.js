@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 
@@ -19,7 +20,7 @@ const Four = () => {
       title: "Divorce",
       details: [
         `Divorce is a legal process that terminates a marriage. TLB’s Family law attorneys provide representation and guidance for individuals seeking a divorce, including issues related to property division, alimony, and child custody. We can help clients understand the laws in their state and the process for obtaining a divorce and can assist with negotiations and court appearances.`
-        
+
       ]
     },
     {
@@ -31,51 +32,51 @@ const Four = () => {
     {
       title: "Adoption",
       details: [
-       `Adoption is the legal process of becoming the legal parent of a child who is not your biological child. Legal representation for individuals and families seeking to adopt a child is important, as the process can be complex and time-consuming. TLB’s attorneys can help navigate the adoption process, ensure that all legal requirements are met, and represent clients in court.`
+        `Adoption is the legal process of becoming the legal parent of a child who is not your biological child. Legal representation for individuals and families seeking to adopt a child is important, as the process can be complex and time-consuming. TLB’s attorneys can help navigate the adoption process, ensure that all legal requirements are met, and represent clients in court.`
       ]
     },
     {
       title: "Domestic violence",
       details: [
-       `Domestic violence is a serious issue that affects many families. Legal representation and guidance for individuals who are victims of domestic violence is important, as they may need to obtain restraining orders and pursue criminal charges against the abuser. Our attorneys can help clients understand their rights and the legal process and can provide representation in court.
+        `Domestic violence is a serious issue that affects many families. Legal representation and guidance for individuals who are victims of domestic violence is important, as they may need to obtain restraining orders and pursue criminal charges against the abuser. Our attorneys can help clients understand their rights and the legal process and can provide representation in court.
 `
       ]
     },
     {
       title: "Paternity",
       details: [
-       `Paternity is the legal determination of the father of a child. Legal representation for individuals seeking to establish paternity is important, as it can have significant legal consequences. Our attorneys can help with DNA testing and establishing legal rights and responsibilities.`
+        `Paternity is the legal determination of the father of a child. Legal representation for individuals seeking to establish paternity is important, as it can have significant legal consequences. Our attorneys can help with DNA testing and establishing legal rights and responsibilities.`
       ]
     },
     {
       title: "Mediation",
       details: [
-       `Mediation is a process of resolving disputes with the help of a neutral third party. We provide legal representation and guidance for individuals participating in mediation to resolve family law disputes and help them to reach a mutually beneficial agreement.`
+        `Mediation is a process of resolving disputes with the help of a neutral third party. We provide legal representation and guidance for individuals participating in mediation to resolve family law disputes and help them to reach a mutually beneficial agreement.`
       ]
     },
     {
       title: "Modification of orders",
       details: [
-       `Legal representation for individuals seeking to modify existing court orders is important, as it can help them to adjust to changing circumstances. Our attorneys can help clients understand the process and requirements for modifying orders and can represent them in court if necessary.`
+        `Legal representation for individuals seeking to modify existing court orders is important, as it can help them to adjust to changing circumstances. Our attorneys can help clients understand the process and requirements for modifying orders and can represent them in court if necessary.`
       ]
     },
     {
       title: "Guardianship",
       details: [
-       `Guardianship is the legal process of appointing someone to take care of a child or incapacitated adult. TLB provides legal representation for individuals seeking to be appointed as a guardian. We understand the process can be complex and emotionally charged and hence make sure to make the process as smooth and comforting as possible.`
+        `Guardianship is the legal process of appointing someone to take care of a child or incapacitated adult. TLB provides legal representation for individuals seeking to be appointed as a guardian. We understand the process can be complex and emotionally charged and hence make sure to make the process as smooth and comforting as possible.`
       ]
     },
     {
       title: "Name change",
       details: [
-       `Legal representation for individuals seeking to change their name or the name of a minor child is a complex process. Our attorneys at TLB can help you make the entire process smooth by assisting with the paperwork and court appearances.
+        `Legal representation for individuals seeking to change their name or the name of a minor child is a complex process. Our attorneys at TLB can help you make the entire process smooth by assisting with the paperwork and court appearances.
 `
       ]
     },
     {
       title: "Premarital agreements",
       details: [
-       `Premarital agreements are legal agreements that are made between two people before they get married. Legal representation for individuals seeking to draft or review premarital agreements is crucial, as it can help them to address potential issues that may arise in the future. Our attorneys at TLB can help with the drafting, negotiation, and review of agreements to ensure they are fair and legally binding.`
+        `Premarital agreements are legal agreements that are made between two people before they get married. Legal representation for individuals seeking to draft or review premarital agreements is crucial, as it can help them to address potential issues that may arise in the future. Our attorneys at TLB can help with the drafting, negotiation, and review of agreements to ensure they are fair and legally binding.`
       ]
     },
   ];
@@ -109,7 +110,7 @@ const Four = () => {
 
               </p>
             </div>
-            
+
 
 
             <section className="bg-[#f8fafc] dark:bg-white-90 mt-4">

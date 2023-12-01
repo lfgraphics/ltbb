@@ -36,7 +36,7 @@ const Second = () => {
 									</div>
 									<div className="ml-4">
 										<h4 className="text-lg font-medium leading-6">
-											Wills and Trusts: 
+											Wills and Trusts:
 										</h4>
 										<p className="mt-2 dark:text-gray-400">
 											TLB’s estate planning professionals can help create a last will and testament, which outlines how assets will be distributed after client’s death. They can also assist in establishing trusts, such as revocable living trusts or irrevocable trusts, to manage and protect assets during client’s lifetime and beyond.
@@ -47,14 +47,14 @@ const Second = () => {
 									<div className="flex shadow-lg p-4 hover:shadow-2xl  border-solid  rounded-md" data-aos="fade-right">
 										<div className="flex-shrink-0">
 											<div className="flex items-center justify-center w-12 h-12 rounded-md bg-gray-700">
-											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
+												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
 													<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
 												</svg>
 											</div>
 										</div>
 										<div className="ml-4">
 											<h4 className="text-lg font-medium leading-6">
-												Power of Attorney: 
+												Power of Attorney:
 											</h4>
 											<p className="mt-2 dark:text-gray-400">
 												TLB’s estate planning services can help you designate a power of attorney, a legal document that grants someone the authority to make financial or healthcare decisions on your behalf in case you become incapacitated.
@@ -65,14 +65,14 @@ const Second = () => {
 									<div className="flex shadow-lg p-4 hover:shadow-2xl  border-solid  rounded-md" data-aos="fade-right">
 										<div className="flex-shrink-0">
 											<div className="flex items-center justify-center w-12 h-12 rounded-md bg-gray-700">
-											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
+												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
 													<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
 												</svg>
 											</div>
 										</div>
 										<div className="ml-4">
 											<h4 className="text-lg font-medium leading-6">
-												Advance Healthcare Directives: 
+												Advance Healthcare Directives:
 
 											</h4>
 											<p className="mt-2 dark:text-gray-400">
@@ -83,7 +83,7 @@ const Second = () => {
 									<div className="flex shadow-lg p-4 hover:shadow-2xl  border-solid  rounded-md" data-aos="fade-right">
 										<div className="flex-shrink-0">
 											<div className="flex items-center justify-center w-12 h-12 rounded-md bg-gray-700">
-											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
+												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
 													<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
 												</svg>
 											</div>
@@ -110,14 +110,14 @@ const Second = () => {
 									<div className="flex shadow-lg p-4 hover:shadow-2xl  border-solid  rounded-md" data-aos="fade-right">
 										<div className="flex-shrink-0">
 											<div className="flex items-center justify-center w-12 h-12 rounded-md bg-gray-700">
-											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
+												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
 													<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
 												</svg>
 											</div>
 										</div>
 										<div className="ml-4">
 											<h4 className="text-lg font-medium leading-6">
-												Tax Planning: 
+												Tax Planning:
 											</h4>
 											<p className="mt-2 dark:text-gray-400">
 												TLB’s estate planning services can help minimize estate taxes, gift taxes, and income taxes through various strategies and tools, such as gifting strategies, charitable giving, and utilizing tax-efficient vehicles like trusts.
@@ -157,7 +157,7 @@ const Second = () => {
 											</div>
 											<div className="ml-4">
 												<h4 className="text-lg font-medium leading-6">
-													Asset Protection: 
+													Asset Protection:
 												</h4>
 												<p className="mt-2 dark:text-gray-400">
 													TLB’s Estate planning professionals can help you protect your assets from potential creditors, lawsuits, or other risks through techniques such as the creation of trusts or the use of legal structures.

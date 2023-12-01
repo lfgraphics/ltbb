@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from 'react';
 
 const Faq = () => {
@@ -76,11 +77,7 @@ const faqData = [
     },
     {
         question: "How do you handle disputes or issues that may arise during the outsourcing process?",
-        answer: "How do you handle disputes or issues that may arise during the outsourcing process?"
-    },
-    {
-        question: "How do you handle disputes or issues that may arise during the outsourcing process?",
-        answer: "How do you handle disputes or issues that may arise during the outsourcing process?"
+        answer: "We handle disputes or issues that may arise during the outsourcing process by communicating openly and honestly with our clients, and by working together to find a resolution that is fair for all parties involved."
     },
     {
         question: "How can I get started with outsourcing my law firm's family law services to your company? How can I get started with outsourcing my law firm's family law services to your company? ",
