@@ -33,8 +33,6 @@ const Hero = () => {
                 />
                 <br></br>
                 <p className="mt-2 text-sm text-gray-500">
-
-
                 </p>
               </div>
               <div>

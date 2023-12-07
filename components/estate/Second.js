@@ -224,7 +224,7 @@ const Second = () => {
 						/>
 						<div className="flex flex-col w-full p-6 lg:w-2/3 md:p-8 lg:p-12">
 
-							<h2 className="text-xl font-semibold leading-loose">
+							<h2 className="text-xl font-normal leading-loose">
 								Estate planning is essential for everyone, regardless of the magnitude of their possessions. Wills and estate preparation may be a difficult and time-consuming practice since each client has distinct demands and requires various tactics. We can assist your in-house staff in providing world-class services to your end customer with any difficult will preparation assignment, as well as construct their family estate plans.
 							</h2>
 
