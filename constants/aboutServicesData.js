@@ -14,13 +14,13 @@ export const legalServicesData = [
     {
         id: 3,
         title: "Estate Planning",
-        learnMore: "/estate",
+        learnMore: "/estateplanning",
         image: "/about/icons/estate-planning.png"
     },
     {
         id: 4,
         title: "Immigration Support",
-        learnMore: "/globalimigration",
+        learnMore: "/globalimmigration",
         image: "/about/icons/global-immigration.png"
     },
     {

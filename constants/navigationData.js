@@ -16,7 +16,7 @@ export const menuItems = [
             {
                 id: 3,
                 name: "Global Immigration Management",
-                href: "/globalimigration",
+                href: "/globalimmigration",
             },
             {
                 id: 4,
@@ -46,7 +46,7 @@ export const menuItems = [
             {
                 id: 9,
                 name: "Estate Planning Services",
-                href: "/estate",
+                href: "/estateplanning",
             },
             {
                 id: 10,

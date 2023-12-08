@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from 'react';
 
 const Faq = () => {
@@ -15,7 +16,7 @@ const Faq = () => {
                         How it works
                     </p>
                     <h2 className="mb-12 text-4xl font-bold leading-none text-center sm:text-5xl">
-                    Frequently Asked Questions 
+                        Frequently Asked Questions
                     </h2>
                     <div className="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 divide-gray-700">
                         {faqData.map((item, index) => (
@@ -46,13 +47,13 @@ const ans2 = <div>
     <br></br>
     <br></br>
     <ul>
-       <li>Setting up trust funds in the names of beneficiaries to limit estate taxes.</li>
-       <li>Setting up a guardian for live dependents</li>
-       <li>appointing an executor of the estate to supervise the will's terms.</li>
-       <li>Adding or changing beneficiaries on life insurance, IRAs, and 401(k)s</li>
-       <li>Making funeral arrangements</li>
-       <li>To lower the taxable estate, make yearly gifts to recognized charity and non-profit organizations.</li>
-       <li>Creating a lasting power of attorney (POA) to direct other assets and investments</li>
+        <li>Setting up trust funds in the names of beneficiaries to limit estate taxes.</li>
+        <li>Setting up a guardian for live dependents</li>
+        <li>appointing an executor of the estate to supervise the will's terms.</li>
+        <li>Adding or changing beneficiaries on life insurance, IRAs, and 401(k)s</li>
+        <li>Making funeral arrangements</li>
+        <li>To lower the taxable estate, make yearly gifts to recognized charity and non-profit organizations.</li>
+        <li>Creating a lasting power of attorney (POA) to direct other assets and investments</li>
     </ul>
 </div>
 

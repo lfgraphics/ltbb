@@ -17,14 +17,14 @@ export const legalSearchData = [
     id: 3,
     title: "Estate Planning",
     desc: "Estate Planning is necessary for every individual, irrespective of the value of their assets. We have resource pool with expertise in estate planning process",
-    learnMore: "/estate",
+    learnMore: "/estateplanning",
     image: "/legal-solutions/estate-planning-card-bg.webp",
   },
   {
     id: 4,
     title: "Immigration Support",
     desc: "Immigration involves movement of individuals from the country of their origin to the country of their preference, and is done with the help of immigration agency.",
-    learnMore: "/globalimigration",
+    learnMore: "/globalimmigration",
     image: "/legal-solutions/immigration-card-bg.webp",
   },
   {
