@@ -1,9 +1,33 @@
+"use client"
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 
 import 'aos/dist/aos.css';
 import Image from 'next/image';
 
+
+const data = [
+  {
+    id:1,
+    title:'Conduct market research on your intended audience.'
+  },
+  {
+    id:2,
+    title:'Establish your digital marketing objectives'
+  },
+  {
+    id:3,
+    title:'Which marketing channels are most effective for lawyers?'
+  },
+  {
+    id:4,
+    title:'Design an SEO-friendly legal office website that turns visitors into clients.'
+  },
+  {
+    id:4,
+    title:'Evaluate the effectiveness of your digital marketing plan.'
+  }
+]
 
 const Four = () => {
   useEffect(() => {
@@ -14,124 +38,35 @@ const Four = () => {
     });
   }, []);
 
-  const data = [
-    {
-      title: "24/7 Answering Services",
-      details: [
-        "No matter what type of law you practice, potential clients may call at any time. With our round-the-clock legal intake services, you can rest easy knowing that there will always be a live operator available to answer their calls.",
-        "Our expert legal intake professionals will use scripts that you design and gather all the relevant information to help you move ahead with your business. With our services, you can be sure that all the right information is always collected."
-        
-      ]
-    },
-    {
-      title: "Scalable Services",
-      details: [
-        "We have a professionally run legal intake centre that can handle all your call and chat volume, whether you are receiving sporadic calls throughout the night or multiple inquiries from potential clients.",
-        "Our legal intake professionals are experts in multitasking and dealing with every caller so that you never miss a lead."
-      ]
-    },
-    {
-      title: "High-quality Reporting Services",
-      details: [
-       "Our legal intake representatives will record all the calls and other data you receive and deliver it to you in the format of your choice, whether it's through web-based databases or email communication.",
-       "Our goal is to capture every potential opportunity and deliver the data that you need to capitalise on it. With our legal intake reporting services, we eliminate the need for further data entry, allowing you to move quickly on all your leads."
-      ]
-    }
-  ];
-
 
   return (
-    <React.Fragment>
-      <div className='mx-auto  sm:w-5/6 w-full md:w-5/6 lg:5/6'>
-        <div className='m-4 space-y-3'>
-          <div className="max-w-full px-8 py-4 bg-[#f8fafc] rounded-lg shadow-gray-400   cursor-pointer" data-aos="fade-down">
-            <div className="flex items-center justify-between">
-              <span className="text-md font-bold text-black ">
-                <div className='flex items-center justify-between'>
-                  <img
-                    className="hidden object-cover w-10 h-10 mx-4 rounded-full sm:block"
-                    src="/law2.png"
-                    alt="avatar"
-                  />
-
-                  <p className="text-3xl font-bold text-black  dark:hover:text-white-500">
-                    TLB’s Case Intake Services
-                  </p>
-                </div>
-              </span>
-
-            </div>
-            <div className="mt-2">
-
-              <p className="mt-2 lg:px-14 sm:px-12 px-0 text-black font-semibold ">
-                TLB is a legal intake company with decades of experience in providing top-notch
-                services to clients. We understand that every legal practice is unique and that's why we have a
-                range of offerings to match your specific needs. Here's what you can expect from our legal
-                intake services:
-              </p>
-            </div>
-            
-
-
-            <section className="bg-[#f8fafc] dark:bg-white-90 mt-4">
-              <div className="container px-6 py-8 mx-auto">
-                <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-                  {data.map((item, index) => (
-
-                    <article
-                      key={index} data-aos="zoom-in-down"
-                      className="rounded-xl bg-white-050 shadow-xl border-t-2 border-gray-100 hover:shadow-2xl  h-80  "
-                    >
-
-                      <div className='w-full'>
-                        <div className="flex items-center gap-4   p-2 shadow-lg rounded-t-lg hover:rounded-t-xl hover:shadow-xl" >
-                          <img
-                            alt="Developer"
-                            src="/law.png"
-                            className="h-16 w-16 rounded-full object-cover"
-                          />
-
-
-                          <div>
-                            <h3 className="text-lg  font-medium text-black">
-                              {item.title}
-                            </h3>
-
-                          </div>
-                        </div>
-                      </div>
-
-
-
-                      <div className=' w-full h-48   overflow-auto  shadow-sm  '>
-                        <ul className="mt-4 space-y-2  mx-auto w-full  ">
-                          {item.details.map((detail, idx) => (
-                            <li key={idx} className="">
-                              <a
-                                href="#"
-                                className="block h-full rounded-xl  p-2 "
-                              >
-                                {/* <strong className="font-medium text-black">
-                          {idx + 1}
-                        </strong> */}
-                                <p className="mt-1 text-xs font-medium text-black">
-                                  {detail}
-                                </p>
-                              </a>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </article>
-                  ))}
-                </div>
-              </div>
-            </section>
-          </div>
-
+    <>
+      <div className='mx-auto  sm:w-5/6 w-full md:w-5/6 lg:5/6 max-w-5xl mb-12'>
+        <div className="container mx-auto p-4 my-6 space-y-2 text-center  mt-4 bg-w mb-4">
+          <h2 className="text-3xl font-bold" data-aos="fade-right" data-aos-delay="100">
+            How we make Digital Marketing strategies for law firms
+          </h2>
+          <p className="dark:text-gray-400 max-w-4xl mx-auto" data-aos="fade-left" data-aos-delay="200">
+            It may be difficult for attorneys to know where to begin with their digital marketing plan. There are several digital marketing methods to explore, including website optimization, social media marketing, search engine optimization (SEO), and paid digital advertisements. The most successful law firms focus their efforts on a few areas that make the most sense for their practice areas, company, and customers
+          </p>
+        </div>
+        <div className="flex gap-5 justify-center flex-wrap py-8 px-2">
+          {
+            data?.map(({id,title},i)=>{
+              return (
+                  <div
+                      data-aos={"zoom-in"}
+                      data-aos-delay={(i+1)*100}
+                      key={id} className="flex flex-1 flex-col items-center text-center gap-3 rounded-xl border-[1px] p-6 justify-center min-w-full sm:min-w-[200px] md:min-w-[300px] sm:max-w-[300px]">
+                        <div className="w-12 h-12 font-bold text-lg rounded-full bg-[#DDE2FB] flex justify-center items-center text-[#4E6BFF]">{i+1}</div>
+          <h3 className="text-xl">{title}</h3>
+                  </div>
+              )
+            })
+          }
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 
