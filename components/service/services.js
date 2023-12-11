@@ -22,7 +22,7 @@ const services = () => {
     {
       title: "Estate Planning Services",
       desc: "Estate planning services are professional services provided by attorneys, financial advisors, or estate planners to help individuals and families plan for the management and distribution of their assets upon death or incapacity. Estate planning involves making important decisions regarding the transfer of wealth, minimizing taxes, protecting assets, and ensuring that the wishes of the individual are carried out.",
-      href: "/estate",
+      href: "/estateplanning",
     },
     {
       title: "Family Law Services",
@@ -32,7 +32,7 @@ const services = () => {
     {
       title: "Global Immigration Management Services",
       desc: "Global Immigration Management Services refers to the comprehensive range of services provided by specialized companies or organizations to assist individuals, families, and businesses with their immigration and mobility needs on a global scale. These services encompass various aspects of the immigration process, including legal, administrative, and logistical support.",
-      href: "/globalimigration",
+      href: "/globalimmigration",
     },
     {
       title: "Global IP Research And Consultation Services",

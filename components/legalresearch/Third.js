@@ -39,7 +39,7 @@ export default function Third() {
 
         <div className="container mx-auto p-4 my-6 space-y-2 text-center  mt-4 bg-w mb-4">
           <h2 className="text-3xl font-bold">
-            Why Outsource Legal Research Services?
+            Why Outsource Legal Research Services to TLB
           </h2>
           {/* <p className="dark:text-gray-400">
             Outsourcing your <strong>IP Research and Consultation Service </strong> requirements can do wonders for your firm. Today it's a proven fact that firms that have outsourced their legal requirements to reliable partners have witnessed fruitful results and the potential to take in more client projects has only increased over the years.

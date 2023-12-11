@@ -5,7 +5,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 // import ParticlesBg from 'particles-bg'
 
-const inter = Varela({ subsets: ['latin'],weight:'400' })
+const inter = Varela({ subsets: ['latin'], weight: '400' })
 
 export const metadata = {
   title: 'TLB',
@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
         {children}
         <Footer></Footer>
         {/* <ParticlesBg color="#1E293B" num={200} type="circle" bg={true} /> */}
-        </body>
+      </body>
     </html>
   )
 }

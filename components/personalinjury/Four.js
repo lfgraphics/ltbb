@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 
@@ -103,7 +104,7 @@ const Four = () => {
         "TLB’s forensic expert attorneys and doctors have over 20 years of experience in the field of forensic analysis and evaluations. They are skilled at making detailed processes of detecting, investigating, and documenting the reason, course, and consequences of an incident and the violations thereof. They can review photographic evidence in all types of personal injury cases and can interpret the injuries. Additionally, the team can track down the clinical situation that led to the adverse outcome. ",
       ]
     },
-    
+
   ];
 
 

@@ -1,6 +1,8 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Banner from "@/components/home/Banner";
-import AnimatedShape from "@/components/service/AnimatedShape";
 import HomeAchievements from "@/components/home/HomeAchievements";
 import LegalSolutions from "@/components/home/LegalSolutions";
 import HowWeWork from "@/components/home/HowWeWork";
@@ -8,19 +10,27 @@ import OurMissionAndVisions from "@/components/home/OurMissionAndVisions";
 import BlogSection from "@/components/home/BlogSection";
 import Testimonials from "@/components/home/Testimonials";
 import ContactSection from "@/components/home/ContactSection";
+import ManagedServices from "@/components/home/ManagedServices";
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init({
+      offset: 150,
+      delay: 0,
+      duration: 500,
+    });
+  });
   return (
-    <React.Fragment>
+    <section className="overflow-hidden">
       <Banner />
-      <AnimatedShape background="#EFF2FF" />
       <HomeAchievements />
       <LegalSolutions />
+      <ManagedServices />
       <HowWeWork />
       <OurMissionAndVisions />
       <BlogSection />
       <Testimonials />
-      <ContactSection/>
-    </React.Fragment>
+      <ContactSection />
+    </section>
   );
 }

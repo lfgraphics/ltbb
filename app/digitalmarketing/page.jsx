@@ -6,19 +6,19 @@ import Four from '@/components/digitalmarketing/Four';
 import Faq from '@/components/digitalmarketing/Faq';
 
 export const metadata = {
-    title: "Digital Marketing Services | TLB",
-    description: " TLB’s outsourced digital marketing services allow law firms and attorneys in achieving their social media and digital footprint objectives through bespoke plans and purpose-driven campaigns.\n"
+  title: "Digital Marketing Services | TLB",
+  description: " TLB’s outsourced digital marketing services allow law firms and attorneys in achieving their social media and digital footprint objectives through bespoke plans and purpose-driven campaigns."
 }
+
 const page = () => {
   return (
-      <React.Fragment>
-        <Hero></Hero>
-        <Second></Second>
-        <Third></Third>
-        <Four></Four>
-        {/*<Faq></Faq>*/}
-      </React.Fragment>
+    <React.Fragment>
+      <Hero></Hero>
+      <Second></Second>
+      <Third></Third>
+      <Four></Four>
+    </React.Fragment>
   )
 }
 
-export default page
+export default page;

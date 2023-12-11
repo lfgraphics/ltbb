@@ -1,17 +1,6 @@
 "use client"
-import React, { useRef, useState } from "react";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/pagination";
 
 import "./styles.css";
-
-// import required modules
-import { FreeMode, Pagination } from "swiper";
 
 export default function Third2() {
   const cardData = [
@@ -58,6 +47,14 @@ export default function Third2() {
 
   ];
 
+  const shouldAddBorderRight = (i) => {
+    return (i !== 1 && i !== 3 && i !== 5 && i !== 7 && i !== 9);
+  };
+
+  const shouldAddBorderRightXL = (i) => {
+    return (i !== 2 && i !== 5 && i !== 8 && i !== 9);
+  };
+
   return (
     <>
       <div className="bg-transparent mx-auto w-5/6">
@@ -70,83 +67,32 @@ export default function Third2() {
             Outsourcing estate planning services to TLB can be beneficial for several reasons:
           </p>
         </div>
-        <Swiper
-          slidesPerView={3}
-          spaceBetween={30}
-          freeMode={true}
-          grabCursor={true}
-          pagination={{
-            clickable: true,
-          }}
-          breakpoints={{
-            "@0.00": {
-              slidesPerView: 1,
-              spaceBetween: 10,
-            },
-            "@0.75": {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            "@1.00": {
-              slidesPerView: 3,
-              spaceBetween: 40,
-            },
-            "@1.50": {
-              slidesPerView: 4,
-              spaceBetween: 50,
-            },
-          }}
-          modules={[FreeMode, Pagination]}
-          className="mySwiper"
-        >
+        <div className="flex flex-wrap gap-8">
           {/* Step 2: Map the card data to the SwiperSlides */}
-          {cardData.map((card, index) => (
-            <SwiperSlide
-              key={index}
-              className="border h-fit lg:min-h-[435px] p-8 flex flex-col"
+          {cardData.map((card, i) => (
+            <div
+              key={i}
+              className={`bg-white tiles p-8 flex-1 w-full min-w-[300px] border-b-[1px] md:border-b-0 md:max-w-[50%] xl:max-w-[400px]
+                ${shouldAddBorderRight(i) && "md:border-r-[1px]"} 
+                ${shouldAddBorderRight(i) && !shouldAddBorderRightXL(i) && "xl:border-r-0"}
+                ${shouldAddBorderRightXL(i) && "xl:border-r-[1px]"}
+                border-[#E4E4E7]`}
             >
-              <div className="bg-white flex-1">
-                <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
-                    <svg
-                      className="text-white w-6 h-6"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm0 2a10 10 0 100-20 10 10 0 000 20z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </div>
-                  <h3 className="text-xl font-bold ml-4">{card.title}</h3>
+              <div className="flex flex-col mb-6">
+                <div className="w-12 h-12 flex">
+                  <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="36" height="36" rx="6" fill="#374151" />
+                    <path d="M9.83594 19.1665L14.5026 23.8332L26.1693 12.1665" stroke="white" strokeWidth="2.33333"
+                      strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+
                 </div>
-                <p className="text-gray-700">
-                  {card.description}
-                </p>
+                <h3 className="text-xl font-semiblod">{card.title}</h3>
               </div>
-            </SwiperSlide>
+              <p className="text-gray-700">{card.description}</p>
+            </div>
           ))}
-        </Swiper>
-
-        {/* <div  data-aos="flip-down" className="m-4 mt-8 mb-4">
-          <div className="max-w-full p-6 overflow-hidden  rounded-lg shadow bg-[#1E293B] text-gray-100" >
-            <article>
-              <h2 className="text-xl font-bold text-center mb-4">It&apos;s Important</h2>
-              <p className="text-lg">
-                Overall, outsourcing case intake services to TLB will allows law firms to improve client service,
-                increase efficiency, reduce costs, and focus on their core legal work. By leveraging the expertise
-                and scalability TLB, firms can effectively manage the initial contact and evaluation process,
-                ensuring that potential cases are properly assessed and directed to the appropriate legal teams.
-              </p>
-
-              <p className="mt-4 text-gray-400"></p>
-              
-            </article>
-          </div>
-        </div> */}
+        </div>
 
       </div>
     </>

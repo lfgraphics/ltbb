@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Varela+Round&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Varela+Round&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import '~@fortawesome/fontawesome-free/css/all.min.css';
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -21,24 +21,38 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom, transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
   max-width: 100vw;
   overflow-x: hidden;
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
 }
-h1,h2,h3,h4,h5,h6{
-  font-family: 'Outfit', sans-serif;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Outfit", sans-serif;
 }
+
 .cls-2 {
   fill: transparent;
 }
-.homeClipPath{
+
+.homeClipPath {
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
 }
-.legalOverlay{
-  background: rgba(0,0,0,0.3);
+
+.legalOverlay {
+  background: rgba(0, 0, 0, 0.3);
 }
+
 .swiper-pagination-bullets {
   display: none;
 }
@@ -50,11 +64,13 @@ h1,h2,h3,h4,h5,h6{
   display: flex;
 }
 
-@media (max-width:768px){
-  .homeClipPath{
+@media (max-width: 768px) {
+  .homeClipPath {
     clip-path: none;
   }
-  .testimonials .swiper-button-prev,.testimonials .swiper-button-next{
+
+  .testimonials .swiper-button-prev,
+  .testimonials .swiper-button-next {
     display: none !important;
   }
 }
@@ -64,8 +80,6 @@ h1,h2,h3,h4,h5,h6{
     border: none;
   }
 }
-
-
 
 /* .navbar {
   
@@ -91,7 +105,6 @@ h1,h2,h3,h4,h5,h6{
   color: #333; 
   font-size: 18px;
 }  */
-
 
 /* .logo-container{
   margin-top: 60px;

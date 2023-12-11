@@ -51,7 +51,7 @@ export default function Third2() {
 
         <div className="container mx-auto p-4 my-6 space-y-2 text-center  mt-4 bg-w mb-4">
           <h2 className="text-3xl font-bold">
-            Why Outsource Legal Research Services?
+            Why Outsource Legal Research Services to TLB
           </h2>
           <p className="dark:text-gray-400">
             Legal research services have undergone a revolutionary change relating to their functioning and can be simply defined as the procedure of discovering effective legal research solutions to a legal question or checking for a legal precedent that can be quoted in an appeal or during the trial. TLB’s Legal Research team can help you in providing accurate solutions, analyze statutes and case studies to ensure that all your legal issues are taken care of accordingly.

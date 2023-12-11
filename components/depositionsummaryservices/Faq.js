@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+"use client"
+import React, { useState } from 'react';
 
 const Faq = () => {
   const [expanded, setExpanded] = useState(Array(faqData.length).fill(false));
@@ -29,9 +30,8 @@ const Faq = () => {
                 >
                   <span className="w-[90%] md:w-auto text-base lg:text-lg font-medium">{item.question}</span>
                   <svg
-                    className={`w-5 h-5 ${
-                      expanded[index] ? "transform rotate-180" : ""
-                    }`}
+                    className={`w-5 h-5 ${expanded[index] ? "transform rotate-180" : ""
+                      }`}
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"

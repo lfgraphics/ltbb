@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function BlogCard({ data }) {
+export default function BlogCard({ data,animationType,animationDelay }) {
   const { image, title, desc, link } = data;
   return (
-    <div className="flex-1 min-w-[300px] md:max-w-[320px] rounded-md p-4 bg-white drop-shadow-md">
+    <div className="flex-1 min-w-[300px] md:max-w-[320px] rounded-md p-4 bg-white drop-shadow-md" data-aos={animationType} data-aos-delay={animationDelay}>
       <div className="relative w-full h-56">
         <Link href={link} className="absolute z-10 inset-0"></Link>
         <Image
