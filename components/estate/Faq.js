@@ -2,12 +2,10 @@
 import React, { useState } from 'react';
 
 const Faq = () => {
-  const [expanded, setExpanded] = useState(Array(faqData.length).fill(false));
+  const [openQuestionIndex, setOpenQuestionIndex] = useState(null);
 
-  const toggleExpand = (index) => {
-    const updatedExpanded = [...expanded];
-    updatedExpanded[index] = !updatedExpanded[index];
-    setExpanded(updatedExpanded);
+  const handleQuestionToggle = (index) => {
+    setOpenQuestionIndex((prevIndex) => (prevIndex === index ? null : index));
   };
 
   return (
@@ -31,7 +29,7 @@ const Faq = () => {
                   {item.question}
                 </summary>
                 <div className="px-4 pb-4">
-                  <p>{item.answer}</p>
+                  {item.answer}
                 </div>
               </details>
             ))}

@@ -2,50 +2,50 @@
 
 import "./styles.css";
 
-export default function Third2() {
-  const cardData = [
-    {
-      title: "Expertise:",
-      description: "Estate planning involves complex legal, financial, and tax considerations. By outsourcing to TLB’s specialized estate planning professionals, law firms and attorneys can tap into their expertise and knowledge to create a comprehensive and effective estate plan.",
-    },
-    {
-      title: "Personalized Solutions:",
-      description: "TLB’s estate planning professionals can tailor the estate plan to suit the individual's unique needs and goals. They can provide personalized advice and recommend appropriate strategies based on the individual's financial situation, family dynamics, and long-term objectives.",
-    },
-    {
-      title: "Time-Saving:",
-      description: "Estate planning can be a time-consuming process, especially for those who are not familiar with the legal and financial intricacies involved. By outsourcing to TLB, law firms and attorneys can delegate the tasks to experts, allowing them to focus on other important aspects of their life and business.",
-    },
-    {
-      title: "Minimize Errors and Omissions:",
-      description: "Estate planning mistakes can lead to legal disputes, tax issues, or unintended distribution of assets. TLB’s estate planning professionals who specialize in estate planning can help minimize the risk of errors and ensure that the plan is legally valid and effective.",
-    },
-    {
-      title: "Keeping Up with Changing Laws:",
-      description: "Estate planning laws and regulations are subject to change. TLB’s estate planning professionals stay up-to-date with the latest legal developments, ensuring that the estate plan remains compliant with current laws.",
-    },
-    {
-      title: "Objective Advice:",
-      description: "TLB can provide an objective perspective on sensitive family matters and financial decisions, helping to mediate potential conflicts and ensuring fairness in the distribution of assets.",
-    },
-    {
-      title: "Confidentiality and Privacy:",
-      description: "Estate planning involves sharing personal and financial information. By outsourcing to TLB’s estate planning professionals, law firms and attorneys can maintain a higher level of confidentiality and privacy compared to sharing sensitive details with multiple parties.",
-    },
-    {
-      title: "Continuity and Support:",
-      description: "TLB can offer ongoing support, periodically reviewing and updating the plan as circumstances change, such as changes in tax laws, family situations, or financial status.",
-    },
-    {
-      title: "Cost-Effective: ",
-      description: "Outsourcing can be more cost-effective than hiring a full-time in-house estate planner, especially for individuals with relatively straightforward estate planning needs.",
-    },
-    {
-      title: "Specialized Services: ",
-      description: "TLB offers a wide range of specialized services, including tax planning, trust administration, and business succession planning, providing a comprehensive approach to estate planning.",
-    },
+const cardData = [
+  {
+    title: "Expertise:",
+    description: "Estate planning involves complex legal, financial, and tax considerations. By outsourcing to TLB’s specialized estate planning professionals, law firms and attorneys can tap into their expertise and knowledge to create a comprehensive and effective estate plan.",
+  },
+  {
+    title: "Personalized Solutions:",
+    description: "TLB’s estate planning professionals can tailor the estate plan to suit the individual's unique needs and goals. They can provide personalized advice and recommend appropriate strategies based on the individual's financial situation, family dynamics, and long-term objectives.",
+  },
+  {
+    title: "Time-Saving:",
+    description: "Estate planning can be a time-consuming process, especially for those who are not familiar with the legal and financial intricacies involved. By outsourcing to TLB, law firms and attorneys can delegate the tasks to experts, allowing them to focus on other important aspects of their life and business.",
+  },
+  {
+    title: "Minimize Errors and Omissions:",
+    description: "Estate planning mistakes can lead to legal disputes, tax issues, or unintended distribution of assets. TLB’s estate planning professionals who specialize in estate planning can help minimize the risk of errors and ensure that the plan is legally valid and effective.",
+  },
+  {
+    title: "Keeping Up with Changing Laws:",
+    description: "Estate planning laws and regulations are subject to change. TLB’s estate planning professionals stay up-to-date with the latest legal developments, ensuring that the estate plan remains compliant with current laws.",
+  },
+  {
+    title: "Objective Advice:",
+    description: "TLB can provide an objective perspective on sensitive family matters and financial decisions, helping to mediate potential conflicts and ensuring fairness in the distribution of assets.",
+  },
+  {
+    title: "Confidentiality and Privacy:",
+    description: "Estate planning involves sharing personal and financial information. By outsourcing to TLB’s estate planning professionals, law firms and attorneys can maintain a higher level of confidentiality and privacy compared to sharing sensitive details with multiple parties.",
+  },
+  {
+    title: "Continuity and Support:",
+    description: "TLB can offer ongoing support, periodically reviewing and updating the plan as circumstances change, such as changes in tax laws, family situations, or financial status.",
+  },
+  {
+    title: "Cost-Effective: ",
+    description: "Outsourcing can be more cost-effective than hiring a full-time in-house estate planner, especially for individuals with relatively straightforward estate planning needs.",
+  },
+  {
+    title: "Specialized Services: ",
+    description: "TLB offers a wide range of specialized services, including tax planning, trust administration, and business succession planning, providing a comprehensive approach to estate planning.",
+  },
 
-  ];
+];
+export default function Third2() {
 
   const shouldAddBorderRight = (i) => {
     return (i !== 1 && i !== 3 && i !== 5 && i !== 7 && i !== 9);
