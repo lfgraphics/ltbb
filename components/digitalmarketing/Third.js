@@ -8,13 +8,15 @@ const cardData = [
     title: "Targeted email marketing campaigns",
     description: "At TLB we believe targeting emails to prospective leads can do wonders for a law firm. Through targeted emails, you can run personalized campaigns that will connect your leads or clients to your law firm. Targeted email marketing is something that’s rigorously practiced in all kinds of businesses to get desired clients to connect to the decision-makers of a business.",
     subtitle:"What we offer in targeted email marketing campaigns",
-    features:["Personalized email templates ","Complete handling of email campaigns ","Scheduling and rescheduling of emails as per the requirements.","Follow-ups with the interested leads"]
+    features:["Personalized email templates ","Complete handling of email campaigns ","Scheduling and rescheduling of emails as per the requirements.","Follow-ups with the interested leads"],
+    images:"/digital-marketing/digital-marketing-1.webp"
   },
   {
     title: "Search Engine Optimization (SEO)",
     description: "Search engine optimization (SEO) is included in TLB’s digital marketing services to ensure online exposure on search engines for the clients. TLB can help increase the number of quality visitors to client’s website by creating optimized content that focuses on important keywords that define the brand. ",
     subtitle:"What we offer in SEO",
-    features:["Link building ","User-friendly and search engine-friendly content ","Well researched keywords.","Content optimization","On-page SEO","Quality leads","Digital growth","Building a better reputation for your firm"]
+    features:["Link building ","User-friendly and search engine-friendly content ","Well researched keywords.","Content optimization","On-page SEO","Quality leads","Digital growth","Building a better reputation for your firm"],
+    images:"/digital-marketing/digital-marketing-3.webp"
   },
   {
     title: "Website Optimization and Development",
@@ -26,7 +28,8 @@ const cardData = [
       "User-Friendly Navigation",
       "Responsive Web Design for All Devices",
       "ADA-Compliance to Improve Accessibility"
-    ]
+    ],
+    images:"/digital-marketing/digital-marketing-5.webp"
   },
   {
     title: "Social Media Optimization",
@@ -34,7 +37,8 @@ const cardData = [
     subtitle: "What we offer in Social Media optimization:",
     features: [
       "Optimization and management of Linkedin, Facebook, Instagram, Twitter, Youtube"
-    ]
+    ],
+     images:"/digital-marketing/digital-marketing-4.webp"
   },
   {
     title: "Pay-Per-Click",
@@ -46,7 +50,8 @@ const cardData = [
       "Improve Conversions from Qualified Visitors",
       "Increased Recognition and Awareness",
       "Campaigns Tailored to Any Budget"
-    ]
+    ],
+     images:"/digital-marketing/digital-marketing-6.webp"
   },
   {
     title: "Logo Design and Rebranding",
@@ -56,7 +61,8 @@ const cardData = [
       "Custom logo design that fits your firm",
       "Market research to better understand your clients.",
       "Rebranding as per the requirement"
-    ]
+    ],
+     images:"/Estate Planning/pexels-mikhail-nilov-7731330.jpg"
   },
   {
     title: "Blogging, Case Studies, White Papers, and Articles",
@@ -66,7 +72,8 @@ const cardData = [
       "Relevant and trending legal blogs and articles",
       "Well-researched and detailed case studies of your projects",
       "Well-crafted and researched white papers."
-    ]
+    ],
+    images:"/Immigration/pexels-sheila-731217.jpg"
   },
   {
     title: "Legal Content Writing",
@@ -77,7 +84,8 @@ const cardData = [
       "Blog posts and email templates",
       "Social media posts",
       "Optimized and conversion-focused content."
-    ]
+    ],
+     images:"/Legal Research/pexels-vlada-karpovich-4050312.jpg"
   },
   {
     title: "Business Listing and Award Rankings",
@@ -87,7 +95,8 @@ const cardData = [
       "Business listing",
       "Helping you get more awards.",
       "Better reputation and clientele"
-    ]
+    ],
+     images:"/Personal Injury/pexels-rdne-stock-project-6520179.jpg"
   },
   {
     title: "Targeted Email Marketing Campaigns",
@@ -98,7 +107,8 @@ const cardData = [
       "Complete handling of email campaigns",
       "Scheduling and rescheduling of emails as per the requirements.",
       "Follow-ups with the interested leads"
-    ]
+    ],
+     images:"/Paralegal Services/pexels-sora-shimazaki-5668802.jpg"
   }
 ];
 
@@ -131,7 +141,7 @@ export default function Third() {
         <div className="mt-10 flex flex-col md:flex-row gap-10 flex-wrap px-[5%]">
           {
             displayCards?.map((item,i)=> {
-              const {title,description,subtitle,features} = item;
+              const {title,description,subtitle,features,images} = item;
               return (
                   < div
                       key={i}
@@ -140,7 +150,7 @@ export default function Third() {
                   < div
               className = "relative w-full h-56" >
               <Image
-                  src="/digital-marketing/banner.webp"
+                  src={images}
                   fill
                   alt={title}
                   className="object-cover rounded-md"
