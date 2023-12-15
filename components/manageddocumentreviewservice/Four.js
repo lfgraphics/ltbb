@@ -1,10 +1,7 @@
 'use client'
 import React, { useEffect } from 'react';
 import AOS from 'aos';
-
-import 'aos/dist/aos.css';
-import Image from 'next/image';
-
+import "aos/dist/aos.css";
 
 const Four = () => {
   useEffect(() => {
@@ -21,8 +18,8 @@ const Four = () => {
       details: [
         "Reviewing, organizing, indexing, and summarizing client files",
         "Preparing different correspondence",
-        "Preparing a variety of pleadings"
-      ]
+        "Preparing a variety of pleadings",
+      ],
     },
     {
       title: "Discovery Preparation",
@@ -30,8 +27,8 @@ const Four = () => {
         "Drafting Subpoenas, Interrogatories, and Discovery Demands",
         "Detailed Analysis Reports of Depositions and Interrogatories",
         "Witness Summary",
-        "Requesting for Medical Reports and Detailed Analysis of Medical Reports"
-      ]
+        "Requesting for Medical Reports and Detailed Analysis of Medical Reports",
+      ],
     },
     {
       title: "Trial Preparation",
@@ -39,8 +36,8 @@ const Four = () => {
         "Expert witness report summarization",
         "Document summarization for discovery",
         "Property search from public records",
-        "Document Management with the use of software Casemap"
-      ]
+        "Document Management with the use of software Casemap",
+      ],
     },
     {
       title: "Legal Document Production",
@@ -49,8 +46,8 @@ const Four = () => {
         "Power of attorneys",
         "Prenuptial agreements",
         "Case Information statements",
-        "Property Settlement agreements"
-      ]
+        "Property Settlement agreements",
+      ],
     },
     {
       title: "Editorial Support",
@@ -59,15 +56,15 @@ const Four = () => {
         "Abstraction of case law and legal journals",
         "Indexing legal material",
         "Legal research",
-        "Copy editing"
-      ]
+        "Copy editing",
+      ],
     },
     {
       title: "Organizing Legal Database",
       details: [
         "Creating legal databases for law firms and corporates",
-        "Providing assistance in organizing the information into an index and searchable database"
-      ]
+        "Providing assistance in organizing the information into an index and searchable database",
+      ],
     },
     {
       title: "Proofreading Services",
@@ -80,8 +77,8 @@ const Four = () => {
         "Validating table of contents with elements like titles and subtitles",
         "Validating the appropriateness of in-text illustrations",
         "Real Estate Title Search",
-        "Data Entry Services"
-      ]
+        "Data Entry Services",
+      ],
     },
     {
       title: "Corporate Services",
@@ -95,8 +92,8 @@ const Four = () => {
         "Performing Clerical Tasks and Assignments",
         "Preparing Table of Authorities",
         "Preparing Table of Contents",
-        "Legal Typing and Creating Minutes of Meetings"
-      ]
+        "Legal Typing and Creating Minutes of Meetings",
+      ],
     },
     {
       title: "Legal Research and Drafting Services",
@@ -110,16 +107,16 @@ const Four = () => {
         "Multi-Jurisdictional Research Services",
         "Memoranda of Law Research Services",
         "Drafting of agreements/contracts as well as court-specific documents",
-        "Analyzing SEC Forms such as Form 4 and inputting the relevant information into Excel."
-      ]
+        "Analyzing SEC Forms such as Form 4 and inputting the relevant information into Excel.",
+      ],
     },
     {
       title: "Legal Transcription Services",
       details: [
         "Transcribing audio files related to legal cases.",
         "Tribunal Transcription",
-        "Verbatim Voice Dictation"
-      ]
+        "Verbatim Voice Dictation",
+      ],
     },
     {
       title: "Litigation Support Services",
@@ -128,8 +125,8 @@ const Four = () => {
         "Medical Records",
         "Document Review Management",
         "Electronic Data Discovery Solutions",
-        "Processing of Information Stored Electronically"
-      ]
+        "Processing of Information Stored Electronically",
+      ],
     },
     {
       title: "Other services",
@@ -142,47 +139,40 @@ const Four = () => {
         "Data format conversion and storage",
         "Collection Evidence",
         "Legal Coding",
-        "Legal Content Support"
-      ]
-    }
+        "Legal Content Support",
+      ],
+    },
   ];
-
 
   return (
     <React.Fragment>
-      <div className='mx-auto  sm:w-5/6 w-full md:w-5/6 lg:5/6'>
-        <div className='m-4 space-y-3'>
-
-
-
-
-          <div className="max-w-full px-8 py-4 bg-[#f8fafc] rounded-lg shadow-gray-400   cursor-pointer" data-aos="fade-down">
-            <div className="flex items-center justify-between">
+      <div className="mx-auto sm:w-5/6 w-full md:w-5/6 lg:5/6 mt-2">
+        <div className="m-1 lg:m-4 space-y-3">
+          <div
+            className="max-w-full px-0 lg:px-8 py-4 bg-[#f8fafc] rounded-lg shadow-gray-400   cursor-pointer"
+            data-aos="fade-down"
+          >
+            <div className="flex items-center justify-between px-4">
               <span className="text-md font-bold text-black ">
-                <div className='flex items-center justify-between'>
+                <div className="flex items-center justify-between">
                   <img
                     className="hidden object-cover w-10 h-10 mx-4 rounded-full sm:block"
                     src="/law2.png"
                     alt="avatar"
                   />
-
-                  <p
-
-                    className="text-3xl font-bold text-black  dark:hover:text-white-500  "
-
-                  >
+                  <p className="text-3xl font-bold text-black  dark:hover:text-white-500  ">
                     TLBs Paralegal Services
-
                   </p>
                 </div>
               </span>
-
             </div>
-            <div className="mt-2">
-
+            <div className="mt-2 px-4">
               <p className="mt-2 lg:px-16 sm:px-12  px-0 text-black font-semibold ">
-                We at TLB understand the burden an attorney or a lawyer goes through. That is why we offer custom paralegal support services that are specially designed to suit your unique needs. Below mentioned are our portfolio of paralegal services that can be outsourced to us.
-
+                We at TLB understand the burden an attorney or a lawyer goes
+                through. That is why we offer custom paralegal support services
+                that are specially designed to suit your unique needs. Below
+                mentioned are our portfolio of paralegal services that can be
+                outsourced to us.
               </p>
             </div>
             <div className="flex items-center justify-between mt-4">
@@ -194,10 +184,7 @@ const Four = () => {
     >
       Read more
     </a> */}
-              <div className="flex items-center">
-
-
-              </div>
+              <div className="flex items-center"></div>
             </div>
 
             {/* ============================================================== */}
@@ -206,33 +193,28 @@ const Four = () => {
               <div className="container px-6 py-8 mx-auto">
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
                   {data.map((item, index) => (
-
                     <article
-                      key={index} data-aos="zoom-in-down"
+                      key={index}
+                      data-aos="zoom-in-down"
                       className="rounded-xl bg-white-050 shadow-xl border-t-2 border-gray-100 hover:shadow-2xl  h-80  "
                     >
-
-                      <div className='w-full'>
-                        <div className="flex items-center gap-4   p-2 shadow-lg rounded-t-lg hover:rounded-t-xl hover:shadow-xl" >
+                      <div className="w-full">
+                        <div className="flex items-center gap-4   p-2 shadow-lg rounded-t-lg hover:rounded-t-xl hover:shadow-xl">
                           <img
                             alt="Developer"
                             src="/law.png"
                             className="h-16 w-16 rounded-full object-cover"
                           />
 
-
                           <div>
                             <h3 className="text-lg  font-medium text-black">
                               {item.title}
                             </h3>
-
                           </div>
                         </div>
                       </div>
 
-
-
-                      <div className=' w-full h-48   overflow-auto  shadow-sm  '>
+                      <div className=" w-full h-48   overflow-auto  shadow-sm  ">
                         <ul className="mt-4 space-y-2  mx-auto w-full  ">
                           {item.details.map((detail, idx) => (
                             <li key={idx} className="">
@@ -257,7 +239,6 @@ const Four = () => {
               </div>
             </section>
           </div>
-
         </div>
       </div>
     </React.Fragment>

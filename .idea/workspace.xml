@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a79fbd87-bbd1-47ad-8d2d-e7ab371b38d5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/components/estate/Hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/estate/Hero.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/estate/Second.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/estate/Second.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/estate/Third2.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/estate/Third2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/digitalmarketing/Third.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/digitalmarketing/Third.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +34,7 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "latest-fixes",
+    "git-widget-placeholder": "digital-marketing",
     "last_opened_file_path": "/Users/kaifayazkhan/Desktop/Projects/ltbb/components/digitalmarketing",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -62,6 +61,7 @@
       <updated>1701969513178</updated>
       <workItem from="1701969516027" duration="4228000" />
       <workItem from="1701978815254" duration="4585000" />
+      <workItem from="1702378888779" duration="1864000" />
     </task>
     <servers />
   </component>

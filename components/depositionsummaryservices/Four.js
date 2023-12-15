@@ -62,14 +62,10 @@ const Four = () => {
 
   return (
     <React.Fragment>
-      <div className='mx-auto  sm:w-5/6 w-full md:w-5/6 lg:5/6'>
-        <div className='m-4 space-y-3'>
-
-
-
-
-          <div className="max-w-full px-8 py-4 bg-[#f8fafc] rounded-lg shadow-gray-400   cursor-pointer" data-aos="fade-down">
-            <div className="flex items-center justify-between">
+      <div className='mx-auto sm:w-5/6 w-full md:w-5/6 lg:5/6 mt-2'>
+        <div className='m-1 lg:m-4 space-y-3'>
+          <div className="max-w-full px-0 lg:px-8 py-4 bg-[#f8fafc] rounded-lg shadow-gray-400   cursor-pointer" data-aos="fade-down">
+            <div className="flex items-center justify-between px-4">
               <span className="text-md font-bold text-black ">
                 <div className='flex items-center justify-between'>
                   <img
@@ -90,7 +86,7 @@ const Four = () => {
               </span>
 
             </div>
-            <div className="mt-2">
+            <div className="mt-2 px-4">
 
               <p className="mt-2 lg:px-16 sm:px-12  px-0 text-black font-semibold ">
                 TLB’s goal with deposition summary services is to provide a concise and accurate summary of the key points and testimony from a deposition, in a format that is easily understandable and useful to the client.

@@ -1,17 +1,17 @@
-"use client"
+"use client";
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/effect-coverflow";
+import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
 import "./styles.css";
 
 // import required modules
-import { EffectCoverflow, Pagination } from "swiper";
+import { FreeMode, Pagination } from "swiper";
 
 export default function Third() {
   const cardData = [
@@ -34,50 +34,64 @@ export default function Third() {
     {
       title: "Quality and Accuracy:",
       description: `TLB’s specialized deposition summary service has rigorous quality control measures in place to ensure accuracy and attention to detail in their summaries. We are familiar with legal terminology and the specific requirements of deposition summaries.\n\nWhen considering outsourcing deposition summary services, it is essential to select a reputable and reliable service provider. Conducting due diligence, checking reviews or testimonials, and evaluating the provider's expertise and track record can help ensure a successful outsourcing partnership.`,
-    }
-
+    },
   ];
 
   return (
     <>
       <div className="bg-transparent mx-auto w-5/6">
-
         <div className="container mx-auto p-4 my-6 space-y-2 text-center  mt-4 bg-w mb-4">
           <h2 className="text-3xl font-bold">
             Why Outsource Deposition Summary Services to TLB?
           </h2>
           <p className="dark:text-gray-400">
-            Outsourced deposition summary services refer to the practice of hiring an external service provider to handle the task of creating deposition summaries. Instead of handling the task in-house, law firms and legal professionals outsource this work to specialized companies or freelance professionals who specialize in deposition summarization.
+            Outsourced deposition summary services refer to the practice of
+            hiring an external service provider to handle the task of creating
+            deposition summaries. Instead of handling the task in-house, law
+            firms and legal professionals outsource this work to specialized
+            companies or freelance professionals who specialize in deposition
+            summarization.
             <br></br>
-            There are several reasons why outsourcing deposition summary services may be beneficial:
-
+            There are several reasons why outsourcing deposition summary
+            services may be beneficial:
           </p>
         </div>
         <Swiper
-          effect={"coverflow"}
+          slidesPerView={3}
+          spaceBetween={30}
+          freeMode={true}
           grabCursor={true}
-          centeredSlides={true}
-          loop={true}
-          slidesPerView={"auto"}
-          coverflowEffect={{
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            shadow: true,
+          pagination={{
+            clickable: true,
           }}
-          pagination={false}
-          autoplay={{
-            delay: 3500,
-            disableOnInteraction: false,
+          breakpoints={{
+            "@0.00": {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            "@0.75": {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            "@1.00": {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+            "@1.50": {
+              slidesPerView: 4,
+              spaceBetween: 50,
+            },
           }}
-          modules={[EffectCoverflow, Pagination]}
-          className="mySwiper space-y-2"
+          modules={[FreeMode, Pagination]}
+          className="mySwiper"
         >
           {/* Step 2: Map the card data to the SwiperSlides */}
           {cardData.map((card, index) => (
-            <SwiperSlide key={index}>
-              <div className="bg-white tiles rounded-b-xl shadow-gray-700 shadow-xl rounded-t-lg    p-8 ">
+            <SwiperSlide
+              key={index}
+              className="border h-fit lg:min-h-[435px] p-8 flex flex-col"
+            >
+              <div className="bg-white flex-1">
                 <div className="flex items-center mb-6">
                   <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
                     <svg
@@ -95,7 +109,9 @@ export default function Third() {
                   </div>
                   <h3 className="text-xl font-bold ml-4">{card.title}</h3>
                 </div>
-                <p className="text-gray-700">{card.description}</p>
+                <p className="text-gray-700">
+                  {card.description}
+                </p>
               </div>
             </SwiperSlide>
           ))}
@@ -113,7 +129,6 @@ export default function Third() {
             </article>
           </div>
         </div> */}
-
       </div>
     </>
   );

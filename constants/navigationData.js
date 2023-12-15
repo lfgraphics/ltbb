@@ -82,7 +82,7 @@ export const menuItems = [
             {
                 id: 2,
                 name: "Digital Marketing Services for Law Firms",
-                href: "/",
+                href: "/digitalmarketing",
             },
         ],
     },
