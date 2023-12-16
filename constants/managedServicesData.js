@@ -3,7 +3,7 @@ export const ManagedServicesData = [
         id: 1,
         title: "Bespoke IT Services",
         desc: "TLB has a dedicated contract lifecycle management services team that delivers customized solutions to law firms and corporates",
-        learnMore: "/",
+        learnMore: "/bespokeitservices",
         image: "/Legal Research/pexels-vlada-karpovich-4050312.jpg",
     },
     {

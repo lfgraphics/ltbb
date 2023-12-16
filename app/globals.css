@@ -64,6 +64,11 @@ h6 {
   display: flex;
 }
 
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+  scrollbar-width: 0;
+}
+
 @media (max-width: 768px) {
   .homeClipPath {
     clip-path: none;
