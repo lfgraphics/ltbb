@@ -127,18 +127,13 @@ const Second = () => {
 										</div>
 										<div className="ml-4">
 											<h4 className="text-lg font-medium leading-6">
-												Contract Renewal or Terminatio
+												Contract Renewal or Termination
 											</h4>
 											<p className="mt-2 dark:text-gray-400">
 												TLB CLM services assist in managing contract renewals or terminations. They can
 												automate the renewal process, track notice periods, facilitate renegotiation, or facilitate
 												the termination process while ensuring compliance with contract requirements.
-												<br></br>
-												TLB CLM services leverage technology, such as contract management software, to
-												centralize contract data, streamline workflows, and provide visibility into the contract
-												lifecycle. These services aim to improve efficiency, reduce manual errors, enhance
-												collaboration, and enable organizations to effectively manage and maximize the value
-												of their contracts throughout their lifecycle.
+
 												<br></br>
 
 											</p>
@@ -168,7 +163,7 @@ const Second = () => {
 						/>
 						<div className="flex flex-col w-full p-6 lg:w-2/3 md:p-8 lg:p-12">
 
-							<h2 className="text-xl font-semibold leading-loose">
+							<h2 className="text-xl leading-loose">
 								<strong>TLB</strong> provides you with the best contract lifecycle management services by assisting you
 								in achieving your objectives, including enforcing compliance, taking advantage of
 								volume discounts, successfully managing commitments, decreasing contract risks and

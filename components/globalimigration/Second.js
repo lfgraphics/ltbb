@@ -34,7 +34,7 @@ const Second = () => {
 										</div>
 									</div>
 									<div className="ml-4">
-										<h4 className="text-lg font-medium leading-6">Immigration Consultation:
+										<h4 className="text-lg  leading-6">Immigration Consultation:
 										</h4>
 										<p className="mt-2 dark:text-gray-400">TLB can assist clients in providing expert advice and guidance on immigration options, eligibility requirements, and strategies tailored to the specific needs and goals of individuals or businesses.</p>
 									</div>

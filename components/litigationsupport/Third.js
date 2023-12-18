@@ -302,7 +302,7 @@ export default function Third() {
             disableOnInteraction: false,
           }}
           modules={[EffectCoverflow, Pagination]}
-          className="mySwiper space-y-2"
+          className="mySwiper space-y-2 min-h-[95vh]"
         >
           {/* Step 2: Map the card data to the SwiperSlides */}
           {cardData.map((card, index) => (

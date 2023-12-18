@@ -13,42 +13,60 @@ import "./styles.css";
 // import required modules
 import { EffectCoverflow, Pagination } from "swiper";
 
-export default function Third() {
-  const cardData = [
+const  immigrationFirmTasks = [
+    "Collecting information from clients on the prescribed case management tool/database.",
+    "Scrutinizing information in consonance with visa-specific requirements.",
+    "Interacting with clients on behalf of the attorney/Firm for queries and other information requirements.",
+    "Drafting focused letters and cover letters to support Visa petitions.",
+    "Drafting Attorney cover letters for visa application forms.",
+    "Providing expert services on various software platforms like INSZoom, LawLogix, and BlueDot.",
+    "Filing Visa application forms with the department of immigration (e.g., USCIS) online.",
+    "Providing post-submission tracking on the status of applications/petitions.",
+    "Conducting continuous research on changes and amendments in immigration policies and rules.",
+    "Gathering information from clients on recommended tools.",
+    "Analyzing information in accordance with specific Visa needs.",
+    "Communicating with clients on behalf of immigration firms.",
+    "Online filing of Visa application forms and offering post-submission status."
+];
+
+const cardData = [
     {
-      title: "Expertise and Knowledge:",
-      description: "TLB provides specialized professionals in immigration laws, regulations, and processes across multiple countries. They have in-depth knowledge and expertise in navigating the complexities of immigration systems. By outsourcing to TLB, immigration law firms and corporate legal departments can benefit from their extensive experience and ensure that their immigration matters are handled efficiently and accurately.",
+        title: "Expertise and Knowledge:",
+        description: "TLB provides specialized professionals in immigration laws, regulations, and processes across multiple countries. They have in-depth knowledge and expertise in navigating the complexities of immigration systems. By outsourcing to TLB, immigration law firms and corporate legal departments can benefit from their extensive experience and ensure that their immigration matters are handled efficiently and accurately.",
     },
     {
-      title: "Time and Resource Efficiency:",
-      description: "Immigration processes can be time-consuming and require significant administrative work. Outsourcing immigration management services to TLB frees up valuable time and resources for immigration law firms and corporate legal departments to focus on their core activities. Our professionals handling immigration matters can efficiently manage paperwork, applications, and compliance requirements, saving time and effort.",
+        title: "Time and Resource Efficiency:",
+        description: "Immigration processes can be time-consuming and require significant administrative work. Outsourcing immigration management services to TLB frees up valuable time and resources for immigration law firms and corporate legal departments to focus on their core activities. Our professionals handling immigration matters can efficiently manage paperwork, applications, and compliance requirements, saving time and effort.",
     },
     {
-      title: "Compliance and Risk Mitigation: ",
-      description: "Immigration laws and regulations are subject to frequent changes, making compliance a challenging task. Outsourcing immigration management service to TLB ensures that immigration law firms and corporate legal departments stay updated with the latest immigration policies, rules, and procedures. TLB can proactively monitor changes, assess their impact, and help clients remain compliant, minimizing the risk of legal issues or penalties.",
+        title: "Compliance and Risk Mitigation: ",
+        description: "Immigration laws and regulations are subject to frequent changes, making compliance a challenging task. Outsourcing immigration management service to TLB ensures that immigration law firms and corporate legal departments stay updated with the latest immigration policies, rules, and procedures. TLB can proactively monitor changes, assess their impact, and help clients remain compliant, minimizing the risk of legal issues or penalties.",
     },
     {
-      title: "Access to Global Networks: ",
-      description: "TLB has extensive networks and relationships with immigration authorities, government agencies, and other relevant stakeholders. This can help expedite the immigration process, provide access to valuable resources, and navigate potential challenges more effectively.",
+        title: "Access to Global Networks: ",
+        description: "TLB has extensive networks and relationships with immigration authorities, government agencies, and other relevant stakeholders. This can help expedite the immigration process, provide access to valuable resources, and navigate potential challenges more effectively.",
     },
     {
-      title: "Tailored Solutions: ",
-      description: "Each immigration case is unique, and outsourcing immigration management services to TLB allows immigration law firms and corporate legal departments to receive personalized and tailored solutions. TLB can assess specific needs, goals, and constraints to develop customized strategies and plans that align with clients' objectives.",
+        title: "Tailored Solutions: ",
+        description: "Each immigration case is unique, and outsourcing immigration management services to TLB allows immigration law firms and corporate legal departments to receive personalized and tailored solutions. TLB can assess specific needs, goals, and constraints to develop customized strategies and plans that align with clients' objectives.",
     },
     {
-      title: "Scalability and Flexibility: ",
-      description: "Outsourcing immigration management service to TLB enables immigration law firms and corporate legal department to scale their immigration efforts according to their requirements. Whether it's handling a single immigration case or managing a large-scale global mobility program, TLB can adapt to the scope and scale of the client's needs.",
+        title: "Scalability and Flexibility: ",
+        description: "Outsourcing immigration management service to TLB enables immigration law firms and corporate legal department to scale their immigration efforts according to their requirements. Whether it's handling a single immigration case or managing a large-scale global mobility program, TLB can adapt to the scope and scale of the client's needs.",
     },
     {
-      title: "Cost Savings: ",
-      description: "While there is a cost associated with outsourcing immigration management service to TLB, it can often be more cost-effective than maintaining an in-house immigration team. Outsourcing eliminates the need for hiring and training dedicated immigration staff, investing in infrastructure and technology, and staying updated with evolving immigration regulations.",
+        title: "Cost Savings: ",
+        description: "While there is a cost associated with outsourcing immigration management service to TLB, it can often be more cost-effective than maintaining an in-house immigration team. Outsourcing eliminates the need for hiring and training dedicated immigration staff, investing in infrastructure and technology, and staying updated with evolving immigration regulations.",
     },
     {
-      title: "Peace of Mind: ",
-      description: "Immigration processes can be stressful and complex, especially when dealing with multiple countries and legal frameworks. Outsourcing immigration management service to TLB provides peace of mind, knowing that experts are managing the process, ensuring compliance, and handling any challenges that may arise.",
+        title: "Peace of Mind: ",
+        description: "Immigration processes can be stressful and complex, especially when dealing with multiple countries and legal frameworks. Outsourcing immigration management service to TLB provides peace of mind, knowing that experts are managing the process, ensuring compliance, and handling any challenges that may arise.",
     },
 
-  ];
+];
+
+
+export default function Third() {
 
   return (
     <>
@@ -113,46 +131,17 @@ export default function Third() {
         <div className="m-4 mt-8 mb-4" data-aos="flip-down">
           <div className="max-w-full p-6 overflow-hidden  rounded-lg shadow bg-[#1E293B] text-gray-100" >
             <article>
-              <h2 className="text-xl font-bold text-center mb-4">Our Global Immigration Management Service experts help your business by:</h2>
-              {/* <p> */}
-              <p className="text-center font-18">
-                 As a virtual assistant for your Immigration Firm.
-                 Information from clients on the prescribed case management tool/database.
-                 Information in consonance with visa specific requirements.
-                 With clients on behalf of the attorney/Firm for queries and other information requirements.
-                 Focused letters and cover letters to support Visa petitions
-                 Attorney cover letters for visa application forms.
-                 Expert services on various software platforms like INSZoom, LawLogix and BlueDot.
-                 of Visa application forms with the department of immigration (for e.g., USCIS) online.
-                 post submission track on the status of applications/petitions.
-                 continuous research on the changes and amendments in immigration policies and rules.
-                 information from clients on recommended tools
-                 information in accordance with specific Visa needs
-                 with clients on behalf of immigration firms
-                 filing of Visa application forms and offering post submission status
-                </p>
-              {/* </p> */}
-              <p className="mt-4 text-gray-400"></p>
+              <h2 className="text-xl font-bold mb-4">Our Global Immigration Management Service experts help your business by:</h2>
+                <ul className="flex flex-col gap-2 list-disc">
+                    {
+                        immigrationFirmTasks?.map((item)=>(
+                         <li className="ml-4">{item}</li>
+                        ))
+                    }
+                </ul>
             </article>
           </div>
         </div>
-
-        {/* <div data-aos="flip-down" className="m-4 mt-8 mb-4">
-          <div className="max-w-full p-6 overflow-hidden  rounded-lg shadow bg-[#1E293B] text-gray-100" >
-            <article>
-              <h2 className="text-xl font-bold text-center mb-4">It&apos;s Important</h2>
-              <p className="text-lg">
-                Overall, outsourcing case intake services to TLB will allows law firms to improve client service,
-                increase efficiency, reduce costs, and focus on their core legal work. By leveraging the expertise
-                and scalability TLB, firms can effectively manage the initial contact and evaluation process,
-                ensuring that potential cases are properly assessed and directed to the appropriate legal teams.
-              </p>
-
-              <p className="mt-4 text-gray-400"></p>
-
-            </article>
-          </div>
-        </div> */}
 
       </div>
     </>

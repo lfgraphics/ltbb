@@ -57,6 +57,13 @@ h6 {
   display: none;
 }
 
+.swpier{
+  padding-bottom: 160px !important;
+}
+.swiper-wrapper{
+  padding-bottom: 50px !important;
+}
+
 .navbar {
   background-color: white;
   padding: 10px;

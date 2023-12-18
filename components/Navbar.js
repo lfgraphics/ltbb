@@ -34,7 +34,7 @@ const Navbar = () => {
                 <Image
                   src="/The_Legal Base-logos_black.png"
                   alt="Logo"
-                  width={100}
+                  width={140}
                   height={100}
                 ></Image>
               </Link>

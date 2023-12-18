@@ -18,7 +18,7 @@ const Hero = () => {
 
             </h1>
             <p className="mt-8 text-lg text-gray-700">
-              Outsourced paralegal services involve contracting with a third-party provider like TLB to handle various legal support tasks and responsibilities typically performed by in-house paralegals. TLB is a specialized firm that employ paralegals with expertise in different areas of law.
+              A managed document review service is a professional service that assists law firms, corporations, or legal departments in reviewing large volumes of documents for litigation, regulatory compliance, investigations, or other legal purposes. It involves the systematic analysis and categorization of documents to identify relevant information and determine their significance to a particular case or matter.
               <br>
               </br>
 

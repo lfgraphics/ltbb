@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef, useState } from "react";
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide} from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
@@ -11,7 +11,9 @@ import "swiper/css/pagination";
 import "./styles.css";
 
 // import required modules
-import { FreeMode, Pagination } from "swiper";
+import SwiperCore, { FreeMode, Pagination,Autoplay } from "swiper";
+
+SwiperCore.use([Autoplay])
 
 export default function Third() {
   const cardData = [
@@ -64,6 +66,10 @@ export default function Third() {
           pagination={{
             clickable: true,
           }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
           breakpoints={{
             "@0.00": {
               slidesPerView: 1,
@@ -76,10 +82,6 @@ export default function Third() {
             "@1.00": {
               slidesPerView: 3,
               spaceBetween: 40,
-            },
-            "@1.50": {
-              slidesPerView: 4,
-              spaceBetween: 50,
             },
           }}
           modules={[FreeMode, Pagination]}

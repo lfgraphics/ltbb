@@ -11,44 +11,42 @@ import "swiper/css/pagination";
 import "./styles.css";
 
 // import required modules
-import { FreeMode, Pagination } from "swiper";
+import SwiperCore,{ FreeMode, Pagination,Autoplay } from "swiper";
+
+SwiperCore.use([Autoplay])
 
 export default function Third() {
   const cardData = [
     {
-      title: "Cost savings",
-      description: "Outsourcing paralegal support to TLB can be more cost-effective than hiring and maintaining an in-house paralegal team. By outsourcing to TLB, organizations can avoid costs associated with salaries, benefits, training, office space, equipment, and other overhead expenses.",
+      title: "Expertise and Specialization",
+      description: "TLB specializes in document review processes and has expertise in handling large volumes of documents. They have experienced professionals who are trained in efficient review techniques, legal standards, and relevant technologies. Outsourcing to TLB ensures that the document review is conducted by knowledgeable experts who can accurately identify relevant information and make informed determinations."
     },
     {
-      title: "Scalability and flexibility",
-      description: "Outsourcing to TLB allows for flexibility in scaling paralegal resources based on workload fluctuations or specific project requirements. During peak periods or when facing a sudden increase in caseload, organizations can quickly ramp up paralegal support without the need for long-term commitments.",
+      title: "Scalability and Flexibility",
+      description: "Document review needs can vary significantly from case to case. Outsourcing to TLB allows for easy scalability and flexibility in resource allocation. Service providers can quickly assemble a team of reviewers or adjust the team size based on the volume and urgency of the documents to be reviewed. This scalability ensures that the review process is efficient and completed within the required timelines."
     },
     {
-      title: "Access to specialized expertise",
-      description: "Outsourcing to TLB provides access to a pool of paralegals with diverse backgrounds and expertise in various areas of law. Organizations can tap into this specialized knowledge without having to invest in extensive training or hiring full-time paralegals with specific skill sets.",
+      title: "Cost Efficiency",
+      description: "Outsourcing managed document review to TLB can be cost-effective compared to conducting the review in-house. It eliminates the need for law firms or legal departments to invest in additional staff, technology infrastructure, or software licenses. TLB operates on a project-based or per-document pricing model, allowing for better cost predictability."
     },
     {
-      title: "Enhanced efficiency and productivity",
-      description: "TLB Paralegal support can help streamline legal operations, increase efficiency, and improve overall productivity. TLB Paralegals are experienced in handling routine legal tasks, document management, research, and administrative duties, allowing attorneys to focus on higher-level legal work.",
+      title: "Access to Advanced Technologies",
+      description: "TLB typically leverages advanced eDiscovery technologies, such as predictive coding and machine learning, to streamline the review process. These technologies can help identify relevant documents more accurately and efficiently, saving time and resources."
     },
     {
-      title: "Focus on core legal work",
-      description: "By outsourcing paralegal support to TLB, attorneys and legal professionals can devote more time and attention to their core legal work, such as strategy, client counseling, case management, and courtroom advocacy. TLB Paralegals handle the time-consuming tasks, freeing up attorneys to focus on matters that require their expertise.",
+      title: "Focus on Core Competencies",
+      description: "By outsourcing document review to TLB, legal professionals can focus on their core competencies, such as case strategy, client representation, or legal analysis. Outsourcing the time-consuming and resource-intensive document review process allows them to dedicate more time and energy to higher-value tasks that require their specialized expertise."
     },
     {
-      title: "Access to advanced technology and resources",
-      description: "TLB Outsourced paralegal service providers often have access to advanced legal technology, research databases, and document management systems. Leveraging these tools can improve efficiency, accuracy, and the quality of work delivered.",
+      title: "Quality Control and Consistency",
+      description: "TLB has established quality control processes and protocols to ensure accuracy, consistency, and adherence to legal standards. They employ senior reviewers or quality control specialists to oversee the review work and ensure the highest level of quality and compliance."
     },
     {
-      title: "Reduced administrative burden",
-      description: "TLB Paralegals can assist with administrative tasks, such as organizing documents, managing calendars, and maintaining case files. By outsourcing these administrative responsibilities to TLB, attorneys can minimize their administrative workload and allocate their time more effectively.",
-    },
-    {
-      title: "Increased agility and competitiveness",
-      description: "Outsourcing to TLB paralegal support allows organizations to stay agile and competitive in a rapidly changing legal landscape. They can quickly adapt to new projects, expand their services, and meet client demands without being constrained by limited in-house resources.",
-    },
-
+      title: "Risk Mitigation",
+      description: "Outsourcing the document review process to TLB can help mitigate the risk of errors or omissions. They are experienced in navigating complex legal requirements, ensuring compliance, and maintaining confidentiality and data privacy."
+    }
   ];
+
 
   return (
     <>
@@ -56,11 +54,10 @@ export default function Third() {
 
         <div className="container mx-auto p-4 my-6 space-y-2 text-center  mt-4 bg-w mb-4">
           <h2 className="text-3xl font-bold">
-            Why Outsource Paralegal Support Services to TLB?
+            Why Outsource Document Review Services to TLB?
           </h2>
           <p className="dark:text-gray-400">
-            Outsourcing paralegal support offers several benefits to law firms and
-            legal departments:
+            Outsourcing a managed document review service can offer several advantages for law firms, corporations, or legal departments. Here are some key reasons why outsourcing this service is beneficial:
           </p>
         </div>
         <Swiper
@@ -70,6 +67,10 @@ export default function Third() {
           grabCursor={true}
           pagination={{
             clickable: true,
+          }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
           }}
           breakpoints={{
             "@0.00": {
@@ -83,11 +84,7 @@ export default function Third() {
             "@1.00": {
               slidesPerView: 3,
               spaceBetween: 40,
-            },
-            "@1.50": {
-              slidesPerView: 4,
-              spaceBetween: 50,
-            },
+            }
           }}
           modules={[FreeMode, Pagination]}
           className="mySwiper"
@@ -124,25 +121,18 @@ export default function Third() {
           ))}
         </Swiper>
 
-        <div className="m-4 mt-8 mb-4">
-          <div className="max-w-full p-6 overflow-hidden  rounded-lg shadow bg-[#1E293B] text-gray-100" >
-            <article data-aos="flip-down">
-              <h2 className="text-xl font-bold text-center mb-4">It&apos;s Important</h2>
-              <p className="text-lg">
-                &quot;It&apos;s important to note that outsourcing paralegal support does not replace the need for qualified attorneys. Rather, it complements legal expertise by providing additional support and resources, enabling legal professionals to operate more efficiently and effectively.&quot;
-              </p>
+        {/*<div className="m-4 mt-8 mb-4">*/}
+        {/*  <div className="max-w-full p-6 overflow-hidden  rounded-lg shadow bg-[#1E293B] text-gray-100" >*/}
+        {/*    <article data-aos="flip-down">*/}
+        {/*      <h2 className="text-xl font-bold text-center mb-4">It&apos;s Important</h2>*/}
+        {/*      <p className="text-lg">*/}
+        {/*        &quot;It&apos;s important to note that outsourcing paralegal support does not replace the need for qualified attorneys. Rather, it complements legal expertise by providing additional support and resources, enabling legal professionals to operate more efficiently and effectively.&quot;*/}
+        {/*      </p>*/}
 
-              <p className="mt-4 text-gray-400"></p>
-              {/* <div className="flex items-center mt-8 space-x-4">
-			<img src="https://source.unsplash.com/100x100/?portrait" alt="" className="w-10 h-10 rounded-full bg-gray-500" />
-			<div>
-				<h3 className="text-sm font-medium">Leroy Jenkins</h3>
-				<time datetime="2021-02-18" className="text-sm text-gray-400">Feb 18th 2021</time>
-			</div>
-		</div> */}
-            </article>
-          </div>
-        </div>
+        {/*      <p className="mt-4 text-gray-400"></p>*/}
+        {/*    </article>*/}
+        {/*  </div>*/}
+        {/*</div>*/}
 
       </div>
     </>
