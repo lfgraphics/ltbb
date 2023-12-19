@@ -18,7 +18,7 @@ const Second = () => {
 					<div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
 						<div data-aos="fade-down">
 							<h2 className="text-lg font-semibold tracking-tight text-center sm:text-5xl">
-								Here are some common elements of outsourced case intake services
+								Why outsource IP Research and Consultation services to TLB?
 							</h2>
 							{/* <p className="max-w-3xl mx-auto mt-4 text-xl text-center dark:text-gray-400">Here are some common paralegal services which are typically outsourced to TLB.</p> */}
 						</div>
@@ -35,12 +35,9 @@ const Second = () => {
 										</div>
 									</div>
 									<div className="ml-4">
-										<h4 className="text-lg font-medium leading-6">Initial Contact and Communication:
+										<h4 className="text-lg font-medium leading-6">Highly efficient experts:
 										</h4>
-										<p className="mt-2 dark:text-gray-400">TLB can act as the first point of contact for potential clients and handle phone calls, emails, or
-											web inquiries from individuals seeking legal assistance. TLB can gather essential information
-											about the potential case, such as the nature of the legal issue, relevant dates, parties involved,
-											and any supporting documentation.</p>
+										<p className="mt-2 dark:text-gray-400">Our IP Consultation professionals contribute extensive subject and industry knowledge to each engagement, as well as access to TLB's substantial intellectual capital. Our innovative approach to technology-powered legal solutions, along with a broad range of service options, puts us ahead of the competition.</p>
 									</div>
 								</div>
 								<div className="mt-12 space-y-12">
@@ -53,11 +50,11 @@ const Second = () => {
 											</div>
 										</div>
 										<div className="ml-4">
-											<h4 className="text-lg font-medium leading-6">Data Collection and Documentation
+											<h4 className="text-lg font-medium leading-6">Reliable
+
 											</h4>
-											<p className="mt-2 dark:text-gray-400">TLB can collect relevant data and documents from potential clients during the intake process.
-												This may include personal information, contact details, incident descriptions, medical records,
-												contracts, or any other relevant information needed for evaluation.
+											<p className="mt-2 dark:text-gray-400">When it comes to picking a relationship, trust is crucial. We realize this and make every effort to deliver on our promises to you. Our IP Consultation professionals understand your need for confidentiality and ensure the greatest degree of confidentiality.
+
 											</p>
 										</div>
 									</div>
@@ -70,13 +67,11 @@ const Second = () => {
 											</div>
 										</div>
 										<div className="ml-4">
-											<h4 className="text-lg font-medium leading-6">Initial Assessment and Screening:
+											<h4 className="text-lg font-medium leading-6">Globally optimized solutions
+
 											</h4>
-											<p className="mt-2 dark:text-gray-400">TLB can assess the potential cases based on predetermined criteria or instructions provided by
-												the law firm. TLB can evaluate the viability of the case, determining if it falls within the firm's
-												practice areas and meets the necessary requirements for further consideration. This
-												assessment helps filter out cases that do not align with the firm's expertise or do not meet
-												specific criteria.
+											<p className="mt-2 dark:text-gray-400">Our professionals have extensive R&D experience, advanced scientific and engineering degrees, and a track record of producing cross-domain solutions. Our advanced educational credentials enable us to deliver vital technological research, paralegal services, and tools to IP law firms in order for them to present their clients with a globally optimal solution.
+
 											</p>
 										</div>
 									</div>
@@ -89,12 +84,11 @@ const Second = () => {
 											</div>
 										</div>
 										<div className="ml-4">
-											<h4 className="text-lg font-medium leading-6">Case Prioritization and Routing:
+											<h4 className="text-lg font-medium leading-6">Creative
+
 											</h4>
-											<p className="mt-2 dark:text-gray-400">Once the initial assessment is complete, TLB can prioritize and route qualified cases to the
-												appropriate attorney or legal team within the law firm. This involves categorizing cases based on
-												urgency, complexity, practice area, or other predefined factors to ensure proper allocation of
-												resources.
+											<p className="mt-2 dark:text-gray-400">We combine the art of search with tried-and-true approaches like TRIZ to identify the most innovative and optimal solutions for your needs and budget. Our IP Consultation professionals ensure that your legal company receives the finest service available.
+
 											</p>
 										</div>
 									</div>
@@ -138,32 +132,31 @@ const Second = () => {
 												</div>
 											</div>
 											<div className="ml-4" data-aos="fade-left">
-												<h4 className="text-lg font-medium leading-6">Client Relationship Management:
+												<h4 className="text-lg font-medium leading-6">Customer focused services
 												</h4>
-												<p className="mt-2 dark:text-gray-400">During the case intake process, TLB can maintain communication with potential clients, keeping
-													them informed about the progress of their inquiry or case. TLB can provide updates, answer
-													basic questions, and address any concerns or follow-up inquiries.
+												<p className="mt-2 dark:text-gray-400">We collaborate with you as an extension of your team, and each solution is tailored to the specific demands of the customer. We will not stop till you have found what you are looking for. Our committed support team is always on the lookout for the best potential solutions to your service-related issues.
+
 												</p>
 											</div>
 										</div>
-										<div className="flex shadow-lg p-4 hover:shadow-2xl  border-solid  rounded-md" data-aos="fade-left">
-											<div className="flex-shrink-0">
-												<div className="flex items-center justify-center w-12 h-12 rounded-md bg-gray-700">
-													<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
-														<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-													</svg>
-												</div>
-											</div>
-											<div className="ml-4">
-												<h4 className="text-lg font-medium leading-6">Data Management and Reporting:
-												</h4>
-												<p className="mt-2 dark:text-gray-400">TLB can employ case management software or databases to capture and organize the intake
-													data. TLB can generate reports and provide analytics related to case intake volume, case types,
-													conversion rates, or other relevant metrics to help law firms assess their performance and make
-													data-driven decisions.
-												</p>
-											</div>
-										</div>
+										{/*<div className="flex shadow-lg p-4 hover:shadow-2xl  border-solid  rounded-md" data-aos="fade-left">*/}
+										{/*	<div className="flex-shrink-0">*/}
+										{/*		<div className="flex items-center justify-center w-12 h-12 rounded-md bg-gray-700">*/}
+										{/*			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">*/}
+										{/*				<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>*/}
+										{/*			</svg>*/}
+										{/*		</div>*/}
+										{/*	</div>*/}
+										{/*	<div className="ml-4">*/}
+										{/*		<h4 className="text-lg font-medium leading-6">Data Management and Reporting:*/}
+										{/*		</h4>*/}
+										{/*		<p className="mt-2 dark:text-gray-400">TLB can employ case management software or databases to capture and organize the intake*/}
+										{/*			data. TLB can generate reports and provide analytics related to case intake volume, case types,*/}
+										{/*			conversion rates, or other relevant metrics to help law firms assess their performance and make*/}
+										{/*			data-driven decisions.*/}
+										{/*		</p>*/}
+										{/*	</div>*/}
+										{/*</div>*/}
 										{/* <div className="flex shadow-lg p-4 hover:shadow-2xl  border-solid  rounded-md" data-aos="fade-left"> */}
 										{/* <div className="flex-shrink-0">
 												<div className="flex items-center justify-center w-12 h-12 rounded-md bg-gray-700">
@@ -192,32 +185,32 @@ const Second = () => {
 
 
 
-				<section className="dark:bg-gray-800 dark:text-gray-100 m-4 mx-8 bg-white mb-4" data-aos="zoom-in">
-					<div className="container flex flex-col mx-auto lg:flex-row">
-						<div
-							className="w-full lg:w-1/3 rounded-lg object-fill"
-							style={{
-								backgroundImage: 'url("/Case Intake/pexels-mikhail-nilov-7731326.jpg")',
-								backgroundPosition: "center center",
-								backgroundSize: "cover",
-								// height: '640px',
-								// width: '480px'
-							}}
-						/>
-						<div className="flex flex-col w-full p-6 lg:w-2/3 md:p-8 lg:p-12">
+				{/*<section className="dark:bg-gray-800 dark:text-gray-100 m-4 mx-8 bg-white mb-4" data-aos="zoom-in">*/}
+				{/*	<div className="container flex flex-col mx-auto lg:flex-row">*/}
+				{/*		<div*/}
+				{/*			className="w-full lg:w-1/3 rounded-lg object-fill"*/}
+				{/*			style={{*/}
+				{/*				backgroundImage: 'url("/Case Intake/pexels-mikhail-nilov-7731326.jpg")',*/}
+				{/*				backgroundPosition: "center center",*/}
+				{/*				backgroundSize: "cover",*/}
+				{/*				// height: '640px',*/}
+				{/*				// width: '480px'*/}
+				{/*			}}*/}
+				{/*		/>*/}
+				{/*		<div className="flex flex-col w-full p-6 lg:w-2/3 md:p-8 lg:p-12">*/}
 
-							<h2 className="text-xl font-semibold leading-loose">
-								Outsourcing case intake services can bring several benefits, including increased efficiency in
-								handling inquiries, improved client experience during the initial contact phase, streamlined data
-								management, and the ability to focus on core legal work. It allows law firms to ensure proper
-								evaluation and prioritization of potential cases while optimizing their resources.
-							</h2>
+				{/*			<h2 className="text-xl font-semibold leading-loose">*/}
+				{/*				Outsourcing case intake services can bring several benefits, including increased efficiency in*/}
+				{/*				handling inquiries, improved client experience during the initial contact phase, streamlined data*/}
+				{/*				management, and the ability to focus on core legal work. It allows law firms to ensure proper*/}
+				{/*				evaluation and prioritization of potential cases while optimizing their resources.*/}
+				{/*			</h2>*/}
 
 
 
-						</div>
-					</div>
-				</section>
+				{/*		</div>*/}
+				{/*	</div>*/}
+				{/*</section>*/}
 			</div>
 		</React.Fragment>
 	)

@@ -1,6 +1,83 @@
 "use client"
 import React, { useState } from 'react';
 
+const ipAnalyticsData = [
+    {
+        category: "IP Analytics",
+        services: [
+            "Prior Art Search",
+            "Patentability Analysis",
+            "Patent Infringement & Analysis",
+            "Patent Mapping",
+            "Patent Drafting & Prosecution",
+            "IP Due Diligence & IP Audit"
+        ]
+    },
+    {
+        category: "Prior Art Searches",
+        description: "A broad, in-depth investigation of patentability, state-of-the-art, patent invalidation, infringement, and freedom to operate.",
+        services: [
+            "Patentability Search",
+            "State of Art Search",
+            "Patent Invalidation Search",
+            "Infringement Search",
+            "Freedom to Operate"
+        ]
+    },
+    {
+        category: "Patent Watch",
+        description: "Periodic and thorough monitoring of competitor product launches for infringement.",
+        services: ["Competitor Product Launch Monitoring"]
+    },
+    {
+        category: "Patent Drafting, Illustrations & Translation",
+        description: "Our IP Consultation professionals prepare and convert standard designs to AUTOCAD in accordance with PTO requirements.",
+        services: [
+            "Invention Disclosure Form Collection",
+            "Patent Application Development",
+            "AutoCAD Drawing Transformation",
+            "Patent Application Filing",
+            "Patent Renewal Monitoring"
+        ]
+    },
+    {
+        category: "IP Consulting",
+        description: "Analyzing and identifying intellectual property portfolios, optimizing potential, and integrating IP strategy with business.",
+        services: [
+            "IP Strategy & Policy Formulation",
+            "IP Portfolio Creation & Management",
+            "IP Valuation & Licensing"
+        ]
+    },
+    {
+        category: "Landscape Analysis",
+        description: "Forecasting trends and activities in any technological domain.",
+        services: ["Technological Domain Analysis"]
+    },
+    {
+        category: "Patent Portfolio Analysis, Patent Licensing & Monetization",
+        description: "Using successful licensing to convert intellectual property assets to monetary value.",
+        services: ["Licensing for Monetization"]
+    },
+    {
+        category: "Open-Source License Compliance",
+        description: "Completing compliance with open-source licensing agreements.",
+        services: ["Open-Source License Compliance"]
+    },
+    {
+        category: "End-to-End Docketing and Administrative Support",
+        description: "Providing end-to-end docketing support in all IP-related administrative chores.",
+        services: [
+            "Data Administration",
+            "Data Verification",
+            "Timetable Tracking",
+            "Reminders",
+            "External Support for IP Administration"
+        ]
+    }
+];
+
+
 const Faq = () => {
     const [openQuestionIndex, setOpenQuestionIndex] = useState(null);
 
@@ -19,17 +96,24 @@ const Faq = () => {
                         Frequently Asked Questions
                     </h2>
                     <div className="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 divide-gray-700">
-                        {faqData.map((item, index) => (
+                        {ipAnalyticsData.map((item, index) => (
                             <details
                                 key={index}
                                 open={index === openQuestionIndex}
                                 onToggle={() => handleQuestionToggle(index)}
                             >
                                 <summary className="py-2 outline-none cursor-pointer focus:underline">
-                                    {item.question}
+                                    {item.category}
                                 </summary>
                                 <div className="px-4 pb-4">
-                                    <p>{item.answer}</p>
+                                    <p>{item.description}</p>
+                                    <ul className="flex flex-col gap-2 list-disc ml-4">
+                                        {
+                                            item?.services.map((item,i)=>(
+                                                <li key={i}>{item}</li>
+                                            ))
+                                        }
+                                    </ul>
                                 </div>
                             </details>
                         ))}
@@ -38,34 +122,6 @@ const Faq = () => {
             </section>
         </React.Fragment>
     );
-};
-
-const faqData = [
-    {
-        question: "What is case intake and how does it work?",
-        answer: "Case intake is the process of assessing and gathering information from potential clients seeking legal assistance. The intake worker conducts an initial assessment of the client's needs, determines their eligibility for services, and gathers necessary information about their case. If the client is eligible, they are assigned a case manager who will provide ongoing support and services."
-    },
-    {
-        question: "What types of legal cases do you handle at your organisation?",
-        answer: "Our organisation specialises in handling all kinds of Civil, criminal and bankruptcy cases."
-    },
-    {
-        question: "What is the process for seeking assistance through your organisation?",
-        answer: "The process for seeking assistance begins with an initial contact with our organisation. From there, we will conduct an assessment of your needs and determine your eligibility for our services. If you are eligible, we will gather the necessary information about your case and assign a case manager to work with you."
-    },
-    {
-        question: "How do I know if I am eligible for your services?",
-        answer: "Eligibility is determined by our intake worker during the initial assessment. We will consider factors such as your income, location, and the specific nature of your case when determining your eligibility."
-    },
-    {
-        question: "How long does the case intake process take?",
-        answer: "The case intake process typically can take somewhere around a week to a month depending on your organisation’s unique needs."
-    },
-    {
-        question: "Can I speak with a case manager before starting the intake process?",
-        answer: "Yes, you can contact our organisation and request to speak with a case manager before starting the intake process."
-    }
-];
-
+}
 
 export default Faq;

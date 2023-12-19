@@ -59,34 +59,39 @@ export default function Third() {
             Why Outsource IP Research and Consultation Services?
           </h2>
           <p className="dark:text-gray-400">
-            Outsourcing your <strong>IP Research and Consultation Service </strong> requirements can do wonders for your firm. Today it's a proven fact that firms that have outsourced their legal requirements to reliable partners have witnessed fruitful results and the potential to take in more client projects has only increased over the years.
+            Outsourcing your <strong>IP Research and Consultation Service </strong> requirements can do wonders for your
+            firm. Today it's a proven fact that firms that have outsourced their legal requirements to reliable partners
+            have witnessed fruitful results and the potential to take in more client projects has only increased over
+            the years.
             <br></br>
             <br></br>
-            Outsourcing your IP Research and Consultation Service requirements can do wonders for your firm. Today it's a proven fact that firms that have outsourced their legal requirements to reliable partners have witnessed fruitful results and the potential to take in more client projects has only increased over the years.
+            Outsourcing your IP Research and Consultation Service requirements can do wonders for your firm. Today it's
+            a proven fact that firms that have outsourced their legal requirements to reliable partners have witnessed
+            fruitful results and the potential to take in more client projects has only increased over the years.
             <br></br>
             <br></br>
-            <ul>
-              <li>Achieve compelling cost reductions and faster turnaround times,</li>
-              <li>Free up scarce in-house resources</li>
-              <li>Focus on more strategic and higher-value activities, </li>
-              <li>Refocus the company's energies on its core business activities. </li>
-            </ul>
           </p>
+          <ul>
+            <li>Achieve compelling cost reductions and faster turnaround times,</li>
+            <li>Free up scarce in-house resources</li>
+            <li>Focus on more strategic and higher-value activities,</li>
+            <li>Refocus the company's energies on its core business activities.</li>
+          </ul>
         </div>
         <Swiper
-          effect={"coverflow"}
-          grabCursor={true}
-          centeredSlides={true}
-          loop={true}
-          slidesPerView={"auto"}
-          coverflowEffect={{
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            shadow: true,
-          }}
-          pagination={false}
+            effect={"coverflow"}
+            grabCursor={true}
+            centeredSlides={true}
+            loop={true}
+            slidesPerView={"auto"}
+            coverflowEffect={{
+              rotate: 50,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              shadow: true,
+            }}
+            pagination={false}
           autoplay={{
             delay: 3500,
             disableOnInteraction: false,
