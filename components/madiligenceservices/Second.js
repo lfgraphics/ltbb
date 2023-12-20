@@ -111,7 +111,7 @@ const Second = () => {
 								</div>
 							</div>
 							<div aria-hidden="true" className="mx-auto rounded-lg shadow-lg object-fill" data-aos="fade-left">
-								<img src="/madiligenceservices/pexels-christina-morillo-1181395.webp" alt="" className="mx-auto rounded-lg shadow-lg object-fill" />
+								<img src="/madiligenceservices/pexels-edmond-dantès-4342493.webp" alt="" className="mx-auto rounded-lg shadow-lg object-fill" />
 							</div>
 						</div>
 					</div>
