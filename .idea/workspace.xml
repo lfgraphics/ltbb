@@ -5,10 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a79fbd87-bbd1-47ad-8d2d-e7ab371b38d5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/madiligenceservices/error.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/madiligenceservices/page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/madiligenceservices/Faq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/madiligenceservices/Four.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/madiligenceservices/Hero.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/madiligenceservices/Second.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/madiligenceservices/Third.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/madiligenceservices/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/manageddocumentreviewservice/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/manageddocumentreviewservice/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/manageddocumentreviewservice/Four.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/manageddocumentreviewservice/Four.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/manageddocumentreviewservice/Second.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/manageddocumentreviewservice/Second.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants/legalSearchData.js" beforeDir="false" afterPath="$PROJECT_DIR$/constants/legalSearchData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants/navigationData.js" beforeDir="false" afterPath="$PROJECT_DIR$/constants/navigationData.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,12 +44,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "current-fix",
-    "last_opened_file_path": "/Users/kaifayazkhan/Desktop/Projects/ltbb/components/digitalmarketing",
+    "last_opened_file_path": "/Users/kaifayazkhan/Desktop/Projects/ltbb/components",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
@@ -50,6 +58,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components" />
+      <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/components/digitalmarketing" />
     </key>
   </component>
