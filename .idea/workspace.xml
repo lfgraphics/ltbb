@@ -6,10 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a79fbd87-bbd1-47ad-8d2d-e7ab371b38d5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/globalipresearchandconsultationservices/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/globalipresearchandconsultationservices/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/globalipresearchandconsultationservices/Faq.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/globalipresearchandconsultationservices/Faq.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/globalipresearchandconsultationservices/Second.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/globalipresearchandconsultationservices/Second.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/globalipresearchandconsultationservices/Third.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/globalipresearchandconsultationservices/Third.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/manageddocumentreviewservice/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/manageddocumentreviewservice/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/manageddocumentreviewservice/Four.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/manageddocumentreviewservice/Four.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/manageddocumentreviewservice/Second.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/manageddocumentreviewservice/Second.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

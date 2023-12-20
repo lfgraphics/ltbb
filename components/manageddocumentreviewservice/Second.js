@@ -159,30 +159,28 @@ const Second = () => {
 					</div>
 				</section>
 
+				{/*<section className="dark:bg-gray-800 dark:text-gray-100 m-4 mx-8 bg-white mb-4" data-aos="zoom-in">*/}
+				{/*	<div className="container flex flex-col mx-auto lg:flex-row">*/}
+				{/*		<div*/}
+				{/*			className="w-full lg:w-1/3 rounded-lg object-fill"*/}
+				{/*			style={{*/}
+				{/*				backgroundImage: 'url("/Document Review/pexels-jess-bailey-designs-2002217.jpg")',*/}
+				{/*				backgroundPosition: "center center",*/}
+				{/*				backgroundSize: "cover"*/}
+				{/*			}}*/}
+				{/*		/>*/}
+				{/*		<div className="flex flex-col w-full p-6 lg:w-2/3 md:p-8 lg:p-12">*/}
 
+				{/*			<h2 className="text-xl font-semibold leading-loose">*/}
+				{/*				By outsourcing paralegal services to TLB, law firms and legal departments can access specialized expertise, scale their resources as needed, reduce costs, and increase efficiency. It allows attorneys to focus on core legal work while leveraging the support of qualified paralegals for various legal tasks.*/}
 
-				<section className="dark:bg-gray-800 dark:text-gray-100 m-4 mx-8 bg-white mb-4" data-aos="zoom-in">
-					<div className="container flex flex-col mx-auto lg:flex-row">
-						<div
-							className="w-full lg:w-1/3 rounded-lg object-fill"
-							style={{
-								backgroundImage: 'url("/Document Review/pexels-jess-bailey-designs-2002217.jpg")',
-								backgroundPosition: "center center",
-								backgroundSize: "cover"
-							}}
-						/>
-						<div className="flex flex-col w-full p-6 lg:w-2/3 md:p-8 lg:p-12">
-
-							<h2 className="text-xl font-semibold leading-loose">
-								By outsourcing paralegal services to TLB, law firms and legal departments can access specialized expertise, scale their resources as needed, reduce costs, and increase efficiency. It allows attorneys to focus on core legal work while leveraging the support of qualified paralegals for various legal tasks.
-
-							</h2>
+				{/*			</h2>*/}
 
 
 
-						</div>
-					</div>
-				</section>
+				{/*		</div>*/}
+				{/*	</div>*/}
+				{/*</section>*/}
 			</div>
 		</React.Fragment>
 	)
