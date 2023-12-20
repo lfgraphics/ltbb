@@ -17,7 +17,7 @@ const page = () => {
       <Second></Second>
       <Third></Third>
       {/*<Four></Four>*/}
-      {/*<Faq></Faq>*/}
+      <Faq></Faq>
     </React.Fragment>
   )
 }
