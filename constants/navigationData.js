@@ -1,7 +1,7 @@
 export const menuItems = [
     {
         name: "Legal Services",
-        href: "/",
+        href: "/services",
         children: [
             {
                 id: 1,
@@ -72,7 +72,7 @@ export const menuItems = [
     },
     {
         name: "Managed Services",
-        href: "/",
+        href: "/services",
         children: [
             {
                 id: 1,

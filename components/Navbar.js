@@ -129,7 +129,7 @@ const Navbar = () => {
                           href={item.href}
                           className="-m-3 flex items-center rounded-md p-3 text-sm font-semibold hover:bg-gray-50"
                         >
-                          <span className="ml-3 text-base font-medium text-gray-900">
+                          <span className="ml-3 text-base font-medium text-gray-900" onClick={toggleMenu}>
                             {item.name}
                           </span>
                         </Link>
