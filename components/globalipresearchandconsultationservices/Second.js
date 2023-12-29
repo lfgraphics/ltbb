@@ -13,7 +13,7 @@ const Second = () => {
 	});
 	return (
 		<React.Fragment>
-			<div className='bg-white    sm:w-5/6 w-full md:w-5/6 lg:5/6 mx-auto'>
+			<div className='bg-white    sm:w-5/6 w-full md:w-5/6 lg:5/6 mx-auto overflow-hidden'>
 				<section className="dark:bg-white bg-white">
 					<div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
 						<div data-aos="fade-down">
@@ -41,14 +41,14 @@ const Second = () => {
 								</div>
 								<div className="mt-12 space-y-12">
 									<div className="flex shadow-lg p-4 hover:shadow-2xl  border-solid  rounded-md"
-										 data-aos="fade-right">
+										data-aos="fade-right">
 										<div className="flex-shrink-0">
 											<div
 												className="flex items-center justify-center w-12 h-12 rounded-md bg-gray-700">
 												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-													 stroke="white" className="w-7 h-7">
+													stroke="white" className="w-7 h-7">
 													<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-														  d="M5 13l4 4L19 7"></path>
+														d="M5 13l4 4L19 7"></path>
 												</svg>
 											</div>
 										</div>
@@ -63,14 +63,14 @@ const Second = () => {
 										</div>
 									</div>
 									<div className="flex shadow-lg p-4 hover:shadow-2xl  border-solid  rounded-md"
-										 data-aos="fade-right">
+										data-aos="fade-right">
 										<div className="flex-shrink-0">
 											<div
 												className="flex items-center justify-center w-12 h-12 rounded-md bg-gray-700">
 												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-													 stroke="white" className="w-7 h-7">
+													stroke="white" className="w-7 h-7">
 													<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-														  d="M5 13l4 4L19 7"></path>
+														d="M5 13l4 4L19 7"></path>
 												</svg>
 											</div>
 										</div>
@@ -85,14 +85,14 @@ const Second = () => {
 										</div>
 									</div>
 									<div className="flex shadow-lg p-4 hover:shadow-2xl  border-solid  rounded-md"
-										 data-aos="fade-right">
+										data-aos="fade-right">
 										<div className="flex-shrink-0">
 											<div
 												className="flex items-center justify-center w-12 h-12 rounded-md bg-gray-700">
 												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-													 stroke="white" className="w-7 h-7">
+													stroke="white" className="w-7 h-7">
 													<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-														  d="M5 13l4 4L19 7"></path>
+														d="M5 13l4 4L19 7"></path>
 												</svg>
 											</div>
 										</div>
@@ -114,9 +114,9 @@ const Second = () => {
 												<div
 													className="flex items-center justify-center w-12 h-12 rounded-md bg-gray-700">
 													<svg xmlns="http://www.w3.org/2000/svg" fill="none"
-														 viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
+														viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
 														<path strokeLinecap="round" strokeLinejoin="round"
-															  strokeWidth="2" d="M5 13l4 4L19 7"></path>
+															strokeWidth="2" d="M5 13l4 4L19 7"></path>
 													</svg>
 												</div>
 											</div>
@@ -134,23 +134,23 @@ const Second = () => {
 								</div>
 							</div>
 							<div aria-hidden="true" className="mx-auto rounded-lg shadow-lg object-fill"
-								 data-aos="fade-left">
+								data-aos="fade-left">
 								<img src="/IP/pexels-timson-foox-2182863.jpg" alt=""
-									 className="mx-auto rounded-lg shadow-lg object-fill"/>
+									className="mx-auto rounded-lg shadow-lg object-fill" />
 							</div>
 						</div>
 						<div>
 							<div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
 								<div className="lg:col-start-2">
 									<div className="flex shadow-lg p-4 hover:shadow-2xl  border-solid  rounded-md"
-										 data-aos="fade-right">
+										data-aos="fade-right">
 										<div className="flex-shrink-0">
 											<div
 												className="flex items-center justify-center w-12 h-12 rounded-md bg-gray-700">
 												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-													 stroke="white" className="w-7 h-7">
+													stroke="white" className="w-7 h-7">
 													<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-														  d="M5 13l4 4L19 7"></path>
+														d="M5 13l4 4L19 7"></path>
 												</svg>
 											</div>
 										</div>
@@ -171,9 +171,9 @@ const Second = () => {
 												<div
 													className="flex items-center justify-center w-12 h-12 rounded-md bg-gray-700">
 													<svg xmlns="http://www.w3.org/2000/svg" fill="none"
-														 viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
+														viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
 														<path strokeLinecap="round" strokeLinejoin="round"
-															  strokeWidth="2" d="M5 13l4 4L19 7"></path>
+															strokeWidth="2" d="M5 13l4 4L19 7"></path>
 													</svg>
 												</div>
 											</div>
@@ -193,9 +193,9 @@ const Second = () => {
 												<div
 													className="flex items-center justify-center w-12 h-12 rounded-md bg-gray-700">
 													<svg xmlns="http://www.w3.org/2000/svg" fill="none"
-														 viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
+														viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
 														<path strokeLinecap="round" strokeLinejoin="round"
-															  strokeWidth="2" d="M5 13l4 4L19 7"></path>
+															strokeWidth="2" d="M5 13l4 4L19 7"></path>
 													</svg>
 												</div>
 											</div>
@@ -213,42 +213,42 @@ const Second = () => {
 										</div>
 									</div>
 									<div className="mt-12 space-y-12">
-									<div className="flex shadow-lg p-4 hover:shadow-2xl  border-solid  rounded-md"
-										 data-aos="fade-right">
-										<div className="flex-shrink-0">
-											<div
-												className="flex items-center justify-center w-12 h-12 rounded-md bg-gray-700">
-												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-													 stroke="white" className="w-7 h-7">
-													<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-														  d="M5 13l4 4L19 7"></path>
-												</svg>
+										<div className="flex shadow-lg p-4 hover:shadow-2xl  border-solid  rounded-md"
+											data-aos="fade-right">
+											<div className="flex-shrink-0">
+												<div
+													className="flex items-center justify-center w-12 h-12 rounded-md bg-gray-700">
+													<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+														stroke="white" className="w-7 h-7">
+														<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+															d="M5 13l4 4L19 7"></path>
+													</svg>
+												</div>
+											</div>
+											<div className="ml-4">
+												<h4 className="text-lg font-medium leading-6">IP Consulting
+												</h4>
+												<p className="mt-2 dark:text-gray-400">Today's key difficulty for businesses
+													is to analyze and identify their intellectual property portfolio, and
+													then optimize its latent potential. Our Intellectual Property
+													Consultants create plans for preserving and increasing revenue from
+													patents, trademarks, and copyrights. We aim to integrate our clients' IP
+													strategy with their companies by providing IP consultancy services. We
+													attempt to find areas for significant improvement in the organization's
+													business performance through adjustments or enhancements in IP
+													procedures and the protection of current IP. We also assist our clients
+													in developing worldwide portfolios that position the client firm well in
+													the international market.
+
+												</p>
 											</div>
 										</div>
-										<div className="ml-4">
-											<h4 className="text-lg font-medium leading-6">IP Consulting
-											</h4>
-											<p className="mt-2 dark:text-gray-400">Today's key difficulty for businesses
-												is to analyze and identify their intellectual property portfolio, and
-												then optimize its latent potential. Our Intellectual Property
-												Consultants create plans for preserving and increasing revenue from
-												patents, trademarks, and copyrights. We aim to integrate our clients' IP
-												strategy with their companies by providing IP consultancy services. We
-												attempt to find areas for significant improvement in the organization's
-												business performance through adjustments or enhancements in IP
-												procedures and the protection of current IP. We also assist our clients
-												in developing worldwide portfolios that position the client firm well in
-												the international market.
-
-											</p>
-										</div>
-									</div>
 									</div>
 								</div>
 								<div className="mx-auto rounded-lg shadow-lg object-filllg:col-start-1 lg:row-start-1"
-									 data-aos="fade-right">
+									data-aos="fade-right">
 									<img src="/Case Intake/pexels-karolina-grabowska-5387261.jpg" alt=""
-										 className="mx-auto rounded-lg shadow-lg object-fill"/>
+										className="mx-auto rounded-lg shadow-lg object-fill" />
 								</div>
 							</div>
 						</div>
