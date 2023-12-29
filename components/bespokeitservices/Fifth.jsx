@@ -13,7 +13,7 @@ const Second = () => {
     });
     return (
         <>
-            <div className='bg-white sm:w-5/6 w-full md:w-5/6 lg:5/6 mx-auto'>
+            <div className='bg-white sm:w-5/6 w-full md:w-5/6 lg:5/6 mx-auto overflow-hidden'>
                 <div className='my-12 text-start'>
                     <h2 className="text-lg font-semibold tracking-wide sm:text-5xl" data-aos="fade-right" data-aos-delay="100">Accelerate your firm's digital transformation with TLB’s <span className='text-[#4E6BFF]'> Legal IT Services</span></h2>
                     <p className='mt-4 max-w-5xl text-lg' data-aos="fade-left">Use TLB’s IT services to update your law firm's operations, resulting in drastically improved simplicity, security, and performance—and get the freedom to operate.</p>

@@ -29,9 +29,9 @@ export default function Third2() {
 
 	return (
 		<>
-			<div className="bg-transparent mx-auto w-5/6">
+			<div className="bg-transparent mx-auto w-5/6 overflow-hidden">
 
-				<div className="container mx-auto p-4 my-6 space-y-2 text-center  mt-4 bg-w mb-4">
+				<div className="container mx-auto p-4 my-6 space-y-2 text-center  mt-4 bg-w mb-4 overflow-hidden">
 					<h2 className="text-3xl font-bold" data-aos="fade-right" data-aos-delay="100">
 						Why Outsource Digital Marketing Services to TLB?
 					</h2>
@@ -45,15 +45,15 @@ export default function Third2() {
 						<div
 							key={i}
 							data-aos="zoom-in"
-							data-aos-delay={(i+1)*150}
+							data-aos-delay={(i + 1) * 150}
 							className={`bg-white tiles p-6 flex-1 w-full min-w-[300px] rounded-xl md:max-w-[50%] xl:max-w-[400px] border-[1px] border-[#E4E4E7]`}
 						>
 							<div className="flex flex-col ">
 								<div className="w-12 h-12 flex">
 									<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<rect width="36" height="36" rx="6" fill="#374151"/>
+										<rect width="36" height="36" rx="6" fill="#374151" />
 										<path d="M9.83594 19.1665L14.5026 23.8332L26.1693 12.1665" stroke="white" strokeWidth="2.33333"
-											  strokeLinecap="round" strokeLinejoin="round"/>
+											strokeLinecap="round" strokeLinejoin="round" />
 									</svg>
 								</div>
 								<h3 className="text-xl font-semiblod">{card.title}</h3>
