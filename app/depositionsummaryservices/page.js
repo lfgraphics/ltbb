@@ -16,8 +16,6 @@ const page = () => {
   return (
     <React.Fragment>
       <Hero></Hero>
-      {/* <Second></Second>
-    <New></New> */}
       <Third></Third>
       <Four></Four>
       <Faq></Faq>

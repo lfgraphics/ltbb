@@ -1,21 +1,9 @@
 "use client"
-import React, { useRef, useState } from "react";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import React from "react";
+import ThreeDCard from "../UI/ThreeDCards";
 
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/pagination";
 
-import "./styles.css";
-
-// import required modules
-import SwiperCore,{ FreeMode, Pagination,Autoplay } from "swiper";
-
-SwiperCore.use([Autoplay])
-
-const cardData = [
+const data = [
   {
     title: "Amped-up Accuracy",
     description: "At TLB, we take a data-driven approach to potential deals and negotiations, thereby giving you the upper hand in making successful Mergers & Acquisitions. Our team of experts analyses financial data, industry trends, and other relevant information to help you make informed decisions."
@@ -46,78 +34,7 @@ export default function Third() {
 
   return (
     <>
-      <div className="bg-transparent mx-auto w-5/6 mt-14">
-
-        <div className="container mx-auto p-4 my-6 space-y-2 text-center  mt-4 bg-w mb-4">
-          <h2 className="text-3xl font-bold">
-            Why outsource M&A Diligence Services to TLB
-          </h2>
-          <p className="dark:text-gray-400">
-            Our team of experienced professionals has the expertise and knowledge necessary to conduct a thorough and comprehensive M&A due diligence investigation. We work closely with our clients to understand their specific needs and tailor our services accordingly. Contact us today to learn more about how we can help you make informed decisions about your next M&A transaction.
-          </p>
-        </div>
-        <Swiper
-          slidesPerView={3}
-          spaceBetween={30}
-          freeMode={true}
-          grabCursor={true}
-          pagination={{
-            clickable: true,
-          }}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          breakpoints={{
-            "@0.00": {
-              slidesPerView: 1,
-              spaceBetween: 10,
-            },
-            "@0.75": {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            "@1.00": {
-              slidesPerView: 3,
-              spaceBetween: 40,
-            }
-          }}
-          modules={[FreeMode, Pagination]}
-          className="mySwiper"
-        >
-          {/* Step 2: Map the card data to the SwiperSlides */}
-          {cardData.map((card, index) => (
-            <SwiperSlide
-              key={index}
-              className="border h-fit lg:min-h-[340px] p-8 flex flex-col"
-            >
-              <div className="bg-white flex-1">
-                <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
-                    <svg
-                      className="text-white w-6 h-6"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm0 2a10 10 0 100-20 10 10 0 000 20z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </div>
-                  <h3 className="text-xl font-bold ml-4">{card.title}</h3>
-                </div>
-                <p className="text-gray-700">
-                  {card.description}
-                </p>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-
-      </div>
+      <ThreeDCard cardData={data} title="Why outsource M&A Diligence Services to TLB" description="Our team of experienced professionals has the expertise and knowledge necessary to conduct a thorough and comprehensive M&A due diligence investigation. We work closely with our clients to understand their specific needs and tailor our services accordingly. Contact us today to learn more about how we can help you make informed decisions about your next M&A transaction." />
     </>
   );
 }
