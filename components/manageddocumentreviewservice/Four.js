@@ -14,132 +14,75 @@ const Four = () => {
 
   const data = [
     {
-      title: "Case Management",
+      title: "Document Organization",
       details: [
-        "Reviewing, organizing, indexing, and summarizing client files",
-        "Preparing different correspondence",
-        "Preparing a variety of pleadings",
+        "TLB organizes the documents in a structured manner, creating a framework for efficient review. This may involve categorizing documents based on subject matter, date range, author, or any other relevant criteria."
       ],
     },
     {
-      title: "Discovery Preparation",
+      title: "Review Team",
       details: [
-        "Drafting Subpoenas, Interrogatories, and Discovery Demands",
-        "Detailed Analysis Reports of Depositions and Interrogatories",
-        "Witness Summary",
-        "Requesting for Medical Reports and Detailed Analysis of Medical Reports",
+        "TLB employs a team of attorneys, paralegals, or legal professionals who are trained and experienced in document review. These professionals conduct a thorough review of the documents, applying legal standards, review protocols, and client-specific guidelines.",
       ],
     },
     {
-      title: "Trial Preparation",
+      title: "Technology-Assisted Review",
       details: [
-        "Expert witness report summarization",
-        "Document summarization for discovery",
-        "Property search from public records",
-        "Document Management with the use of software Casemap",
+        "TLB  leverage technology tools, such as eDiscovery software and machine learning algorithms, to expedite the review process. These tools can help identify potentially relevant documents, categorize them, and prioritize the review based on relevance.",
       ],
     },
     {
-      title: "Legal Document Production",
+      title: "Quality Control",
       details: [
-        "Contracts",
-        "Power of attorneys",
-        "Prenuptial agreements",
-        "Case Information statements",
-        "Property Settlement agreements",
+        "TLB implements quality control processes to ensure accuracy, consistency, and adherence to review protocols. TLB has senior reviewers or quality control specialists who review the work of the review team, validate decisions, and maintain high-quality standards.",
       ],
     },
     {
-      title: "Editorial Support",
+      title: "Reporting and Analytics",
       details: [
-        "Editorial support to publishers who are looking for value-added enhancements to their publications. Our services comprise of:",
-        "Abstraction of case law and legal journals",
-        "Indexing legal material",
-        "Legal research",
-        "Copy editing",
+        "TLB provides detailed reports and analytics on the reviewed documents. These reports can include metrics such as the number of documents reviewed, categorized, and flagged as relevant, providing valuable insights into the progress and outcomes of the review process.\n",
       ],
     },
     {
-      title: "Organizing Legal Database",
+      title: "Regulatory Compliance",
       details: [
-        "Creating legal databases for law firms and corporates",
-        "Providing assistance in organizing the information into an index and searchable database",
+        "TLB is knowledgeable about regulatory requirements and legal standards. TLB ensures compliance during the review process, including data privacy, confidentiality, and legal privilege protections.",
       ],
     },
     {
-      title: "Proofreading Services",
+      title: "Project Management",
       details: [
-        "Reviewing and rectifying spellings",
-        "Making grammatical changes if needed",
-        "Confirming uniformity in typefaces throughout the document",
-        "Determining accurate and consecutive numbering of several elements like page numbers",
-        "Looking for errors in formatting",
-        "Validating table of contents with elements like titles and subtitles",
-        "Validating the appropriateness of in-text illustrations",
-        "Real Estate Title Search",
-        "Data Entry Services",
+        "TLB manages the entire document review project, including planning, resource allocation, timelines, and communication. TLB works closely with the client to understand the specific requirements and objectives of the review and ensure that the project is executed efficiently.",
       ],
     },
     {
-      title: "Corporate Services",
+      title: "Legal Compliance",
       details: [
-        "Coordinating Hearings, Depositions, and Meetings with Clients",
-        "Preparing Notices for Hearings and Depositions",
-        "Arranging Court Reporters and Ordering Transcripts",
-        "Formatting and Finalizing Pleadings and Correspondence",
-        "Filing Documents Electronically",
-        "Preparing Periodic Client Invoices",
-        "Performing Clerical Tasks and Assignments",
-        "Preparing Table of Authorities",
-        "Preparing Table of Contents",
-        "Legal Typing and Creating Minutes of Meetings",
+        "In certain industries, such as finance and healthcare, TLB can help comply with laws and regulations that necessitate the collection, preservation, and review of electronic data.",
       ],
     },
     {
-      title: "Legal Research and Drafting Services",
+      title: "Litigation Support",
       details: [
-        "Performing Due Diligence",
-        "Data Room Management",
-        "Administrative and Regulatory Law Research Services",
-        "Legislation Research Services, including Primary (Regulations, Statutes, Cases, etc.) and Secondary Sources (Legal Dictionaries, Law Reviews, Treatises, etc.)",
-        "Case Law Research Services",
-        "Compliance Research Services",
-        "Multi-Jurisdictional Research Services",
-        "Memoranda of Law Research Services",
-        "Drafting of agreements/contracts as well as court-specific documents",
-        "Analyzing SEC Forms such as Form 4 and inputting the relevant information into Excel.",
+        "In the event of a lawsuit or legal dispute, TLB can help review and produce relevant documents as evidence. Document review and eDiscovery services can help identify, collect, and review these documents in a timely and efficient manner.\n",
       ],
     },
     {
-      title: "Legal Transcription Services",
+      title: "Risk Management",
       details: [
-        "Transcribing audio files related to legal cases.",
-        "Tribunal Transcription",
-        "Verbatim Voice Dictation",
+        "By conducting regular document reviews and eDiscovery, TLB can help identify and address potential legal issues before they escalate into more significant problems.",
       ],
     },
     {
-      title: "Litigation Support Services",
+      title: "Records Management",
       details: [
-        "Depositions",
-        "Medical Records",
-        "Document Review Management",
-        "Electronic Data Discovery Solutions",
-        "Processing of Information Stored Electronically",
+        "TLB’s document review and eDiscovery services can help a business organize and manage its electronic data, making it easier to locate and retrieve information when needed.",
       ],
     },
     {
-      title: "Other services",
+      title: " Data Privacy",
       details: [
-        "Data Management",
-        "Reviewing documentation",
-        "Legal data entry services",
-        "Business registrations",
-        "Preparing Agreements and Contracts (business and other kind)",
-        "Data format conversion and storage",
-        "Collection Evidence",
-        "Legal Coding",
-        "Legal Content Support",
+        "Businesses can make use of TLB’s document review and eDiscovery services to ensure that they are in compliance with data privacy regulations such as GDPR, HIPAA, and other similar laws.\n",
       ],
     },
   ];
@@ -161,29 +104,12 @@ const Four = () => {
                     alt="avatar"
                   />
                   <p className="text-3xl font-bold text-black  dark:hover:text-white-500  ">
-                    TLBs Paralegal Services
+                      TLB’s Managed Document Review Services
                   </p>
                 </div>
               </span>
             </div>
-            <div className="mt-2 px-4">
-              <p className="mt-2 lg:px-16 sm:px-12  px-0 text-black font-semibold ">
-                We at TLB understand the burden an attorney or a lawyer goes
-                through. That is why we offer custom paralegal support services
-                that are specially designed to suit your unique needs. Below
-                mentioned are our portfolio of paralegal services that can be
-                outsourced to us.
-              </p>
-            </div>
             <div className="flex items-center justify-between mt-4">
-              {/* <a
-      href="#"
-      className="text-blue-600 dark:text-blue-400 hover:underline"
-      tabIndex={0}
-      role="link"
-    >
-      Read more
-    </a> */}
               <div className="flex items-center"></div>
             </div>
 
@@ -222,9 +148,6 @@ const Four = () => {
                                 href="#"
                                 className="block h-full rounded-xl  p-2 "
                               >
-                                {/* <strong className="font-medium text-black">
-                          {idx + 1}
-                        </strong> */}
                                 <p className="mt-1 text-xs font-medium text-black">
                                   {detail}
                                 </p>

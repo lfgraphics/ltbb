@@ -8,7 +8,7 @@ export default function OurStory() {
     }
     return (
         <section className='bg-[#F0F3FA] px-[9%] py-12 flex-col md:flex-row flex gap-8 lg:gap-20 min-h-[70vh]'>
-            <div className="flex-[3] flex flex-col gap-4 text-[#181C31]">
+            <div className="flex-[3] flex flex-col gap-4 text-lg text-[#181C31]">
                 <h2 data-aos="fade-right" data-aos-delay="100" className='text-2xl md:text-3xl lg:text-4xl'>Our Story</h2>
                 <p data-aos="fade-left" data-aos-delay="200" className={`${showMore ? "line-clamp-none" : "line-clamp-5"}  md:line-clamp-none`}>The Legal Base is the trading name of Omnifix Technology Solutions Private Limited. Incepted with a view to be a one-stop shop for law firms , corporate legal departments and single attorneys, TLB is led by seasoned legal professionals with a wealth of experience in working with clients from US , UK, Canada , Australia and New Zealand.</p>
                 {!showMore && <span className='md:hidden underline' data-aos="fade-up" data-aos-delay="250" onClick={handleShowMore}>Read More</span>}

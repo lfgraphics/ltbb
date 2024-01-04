@@ -1,6 +1,65 @@
 "use client"
 import React, { useState } from 'react';
 
+const ipAnalyticsData = [
+    {
+        category: "What do we offer in IP Analytics?",
+        services: [
+            "Prior Art Search",
+            "Patentability Analysis",
+            "Patent Infringement & Analysis",
+            "Patent Mapping",
+            "Patent Drafting & Prosecution",
+            "IP Due Diligence & IP Audit"
+        ]
+    },
+    {
+        category: "What do we offer in Prior Art Search",
+        services: [
+            "Patentability Search",
+            "State of Art Search",
+            "Patent Invalidation Search",
+            "Infringement Search",
+            "Freedom to Operate"
+        ]
+    },
+    {
+        category: "What do we offer in Patent Watch?",
+        description: "There is an irrational desire to keep a close eye on whether any of the rivals have introduced a product that infringes on the client's patents. It is also critical to investigate what other rivals are doing to innovate. Changes in the office actions of strong rival patents can sometimes help the client prepare strong post-grant opposition filings.\n",
+    },
+    {
+        category: "What do we offer in Patent Drafting, Illustrations & Translation?",
+        description:"Using the standardized invention disclosure form template, the domain expert collects the inventor's invention information. The domain expert then develops the patent application in accordance with PTO criteria. The casual sketches/photographs are transformed into precise and professional AutoCAD drawings that adhere to patent office rules. After that, the patent application is filed with the PTO. The patent's renewals are monitored throughout its existence. From the time the patent is filed until it expires, all communications (office activities) with the patent office are managed."
+    },
+    {
+        category: "What do we offer in IP consulting services?",
+        services: [
+            "IP Strategy & Policy Formulation",
+            "IP Portfolio Creation & Management",
+            "IP Valuation & Licensing"
+        ]
+    },
+    {
+        category: "What do we offer in Landscape analysis services?",
+        description: "\n" +
+            "It gathers business intelligence from technological activity occurring in a certain technological domain. Among the projected areas are innovation trends, R&D regions, and possible markers. It is possible to identify strong rival patents. Possibilities for purchase can also be found.\n"
+    },
+    {
+        category: "What do we offer in Patent Portfolio Analysis, Patent Licensing & Monetization services?",
+        description: "The licensing approach can unlock monetary value from IP assets. Patent licensing provides firms with a consistent way to boost the bottom lines of their separate technology business divisions. Patent licensing is possible in several locations. Consultants from TLB have aided technology leaders in effectively completing inter-company and intra-company license agreements.",
+    },
+    {
+        category: "What do we offer in Open-Source License Compliance?",
+        description: "Software firms all around the world have been employing a variety of third-party open-source libraries to accelerate the delivery of their products. However, there are some hazards associated with this. There are several open-source licenses, and firms must follow the terms and conditions of these licensing agreements.\n" +
+            "\n",
+    },
+    {
+        category: "What do we offer in docketing and administrative support?\n",
+        description: "Through its Certified systems and procedures, TLB’s IP professionals provides end-to-end docketing and administrative assistance. Data saved on IPMS is utilized for decision-making purposes including renewals, M&A, and overall IP protection. It is vital that this information be correct and up to date. Our team provides extra external support to your IP administration staff in order to assist them in managing all IP-related administrative responsibilities.\n"
+    }
+];
+
+
 const Faq = () => {
     const [openQuestionIndex, setOpenQuestionIndex] = useState(null);
 
@@ -19,17 +78,24 @@ const Faq = () => {
                         Frequently Asked Questions
                     </h2>
                     <div className="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 divide-gray-700">
-                        {faqData.map((item, index) => (
+                        {ipAnalyticsData.map((item, index) => (
                             <details
                                 key={index}
                                 open={index === openQuestionIndex}
                                 onToggle={() => handleQuestionToggle(index)}
                             >
                                 <summary className="py-2 outline-none cursor-pointer focus:underline">
-                                    {item.question}
+                                    {item.category}
                                 </summary>
                                 <div className="px-4 pb-4">
-                                    <p>{item.answer}</p>
+                                    <p>{item.description}</p>
+                                    <ul className="flex flex-col gap-2 list-disc ml-4">
+                                        {
+                                            item?.services?.map((item,i)=>(
+                                                <li key={i}>{item}</li>
+                                            ))
+                                        }
+                                    </ul>
                                 </div>
                             </details>
                         ))}
@@ -38,34 +104,6 @@ const Faq = () => {
             </section>
         </React.Fragment>
     );
-};
-
-const faqData = [
-    {
-        question: "What is case intake and how does it work?",
-        answer: "Case intake is the process of assessing and gathering information from potential clients seeking legal assistance. The intake worker conducts an initial assessment of the client's needs, determines their eligibility for services, and gathers necessary information about their case. If the client is eligible, they are assigned a case manager who will provide ongoing support and services."
-    },
-    {
-        question: "What types of legal cases do you handle at your organisation?",
-        answer: "Our organisation specialises in handling all kinds of Civil, criminal and bankruptcy cases."
-    },
-    {
-        question: "What is the process for seeking assistance through your organisation?",
-        answer: "The process for seeking assistance begins with an initial contact with our organisation. From there, we will conduct an assessment of your needs and determine your eligibility for our services. If you are eligible, we will gather the necessary information about your case and assign a case manager to work with you."
-    },
-    {
-        question: "How do I know if I am eligible for your services?",
-        answer: "Eligibility is determined by our intake worker during the initial assessment. We will consider factors such as your income, location, and the specific nature of your case when determining your eligibility."
-    },
-    {
-        question: "How long does the case intake process take?",
-        answer: "The case intake process typically can take somewhere around a week to a month depending on your organisation’s unique needs."
-    },
-    {
-        question: "Can I speak with a case manager before starting the intake process?",
-        answer: "Yes, you can contact our organisation and request to speak with a case manager before starting the intake process."
-    }
-];
-
+}
 
 export default Faq;

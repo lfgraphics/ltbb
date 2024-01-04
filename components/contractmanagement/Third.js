@@ -11,40 +11,42 @@ import "swiper/css/pagination";
 import "./styles.css";
 
 // import required modules
-import { EffectCoverflow, Pagination } from "swiper";
+import SwiperCore, { EffectCoverflow, Pagination, Autoplay } from "swiper";
 
+SwiperCore.use([EffectCoverflow, Autoplay, Pagination])
+
+const cardData = [
+  {
+    title: "Cost efficiency:",
+    description: "Outsourcing contract lifecycle management (CLM) services can be more cost-effective than hiring and maintaining an in-house team.Outsourcing to TLB eliminates the need for recruitment, training, salaries, benefits, office space, and other overhead costs associated with an internal team.",
+  },
+  {
+    title: "Expertise and specialized skills:",
+    description: "Outsourcing to TLB allows companies to leverage the expertise and specialized skills of a dedicated team.Contract lifecycle management requires knowledge of legal, regulatory, and compliance frameworks, as well as experience in managing contracts throughout their lifecycle.Outsourcing to TLB ensures efficient and accurate management of contracts.",
+  },
+  {
+    title: "Focus on core competencies:",
+    description: "Contract management may not be a core competency of every company. By outsourcing this function, organizations can free up their internal resources to focus ontheir core business activities and strategic initiatives, allowing them to allocate their time and resources more effectively.",
+  },
+  {
+    title: "Scalability and flexibility:",
+    description: "Outsourcing to TLB provides scalability and flexibility to adapt to changing business needs.TLB can quickly scale their resources up or down based on the volume of contracts or the complexity of the organization's requirements. This flexibility is particularly beneficial for companies with fluctuating contract volumes or those undergoing periods of growth or change",
+  },
+  {
+    title: "Access to advanced technology and tools:",
+    description: "TLB leverages from advanced contract management software and tools that streamline and automate the contract lifecycle.Outsourcing to TLB enables companies to benefit from these technologies without investing in expensive software licenses or infrastructure.",
+  },
+  {
+    title: "Improved compliance and risk management:",
+    description: "Effective contract lifecycle management helps mitigate risks and ensures compliance with regulatory requirements.Outsourcing CLM services to TLB which has extensive knowledge and experience in contract compliance and risk management can enhance an organization's ability to navigate complex legal and regulatory landscapes. .",
+  },
+  {
+    title: "Enhanced efficiency and productivity:",
+    description: "Outsourcing to TLB can improve operational efficiency and productivity. TLB can implement standardized processes, best practices, and automation, reducing the time and effort required for contract creation, negotiation, execution, and monitoring.",
+  },
+
+];
 export default function Third() {
-  const cardData = [
-    {
-      title: "Cost efficiency:",
-      description: "Outsourcing contract lifecycle management (CLM) services can be more cost-effective than hiring and maintaining an in-house team.Outsourcing to TLB eliminates the need for recruitment, training, salaries, benefits, office space, and other overhead costs associated with an internal team.",
-    },
-    {
-      title: "Expertise and specialized skills:",
-      description: "Outsourcing to TLB allows companies to leverage the expertise and specialized skills of a dedicated team.Contract lifecycle management requires knowledge of legal, regulatory, and compliance frameworks, as well as experience in managing contracts throughout their lifecycle.Outsourcing to TLB ensures efficient and accurate management of contracts.",
-    },
-    {
-      title: "Focus on core competencies:",
-      description: "Contract management may not be a core competency of every company. By outsourcing this function, organizations can free up their internal resources to focus ontheir core business activities and strategic initiatives, allowing them to allocate their time and resources more effectively.",
-    },
-    {
-      title: "Scalability and flexibility:",
-      description: "Outsourcing to TLB provides scalability and flexibility to adapt to changing business needs.TLB can quickly scale their resources up or down based on the volume of contracts or the complexity of the organization's requirements. This flexibility is particularly beneficial for companies with fluctuating contract volumes or those undergoing periods of growth or change",
-    },
-    {
-      title: "Access to advanced technology and tools:",
-      description: "TLB leverages from advanced contract management software and tools that streamline and automate the contract lifecycle.Outsourcing to TLB enables companies to benefit from these technologies without investing in expensive software licenses or infrastructure.",
-    },
-    {
-      title: "Improved compliance and risk management:",
-      description: "Effective contract lifecycle management helps mitigate risks and ensures compliance with regulatory requirements.Outsourcing CLM services to TLB which has extensive knowledge and experience in contract compliance and risk management can enhance an organization's ability to navigate complex legal and regulatory landscapes. .",
-    },
-    {
-      title: "Enhanced efficiency and productivity:",
-      description: "Outsourcing to TLB can improve operational efficiency and productivity. TLB can implement standardized processes, best practices, and automation, reducing the time and effort required for contract creation, negotiation, execution, and monitoring.",
-    },
-
-  ];
 
   return (
     <>
@@ -77,7 +79,6 @@ export default function Third() {
             delay: 3500,
             disableOnInteraction: false,
           }}
-          modules={[EffectCoverflow, Pagination]}
           className="mySwiper space-y-2"
         >
           {/* Step 2: Map the card data to the SwiperSlides */}

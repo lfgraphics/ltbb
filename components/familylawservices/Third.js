@@ -11,36 +11,38 @@ import "swiper/css/pagination";
 import "./styles.css";
 
 // import required modules
-import { EffectCoverflow, Pagination } from "swiper";
+import SwiperCore, { EffectCoverflow, Pagination, Autoplay } from "swiper";
 
+SwiperCore.use([EffectCoverflow, Autoplay, Pagination])
+
+const cardData = [
+  {
+    title: "Expertise and specialization:",
+    description: "Family law is a complex and specialized field that requires in-depth knowledge of various legal aspects such as divorce, child custody, adoption, and domestic violence. By outsourcing family law services to TLB’s experienced professionals, law firms and attorneys can gain access to their expertise and specialization in this specific area, ensuring that their legal matters are handled by professionals who understand the nuances of family law.",
+  },
+  {
+    title: "Cost-effectiveness:",
+    description: "Outsourcing to TLB can be a cost-effective solution compared to hiring and maintaining in-house legal professionals. By outsourcing family law services to TLB, law firms and attorneys can avoid the expenses associated with full-time salaries, benefits, office space, and training. Additionally, outsourcing to TLB allows to pay for services on an as-needed basis, reducing costs during periods of low caseload.",
+  },
+  {
+    title: "Focus on core competencies:",
+    description: "For law firms, outsourcing family law services to TLB can allow them to focus on their core competencies and areas of practice where they have the most expertise. This enables them to allocate their internal resources more efficiently and effectively, leading to improved client service and satisfaction.",
+  },
+  {
+    title: "Increased flexibility and scalability: ",
+    description: "Outsourcing family law services to TLB provides flexibility and scalability in handling fluctuating workloads. During peak periods or when faced with complex cases, outsourcing allows law firms to quickly ramp up resources by engaging external professionals or firms. Conversely, during slower periods, law firms can reduce outsourcing arrangements to match the demand, avoiding the need for unnecessary overhead.",
+  },
+  {
+    title: "Access to advanced technology and resources:",
+    description: "Outsourcing family law services to TLB often grants access to advanced legal technology and resources that may not be readily available in-house. This can include case management systems, legal research tools, document automation, and other specialized software, enhancing the efficiency and effectiveness of legal processes.",
+  },
+  {
+    title: "Confidentiality and impartiality:",
+    description: "In sensitive family law matters, outsourcing to TLB can provide an added layer of confidentiality and impartiality. Working with external professionals or firms can ensure that sensitive information is handled discreetly and impartially, helping to maintain the privacy and dignity of the parties involved.",
+  }
+
+];
 export default function Third() {
-  const cardData = [
-    {
-      title: "Expertise and specialization:",
-      description: "Family law is a complex and specialized field that requires in-depth knowledge of various legal aspects such as divorce, child custody, adoption, and domestic violence. By outsourcing family law services to TLB’s experienced professionals, law firms and attorneys can gain access to their expertise and specialization in this specific area, ensuring that their legal matters are handled by professionals who understand the nuances of family law.",
-    },
-    {
-      title: "Cost-effectiveness:",
-      description: "Outsourcing to TLB can be a cost-effective solution compared to hiring and maintaining in-house legal professionals. By outsourcing family law services to TLB, law firms and attorneys can avoid the expenses associated with full-time salaries, benefits, office space, and training. Additionally, outsourcing to TLB allows to pay for services on an as-needed basis, reducing costs during periods of low caseload.",
-    },
-    {
-      title: "Focus on core competencies:",
-      description: "For law firms, outsourcing family law services to TLB can allow them to focus on their core competencies and areas of practice where they have the most expertise. This enables them to allocate their internal resources more efficiently and effectively, leading to improved client service and satisfaction.",
-    },
-    {
-      title: "Increased flexibility and scalability: ",
-      description: "Outsourcing family law services to TLB provides flexibility and scalability in handling fluctuating workloads. During peak periods or when faced with complex cases, outsourcing allows law firms to quickly ramp up resources by engaging external professionals or firms. Conversely, during slower periods, law firms can reduce outsourcing arrangements to match the demand, avoiding the need for unnecessary overhead.",
-    },
-    {
-      title: "Access to advanced technology and resources:",
-      description: "Outsourcing family law services to TLB often grants access to advanced legal technology and resources that may not be readily available in-house. This can include case management systems, legal research tools, document automation, and other specialized software, enhancing the efficiency and effectiveness of legal processes.",
-    },
-    {
-      title: "Confidentiality and impartiality:",
-      description: "In sensitive family law matters, outsourcing to TLB can provide an added layer of confidentiality and impartiality. Working with external professionals or firms can ensure that sensitive information is handled discreetly and impartially, helping to maintain the privacy and dignity of the parties involved.",
-    }
-
-  ];
 
   return (
     <>
@@ -83,7 +85,6 @@ export default function Third() {
             delay: 3500,
             disableOnInteraction: false,
           }}
-          modules={[EffectCoverflow, Pagination]}
           className="mySwiper space-y-2"
         >
           {/* Step 2: Map the card data to the SwiperSlides */}

@@ -87,7 +87,7 @@ export const legalSearchData = [
     id: 13,
     title: "M_A Diligence Services",
     desc: "TLB has a dedicated team of paralegals that can help you with a wide range of paralegal services, including legal research, drafting, and document review.",
-    learnMore: "/",
+    learnMore: "/madiligenceservices",
     image: "/Legal Research/pexels-anna-shvets-5324926.jpg",
   }
 ];

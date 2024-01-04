@@ -121,7 +121,7 @@ export default function Third() {
 
   return (
     <>
-      <div className="bg-transparent mx-auto w-5/6">
+      <div className="bg-transparent mx-auto w-5/6 overflow-hidden">
         <div className="container mx-auto p-4 mt-12 space-y-2 text-center bg-w mb-4">
           <h2 className="text-3xl font-bold" data-aos="fade-right" data-aos-delay="100">
             TLB’s Legal IT Services

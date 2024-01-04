@@ -3,6 +3,7 @@ import Hero from '@/components/paralegalservices/Hero';
 import Second from '@/components/paralegalservices/Second';
 import Third from '@/components/paralegalservices/Third';
 import Four from '@/components/paralegalservices/Four';
+import Faq from '@/components/paralegalservices/Faq';
 
 export const metadata = {
   title: " Outsourced Paralegal Services | TLB",
@@ -15,6 +16,7 @@ const page = () => {
       <Second></Second>
       <Third></Third>
       <Four></Four>
+        <Faq/>
     </React.Fragment>
   )
 }

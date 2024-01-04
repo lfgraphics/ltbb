@@ -33,7 +33,7 @@ export default function Third2() {
 
 	return (
 		<>
-			<div className="bg-transparent mx-auto w-5/6">
+			<div className="bg-transparent mx-auto w-5/6 overflow-hidden">
 
 				<div className="container mx-auto p-4 my-6 space-y-2 text-center  mt-4 bg-w mb-4">
 					<h2 className="text-3xl font-bold" data-aos="fade-right" data-aos-delay="100">
