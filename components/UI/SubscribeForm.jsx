@@ -1,8 +1,33 @@
+"use client"
 import React from 'react';
+
+import { usePathname } from 'next/navigation'
+
 import emailjs from '@emailjs/browser';
 import { useForm } from 'react-hook-form';
 
+const urls = {
+    "caseintakeservices": "Case Intake Services",
+    "contractmanagement": "Contract Management",
+    "globalimmigration": "Global Immigration Management",
+    "paralegalservices": "Paralegal Services",
+    "personalinjury": "Personal Injury",
+    "familylawservices": "Family Law Services",
+    "legalresearch": "Legal Research Services",
+    "litigationsupport": "Litigation Support",
+    "estateplanning": "Estate Planning Services",
+    "depositionsummaryservices": "Deposition Summary Services",
+    "manageddocumentreviewservice": "Managed Document Review Service",
+    "madiligenceservices": "M_A Diligence Services",
+    "globalipresearchandconsultationservices": "Global IP Research & Consultation Services",
+    "bespokeitservices": "Bespoke IT Services",
+    "digitalmarketing": "Digital Marketing Services for Law Firms"
+}
+
 export default function SubscribeForm() {
+    const pathname = usePathname();
+    const service = pathname.split('/')[1];
+
     const {
         register,
         handleSubmit,
@@ -14,7 +39,7 @@ export default function SubscribeForm() {
         const formData = {
             email: data.email,
             subject: 'Appointment Booking',
-            message: `${data.email} wants to book an appointment!`,
+            page: urls[service]
         };
         try {
             await emailjs.send(
