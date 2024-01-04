@@ -9,12 +9,19 @@ import ThirdStep from "./thirdStep";
 const ContactForm = ({ title, message }) => {
   const [step, setStep] = React.useState(1);
   const [formState, setFormState] = React.useState(1);
+
   const {
     watch,
     register,
-    formState: { errors },
+    handleSubmit,
+    formState: { errors, isSubmitSuccessful },
     isValid,
   } = useForm({ mode: "all" });
+
+  const onSubmit = (data) => {
+    console.log(data);
+  }
+
   const Step = () => {
     if (step === 1) {
       return (
@@ -22,7 +29,7 @@ const ContactForm = ({ title, message }) => {
           register={register}
           errors={errors}
           isValid={isValid}
-        ></FirstStep>
+        />
       );
     } else if (step === 2) {
       return <SecondStep register={register} errors={errors}></SecondStep>;
@@ -30,23 +37,28 @@ const ContactForm = ({ title, message }) => {
       return <ThirdStep register={register} errors={errors}></ThirdStep>;
     }
   };
+
   return (
     <React.Fragment>
       <div className="w-screen min-h-screen h-full flex flex-col gap-3 justify-center items-center">
         <h2 className="text-2xl md:text-3xl font-extrabold text-center">{title}</h2>
         <div className="w-full max-w-sm h  mx-auto overflow-hidden p-8 bg-white rounded-lg shadow-md ">
-          <h1 className="font-bold">
+          {isSubmitSuccessful && <p className="text-green-500 text-center mb-2">Your have has been sent successfully</p>}
+          <h1 className="font-bold text-center">
             {message}
           </h1>
           <p className="text-center font-bold">{step}/3</p>
 
-          {Step()}
+          <form onSubmit={handleSubmit(onSubmit)}>
+            {Step()}
+          </form>
 
           <Button
             step={step}
             setStep={setStep}
             isValid={isValid}
             watch={watch}
+            submitForm={handleSubmit(onSubmit)}
           ></Button>
         </div>
       </div>
