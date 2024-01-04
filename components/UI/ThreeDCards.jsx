@@ -11,7 +11,10 @@ import "swiper/css/pagination";
 import "./style.css";
 
 // import required modules
-import { EffectCoverflow, Pagination } from "swiper";
+import SwiperCore, { EffectCoverflow, Pagination, Autoplay } from "swiper";
+
+SwiperCore.use([Autoplay, EffectCoverflow, Pagination])
+
 
 export default function ThreeDCard({ cardData, title, description }) {
     return (
@@ -30,7 +33,7 @@ export default function ThreeDCard({ cardData, title, description }) {
                     effect={"coverflow"}
                     grabCursor={true}
                     centeredSlides={true}
-                    loop={true}
+                    loop
                     slidesPerView={"auto"}
                     coverflowEffect={{
                         rotate: 50,
@@ -44,7 +47,6 @@ export default function ThreeDCard({ cardData, title, description }) {
                         delay: 3500,
                         disableOnInteraction: false,
                     }}
-                    modules={[EffectCoverflow, Pagination]}
                     className="mySwiper space-y-2"
                 >
                     {/* Step 2: Map the card data to the SwiperSlides */}

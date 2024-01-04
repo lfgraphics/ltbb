@@ -11,7 +11,9 @@ import "swiper/css/pagination";
 import "./styles.css";
 
 // import required modules
-import { EffectCoverflow, Pagination } from "swiper";
+import SwiperCore, { EffectCoverflow, Pagination, Autoplay } from "swiper";
+
+SwiperCore.use([EffectCoverflow, Autoplay, Pagination])
 import { MdHeight } from "react-icons/md";
 
 export default function Third() {
@@ -301,7 +303,6 @@ export default function Third() {
             delay: 3500,
             disableOnInteraction: false,
           }}
-          modules={[EffectCoverflow, Pagination]}
           className="mySwiper space-y-2 min-h-[95vh]"
         >
           {/* Step 2: Map the card data to the SwiperSlides */}

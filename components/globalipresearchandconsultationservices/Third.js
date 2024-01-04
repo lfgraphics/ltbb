@@ -11,7 +11,9 @@ import "swiper/css/pagination";
 import "./styles.css";
 
 // import required modules
-import { EffectCoverflow, Pagination } from "swiper";
+import SwiperCore, { EffectCoverflow, Pagination, Autoplay } from "swiper";
+
+SwiperCore.use([EffectCoverflow, Autoplay, Pagination])
 
 const cardData = [
   {
@@ -51,7 +53,7 @@ export default function Third() {
             have witnessed fruitful results and the potential to take in more client projects has only increased over
             the years.
           </p>
-          <br/>
+          <br />
           <p> If you are wondering whether to outsource your IP Research and Consultation service requirements to TLB or not, you must consider the following benefits that you will get upon outsourcing.</p>
           <ul className="list-disc  ml-4">
             <li>Achieve compelling cost reductions and faster turnaround times,</li>
@@ -71,24 +73,23 @@ export default function Third() {
         </div>
 
         <Swiper
-            effect={"coverflow"}
-            grabCursor={true}
-            centeredSlides={true}
-            loop={true}
-            slidesPerView={"auto"}
-            coverflowEffect={{
-              rotate: 50,
-              stretch: 0,
-              depth: 100,
-              modifier: 1,
-              shadow: true,
-            }}
-            pagination={false}
+          effect={"coverflow"}
+          grabCursor={true}
+          centeredSlides={true}
+          loop={true}
+          slidesPerView={"auto"}
+          coverflowEffect={{
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            shadow: true,
+          }}
+          pagination={false}
           autoplay={{
             delay: 3500,
             disableOnInteraction: false,
           }}
-          modules={[EffectCoverflow, Pagination]}
           className="mySwiper space-y-2"
         >
           {/* Step 2: Map the card data to the SwiperSlides */}

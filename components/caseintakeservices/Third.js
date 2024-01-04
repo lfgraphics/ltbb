@@ -11,44 +11,47 @@ import "swiper/css/pagination";
 import "./styles.css";
 
 // import required modules
-import { EffectCoverflow, Pagination } from "swiper";
+import SwiperCore, { EffectCoverflow, Pagination, Autoplay } from "swiper";
+
+SwiperCore.use([EffectCoverflow, Autoplay, Pagination])
+
+const cardData = [
+  {
+    title: "Improved Responsiveness:",
+    description: "Outsourcing to TLB can ensure a prompt response to potential clients. By having a dedicated team managing initial inquiries, law firms can provide timely and professional communication, enhancing the overall client experience and satisfaction.",
+  },
+  {
+    title: "Scalability and Flexibility:",
+    description: "TLB can scale their resources based on the volume of inquiries. During periods of high demand, such as marketing campaigns or peak seasons, TLB can quickly ramp up their capacity to handle a larger influx of potential cases. Conversely, during slower periods, TLB can adjust their resources, accordingly, avoiding underutilized staff.",
+  },
+  {
+    title: "Cost Savings:",
+    description: "Outsourcing to TLB can be cost-effective compared to hiring and training an in-house team. Law firms can avoid expenses associated with recruitment, salaries, benefits, office space, and technology infrastructure. Additionally, outsourcing to TLB allows for a variable cost structure, as firms only pay for the services utilized.",
+  },
+  {
+    title: "Expertise and Specialization:",
+    description: "TLB specializes in efficiently managing the intake process. TLB has experience in gathering relevant information, conducting initial case assessments, and routing cases to the appropriate legal teams. TLB’s expertise in case intake procedures can result in more accurate and efficient evaluations of potential cases.",
+  },
+  {
+    title: "Focus on Core Legal Work:",
+    description: "By outsourcing to TLB, law firms can free up their internal resources, allowing attorneys and legal staff to concentrate on core legal work. Instead of spending time on administrative tasks and initial client screenings, attorneys can focus on providing legal advice, strategizing cases, and advocating for their clients.",
+  },
+  {
+    title: "Consistent Processes and Quality Assurance:",
+    description: "TLB follows standardized processes and protocols for case intake. This consistency helps ensure that each potential case receives thorough and consistent evaluation and treatment. Quality assurance measures implemented by TLB helps maintain a high level of service and accuracy.",
+  },
+  {
+    title: "Enhanced Efficiency and Productivity:",
+    description: "Outsourcing case intake services to TLB will streamlines the intake process, resulting in increased efficiency and productivity. TLB leverages technology and automation tools to streamline data collection, organization, and reporting, reducing manual effort and improving overall workflow.",
+  },
+  {
+    title: "Access to Data and Analytics:",
+    description: "TLB offers reporting and analytics capabilities and can provide law firms with valuable insights and metrics on case intake volume, conversion rates, lead sources, and other relevant data. This information helps firms make data-driven decisions, optimize marketing strategies, and allocate resources effectively.",
+  },
+
+];
 
 export default function Third() {
-  const cardData = [
-    {
-      title: "Improved Responsiveness:",
-      description: "Outsourcing to TLB can ensure a prompt response to potential clients. By having a dedicated team managing initial inquiries, law firms can provide timely and professional communication, enhancing the overall client experience and satisfaction.",
-    },
-    {
-      title: "Scalability and Flexibility:",
-      description: "TLB can scale their resources based on the volume of inquiries. During periods of high demand, such as marketing campaigns or peak seasons, TLB can quickly ramp up their capacity to handle a larger influx of potential cases. Conversely, during slower periods, TLB can adjust their resources, accordingly, avoiding underutilized staff.",
-    },
-    {
-      title: "Cost Savings:",
-      description: "Outsourcing to TLB can be cost-effective compared to hiring and training an in-house team. Law firms can avoid expenses associated with recruitment, salaries, benefits, office space, and technology infrastructure. Additionally, outsourcing to TLB allows for a variable cost structure, as firms only pay for the services utilized.",
-    },
-    {
-      title: "Expertise and Specialization:",
-      description: "TLB specializes in efficiently managing the intake process. TLB has experience in gathering relevant information, conducting initial case assessments, and routing cases to the appropriate legal teams. TLB’s expertise in case intake procedures can result in more accurate and efficient evaluations of potential cases.",
-    },
-    {
-      title: "Focus on Core Legal Work:",
-      description: "By outsourcing to TLB, law firms can free up their internal resources, allowing attorneys and legal staff to concentrate on core legal work. Instead of spending time on administrative tasks and initial client screenings, attorneys can focus on providing legal advice, strategizing cases, and advocating for their clients.",
-    },
-    {
-      title: "Consistent Processes and Quality Assurance:",
-      description: "TLB follows standardized processes and protocols for case intake. This consistency helps ensure that each potential case receives thorough and consistent evaluation and treatment. Quality assurance measures implemented by TLB helps maintain a high level of service and accuracy.",
-    },
-    {
-      title: "Enhanced Efficiency and Productivity:",
-      description: "Outsourcing case intake services to TLB will streamlines the intake process, resulting in increased efficiency and productivity. TLB leverages technology and automation tools to streamline data collection, organization, and reporting, reducing manual effort and improving overall workflow.",
-    },
-    {
-      title: "Access to Data and Analytics:",
-      description: "TLB offers reporting and analytics capabilities and can provide law firms with valuable insights and metrics on case intake volume, conversion rates, lead sources, and other relevant data. This information helps firms make data-driven decisions, optimize marketing strategies, and allocate resources effectively.",
-    },
-
-  ];
 
   return (
     <>
@@ -81,7 +84,6 @@ export default function Third() {
             delay: 3500,
             disableOnInteraction: false,
           }}
-          modules={[EffectCoverflow, Pagination]}
           className="mySwiper space-y-2"
         >
           {/* Step 2: Map the card data to the SwiperSlides */}
