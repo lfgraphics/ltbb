@@ -85,11 +85,11 @@ const services = () => {
               We Offer The Best Quality Service for You
             </h2>
             {/* <p className="bb on/5 wo/5 hq" x-text="sectionTitleText" /> */}
-            <p className="bb on/5 wo/5 hq">
+            {/* <p className="bb on/5 wo/5 hq">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
               convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
               ante in maximus.
-            </p>
+            </p> */}
           </div>
         </div>
         {/* Section Title End */}
