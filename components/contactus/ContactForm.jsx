@@ -8,7 +8,6 @@ import ThirdStep from "./thirdStep";
 
 const ContactForm = ({ title, message }) => {
   const [step, setStep] = React.useState(1);
-  const [formState, setFormState] = React.useState(1);
 
   const {
     watch,
@@ -40,27 +39,25 @@ const ContactForm = ({ title, message }) => {
 
   return (
     <React.Fragment>
-      <div className="w-screen min-h-screen h-full flex flex-col gap-3 justify-center items-center">
-        <h2 className="text-2xl md:text-3xl font-extrabold text-center">{title}</h2>
-        <div className="w-full max-w-sm h  mx-auto overflow-hidden p-8 bg-white rounded-lg shadow-md ">
-          {isSubmitSuccessful && <p className="text-green-500 text-center mb-2">Your have has been sent successfully</p>}
-          <h1 className="font-bold text-center">
-            {message}
-          </h1>
-          <p className="text-center font-bold">{step}/3</p>
+      <h2 className="text-2xl md:text-3xl font-extrabold text-center">{title}</h2>
+      <div className="w-full max-w-sm h  overflow-hidden p-8 bg-white rounded-lg shadow-md">
+        {isSubmitSuccessful && <p className="text-green-500 text-center mb-2">Your form has been sent successfully</p>}
+        <h1 className="font-bold text-center">
+          {message}
+        </h1>
+        <p className="text-center font-bold">{step}/3</p>
 
-          <form onSubmit={handleSubmit(onSubmit)}>
-            {Step()}
-          </form>
+        <form onSubmit={handleSubmit(onSubmit)} >
+          {Step()}
+        </form>
 
-          <Button
-            step={step}
-            setStep={setStep}
-            isValid={isValid}
-            watch={watch}
-            submitForm={handleSubmit(onSubmit)}
-          ></Button>
-        </div>
+        <Button
+          step={step}
+          setStep={setStep}
+          isValid={isValid}
+          watch={watch}
+          submitForm={handleSubmit(onSubmit)}
+        ></Button>
       </div>
     </React.Fragment>
   );

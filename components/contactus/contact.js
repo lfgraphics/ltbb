@@ -1,24 +1,32 @@
-import React from "react";
-import Location1 from "./location1";
-import Location2 from "./location2";
-import Location3 from "./location3";
+"use client"
+import React, { useEffect } from "react";
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 import ContactForm from "./ContactForm";
+import OurLocations from "./OurLocations";
+import Banner from "./Banner";
 
 const Form = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 100, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 1000,
+    });
+  });
   return (
-    <React.Fragment>
-      <ContactForm message="Getting in touch with TLB is as simple as" />
-
-      <h1 className="text-center text-3xl font-bold text-gray-800 underline mt-5 p-4 ">
-        OUR LOCATIONS
-      </h1>
-      <div className="flex flex-col   w-full items-center justify-center h-full mx-auto gap-4   px-6">
-        <Location1 />
-        <Location2 />
-        <Location3 />
+    <>
+      <Banner />
+      <div className="bg-white w-full p-10 flex flex-col gap-5">
+        <h1 className="text-center text-3xl font-bold text-gray-800  mt-5 p-4" data-aos="fade-right" data-aos-delay="100">
+          OUR LOCATIONS
+        </h1>
+        <OurLocations />
       </div>
-      <span className="p-4"></span>
-    </React.Fragment>
+    </>
   );
 };
 
