@@ -14,14 +14,14 @@
         "img": "/contact/united-kingdom.webp",
         "email":"contact@thelegalbase.com",
         "phone":"(+44) 789 485 8483",
-        "address": "Abbey House,\n25 Clarendon Road,\nRedhill, Surrey RH1 1QZ, GBR"
+        "address": "Abbey House, 25 Clarendon Road, Redhill, Surrey RH1 1QZ, GBR"
     },
     {
         "id": 3,
         "name": "UNITED States",
         "img": "/contact/united-state.webp",
         "email":"contact@thelegalbase.com",
-        "phone":"",
+        "phone":"(+1) 415 909 4205",
         "address": "111 Lawrence St 49 b,\nBrooklyner Brooklyn,\nNY 11201 USA"
     }
 ]
