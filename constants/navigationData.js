@@ -1,7 +1,7 @@
 export const menuItems = [
     {
         name: "Legal Services",
-        href: "/",
+        href: "#",
         children: [
             {
                 id: 1,
@@ -61,7 +61,7 @@ export const menuItems = [
             {
                 id: 12,
                 name: "M_A Diligence Services",
-                href: "/"
+                href: "/madiligenceservices"
             },
             {
                 id: 13,
@@ -72,7 +72,7 @@ export const menuItems = [
     },
     {
         name: "Managed Services",
-        href: "/",
+        href: "#",
         children: [
             {
                 id: 1,
@@ -96,6 +96,6 @@ export const menuItems = [
     },
     {
         name: "Repository",
-        href: "#",
+        href: "https://blog.thelegalbase.com/",
     },
 ];

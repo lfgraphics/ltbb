@@ -13,7 +13,7 @@ const Second = () => {
 	});
 	return (
 		<React.Fragment>
-			<div className='bg-white    sm:w-5/6 w-full md:w-5/6 lg:5/6 mx-auto'>
+			<div className='bg-white    sm:w-5/6 w-full md:w-5/6 lg:5/6 mx-auto overflow-hidden'>
 				<section className="dark:bg-white bg-white">
 					<div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
 						<div data-aos="fade-down">
@@ -50,7 +50,7 @@ const Second = () => {
 									<div className="flex shadow-lg p-4 hover:shadow-2xl  border-solid  rounded-md" data-aos="fade-right">
 										<div className="flex-shrink-0">
 											<div className="flex items-center justify-center w-12 h-12 rounded-md bg-gray-700">
-											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
+												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
 													<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
 												</svg>
 											</div>
@@ -70,7 +70,7 @@ const Second = () => {
 									<div className="flex shadow-lg p-4 hover:shadow-2xl  border-solid  rounded-md" data-aos="fade-right">
 										<div className="flex-shrink-0">
 											<div className="flex items-center justify-center w-12 h-12 rounded-md bg-gray-700">
-											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
+												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
 													<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
 												</svg>
 											</div>
@@ -89,7 +89,7 @@ const Second = () => {
 									<div className="flex shadow-lg p-4 hover:shadow-2xl  border-solid  rounded-md" data-aos="fade-right">
 										<div className="flex-shrink-0">
 											<div className="flex items-center justify-center w-12 h-12 rounded-md bg-gray-700">
-											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
+												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
 													<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
 												</svg>
 											</div>
@@ -120,25 +120,20 @@ const Second = () => {
 									<div className="flex shadow-lg p-4 hover:shadow-2xl  border-solid  rounded-md" data-aos="fade-right">
 										<div className="flex-shrink-0">
 											<div className="flex items-center justify-center w-12 h-12 rounded-md bg-gray-700">
-											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
+												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
 													<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
 												</svg>
 											</div>
 										</div>
 										<div className="ml-4">
 											<h4 className="text-lg font-medium leading-6">
-												Contract Renewal or Terminatio
+												Contract Renewal or Termination
 											</h4>
 											<p className="mt-2 dark:text-gray-400">
 												TLB CLM services assist in managing contract renewals or terminations. They can
 												automate the renewal process, track notice periods, facilitate renegotiation, or facilitate
 												the termination process while ensuring compliance with contract requirements.
-												<br></br>
-												TLB CLM services leverage technology, such as contract management software, to
-												centralize contract data, streamline workflows, and provide visibility into the contract
-												lifecycle. These services aim to improve efficiency, reduce manual errors, enhance
-												collaboration, and enable organizations to effectively manage and maximize the value
-												of their contracts throughout their lifecycle.
+
 												<br></br>
 
 											</p>
@@ -168,7 +163,7 @@ const Second = () => {
 						/>
 						<div className="flex flex-col w-full p-6 lg:w-2/3 md:p-8 lg:p-12">
 
-							<h2 className="text-xl font-semibold leading-loose">
+							<h2 className="text-xl leading-loose">
 								<strong>TLB</strong> provides you with the best contract lifecycle management services by assisting you
 								in achieving your objectives, including enforcing compliance, taking advantage of
 								volume discounts, successfully managing commitments, decreasing contract risks and

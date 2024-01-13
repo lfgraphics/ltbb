@@ -11,68 +11,67 @@ import "swiper/css/pagination";
 import "./styles.css";
 
 // import required modules
-import { EffectCoverflow, Pagination } from "swiper";
+import SwiperCore, { EffectCoverflow, Pagination, Autoplay } from "swiper";
+
+SwiperCore.use([EffectCoverflow, Autoplay, Pagination])
+
+const cardData = [
+  {
+    title: "Highly efficient experts",
+    description: "Our IP Consultation professionals contribute extensive subject and industry knowledge to each engagement, as well as access to TLB's substantial intellectual capital. Our innovative approach to technology-powered legal solutions, along with a broad range of service options, puts us ahead of the competition."
+  },
+  {
+    title: "Reliable",
+    description: "When it comes to picking a relationship, trust is crucial. We realize this and make every effort to deliver on our promises to you. Our IP Consultation professionals understand your need for confidentiality and ensure the greatest degree of confidentiality."
+  },
+  {
+    title: "Globally optimized solutions",
+    description: "Our professionals have extensive R&D experience, advanced scientific and engineering degrees, and a track record of producing cross-domain solutions. Our advanced educational credentials enable us to deliver vital technological research, paralegal services, and tools to IP law firms in order for them to present their clients with a globally optimal solution."
+  },
+  {
+    title: "Creative",
+    description: "We combine the art of search with tried-and-true approaches like TRIZ to identify the most innovative and optimal solutions for your needs and budget. Our IP Consultation professionals ensure that your legal company receives the finest service available."
+  },
+  {
+    title: "Customer focused services",
+    description: "We collaborate with you as an extension of your team, and each solution is tailored to the specific demands of the customer. We will not stop till you have found what you are looking for. Our committed support team is always on the lookout for the best potential solutions to your service-related issues.\n"
+  },
+];
+
 
 export default function Third() {
-  const cardData = [
-    {
-      title: "Improved Responsiveness:",
-      description: "Outsourcing to TLB can ensure a prompt response to potential clients. By having a dedicated team managing initial inquiries, law firms can provide timely and professional communication, enhancing the overall client experience and satisfaction.",
-    },
-    {
-      title: "Scalability and Flexibility:",
-      description: "TLB can scale their resources based on the volume of inquiries. During periods of high demand, such as marketing campaigns or peak seasons, TLB can quickly ramp up their capacity to handle a larger influx of potential cases. Conversely, during slower periods, TLB can adjust their resources, accordingly, avoiding underutilized staff.",
-    },
-    {
-      title: "Cost Savings:",
-      description: "Outsourcing to TLB can be cost-effective compared to hiring and training an in-house team. Law firms can avoid expenses associated with recruitment, salaries, benefits, office space, and technology infrastructure. Additionally, outsourcing to TLB allows for a variable cost structure, as firms only pay for the services utilized.",
-    },
-    {
-      title: "Expertise and Specialization:",
-      description: "TLB specializes in efficiently managing the intake process. TLB has experience in gathering relevant information, conducting initial case assessments, and routing cases to the appropriate legal teams. TLB’s expertise in case intake procedures can result in more accurate and efficient evaluations of potential cases.",
-    },
-    {
-      title: "Focus on Core Legal Work:",
-      description: "By outsourcing to TLB, law firms can free up their internal resources, allowing attorneys and legal staff to concentrate on core legal work. Instead of spending time on administrative tasks and initial client screenings, attorneys can focus on providing legal advice, strategizing cases, and advocating for their clients.",
-    },
-    {
-      title: "Consistent Processes and Quality Assurance:",
-      description: "TLB follows standardized processes and protocols for case intake. This consistency helps ensure that each potential case receives thorough and consistent evaluation and treatment. Quality assurance measures implemented by TLB helps maintain a high level of service and accuracy.",
-    },
-    {
-      title: "Enhanced Efficiency and Productivity:",
-      description: "Outsourcing case intake services to TLB will streamlines the intake process, resulting in increased efficiency and productivity. TLB leverages technology and automation tools to streamline data collection, organization, and reporting, reducing manual effort and improving overall workflow.",
-    },
-    {
-      title: "Access to Data and Analytics:",
-      description: "TLB offers reporting and analytics capabilities and can provide law firms with valuable insights and metrics on case intake volume, conversion rates, lead sources, and other relevant data. This information helps firms make data-driven decisions, optimize marketing strategies, and allocate resources effectively.",
-    },
-
-  ];
-
   return (
     <>
       <div className="bg-transparent mx-auto w-5/6">
-
-        <div className="container mx-auto p-4 my-6 space-y-2 text-center  mt-4 bg-w mb-4">
+        <div className="container mx-auto p-6 my-6 space-y-2  mt-4 bg-w mb-4 bg-[#1E293B] text-white rounded-2xl">
           <h2 className="text-3xl font-bold">
             Why Outsource IP Research and Consultation Services?
           </h2>
           <p className="dark:text-gray-400">
-            Outsourcing your <strong>IP Research and Consultation Service </strong> requirements can do wonders for your firm. Today it's a proven fact that firms that have outsourced their legal requirements to reliable partners have witnessed fruitful results and the potential to take in more client projects has only increased over the years.
-            <br></br>
-            <br></br>
-            Outsourcing your IP Research and Consultation Service requirements can do wonders for your firm. Today it's a proven fact that firms that have outsourced their legal requirements to reliable partners have witnessed fruitful results and the potential to take in more client projects has only increased over the years.
-            <br></br>
-            <br></br>
-            <ul>
-              <li>Achieve compelling cost reductions and faster turnaround times,</li>
-              <li>Free up scarce in-house resources</li>
-              <li>Focus on more strategic and higher-value activities, </li>
-              <li>Refocus the company's energies on its core business activities. </li>
-            </ul>
+            Outsourcing your <strong>IP Research and Consultation Service </strong> requirements can do wonders for your
+            firm. Today it's a proven fact that firms that have outsourced their legal requirements to reliable partners
+            have witnessed fruitful results and the potential to take in more client projects has only increased over
+            the years.
+          </p>
+          <br />
+          <p> If you are wondering whether to outsource your IP Research and Consultation service requirements to TLB or not, you must consider the following benefits that you will get upon outsourcing.</p>
+          <ul className="list-disc  ml-4">
+            <li>Achieve compelling cost reductions and faster turnaround times,</li>
+            <li>Free up scarce in-house resources</li>
+            <li>Focus on more strategic and higher-value activities,</li>
+            <li>Refocus the company's energies on its core business activities.</li>
+          </ul>
+        </div>
+
+        <div className="container mx-auto p-4 my-6 space-y-2  mt-4 bg-w mb-4">
+          <h2 className="text-3xl font-bold text-center">
+            Why outsource IP Research and Consultation services to TLB?
+          </h2>
+          <p className="dark:text-gray-400 text-center">
+            TLB is a renowned intellectual property and technology consulting firm. We provide our clients with a 'One-Stop' solution for all of their IP needs, providing vital support at each stage of the patent lifecycle, from producing and protecting IP to commercializing IP.
           </p>
         </div>
+
         <Swiper
           effect={"coverflow"}
           grabCursor={true}
@@ -91,7 +90,6 @@ export default function Third() {
             delay: 3500,
             disableOnInteraction: false,
           }}
-          modules={[EffectCoverflow, Pagination]}
           className="mySwiper space-y-2"
         >
           {/* Step 2: Map the card data to the SwiperSlides */}
@@ -120,24 +118,6 @@ export default function Third() {
             </SwiperSlide>
           ))}
         </Swiper>
-
-        {/* <div  data-aos="flip-down" className="m-4 mt-8 mb-4">
-          <div className="max-w-full p-6 overflow-hidden  rounded-lg shadow bg-[#1E293B] text-gray-100" >
-            <article>
-              <h2 className="text-xl font-bold text-center mb-4">It&apos;s Important</h2>
-              <p className="text-lg">
-                Overall, outsourcing case intake services to TLB will allows law firms to improve client service,
-                increase efficiency, reduce costs, and focus on their core legal work. By leveraging the expertise
-                and scalability TLB, firms can effectively manage the initial contact and evaluation process,
-                ensuring that potential cases are properly assessed and directed to the appropriate legal teams.
-              </p>
-
-              <p className="mt-4 text-gray-400"></p>
-              
-            </article>
-          </div>
-        </div> */}
-
       </div>
     </>
   );

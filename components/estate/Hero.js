@@ -1,5 +1,6 @@
 "use client"
 import React from 'react'
+import SubscribeForm from '../UI/SubscribeForm'
 
 const Hero = () => {
   return (
@@ -23,27 +24,7 @@ const Hero = () => {
               <br></br>
 
             </p>
-            <form action="" className="mt-8 flex items-start space-x-2">
-              <div>
-                <input
-                  className="flex w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
-                  type="email"
-                  placeholder="Enter your email"
-                  id="email"
-                />
-                <br></br>
-                <p className="mt-2 text-sm text-gray-500">
-                </p>
-              </div>
-              <div>
-                <button
-                  type="button"
-                  className="rounded-md bg-black px-3 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-                >
-                  Book Appointment
-                </button>
-              </div>
-            </form>
+            <SubscribeForm />
           </div>
           <div className="relative lg:col-span-5 lg:-mr-8 xl:col-span-6">
             <img

@@ -11,7 +11,9 @@ import "swiper/css/pagination";
 import "./styles.css";
 
 // import required modules
-import { EffectCoverflow, Pagination } from "swiper";
+import SwiperCore, { EffectCoverflow, Pagination, Autoplay } from "swiper";
+
+SwiperCore.use([EffectCoverflow, Autoplay, Pagination])
 
 const cardData = [
   {
@@ -75,7 +77,6 @@ export default function Third() {
             delay: 3500,
             disableOnInteraction: false,
           }}
-          modules={[EffectCoverflow, Pagination]}
           className="mySwiper space-y-2"
         >
           {/* Step 2: Map the card data to the SwiperSlides */}

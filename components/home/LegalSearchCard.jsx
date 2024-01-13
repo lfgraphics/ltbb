@@ -20,7 +20,7 @@ export default function LegalSearchCard({ data, animationDelay }) {
       >
         <Image src={image} fill className="object-cover" alt={title} priority />
       </div>
-      <div className="relative text-white h-full text-center flex flex-col justify-end py-2 legalOverlay px-2">
+      <div className="relative text-white h-full text-center flex flex-col justify-center md:justify-end py-2 legalOverlay px-2">
         <h3 className=" text-lg tracking-wide sm:text-xl md:text-2xl font-bold">
           {title}
         </h3>

@@ -13,7 +13,7 @@ const Second = () => {
 	});
 	return (
 		<React.Fragment>
-			<div className='bg-white    sm:w-5/6 w-full md:w-5/6 lg:5/6 mx-auto'>
+			<div className='bg-white    sm:w-5/6 w-full md:w-5/6 lg:5/6 mx-auto overflow-hidden'>
 				<section className="dark:bg-white bg-white">
 					<div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
 						<div data-aos="fade-down">

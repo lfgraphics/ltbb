@@ -13,7 +13,7 @@ const Second = () => {
 	});
 	return (
 		<React.Fragment>
-			<div className='bg-white    sm:w-5/6 w-full md:w-5/6 lg:5/6 mx-auto'>
+			<div className='bg-white    sm:w-5/6 w-full md:w-5/6 lg:5/6 mx-auto overflow-hidden'>
 				<section className="dark:bg-white bg-white">
 					<div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
 						<div data-aos="fade-down">
@@ -39,14 +39,14 @@ const Second = () => {
 										<p className="mt-2 dark:text-gray-400">Personal injury cases often require obtaining relevant medical records and documentation. TLB
 											can assist in retrieving medical records, organizing them in a secure and accessible manner,
 											and preparing summaries or chronologies for easy reference.
-											</p>
+										</p>
 									</div>
 								</div>
 								<div className="mt-12 space-y-12">
 									<div className="flex shadow-lg p-4 hover:shadow-2xl  border-solid  rounded-md" data-aos="fade-right">
 										<div className="flex-shrink-0">
 											<div className="flex items-center justify-center w-12 h-12 rounded-md bg-gray-700">
-											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
+												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
 													<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
 												</svg>
 											</div>
@@ -64,7 +64,7 @@ const Second = () => {
 									<div className="flex shadow-lg p-4 hover:shadow-2xl  border-solid  rounded-md" data-aos="fade-right">
 										<div className="flex-shrink-0">
 											<div className="flex items-center justify-center w-12 h-12 rounded-md bg-gray-700">
-											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
+												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
 													<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
 												</svg>
 											</div>
@@ -81,7 +81,7 @@ const Second = () => {
 									<div className="flex shadow-lg p-4 hover:shadow-2xl  border-solid  rounded-md" data-aos="fade-right">
 										<div className="flex-shrink-0">
 											<div className="flex items-center justify-center w-12 h-12 rounded-md bg-gray-700">
-											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
+												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
 													<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
 												</svg>
 											</div>
@@ -109,7 +109,7 @@ const Second = () => {
 									<div className="flex shadow-lg p-4 hover:shadow-2xl  border-solid  rounded-md" data-aos="fade-left">
 										<div className="flex-shrink-0">
 											<div className="flex items-center justify-center w-12 h-12 rounded-md bg-gray-700">
-											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
+												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
 													<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
 												</svg>
 											</div>
@@ -165,25 +165,25 @@ const Second = () => {
 											</div>
 										</div>
 										<div className="flex shadow-lg p-4 hover:shadow-2xl  border-solid  rounded-md" data-aos="fade-left">
-										<div className="flex-shrink-0">
+											<div className="flex-shrink-0">
 												<div className="flex items-center justify-center w-12 h-12 rounded-md bg-gray-700">
 													<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
 														<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
 													</svg>
 												</div>
 											</div>
-										
+
 											<div className="ml-4">
 												<h4 className="text-lg font-medium leading-6">
 													Litigation Support:
-													</h4>
+												</h4>
 												<p className="mt-2 dark:text-gray-400">
 													In cases that proceed to litigation, TLB can provide support during trial preparation. This
 													includes assistance with drafting pleadings, organizing exhibits, conducting legal research, and
 													preparing trial notebooks.
 												</p>
 											</div>
-											
+
 										</div>
 									</div>
 								</div>

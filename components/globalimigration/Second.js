@@ -13,7 +13,7 @@ const Second = () => {
 	});
 	return (
 		<React.Fragment>
-			<div className='bg-white    sm:w-5/6 w-full md:w-5/6 lg:5/6 mx-auto'>
+			<div className='bg-white    sm:w-5/6 w-full md:w-5/6 lg:5/6 mx-auto overflow-hidden'>
 				<section className="dark:bg-white bg-white">
 					<div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
 						<div data-aos="fade-down">
@@ -34,7 +34,7 @@ const Second = () => {
 										</div>
 									</div>
 									<div className="ml-4">
-										<h4 className="text-lg font-medium leading-6">Immigration Consultation:
+										<h4 className="text-lg  leading-6">Immigration Consultation:
 										</h4>
 										<p className="mt-2 dark:text-gray-400">TLB can assist clients in providing expert advice and guidance on immigration options, eligibility requirements, and strategies tailored to the specific needs and goals of individuals or businesses.</p>
 									</div>
@@ -43,7 +43,7 @@ const Second = () => {
 									<div className="flex shadow-lg p-4 hover:shadow-2xl  border-solid  rounded-md" data-aos="fade-right">
 										<div className="flex-shrink-0">
 											<div className="flex items-center justify-center w-12 h-12 rounded-md bg-gray-700">
-											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
+												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
 													<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
 												</svg>
 											</div>
@@ -58,7 +58,7 @@ const Second = () => {
 									<div className="flex shadow-lg p-4 hover:shadow-2xl  border-solid  rounded-md" data-aos="fade-right">
 										<div className="flex-shrink-0">
 											<div className="flex items-center justify-center w-12 h-12 rounded-md bg-gray-700">
-											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
+												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
 													<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
 												</svg>
 											</div>
@@ -73,7 +73,7 @@ const Second = () => {
 									<div className="flex shadow-lg p-4 hover:shadow-2xl  border-solid  rounded-md" data-aos="fade-right">
 										<div className="flex-shrink-0">
 											<div className="flex items-center justify-center w-12 h-12 rounded-md bg-gray-700">
-											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
+												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
 													<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
 												</svg>
 											</div>
@@ -100,7 +100,7 @@ const Second = () => {
 									<div className="flex shadow-lg p-4 hover:shadow-2xl  border-solid  rounded-md" data-aos="fade-right">
 										<div className="flex-shrink-0">
 											<div className="flex items-center justify-center w-12 h-12 rounded-md bg-gray-700">
-											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
+												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" className="w-7 h-7">
 													<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
 												</svg>
 											</div>
@@ -220,8 +220,8 @@ const Second = () => {
 									</div>
 								</div> */}
 						</div>
-						<div aria-hidden="true" className="mx-auto rounded-lg shadow-lg object-fill" data-aos="fade-left">
-							<img src="/Immigration/pexels-sheila-731217.jpg" alt="" className="mx-auto rounded-lg shadow-lg object-fill" />
+						<div aria-hidden="true" className="mx-auto rounded-lg shadow-lg object-fill h-full" data-aos="fade-left">
+							<img src="/Immigration/airport-immigration.webp" alt="" className="mx-auto rounded-lg shadow-lg h-full object-cover min-h-[490px] lg:min-h-full max-w-[327px] lg:max-w-[416px] object-right" />
 						</div>
 					</div>
 
