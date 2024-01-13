@@ -30,7 +30,7 @@ export default function BlogSection() {
 			</div>
 			<div className='bg-white text-center pb-12 '>
 				<Link
-					href='https://www.thelegalbase.com/blog/'
+					href='https://blog.thelegalbase.com/'
 					className='border border-[#DDE2FB] bg-[#DDE2FB] rounded-lg p-3 text-[#4E6BFF] hover:bg-[#d3d8f5]'
 				>
 					See All Blogs

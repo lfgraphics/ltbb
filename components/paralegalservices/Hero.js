@@ -29,7 +29,7 @@ const Hero = () => {
           </div>
           <div className="relative lg:col-span-5 lg:-mr-8 xl:col-span-6">
             <img
-              className="aspect-[3/2] bg-gray-50 lg:aspect-[4/3] lg:h-[700px] xl:aspect-[16/9] object-cover h-62 w-124"
+              className="aspect-[3/3] bg-gray-50 lg:aspect-[4/3] lg:h-[700px] xl:aspect-[16/9] object-cover h-62 w-124"
               src="/Paralegal Services/pexels-sora-shimazaki-5668802.jpg"
               alt=""
             />

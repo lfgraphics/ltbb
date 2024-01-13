@@ -249,40 +249,31 @@ export default function Third() {
             of your proceedings. </p>
           <br></br>
           <br></br>
-          <div>
-            <table className="mx-auto d-block text-center">
-              <thead>
-                <tr>
-                  <th>PRE-JUDGMENT</th>
-                  <th>POST-JUDGMENT </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="text-left">
-                  <td>
-                    <li>Pre-attorney suit review</li>
-                    <li>Suit assembly</li>
-                    <li>Default request</li>
-                    <li>Stipulations</li>
-                    <li>Alias preparation</li>
-                    <li>Service follow-up and review</li>
-                    <li>Electronic filing</li>
-                  </td>
-                  {/* </tr> */}
-                  <td className="text-left pl-6">
-                    {/* <td> */}
-                    <li>Judgment entry</li>
-                    <li>Garnishment preparation and filing</li>
-                    <li>Garnishment answer review</li>
-                    <li>
-                      Judgment review and validation for placed accounts
-                    </li>
-                    <li>Property sale for foreclosure</li>
-                    {/* </td> */}
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+          <div className="flex justify-center flex-col gap-3 sm:flex-row max-w-xl mx-auto">
+            <div className="flex-1 flex flex-col gap-2">
+              <div className="text-start sm:text-center">PRE-JUDGMENT</div>
+              <ul className="text-start list-disc pl-6">
+                <li>Pre-attorney suit review</li>
+                <li>Suit assembly</li>
+                <li>Default request</li>
+                <li>Stipulations</li>
+                <li>Alias preparation</li>
+                <li>Service follow-up and review</li>
+                <li>Electronic filing</li>
+              </ul>
+            </div>
+            <div className="flex-1 flex flex-col gap-2">
+              <div className="text-start sm:text-center">POST-JUDGMENT</div>
+              <ul className="text-start list-disc pl-6">
+                <li>Judgment entry</li>
+                <li>Garnishment preparation and filing</li>
+                <li>Garnishment answer review</li>
+                <li>
+                  Judgment review and validation for placed accounts
+                </li>
+                <li>Property sale for foreclosure</li>
+              </ul>
+            </div>
           </div>
         </div>
         <Swiper

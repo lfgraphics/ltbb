@@ -78,7 +78,7 @@ const Second = () => {
                                 </div>
                             </div>
                             <div aria-hidden="true" className="mx-auto rounded-lg h-full object-fill relative grid items-center" data-aos="fade-left">
-                                <img src="/bespoke-it-services/outsourced-bespoke.webp" alt="Be Spoke" className="mx-auto rounded-lg object-fill h-[90%] " />
+                                <img src="/bespoke-it-services/outsourced-bespoke.webp" alt="Be Spoke" className="mx-auto rounded-lg object-cover h-[90%] " />
                             </div>
                         </div>
                         <div>
@@ -116,8 +116,8 @@ const Second = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="mx-auto rounded-lg shadow-lg object-filllg:col-start-1 lg:row-start-1" data-aos="fade-right">
-                                    <img src="/Case Intake/pexels-karolina-grabowska-5387261.jpg" alt="" className="mx-auto rounded-lg shadow-lg object-fill" />
+                                <div className="mx-auto rounded-lg mt-4 lg:mt-0 shadow-lg object-fill lg:col-start-1 lg:row-start-1" data-aos="fade-right">
+                                    <img src="/Case Intake/pexels-karolina-grabowska-5387261.jpg" alt="" className="mx-auto rounded-lg shadow-lg object-cover" />
                                 </div>
                             </div>
                         </div>

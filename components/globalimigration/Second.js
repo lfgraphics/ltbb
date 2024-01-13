@@ -220,8 +220,8 @@ const Second = () => {
 									</div>
 								</div> */}
 						</div>
-						<div aria-hidden="true" className="mx-auto rounded-lg shadow-lg object-fill" data-aos="fade-left">
-							<img src="/Immigration/pexels-sheila-731217.jpg" alt="" className="mx-auto rounded-lg shadow-lg object-fill" />
+						<div aria-hidden="true" className="mx-auto rounded-lg shadow-lg object-fill h-full" data-aos="fade-left">
+							<img src="/Immigration/airport-immigration.webp" alt="" className="mx-auto rounded-lg shadow-lg h-full object-cover min-h-[490px] lg:min-h-full max-w-[327px] lg:max-w-[416px] object-right" />
 						</div>
 					</div>
 

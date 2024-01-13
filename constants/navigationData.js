@@ -96,6 +96,6 @@ export const menuItems = [
     },
     {
         name: "Repository",
-        href: "#",
+        href: "https://blog.thelegalbase.com/",
     },
 ];
