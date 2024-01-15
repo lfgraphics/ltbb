@@ -6,6 +6,8 @@ import { usePathname } from 'next/navigation'
 import emailjs from '@emailjs/browser';
 import { useForm } from 'react-hook-form';
 
+import { emailCredentials } from '@/config/emailCredentials';
+
 const urls = {
     "caseintakeservices": "Case Intake Services",
     "contractmanagement": "Contract Management",
@@ -28,6 +30,8 @@ export default function SubscribeForm() {
     const pathname = usePathname();
     const service = pathname.split('/')[1];
 
+    const { publicKey, serviceId, newsLetterTemplateId } = emailCredentials;
+
     const {
         register,
         handleSubmit,
@@ -43,10 +47,10 @@ export default function SubscribeForm() {
         };
         try {
             await emailjs.send(
-                "service_z905fmr",
-                "template_3tl0e17",
+                serviceId,
+                newsLetterTemplateId,
                 formData,
-                "jcoqlfowIkys2Yh1s"
+                publicKey
             );
             reset();
         } catch (e) {

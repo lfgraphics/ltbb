@@ -1,6 +1,9 @@
 "use client";
 import React from "react";
-import { useForm } from "react-hook-form";
+import emailjs from '@emailjs/browser';
+import { useForm } from 'react-hook-form';
+
+import { emailCredentials } from '@/config/emailCredentials';
 import FirstStep from "./firstStep";
 import Button from "./button";
 import SecondStep from "./secondStep";
@@ -8,17 +11,44 @@ import ThirdStep from "./thirdStep";
 
 const ContactForm = ({ title, message }) => {
   const [step, setStep] = React.useState(1);
+  const { publicKey, serviceId, contactFormTemplateId } = emailCredentials;
 
   const {
     watch,
     register,
     handleSubmit,
-    formState: { errors, isSubmitSuccessful },
+    reset,
+    formState: { errors, isSubmitting, isSubmitSuccessful },
     isValid,
   } = useForm({ mode: "all" });
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const onSubmit = async (data) => {
+    const { Phone, areaofbusiness, city, country, date, designation, email, inquire, name, service, time } = data;
+    const formData = {
+      name: name,
+      email: email,
+      phone: Phone,
+      city: city,
+      date: date,
+      time: time,
+      service: service,
+      inquire: inquire,
+      designation: designation,
+      country: country,
+      area_of_business: areaofbusiness,
+    };
+    try {
+      await emailjs.send(
+        serviceId,
+        contactFormTemplateId,
+        formData,
+        publicKey
+      );
+      reset();
+      setStep(1);
+    } catch (e) {
+      console.log(e);
+    }
   }
 
   const Step = () => {
@@ -57,6 +87,7 @@ const ContactForm = ({ title, message }) => {
           isValid={isValid}
           watch={watch}
           submitForm={handleSubmit(onSubmit)}
+          isLoading={isSubmitting}
         ></Button>
       </div>
     </React.Fragment>

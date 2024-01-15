@@ -7,24 +7,21 @@ const leaderShipTeamData = [
         id: 1,
         name: "Yajuvendra.V.Singh",
         designation: "CEO",
-        twitter: "#",
-        linkedin: "#",
+        linkedin: "https://www.linkedin.com/in/yaj-singh-tlb-global-lpo/",
         image: "/about/yaj.webp",
     },
     {
         id: 2,
         name: "Anshu Gautam",
         designation: "Director",
-        twitter: "#",
-        linkedin: "#",
+        linkedin: "https://www.linkedin.com/in/anshu-gautam-044b9930/",
         image: "/about/anshu.webp",
     },
     {
         id: 3,
         name: "Shashi Shekhar",
         designation: "Principal Advisor",
-        twitter: "#",
-        linkedin: "#",
+        linkedin: "https://www.linkedin.com/in/shashi-shekhar-pandey-a4553912/",
         image: "/about/sashi.webp",
     },
 ]
@@ -43,7 +40,7 @@ export default function LeaderShipTeam() {
             <div className="flex gap-8 mt-12 max-w-5xl mx-auto flex-wrap">
                 {
                     leaderShipTeamData.map((item) => (
-                        <LeaderShipTeamCard key={item.id} data={...item} />
+                        <LeaderShipTeamCard key={item.id} data={item} />
                     ))
                 }
             </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 const commonStyle = "rounded-md bg-black px-6 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
 
-const button = ({ step, setStep, isValid, watch, submitForm }) => {
+const button = ({ step, setStep, isValid, watch, submitForm, isLoading }) => {
     const Data = JSON.stringify(watch(), null, 2);
     const onHandleNext = () => {
         setStep((cur) => cur + 1);
@@ -30,7 +30,7 @@ const button = ({ step, setStep, isValid, watch, submitForm }) => {
                     onClick={onHandleSubmit}
                     className={commonStyle}
                 >
-                    Submit
+                    {isLoading ? "Submitting" : "Submit"}
                 </button>
             );
         }

@@ -5,9 +5,15 @@ const Faq = () => {
   const [expanded, setExpanded] = useState(Array(faqData.length).fill(false));
 
   const toggleExpand = (index) => {
-    const updatedExpanded = [...expanded];
-    updatedExpanded[index] = !updatedExpanded[index];
-    setExpanded(updatedExpanded);
+    const newArr = [];
+    expanded.forEach((item, i) => {
+      if (i === index) {
+        newArr.push(!item);
+      } else {
+        newArr.push(false);
+      }
+    })
+    setExpanded(newArr);
   };
 
 
@@ -28,7 +34,7 @@ const Faq = () => {
                   onClick={() => toggleExpand(index)}
                   className="flex items-center justify-between w-full p-2 text-left bg-transparent hover:bg-[#1b2636] rounded-md focus:outline-none"
                 >
-                  <span className="w-[90%] md:w-auto text-base lg:text-lg font-medium">{item.question}</span>
+                  <span className="w-[90%] md:w-auto text-sm font-medium">{item.question}</span>
                   <svg
                     className={`w-5 h-5 ${expanded[index] ? "transform rotate-180" : ""
                       }`}
@@ -46,8 +52,8 @@ const Faq = () => {
                   </svg>
                 </button>
                 {expanded[index] && (
-                  <div className="mt-2 p-4 bg-transparent hover:bg-[#1b2636] rounded-md">
-                    <p className="text-sm lg:text-base">{item.answer}</p>
+                  <div className="mt-1 p-4 bg-transparent hover:bg-[#1b2636] rounded-md text-sm">
+                    {item.answer}
                   </div>
                 )}
               </div>

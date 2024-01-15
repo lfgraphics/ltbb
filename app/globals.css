@@ -123,3 +123,10 @@ h6 {
   margin-right: auto;
   margin-left: -100px;
 } */
+
+.table-scrollbar::-webkit-scrollbar {
+  max-height: 5px;
+}
+.table-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgb(85, 82, 82);
+}

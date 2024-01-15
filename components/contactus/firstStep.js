@@ -1,7 +1,6 @@
 import React from "react";
 import Inquire from "./assets/inquire";
 import Service from "./assets/service";
-import { v4 as uuidv4 } from "uuid";
 import Business from "./assets/business";
 
 const commonStyle = "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
@@ -12,7 +11,7 @@ const firstStep = ({ register, errors, isValid }) => {
       <div className="mt-4 flex flex-col gap-4">
         <div>
           <label
-            htmlFor="countries_multiple"
+            htmlFor="inquire_about"
             className="block mb-2 text-sm font-bold text-black dark:text-white"
           >
             Which of our Legal Solutions do you want to inquire about?
@@ -20,19 +19,15 @@ const firstStep = ({ register, errors, isValid }) => {
           <select
             name="inquire"
             {...register("inquire", { required: true })}
-            multiple=""
-            id="countries_multiple"
+            id="inquire_about"
             className={commonStyle}
-            defaultValue={"Choose One"}
           >
-            {/* <option selected="">Choose countries</option> */}
-            {Inquire.map((item, index) => {
-              return (
-                <option key={uuidv4()} value={item.value}>
-                  {item.name}
-                </option>
-              );
-            })}
+            {Inquire.map(({ name, value }) => (
+              <option key={value} value={value}>
+                {name}
+              </option>
+            )
+            )}
           </select>
           {errors.inquire && (
             <p className="text-red-900 text-sm mt-2">This field is required</p>
@@ -41,7 +36,7 @@ const firstStep = ({ register, errors, isValid }) => {
 
         <div>
           <label
-            htmlFor="countries_multiple"
+            htmlFor="service"
             className="block mb-2 text-sm font-bold text-black dark:text-white"
           >
             What Service do you want to avail?
@@ -49,18 +44,15 @@ const firstStep = ({ register, errors, isValid }) => {
           <select
             name="service"
             {...register("service", { required: true })}
-            defaultValue={"Choose One"}
-            multiple=""
-            id="countries_multiple"
+            id="service"
             className={commonStyle}
           >
-            {Service.map((item, index) => {
-              return (
-                <option key={uuidv4()} value={item.value}>
-                  {item.name}
-                </option>
-              );
-            })}
+            {Service.map(({ name, value }) => (
+              <option key={value} value={value}>
+                {name}
+              </option>
+            )
+            )}
 
             {errors.service && (
               <p className="text-red-900 text-sm mt-2">
@@ -72,26 +64,23 @@ const firstStep = ({ register, errors, isValid }) => {
 
         <div>
           <label
-            htmlFor="countries_multiple"
+            htmlFor="areaOfBusiness"
             className="block mb-2 text-sm font-bold text-black dark:text-white"
           >
             What is your area of business?
           </label>
           <select
             name="areaofbusiness"
-            multiple=""
-            defaultValue={"Choose One"}
             {...register("areaofbusiness", { required: true })}
-            id="countries_multiple"
+            id="areaOfBusiness"
             className={commonStyle}
           >
-            {Business.map((item, index) => {
-              return (
-                <option key={uuidv4()} value={item.value}>
-                  {item.name}
-                </option>
-              );
-            })}
+            {Business.map(({ name, value }) => (
+              <option key={value} value={value}>
+                {name}
+              </option>
+            )
+            )}
 
             {errors.areaofbusiness && (
               <p className="text-red-900 text-sm mt-2">

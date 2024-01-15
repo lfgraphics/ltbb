@@ -1,45 +1,11 @@
-"use client"
-import React, { useState } from 'react';
+import React from 'react'
+import FaqBlock from '../UI/FAQ';
 
-const Faq = () => {
-  const [openQuestionIndex, setOpenQuestionIndex] = useState(null);
-
-  const handleQuestionToggle = (index) => {
-    setOpenQuestionIndex((prevIndex) => (prevIndex === index ? null : index));
-  };
-
+export const Faq = () => {
   return (
-    <React.Fragment>
-      <section className="bg-[#1E293B] text-gray-100 mt-4 mx-auto w-full">
-        <div className="container flex flex-col justify-center p-4 mx-auto md:p-8">
-          <p className="p-2 text-sm font-medium tracking-wider text-center uppercase">
-            How it works
-          </p>
-          <h2 className="mb-12 text-4xl font-bold leading-none text-center sm:text-5xl">
-            Frequently Asked Questions
-          </h2>
-          <div className="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 divide-gray-700">
-            {faqData.map((item, index) => (
-              <details
-                key={index}
-                open={index === openQuestionIndex}
-                onToggle={() => handleQuestionToggle(index)}
-              >
-                <summary className="py-2 outline-none cursor-pointer focus:underline">
-                  {item.question}
-                </summary>
-                <div className="px-4 pb-4">
-                  <p>{item.answer}</p>
-                </div>
-              </details>
-            ))}
-          </div>
-        </div>
-      </section>
-    </React.Fragment>
-  );
-};
-
+    <FaqBlock data={faqData} subtitle="HOW IT WORKS" title="FREQUENTLY ASKED QUESTIONS" />
+  )
+}
 const faqData = [
   {
     question: "What is M&A due diligence?",
