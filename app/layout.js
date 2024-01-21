@@ -11,16 +11,16 @@ export const metadata = {
   title: 'TLB',
   description: 'TLB LPO is a global outsourcing partner which works closely with law firms , attorneys and legal departments of corporations',
   openGraph: {
-    title: "TLB",
     type: 'website',
     url: 'https://tlb-ten.vercel.app/',
     description: 'TLB LPO is a global outsourcing partner which works closely with law firms , attorneys and legal departments of corporations',
     images: {
       type: "image/png",
       url: '/TlbLogoY.png',
-      width: 800,
-      height: 600,
+      width: 256,
+      height: 256,
       alt: 'The Legal Base',
+      itemprop: "image"
     },
     site_name: 'The Legal Base',
   },
