@@ -8,8 +8,10 @@ const inter = Varela({ subsets: ['latin'], weight: '400' })
 
 export const metadata = {
   metadataBase: new URL("https://tlb-ten.vercel.app/"),
-  title: 'TLB',
-  description: 'TLB LPO is a global outsourcing partner which works closely with law firms , attorneys and legal departments of corporations',
+  default: {
+    title: 'TLB',
+    description: 'TLB LPO is a global outsourcing partner which works closely with law firms , attorneys and legal departments of corporations',
+  },
   openGraph: {
     type: 'website',
     url: 'https://tlb-ten.vercel.app/',
@@ -20,7 +22,6 @@ export const metadata = {
       width: 256,
       height: 256,
       alt: 'The Legal Base',
-      itemprop: "image"
     },
     site_name: 'The Legal Base',
   },
