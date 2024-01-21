@@ -1,6 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
 
+export const metadata = {
+    title: "Cookies Policy | TLB",
+    description: "TLB LPO is a global outsourcing partner which works closely with law firms , attorneys and legal departments of corporations",
+}
+
 export default function CookiesPolicy() {
     return (
         <section className='max-w-6xl mb-4 mx-auto p-4'>

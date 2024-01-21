@@ -9,7 +9,7 @@ const BannerVideo = () => {
                 poster='/Litigation Support/pexels-zachary-caraway-17630959.jpg'
             >
                 <source
-                    src="https://thelegalbase.com/wp-content/uploads/2022/07/My-Movie_Website.mp4"
+                    src="/banner-video.webm"
                     type="video/mp4"
                 />
             </video>

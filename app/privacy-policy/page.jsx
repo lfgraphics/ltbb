@@ -1,5 +1,10 @@
 import Image from "next/image";
 
+export const metadata = {
+    title: "Privacy Policy | TLB",
+    description: "TLB LPO is a global outsourcing partner which works closely with law firms , attorneys and legal departments of corporations",
+}
+
 const PrivacyPolicy = () => {
     return (
         <div className="mx-auto mb-4 max-w-6xl p-4">
