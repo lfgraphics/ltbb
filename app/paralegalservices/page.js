@@ -7,7 +7,10 @@ import Faq from '@/components/paralegalservices/Faq';
 
 export const metadata = {
   title: " Outsourced Paralegal Services | TLB",
-  description: "TLB LPO provides you with experienced and skilled paralegal resources working in your time zone to deliver cost savings and better efficiency by sharing your workload."
+  description: "TLB LPO provides you with experienced and skilled paralegal resources working in your time zone to deliver cost savings and better efficiency by sharing your workload.",
+  alternates: {
+    canonical: "/paralegalservices"
+  },
 }
 const page = () => {
   return (
@@ -16,7 +19,7 @@ const page = () => {
       <Second></Second>
       <Third></Third>
       <Four></Four>
-        <Faq/>
+      <Faq />
     </React.Fragment>
   )
 }

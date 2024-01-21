@@ -7,7 +7,10 @@ import Four from '@/components/globalimigration/Four';
 
 export const metadata = {
   title: " Outsourced Global Immigration Management Services | TLB",
-  description: "TLB LPO’s Global Immigration Management aids clients in providing services to their clients by utilizing the ideal combination of people, process, and technology."
+  description: "TLB LPO’s Global Immigration Management aids clients in providing services to their clients by utilizing the ideal combination of people, process, and technology.",
+  alternates: {
+    canonical: "/globalimmigration"
+  },
 }
 const page = () => {
   return (

@@ -7,7 +7,10 @@ import Faq from '@/components/madiligenceservices/Faq';
 export const metadata = {
   title: "M&A Due Diligence Services | TLB\n",
   description: "\n" +
-      "Our team of experienced professionals at TLB has the expertise and knowledge necessary to conduct a thorough and comprehensive M&A due diligence investigation. We work closely with our clients to understand their specific needs and tailor our services accordingly. \n"
+    "Our team of experienced professionals at TLB has the expertise and knowledge necessary to conduct a thorough and comprehensive M&A due diligence investigation. We work closely with our clients to understand their specific needs and tailor our services accordingly. \n",
+  alternates: {
+    canonical: "/madiligenceservices"
+  },
 }
 const page = () => {
   return (
@@ -16,7 +19,7 @@ const page = () => {
       <Second></Second>
       <Third></Third>
       <Four></Four>
-        <Faq/>
+      <Faq />
     </React.Fragment>
   )
 }

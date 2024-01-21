@@ -9,6 +9,9 @@ import Faq from '@/components/caseintakeservices/Faq';
 export const metadata = {
   title: ' Outsourced Case Intake Services | The Legal Base',
   description: 'The Legal Base LPO has a team of experts who have rich experience of providing case intake services to law firms and attorneys. ',
+  alternates: {
+    canonical: "/caseintakeservices"
+  },
 }
 const page = () => {
   return (

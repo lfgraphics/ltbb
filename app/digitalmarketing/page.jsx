@@ -7,7 +7,10 @@ import Faq from '@/components/digitalmarketing/Faq';
 
 export const metadata = {
   title: "Digital Marketing Services | TLB",
-  description: " TLB’s outsourced digital marketing services allow law firms and attorneys in achieving their social media and digital footprint objectives through bespoke plans and purpose-driven campaigns."
+  description: " TLB’s outsourced digital marketing services allow law firms and attorneys in achieving their social media and digital footprint objectives through bespoke plans and purpose-driven campaigns.",
+  alternates: {
+    canonical: "/digitalmarketing"
+  }
 }
 
 const page = () => {

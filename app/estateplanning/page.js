@@ -8,7 +8,10 @@ import Faq from '@/components/estate/Faq';
 
 export const metadata = {
   title: " Estate Planning Services | TLB",
-  description: " LPO provides you with experienced and skilled specialist estate planning resources working in your time zone to deliver cost savings and better efficiency by sharing your workload."
+  description: " LPO provides you with experienced and skilled specialist estate planning resources working in your time zone to deliver cost savings and better efficiency by sharing your workload.",
+  alternates: {
+    canonical: "/estateplanning"
+  },
 }
 
 const page = () => {

@@ -7,6 +7,7 @@ import Footer from '@/components/Footer';
 const inter = Varela({ subsets: ['latin'], weight: '400' })
 
 export const metadata = {
+  metadataBase: new URL("https://thelegalbase.com"),
   title: 'TLB',
   description: 'TLB LPO is a global outsourcing partner which works closely with law firms , attorneys and legal departments of corporations',
   openGraph: {
@@ -14,12 +15,18 @@ export const metadata = {
     type: 'website',
     url: 'https://thelegalbase.com',
     description: 'TLB LPO is a global outsourcing partner which works closely with law firms , attorneys and legal departments of corporations',
-    images: ['/TlbLogoY.png'],
+    images: {
+      type: "image/png",
+      url: '/TlbLogoY.png',
+      width: 800,
+      height: 600,
+      alt: 'The Legal Base',
+    },
     site_name: 'The Legal Base',
-    imageWidth: 1000,
-    imageHeight: 1000,
   },
-  conical: "https://kaifkhan.com"
+  alternates: {
+    canonical: "/"
+  },
 }
 
 export default function RootLayout({ children }) {

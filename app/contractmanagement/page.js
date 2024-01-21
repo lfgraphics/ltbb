@@ -9,6 +9,9 @@ import Faq from '@/components/contractmanagement/Faq';
 export const metadata = {
   title: ' Contract Lifecycle Management | TLB',
   description: 'TLB LPO provides you with the best contract lifecycle management services by assisting you in achieving your objectives and shortening your time-to-contract. ',
+  alternates: {
+    canonical: "/contractmanagement"
+  },
 }
 const page = () => {
   return (

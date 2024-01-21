@@ -7,7 +7,10 @@ import Third from '@/components/litigationsupport/Third';
 
 export const metadata = {
   title: "Outsourced Litigation Support Services | TLB",
-  description: " TLB LPO’s dependable team of Litigation Support professionals work to guarantee that everything they do drives optimum efficiency to your law firm."
+  description: " TLB LPO’s dependable team of Litigation Support professionals work to guarantee that everything they do drives optimum efficiency to your law firm.",
+  alternates: {
+    canonical: "/litigationsupport"
+  },
 }
 const page = () => {
   return (

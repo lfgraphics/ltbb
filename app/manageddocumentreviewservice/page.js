@@ -6,7 +6,10 @@ import Four from '@/components/manageddocumentreviewservice/Four';
 import Faq from '@/components/manageddocumentreviewservice/Faq';
 export const metadata = {
   title: "Outsourced Managed Doc Review Services | TLB",
-  description: " TLB LPO’s legal consulting solutions include eDiscovery and document review services to help legal teams navigate the complex world of electronic data. "
+  description: " TLB LPO’s legal consulting solutions include eDiscovery and document review services to help legal teams navigate the complex world of electronic data. ",
+  alternates: {
+    canonical: "/manageddocumentreviewservice"
+  },
 }
 const page = () => {
   return (
@@ -15,7 +18,7 @@ const page = () => {
       <Second></Second>
       <Third></Third>
       <Four></Four>
-        <Faq/>
+      <Faq />
     </React.Fragment>
   )
 }

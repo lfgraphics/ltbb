@@ -8,7 +8,10 @@ import Faq from '@/components/legalresearch/Faq';
 
 export const metadata = {
   title: "Legal Research Services for Law Firms | TLB",
-  description: "TLB’s Legal Research team can help you in providing accurate solutions, analyze statutes and case studies to ensure that all your legal issues are taken care of accordingly."
+  description: "TLB’s Legal Research team can help you in providing accurate solutions, analyze statutes and case studies to ensure that all your legal issues are taken care of accordingly.",
+  alternates: {
+    canonical: "/legalresearch"
+  },
 }
 const page = () => {
   return (

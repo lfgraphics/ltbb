@@ -8,7 +8,10 @@ import Faq from '@/components/globalipresearchandconsultationservices/Faq';
 
 export const metadata = {
   title: " IP Research and Consultation services | TLB",
-  description: " TLB is a one-stop-shop for all your IP Research and Consultation needs providing vital support at each stage of the patent lifecycle."
+  description: " TLB is a one-stop-shop for all your IP Research and Consultation needs providing vital support at each stage of the patent lifecycle.",
+  alternates: {
+    canonical: "/globalipresearchandconsultationservices"
+  },
 }
 const page = () => {
   return (

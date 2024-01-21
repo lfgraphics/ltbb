@@ -4,6 +4,9 @@ import Image from 'next/image'
 export const metadata = {
     title: "Cookies Policy | TLB",
     description: "TLB LPO is a global outsourcing partner which works closely with law firms , attorneys and legal departments of corporations",
+    alternates: {
+        canonical: "/cookies-policy"
+    },
 }
 
 export default function CookiesPolicy() {

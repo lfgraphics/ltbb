@@ -9,7 +9,10 @@ import Faq from '@/components/depositionsummaryservices/Faq';
 
 export const metadata = {
   title: "Outsourced Deposition Summary Services | TLB",
-  description: "TLB LPO’s deposition summaries are a penned outline of the transcripts that make it easy for attorneys and law firms to gain access to the relevant information that increases the possibility of winning a case."
+  description: "TLB LPO’s deposition summaries are a penned outline of the transcripts that make it easy for attorneys and law firms to gain access to the relevant information that increases the possibility of winning a case.",
+  alternates: {
+    canonical: "/depositionsummaryservices"
+  },
 }
 
 const page = () => {
